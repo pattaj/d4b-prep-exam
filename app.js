@@ -6,8 +6,8 @@ let currentFilter = "NONE";
 
 // Define your JSON files here (must match the names in your /data/ folder)
 const availableModules = [
-    { id: "generative-ai", title: "Generative AI" },
-    { id: "ai-business", title: "AI for Business" }
+    { id: "gen-ai", title: "Generative AI" },
+    { id: "ai-for-business", title: "AI for Business" }
 ];
 
 // =========================================================
