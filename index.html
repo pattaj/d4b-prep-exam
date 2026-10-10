@@ -1,4 +1,4 @@
-html_content = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +8,7 @@ html_content = """<!DOCTYPE html>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 20px; }
         .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         h1 { color: #1a73e8; font-size: 24px; text-align: center; }
+        .topic-header { background: #e8f0fe; color: #1a73e8; padding: 10px; border-radius: 6px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 14px; }
         .question-card { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
         .question-title { font-weight: 600; margin-bottom: 10px; font-size: 16px; }
         label { display: block; padding: 10px; margin: 5px 0; background: #f8f9fa; border-radius: 8px; cursor: pointer; border: 1px solid #ddd; transition: 0.2s; }
@@ -33,9 +34,7 @@ html_content = """<!DOCTYPE html>
 </div>
 
 <script>
-    // PASTE YOUR NOTEBOOKLM QUESTIONS HERE:
-
-const quizData = [
+    const quizData = [
     # =========================================================================
     # TOPIC 1: Generative AI & Machine Learning Foundations (Questions 1–15)
     # =========================================================================
@@ -957,24 +956,40 @@ const quizData = [
     }
 ];
 
-
-
-
     const container = document.getElementById("quizContainer");
 
     quizData.forEach((q, qIndex) => {
         let qDiv = document.createElement("div");
         qDiv.className = "question-card";
-        qDiv.innerHTML = `<div class="question-title">${q.question}</div>`;
+
+        // Display topic header if available
+        if(q.topic) {
+            let topicDiv = document.createElement("div");
+            topicDiv.className = "topic-header";
+            topicDiv.innerText = q.topic;
+            qDiv.appendChild(topicDiv);
+        }
+
+        let titleDiv = document.createElement("div");
+        titleDiv.className = "question-title";
+        titleDiv.innerText = q.question;
+        qDiv.appendChild(titleDiv);
         
-        q.options.forEach((opt, oIndex) => {
+        q.options.forEach((opt) => {
+            let optLetter = opt.charAt(0); // Extracts 'A', 'B', 'C', or 'D'
             qDiv.innerHTML += `
                 <label>
-                    <input type="radio" name="question_${qIndex}" value="${oIndex}">
+                    <input type="radio" name="question_${qIndex}" value="${optLetter}">
                     ${opt}
                 </label>`;
         });
-        qDiv.innerHTML += `<div class="explanation" id="exp_${qIndex}">💡 <b>Explanation:</b> ${q.explanation}</div>`;
+        
+        let expDiv = document.createElement("div");
+        expDiv.className = "explanation";
+        expDiv.id = `exp_${qIndex}`;
+        expDiv.innerHTML = `💡 <b>Explanation:</b> ${q.explanation}`;
+        qDiv.appendChild(expDiv);
+
         container.appendChild(qDiv);
     });
 
@@ -985,7 +1000,7 @@ const quizData = [
             const expDiv = document.getElementById(`exp_${qIndex}`);
             expDiv.style.display = "block";
             
-            if (selected && parseInt(selected.value) === q.answer) {
+            if (selected && selected.value === q.correct_answer) {
                 score++;
                 selected.parentElement.style.background = "#d4edda";
             } else if (selected) {
@@ -1002,10 +1017,4 @@ const quizData = [
     }
 </script>
 </body>
-</html>"""
-
-# This automatically downloads the file named 'index.html' directly to your computer
-with open("index.html", "w") as f:
-    f.write(html_content)
-
-print("✅ Success! Your 'index.html' file has been generated and downloaded.")
+</html>
