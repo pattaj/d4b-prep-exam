@@ -1,0 +1,182 @@
+[
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "1. According to the intelligent agent paradigm presented by Peter Norvig, how does artificial intelligence differ from traditional computer science?",
+    "options": {
+      "A": "Traditional computer science focuses on hardware design, whereas AI focuses purely on software execution.",
+      "B": "Traditional computer science does the right thing efficiently when defined in advance, whereas AI does the right thing efficiently when what that means is not known in advance.",
+      "C": "Traditional computer science relies strictly on neural networks, whereas AI relies on rule-based algorithmic systems.",
+      "D": "Traditional computer science operates at run-time, whereas AI shifts problem-solving entirely to design-time."
+    },
+    "correct_answer": "B",
+    "explanation": "Peter Norvig defines computer science as doing the right thing, efficiently, when you can define what that means in advance, whereas AI is doing the right thing, efficiently, when you don't know what that means in advance, shifting focus from design-time to run-time."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "2. How does an algorithmic AI system differ from a learning-based AI system in terms of how it is constructed?",
+    "options": {
+      "A": "Algorithmic AI is written directly by programmers, whereas learning-based AI combines a general learning system written by programmers with training data provided by domain experts.",
+      "B": "Algorithmic AI is built by domain experts without code, whereas learning-based AI requires no data.",
+      "C": "Algorithmic AI requires deep neural networks, while learning-based AI relies solely on hardcoded logic.",
+      "D": "Algorithmic AI continuously updates its weights during execution, whereas learning-based AI remains static."
+    },
+    "correct_answer": "A",
+    "explanation": "Algorithmic AI programs are written directly by programmers, whereas learning-based AI combines a general learning system written by programmers with training data added by domain experts to learn patterns."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "3. In supervised machine learning, what is the primary objective when learning an unknown function f(x) = y?",
+    "options": {
+      "A": "To cluster unlabelled input data into distinct topological groups.",
+      "B": "To predict the output y' for a new input x' based on given (x, y) training examples while minimizing a loss metric.",
+      "C": "To maximize an external environment reward through trial and error without training examples.",
+      "D": "To eliminate feature dimensionality without evaluating error against correct outputs."
+    },
+    "correct_answer": "B",
+    "explanation": "Supervised learning is formally defined as searching for an approximation to an unknown function f(x) = y given training pairs (x, y), where the model learns to predict outputs for new inputs while minimizing the loss between learned outputs and correct examples."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "4. In machine learning performance evaluation, how are underfitting and overfitting distinguished?",
+    "options": {
+      "A": "Underfitting occurs when test error is zero, while overfitting occurs when training error is zero.",
+      "B": "Underfitting happens when model capacity is too high, while overfitting occurs when model capacity is too low.",
+      "C": "Underfitting occurs when the model cannot obtain a sufficiently low error on the training set, while overfitting occurs when there is a large gap between training error and test error.",
+      "D": "Underfitting indicates high variance, whereas overfitting indicates high bias."
+    },
+    "correct_answer": "C",
+    "explanation": "Underfitting means the model lacks capacity/expressiveness to obtain low error on training data (high bias), whereas overfitting occurs when the gap between training error and test error is too large because the model is over-optimized for training data and memorizes noise (high variance)."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "5. When splitting a dataset for machine learning model development, what is the specific role of the validation set?",
+    "options": {
+      "A": "To teach the model its initial weights and adjust raw parameters.",
+      "B": "To fine-tune model hyperparameters and prevent overfitting.",
+      "C": "To provide final performance evaluation on unseen data after deployment.",
+      "D": "To replace missing attributes and remove duplicate records during data cleaning."
+    },
+    "correct_answer": "B",
+    "explanation": "Datasets are partitioned into three parts: the training set teaches the model and adjusts parameters, the validation set fine-tunes hyperparameters and prevents overfitting, and the test set evaluates generalization on unseen data."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "6. According to the taxonomy of bias in data, what is 'automation bias'?",
+    "options": {
+      "A": "When the data used to train machine learning models does not represent the diversity of the customer base.",
+      "B": "When automated decisions override social and cultural considerations.",
+      "C": "When humans tamper with AI inputs to create biased results.",
+      "D": "When oversimplified personalization makes biased assumptions for a group or individual."
+    },
+    "correct_answer": "B",
+    "explanation": "In data bias classification, automation bias happens when automated decisions override social and cultural considerations. Dataset bias arises from unrepresentative training samples, and association bias reinforces cultural stereotypes."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "7. What defines 'classical planning' within automated planning systems?",
+    "options": {
+      "A": "Planning under partial observability, stochastic state transitions, and dynamic environment changes.",
+      "B": "Finding a sequence of actions from an initial state to a goal state in a static, deterministic, and fully observable environment.",
+      "C": "Model-free reinforcement learning using environmental trial-and-error rewards.",
+      "D": "Randomized search without domain formalisms or explicit goal states."
+    },
+    "correct_answer": "B",
+    "explanation": "Classical planning is defined as finding a sequence of actions that leads from an initial state to a goal state in a state-space search setting where the environment is static, deterministic, and fully observable."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "8. What language is widely used to formally describe planning domains and problem instances in classical planning tools like FastDownward?",
+    "options": {
+      "A": "CUDA (Compute Unified Device Architecture)",
+      "B": "PDDL (Planning Domain Definition Language)",
+      "C": "JSON (JavaScript Object Notation)",
+      "D": "UML (Unified Modeling Language)"
+    },
+    "correct_answer": "B",
+    "explanation": "PDDL (Planning Domain Definition Language) is the standardized language widely used to define planning domains (actions, predicates) and problem instances (initial state, goal state) in classical planning systems."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "9. How do GPUs differ fundamentally from CPUs in terms of processing architecture and workload suitability?",
+    "options": {
+      "A": "CPUs handle massive parallel tasks with thousands of cores, while GPUs execute sequential tasks with low latency.",
+      "B": "CPUs excel at sequential tasks with low latency using limited cores, while GPUs specialize in massive parallelism and high throughput across thousands of cores.",
+      "C": "CPUs are designed exclusively for deep learning, while GPUs manage OS file storage tasks.",
+      "D": "CPUs lack memory caches, while GPUs rely strictly on low-speed system DRAM."
+    },
+    "correct_answer": "B",
+    "explanation": "CPUs are designed for sequential tasks with fast response/low latency using limited cores (typically 4–64), whereas GPUs feature thousands of cores optimized for massive parallelism and high throughput across large datasets."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "10. In accelerated computing hardware, which specialized hardware processor is designed specifically for deep learning workloads?",
+    "options": {
+      "A": "FPGA (Field Programmable Gate Array)",
+      "B": "TPU (Tensor Processing Unit)",
+      "C": "CPU (Central Processing Unit)",
+      "D": "SRAM (Static Random-Access Memory)"
+    },
+    "correct_answer": "B",
+    "explanation": "TPUs (Tensor Processing Units) are designed specifically for deep learning workloads, GPUs handle broader parallel computing, and FPGAs are customizable hardware used for specialized tasks like financial trading."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "11. What key European regulatory framework establishes governance standards and ethical requirements for Trustworthy AI?",
+    "options": {
+      "A": "The Digital Millennium Copyright Act (DMCA)",
+      "B": "The EU AI Act and Ethics Guidelines for Trustworthy AI",
+      "C": "The IEEE Algorithmic Accountability Agreement",
+      "D": "The International PDDL Compliance Standard"
+    },
+    "correct_answer": "B",
+    "explanation": "The EU AI Act along with the Ethical Guidelines for Trustworthy AI set the legal and ethical framework for responsible AI deployment, risk management, and regulatory compliance in business."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "12. Which data normalization technique rescales feature values into a bounded range between 0 and 1 using dataset minimum and maximum values?",
+    "options": {
+      "A": "Z-score standardization",
+      "B": "Min-Max scaling",
+      "C": "Log transformation",
+      "D": "Decimal scaling"
+    },
+    "correct_answer": "B",
+    "explanation": "Min-Max scaling applies the formula (x - min) / (max - min) to scale values strictly into a range while preserving the underlying distribution shape."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "13. In unsupervised machine learning, how is model performance evaluated when neither target output labels nor reward signals are provided?",
+    "options": {
+      "A": "By calculating accuracy against ground-truth labels on a test set.",
+      "B": "By measuring reconstruction error or pattern distribution fit relative to the input data.",
+      "C": "By accumulating reward feedback from an interactive environment.",
+      "D": "By measuring cross-entropy loss against human annotations."
+    },
+    "correct_answer": "B",
+    "explanation": "In unsupervised learning, no correct outputs or rewards are given; the goal is to discover underlying structures (like clusters or lower-dimensional projections), evaluated via reconstruction error or distribution patterns."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "14. Which search strategy in artificial intelligence uses heuristic functions to guide search space exploration efficiently toward a goal state?",
+    "options": {
+      "A": "Uninformed search",
+      "B": "Informed search (such as A*)",
+      "C": "Blind depth-first search",
+      "D": "Brute-force exhaustive search"
+    },
+    "correct_answer": "B",
+    "explanation": "Informed search strategies, such as A*, utilize domain heuristics to guide the search towards goal states efficiently, outperforming uninformed (blind) search strategies."
+  },
+  {
+    "topic": "Fundamentals of AI for Business",
+    "question": "15. How does optimal planning differ from suboptimal (satisficing) planning in automated planning systems?",
+    "options": {
+      "A": "Optimal planning guarantees that returned plans have minimal overall cost, whereas suboptimal planning permits returned plans to be suboptimal.",
+      "B": "Optimal planning requires non-deterministic environments, whereas suboptimal planning requires fully static environments.",
+      "C": "Optimal planning relies on deep reinforcement learning, while suboptimal planning relies on PDDL.",
+      "D": "Optimal planning yields probabilistic action sets, while suboptimal planning guarantees zero execution time."
+    },
+    "correct_answer": "A",
+    "explanation": "In classical planning, optimal planning guarantees that returned plans are optimal (minimal total cost), whereas suboptimal (satisficing) planning allows plans that are not strictly cost-minimal in order to save computational time."
+  }
+]
