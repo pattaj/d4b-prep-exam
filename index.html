@@ -4,63 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master's Exam Review</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
-        
-        /* Mobile Header (Hidden on Desktop) */
-        .mobile-header { display: none; background: #1a73e8; color: white; padding: 15px; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .mobile-header h2 { margin: 0; font-size: 18px; }
-        .hamburger { background: none; border: none; color: white; font-size: 24px; cursor: pointer; padding: 0; }
-
-        /* Layout Structure */
-        .app-layout { display: flex; flex: 1; max-width: 1100px; margin: 0 auto; width: 100%; padding: 20px; box-sizing: border-box; gap: 20px; position: relative; }
-        
-        /* Sidebar Menu */
-        .sidebar { width: 280px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: fit-content; position: sticky; top: 20px; transition: transform 0.3s ease; }
-        .sidebar-close { display: none; background: none; border: none; font-size: 20px; font-weight: bold; cursor: pointer; position: absolute; top: 15px; right: 15px; color: #555; }
-        .sidebar h3 { font-size: 16px; color: #1a73e8; margin-top: 0; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; padding-right: 20px; }
-        .menu-btn { display: block; width: 100%; text-align: left; background: #f8f9fa; border: 1px solid #ddd; padding: 10px 12px; margin-bottom: 8px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; transition: 0.2s; color: #333; }
-        .menu-btn:hover { background: #e8f0fe; border-color: #1a73e8; color: #1a73e8; }
-        .menu-btn.active { background: #1a73e8; color: white; border-color: #1a73e8; font-weight: bold; }
-
-        /* Mobile Overlay Background */
-        .overlay { display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); z-index: 998; opacity: 0; transition: opacity 0.3s ease; }
-
-        /* Main Content Area */
-        .main-content { flex: 1; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 100%; box-sizing: border-box; }
-        h1 { color: #1a73e8; font-size: 24px; text-align: center; margin-top: 0; }
-        
-        .topic-header { background: #e8f0fe; color: #1a73e8; padding: 10px; border-radius: 6px; font-weight: bold; margin-top: 25px; margin-bottom: 10px; font-size: 15px; }
-        .question-card { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
-        .question-title { font-weight: 600; margin-bottom: 10px; font-size: 16px; line-height: 1.4; }
-        label { display: block; padding: 12px 10px; margin: 5px 0; background: #f8f9fa; border-radius: 8px; cursor: pointer; border: 1px solid #ddd; transition: 0.2s; font-size: 15px; line-height: 1.4; }
-        label:hover { background: #e8f0fe; border-color: #1a73e8; }
-        input[type="radio"] { margin-right: 10px; transform: scale(1.2); }
-        
-        button.submit-btn { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 16px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 30px; }
-        button.submit-btn:hover { background: #1557b0; }
-        
-        #results { margin-top: 25px; padding: 20px; border-radius: 10px; font-size: 18px; text-align: center; font-weight: bold; display: none; background: #e8f0fe; color: #1a73e8; }
-        .analytics-box { margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: left; display: none; }
-        .analytics-title { font-size: 16px; font-weight: bold; margin-bottom: 10px; color: #333; border-bottom: 2px solid #1a73e8; padding-bottom: 5px; }
-        .analytics-item { font-size: 14px; margin-bottom: 8px; padding: 6px; border-radius: 4px; }
-        .focus-needed { background: #f8d7da; color: #721c24; }
-        .mastered { background: #d4edda; color: #155724; }
-        .explanation { font-size: 14px; color: #555; margin-top: 10px; padding: 10px; background: #f8f9fa; border-radius: 6px; border-left: 4px solid #1a73e8; display: none; line-height: 1.4; }
-
-        /* Mobile Responsive adjustment */
-        @media (max-width: 768px) {
-            .mobile-header { display: flex; }
-            .app-layout { padding: 10px; margin: 0; }
-            h1 { display: none; } /* Hide large title on mobile to save space */
-            
-            /* Slide-in Menu */
-            .sidebar { position: fixed; top: 0; left: 0; height: 100vh; width: 260px; z-index: 999; margin: 0; border-radius: 0; transform: translateX(-100%); overflow-y: auto; box-shadow: 4px 0 15px rgba(0,0,0,0.1); }
-            .sidebar.open { transform: translateX(0); }
-            .sidebar-close { display: block; }
-            .overlay.active { display: block; opacity: 1; }
-        }
-    </style>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -68,7 +13,7 @@
 <div class="mobile-header">
     <button class="hamburger" onclick="toggleMenu()">☰</button>
     <h2>Master's Exam Review</h2>
-    <div style="width: 24px;"></div> <!-- spacer -->
+    <div style="width: 24px;"></div>
 </div>
 
 <!-- Dark Overlay for Mobile Menu -->
@@ -84,175 +29,45 @@
 
     <!-- Main Content Area -->
     <div class="main-content">
-        <h1>🎓 Master's Exam Review</h1>
-        <p style="text-align:center; color:#666;" id="instructionsText">Select a topic from the left menu or view all questions below.</p>
+        <h1 id="mainTitle">🎓 Master's Exam Review</h1>
+        <p style="text-align:center; color:#666;" id="instructionsText">Select a topic from the menu or test yourself below.</p>
         
+        <!-- The Quiz Container -->
         <form id="quizForm">
             <div id="quizContainer"></div>
-            <button type="button" class="submit-btn" onclick="gradeQuiz()">Submit Quiz & View Analytics</button>
+            <button type="button" class="btn" id="submitQuizBtn" onclick="gradeQuiz()">Submit Quiz & View Analytics</button>
+            
+            <!-- Hidden Review Buttons -->
+            <div class="action-buttons" id="reviewActionBtns" style="display:none; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+                <button type="button" class="btn btn-outline" onclick="showAnalytics()">📊 Back to Analytics</button>
+                <button type="button" class="btn" onclick="retakeQuiz()">🔄 Retake This Section</button>
+            </div>
         </form>
         
-        <div id="results">
-            <div id="scoreText"></div>
-            <div id="analyticsSection" class="analytics-box">
-                <div class="analytics-title">📊 Topic Performance Analytics</div>
+        <!-- Full Analytics Dashboard -->
+        <div id="fullAnalyticsView" class="full-analytics">
+            <h2 style="color: #1a73e8; margin-top:0;">Performance Dashboard</h2>
+            
+            <div class="score-circle" id="overallScoreCircle"></div>
+            <div class="score-feedback" id="overallScoreText"></div>
+
+            <div class="analytics-box">
+                <div class="analytics-title">📊 Topic Breakdown</div>
                 <div id="analyticsContent"></div>
+            </div>
+
+            <div class="action-buttons">
+                <button type="button" class="btn btn-outline" onclick="reviewAnswers()">👀 Review Answers</button>
+                <button type="button" class="btn" onclick="retakeQuiz()">🔄 Retake This Section</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- 1. LOAD EXTERNAL QUESTIONS DATA HERE -->
+<!-- 1. Load Question Data First -->
 <script src="question.js"></script>
+<!-- 2. Load App Logic Second -->
+<script src="app.js"></script>
 
-<!-- 2. APP LOGIC -->
-<script>
-    let currentFilter = "ALL";
-
-    // Mobile Menu Toggle
-    function toggleMenu() {
-        if(window.innerWidth <= 768) {
-            document.getElementById("sidebar").classList.toggle("open");
-            document.getElementById("overlay").classList.toggle("active");
-        }
-    }
-
-    // Build Menu dynamically from questions.js
-    function buildMenu() {
-        const menuContainer = document.getElementById("menuContainer");
-        menuContainer.innerHTML = `<button class="menu-btn active" onclick="filterQuestions('ALL', this)">📂 Show All Topics</button>`;
-
-        let topics = [...new Set(quizData.map(q => q.topic))];
-        topics.forEach(topic => {
-            menuContainer.innerHTML += `<button class="menu-btn" onclick="filterQuestions('${topic}', this)">📁 ${topic}</button>`;
-        });
-    }
-
-    // Render Quiz based on filter
-    function renderQuiz(filter = "ALL") {
-        currentFilter = filter;
-        const container = document.getElementById("quizContainer");
-        container.innerHTML = "";
-
-        quizData.forEach((q, qIndex) => {
-            if (filter !== "ALL" && q.topic !== filter) return;
-
-            let qDiv = document.createElement("div");
-            qDiv.className = "question-card";
-
-            if (filter === "ALL" && q.topic) {
-                let topicDiv = document.createElement("div");
-                topicDiv.className = "topic-header";
-                topicDiv.innerText = "📁 " + q.topic;
-                qDiv.appendChild(topicDiv);
-            }
-
-            let titleDiv = document.createElement("div");
-            titleDiv.className = "question-title";
-            titleDiv.innerText = q.question;
-            qDiv.appendChild(titleDiv);
-            
-            for (let key in q.options) {
-                let optText = q.options[key];
-                qDiv.innerHTML += `
-                    <label>
-                        <input type="radio" name="question_${qIndex}" value="${key}">
-                        <b>${key}:</b> ${optText}
-                    </label>`;
-            }
-            
-            let expDiv = document.createElement("div");
-            expDiv.className = "explanation";
-            expDiv.id = `exp_${qIndex}`;
-            expDiv.innerHTML = `💡 <b>Explanation:</b><br>${q.explanation}`;
-            qDiv.appendChild(expDiv);
-
-            container.appendChild(qDiv);
-        });
-    }
-
-    function filterQuestions(topic, btnElement) {
-        // Update menu styling
-        document.querySelectorAll('.menu-btn').forEach(btn => btn.classList.remove('active'));
-        btnElement.classList.add('active');
-
-        // Render selected topic
-        renderQuiz(topic);
-        
-        // Hide results
-        document.getElementById("results").style.display = "none";
-
-        // Auto-close menu on mobile after selecting a topic
-        if(window.innerWidth <= 768) {
-            toggleMenu();
-        }
-    }
-
-    // Grading Logic
-    function gradeQuiz() {
-        let score = 0;
-        let answeredCount = 0;
-        let topicStats = {};
-
-        quizData.forEach((q, qIndex) => {
-            if (currentFilter !== "ALL" && q.topic !== currentFilter) return;
-
-            const selected = document.querySelector(`input[name="question_${qIndex}"]:checked`);
-            const expDiv = document.getElementById(`exp_${qIndex}`);
-            if (expDiv) expDiv.style.display = "block";
-
-            let topic = q.topic || "General Review";
-            if (!topicStats[topic]) {
-                topicStats[topic] = { total: 0, correct: 0 };
-            }
-            topicStats[topic].total++;
-
-            if (selected) {
-                answeredCount++;
-                if (selected.value === q.correct_answer) {
-                    score++;
-                    topicStats[topic].correct++;
-                    selected.parentElement.style.background = "#d4edda"; // Green
-                } else {
-                    selected.parentElement.style.background = "#f8d7da"; // Red
-                }
-            }
-        });
-
-        if (answeredCount === 0) {
-            alert("Please answer at least one question before submitting!");
-            return;
-        }
-
-        document.getElementById("scoreText").innerHTML = `🎉 Score for this section: ${score} / ${answeredCount}`;
-
-        let analyticsHtml = "";
-        for (let topic in topicStats) {
-            let stats = topicStats[topic];
-            if (stats.total === 0) continue;
-            let percentage = Math.round((stats.correct / stats.total) * 100);
-            let statusClass = percentage < 70 ? "focus-needed" : "mastered";
-            let statusText = percentage < 70 ? "⚠️ Needs More Focus" : "✅ Mastered";
-
-            analyticsHtml += `
-                <div class="analytics-item ${statusClass}">
-                    <b>${topic}</b>: ${stats.correct}/${stats.total} correct (${percentage}%) — <i>${statusText}</i>
-                </div>`;
-        }
-
-        document.getElementById("analyticsContent").innerHTML = analyticsHtml;
-        document.getElementById("analyticsSection").style.display = "block";
-        document.getElementById("results").style.display = "block";
-        
-        // Scroll to results smoothly
-        document.getElementById("results").scrollIntoView({ behavior: 'smooth', block: 'end' });
-    }
-
-    // Initialize when page loads (Wait for questions.js to load)
-    window.onload = () => {
-        buildMenu();
-        renderQuiz("ALL");
-    };
-</script>
 </body>
 </html>
