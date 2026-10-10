@@ -1,0 +1,1011 @@
+html_content = """<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master's Exam Review</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: #1a73e8; font-size: 24px; text-align: center; }
+        .question-card { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .question-title { font-weight: 600; margin-bottom: 10px; font-size: 16px; }
+        label { display: block; padding: 10px; margin: 5px 0; background: #f8f9fa; border-radius: 8px; cursor: pointer; border: 1px solid #ddd; transition: 0.2s; }
+        label:hover { background: #e8f0fe; border-color: #1a73e8; }
+        input[type="radio"] { margin-right: 10px; }
+        button { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 12px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 20px; }
+        button:hover { background: #1557b0; }
+        #results { margin-top: 20px; padding: 15px; border-radius: 8px; font-size: 18px; text-align: center; font-weight: bold; display: none; }
+        .explanation { font-size: 13px; color: #555; margin-top: 8px; padding-left: 10px; border-left: 3px solid #1a73e8; display: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🎓 Master's Exam Review</h1>
+    <p style="text-align:center; color:#666;">Tap your answers below and submit to check your score.</p>
+    
+    <form id="quizForm">
+        <div id="quizContainer"></div>
+        <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+    </form>
+    
+    <div id="results"></div>
+</div>
+
+<script>
+    // PASTE YOUR NOTEBOOKLM QUESTIONS HERE:
+
+const quizData = [
+    # =========================================================================
+    # TOPIC 1: Generative AI & Machine Learning Foundations (Questions 1–15)
+    # =========================================================================
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "1. According to the introductory machine learning framework, what are the three fundamental components common to all machine learning algorithms?",
+        "options": {
+            "A": "Data, Hyperparameters, and Neural Architectures",
+            "B": "Representation, Evaluation, and Optimization",
+            "C": "Supervision, Classification, and Clustering",
+            "D": "Pretraining, Fine-tuning, and Inference"
+        },
+        "correct_answer": "B",
+        "explanation": "Every machine learning algorithm consists of representation (models/rules), evaluation (objective/loss functions), and optimization (search/gradient algorithms)."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "2. According to Pedro Domingos' 'Tribes of Machine Learning', which tribe originates from neuroscience and relies on backpropagation as its core algorithm?",
+        "options": {
+            "A": "Symbolists",
+            "B": "Bayesians",
+            "C": "Connectionists",
+            "D": "Analogizers"
+        },
+        "correct_answer": "C",
+        "explanation": "The Connectionists tribe stems from neuroscience and uses artificial neural networks optimized via backpropagation."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "3. What is a primary distinction between Discriminative AI and Generative AI regarding outputs and data dependency?",
+        "options": {
+            "A": "Discriminative AI generates new data, while Generative AI predicts labels on tabular data",
+            "B": "Discriminative AI classifies and predicts based on labeled data, while Generative AI generates new data artifacts using unstructured data and probabilities",
+            "C": "Discriminative AI is always unsupervised, while Generative AI requires strict manual feature engineering",
+            "D": "Discriminative AI uses deep learning, whereas Generative AI uses traditional decision trees"
+        },
+        "correct_answer": "B",
+        "explanation": "Discriminative AI focuses on classification and prediction tasks using labeled data, whereas Generative AI learns underlying probability distributions to produce new synthetic data."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "4. How do Generative Adversarial Networks (GANs) synthesize new synthetic samples?",
+        "options": {
+            "A": "Through an encoder mapping inputs to a Gaussian latent space and a decoder reconstructing them",
+            "B": "Through an adversarial competition between a Generator creating synthetic samples and a Discriminator evaluating authenticity",
+            "C": "By removing noise step-by-step using non-equilibrium thermodynamics equations",
+            "D": "By performing singular value decomposition on word co-occurrence matrices"
+        },
+        "correct_answer": "B",
+        "explanation": "GANs consist of two competing neural networks: a Generator that produces synthetic data and a Discriminator that tries to distinguish real from fake samples."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "5. What core mechanism characterizes Variational Autoencoders (VAEs)?",
+        "options": {
+            "A": "Predicting the next token in an autoregressive decoder chain",
+            "B": "An encoder mapping input data to a latent probability distribution, and a decoder reconstructing data from latent representations",
+            "C": "Iteratively adding Gaussian noise until the image becomes pure static",
+            "D": "Calculating term frequency multiplied by logarithmic document frequency"
+        },
+        "correct_answer": "B",
+        "explanation": "VAEs use an encoder to map inputs to a probabilistic latent space and a decoder to reconstruct original data from sampled latent vectors."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "6. How do Probabilistic Diffusion Models generate high-quality synthetic data?",
+        "options": {
+            "A": "By inverting co-occurrence matrices in a single linear algebra step",
+            "B": "Through an iterative denoising process inspired by non-equilibrium thermodynamics that predicts and removes noise step-by-step",
+            "C": "By applying rule-based expert grammars crafted manually by linguists",
+            "D": "By training a decision tree ensemble on tabular feature vectors"
+        },
+        "correct_answer": "B",
+        "explanation": "Diffusion models destruct data by adding noise, then learn to generate new samples by iteratively predicting and removing noise via a score-based denoising process."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "7. In the machine learning taxonomy, where does Generative AI fit relative to Deep Learning and Artificial Intelligence?",
+        "options": {
+            "A": "GenAI is a broader umbrella that contains Machine Learning and Deep Learning",
+            "B": "GenAI is a specialized sub-branch of Deep Learning, which is a subset of Machine Learning, which is a branch of Artificial Intelligence",
+            "C": "GenAI and Deep Learning are completely unrelated branches of Rule-Based AI",
+            "D": "GenAI replaces Machine Learning by eliminating algorithms and training data"
+        },
+        "correct_answer": "B",
+        "explanation": "AI encompasses ML; Deep Learning is a subset of ML using neural networks; and Generative AI is a specialized sub-branch of Deep Learning focused on content generation."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "8. Which landmark 2014 paper introduced Generative Adversarial Networks (GANs)?",
+        "options": {
+            "A": "Vaswani et al. ('Attention Is All You Need')",
+            "B": "Ian Goodfellow et al.",
+            "C": "Devlin et al. ('BERT')",
+            "D": "Mikolov et al. ('Word2Vec')"
+        },
+        "correct_answer": "B",
+        "explanation": "GANs were introduced in 2014 by Ian Goodfellow and his co-authors."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "9. Which Generative AI model introduced in 2021 by OpenAI specialized in generating images directly from natural language descriptions?",
+        "options": {
+            "A": "DALL-E",
+            "B": "ELMo",
+            "C": "BERT-Large",
+            "D": "ResNet-50"
+        },
+        "correct_answer": "A",
+        "explanation": "OpenAI introduced DALL-E in 2021 as a multimodal model capable of generating images from textual prompts."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "10. What is a key challenge when evaluating Generative AI models compared to traditional Discriminative models?",
+        "options": {
+            "A": "Generative models cannot process unstructured datasets",
+            "B": "Discriminative models lack clear accuracy metrics, whereas Generative models have perfect deterministic metrics",
+            "C": "Generative models produce creative content where quality assessment can be subjective and models are prone to 'hallucinations'",
+            "D": "Generative models require zero training data"
+        },
+        "correct_answer": "C",
+        "explanation": "Unlike discriminative models that use straightforward accuracy or error metrics, generative models produce complex outputs where hallucination and subjective quality pose evaluation challenges."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "11. According to Domingos' taxonomy, which tribe of machine learning focuses on Symbolism and Inverse Deduction?",
+        "options": {
+            "A": "Connectionists",
+            "B": "Symbolists",
+            "C": "Evolutionaries",
+            "D": "Bayesians"
+        },
+        "correct_answer": "B",
+        "explanation": "The Symbolists tribe originates from logic and philosophy, utilizing inverse deduction to learn rules from observations."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "12. What role does the 'Score Function' play in Probabilistic Diffusion Models?",
+        "options": {
+            "A": "It counts document term frequencies across corpus collections",
+            "B": "It points in the gradient direction of perturbed data with higher likelihood and less noise during denoising",
+            "C": "It measures cosine similarity between Query and Key matrices",
+            "D": "It masks future tokens in decoder self-attention"
+        },
+        "correct_answer": "B",
+        "explanation": "In diffusion models, the score function estimates the vector gradient pointing toward higher data likelihood and lower noise during each reverse step."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "13. What is the fundamental difference between traditional programming and machine learning?",
+        "options": {
+            "A": "Traditional programming uses data to learn rules, whereas ML hardcodes rules",
+            "B": "Traditional programming combines rules and data to produce answers, whereas ML combines data and answers to discover rules",
+            "C": "Machine learning relies strictly on manual IF-THEN statements crafted by domain expert linguists",
+            "D": "Machine learning cannot be executed on digital computers"
+        },
+        "correct_answer": "B",
+        "explanation": "Classic software engineering takes rules and input data to generate output, while ML takes input data and target outputs to automatically discover the underlying rules."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "14. Which generative framework was the precursor to modern Diffusion models for visual synthesis prior to 2021?",
+        "options": {
+            "A": "N-gram Markov chains",
+            "B": "Generative Adversarial Networks (GANs)",
+            "C": "Skip-gram Word2Vec",
+            "D": "TF-IDF matrix projections"
+        },
+        "correct_answer": "B",
+        "explanation": "GANs were the dominant generative image modeling technique before Diffusion models pushed the state of the art forward."
+    },
+    {
+        "topic": "Generative AI & Machine Learning Foundations",
+        "question": "15. How does a Deep Learning model differ from a standard shallow Machine Learning algorithm?",
+        "options": {
+            "A": "Deep learning uses multiple stacked neural layers that automatically learn hierarchical feature representations without manual feature engineering",
+            "B": "Deep learning requires handcrafted rules written by human linguists",
+            "C": "Deep learning only operates on single one-hot encoded vectors",
+            "D": "Deep learning cannot scale to large datasets"
+        },
+        "correct_answer": "A",
+        "explanation": "Deep learning leverages multi-layered neural networks to automatically extract hierarchical features directly from raw data, bypassing manual feature engineering."
+    },
+
+    # =========================================================================
+    # TOPIC 2: Natural Language Processing & Vector Representations (Questions 16–30)
+    # =========================================================================
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "16. What is the central concept underlying distributionally learned word embeddings?",
+        "options": {
+            "A": "Words that appear in similar contextual neighborhoods tend to share similar semantic meanings",
+            "B": "Words are assigned arbitrary static integer IDs based on dictionary alphabetical order",
+            "C": "Word vectors must have dimensions equal to the total vocabulary size",
+            "D": "Word order in a sentence has zero impact on semantic meaning"
+        },
+        "correct_answer": "A",
+        "explanation": "The distributional hypothesis asserts that words occurring in similar contexts share similar semantic meanings, causing their vector representations to cluster in embedding space."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "17. What major structural limitation is inherent to One-Hot Encoding?",
+        "options": {
+            "A": "It produces dense, low-dimensional vectors of 10 dimensions",
+            "B": "It creates high-dimensional, sparse vectors where dot products between distinct words are always zero, failing to capture semantic similarity",
+            "C": "It requires training a deep bidirectional LSTM network",
+            "D": "It automatically resolves word polysemy across sentences"
+        },
+        "correct_answer": "B",
+        "explanation": "One-hot vectors are orthogonal and sparse with dimensions equal to vocabulary size V, meaning all distinct word pairs have a dot product of 0 and show no semantic relationship."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "18. How does Term Frequency-Inverse Document Frequency (TF-IDF) determine term weight?",
+        "options": {
+            "A": "By dividing word length by character n-gram counts",
+            "B": "By multiplying how frequently a word appears in a specific document by the logarithm of its inverse frequency across all documents",
+            "C": "By taking the softmax over one-hot input arrays",
+            "D": "By running forward and backward LSTM hidden state regressions"
+        },
+        "correct_answer": "B",
+        "explanation": "TF-IDF multiplies local Term Frequency (TF) by Inverse Document Frequency (IDF), downweighting common stop words like 'the' while emphasizing domain-specific terms."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "19. Which matrix decomposition technique is applied to a Co-Occurrence Matrix to obtain dense word embeddings?",
+        "options": {
+            "A": "Gradient Descent Optimization",
+            "B": "Singular Value Decomposition (SVD)",
+            "C": "Teacher Forcing Linear Regression",
+            "D": "Masked Causal Attention"
+        },
+        "correct_answer": "B",
+        "explanation": "Singular Value Decomposition (SVD) reduces the dimensionality of a sparse co-occurrence matrix to extract dense, lower-dimensional word vectors."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "20. What are the two primary model architectures introduced in Word2Vec (Mikolov et al., 2013)?",
+        "options": {
+            "A": "Continuous Bag-of-Words (CBOW) and Skip-gram",
+            "B": "Encoder-only and Decoder-only",
+            "C": "TF-IDF and One-Hot Encoding",
+            "D": "Transformer and Diffusion"
+        },
+        "correct_answer": "A",
+        "explanation": "Word2Vec features two neural architectures: CBOW (predicts target word from context) and Skip-gram (predicts context words given target word)."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "21. What is the target prediction task of the Continuous Bag-of-Words (CBOW) architecture in Word2Vec?",
+        "options": {
+            "A": "Predicting context words surrounding a given target word",
+            "B": "Predicting the current target word given its surrounding context words",
+            "C": "Predicting whether two sentences are sequential in a book",
+            "D": "Predicting character 3-gram subword distributions"
+        },
+        "correct_answer": "B",
+        "explanation": "CBOW takes surrounding context word embeddings, averages them, and attempts to predict the center target word."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "22. In Word2Vec's Skip-gram model, what is the training objective?",
+        "options": {
+            "A": "Predicting surrounding context words given a single target word",
+            "B": "Calculating the exact co-occurrence matrix inverse",
+            "C": "Predicting the center word using a bag of unigrams",
+            "D": "Classifying whole documents into sentiment categories"
+        },
+        "correct_answer": "A",
+        "explanation": "Skip-gram uses a single target word as input to predict the probability distribution of context words within a chosen window size."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "23. How does FastText (Bojanowski et al., 2016) represent a word to handle out-of-vocabulary (OOV) terms?",
+        "options": {
+            "A": "By mapping OOV words to a static UNK token with all zero values",
+            "B": "By representing each word as the sum of its character n-gram subword vectors plus the full word vector",
+            "C": "By re-running SVD on the full training corpus dynamically at inference time",
+            "D": "By passing the word through a 12-layer Transformer decoder"
+        },
+        "correct_answer": "B",
+        "explanation": "FastText breaks words into character n-grams (e.g., 3-to-6 character subwords), allowing it to construct embeddings for unseen or misspelled words by summing subword vectors."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "24. What primary limitation of static embedding models (like Word2Vec and GloVe) does ELMo address?",
+        "options": {
+            "A": "Static models are too slow to run on modern GPUs",
+            "B": "Static models assign a single fixed vector to a word regardless of context, failing to resolve polysemy (e.g., 'bank' river vs. 'bank' financial)",
+            "C": "Static models cannot handle numerical values in tabular datasets",
+            "D": "Static models require character n-gram subword tokenization"
+        },
+        "correct_answer": "B",
+        "explanation": "Static embeddings assign one fixed vector per word ID regardless of sentence context. ELMo introduced contextualized embeddings where a word's vector changes based on surrounding words."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "25. Which deep learning architecture powers ELMo (Embeddings from Language Models)?",
+        "options": {
+            "A": "Bidirectional Long Short-Term Memory (BiLSTM) networks",
+            "B": "Single-layer feedforward perceptrons",
+            "C": "Causal decoder-only Transformer blocks",
+            "D": "Vision Transformers (ViT)"
+        },
+        "correct_answer": "A",
+        "explanation": "ELMo uses deep bidirectional LSTM networks (forward and backward pass LSTMs) to generate context-sensitive embeddings."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "26. How are internal layer representations combined in ELMo to produce a final word vector?",
+        "options": {
+            "A": "Only the final top layer output is extracted",
+            "B": "A learned task-specific weighted sum of all hidden states across the BiLSTM layers is computed",
+            "C": "The first layer vector is multiplied by TF-IDF document scores",
+            "D": "Vectors are passed through a singular value decomposition matrix"
+        },
+        "correct_answer": "B",
+        "explanation": "ELMo takes a weighted combination of all BiLSTM layer hidden states, allowing downstream models to combine lower-level syntax with higher-level semantics."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "27. In vector space arithmetic with Word2Vec, what classic semantic relation is demonstrated by 'Vector(King) - Vector(Man) + Vector(Woman)'?",
+        "options": {
+            "A": "Vector(Prince)",
+            "B": "Vector(Queen)",
+            "C": "Vector(Duchess)",
+            "D": "Vector(Throne)"
+        },
+        "correct_answer": "B",
+        "explanation": "Word2Vec dense vectors capture linear analogies in embedding space, famously showing that King - Man + Woman lands closest to Queen."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "28. What is a key disadvantage of TF-IDF vectors in text processing?",
+        "options": {
+            "A": "They cannot process words that appear in single documents",
+            "B": "They produce sparse, high-dimensional vectors that ignore word order and context",
+            "C": "They are computationally too heavy for simple term searches",
+            "D": "They require deep neural network backpropagation during inference"
+        },
+        "correct_answer": "B",
+        "explanation": "TF-IDF vectors suffer from sparsity, high dimensionality, and bag-of-words insensitivity to phrase word order and contextual semantics."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "29. Historical NLP progress is often divided into four eras: Rules, Counting, Learning, and Scale. Which technologies represent the 'Counting' era?",
+        "options": {
+            "A": "Handcrafted grammars written by linguists in the 1950s",
+            "B": "TF-IDF, N-grams, and early search engines from 1970s-2010s",
+            "C": "Word2Vec, FastText, and ELMo from 2010-2017",
+            "D": "Large Language Models pretrained on internet corpora from 2017-present"
+        },
+        "correct_answer": "B",
+        "explanation": "The 'Counting' era relied on statistical counts across large text corpora, such as TF-IDF and N-gram frequency tables."
+    },
+    {
+        "topic": "Natural Language Processing & Vector Representations",
+        "question": "30. Why are subwords (e.g., Byte-Pair Encoding or WordPiece tokens) preferred over raw full-word vocabularies in modern NLP models?",
+        "options": {
+            "A": "They eliminate the need for positional encodings",
+            "B": "They strike a balance between vocabulary size and coverage, handling out-of-vocabulary words while keeping matrix sizes manageable",
+            "C": "They restrict text processing to 100 total words",
+            "D": "They force neural networks to use one-hot representations"
+        },
+        "correct_answer": "B",
+        "explanation": "Subword tokenization prevents huge sparse vocabularies while ensuring any unseen word can be broken down into familiar subword units rather than unknown tokens."
+    },
+
+    # =========================================================================
+    # TOPIC 3: N-Gram Models, Recurrent Architectures & Language Modeling (Questions 31–45)
+    # =========================================================================
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "31. What is the fundamental definition of a probabilistic Language Model (LM)?",
+        "options": {
+            "A": "A model that classifies images into discrete object categories",
+            "B": "A statistical framework that computes probability distributions over sequences of words or tokens",
+            "C": "A linear regression algorithm predicting house prices from features",
+            "D": "A rule-based grammar system written manually by expert linguists"
+        },
+        "correct_answer": "B",
+        "explanation": "A language model assigns probability scores to sequences of words, capturing word order and probabilistic structure in a language."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "32. What mathematical simplification allows N-gram language models to calculate sequence probabilities?",
+        "options": {
+            "A": "The Markov Assumption (the probability of a word depends only on the preceding N-1 words)",
+            "B": "Singular Value Decomposition on term frequency matrices",
+            "C": "Self-attention scaling by the square root of key dimensions",
+            "D": "Reinforcement learning policy gradient optimization"
+        },
+        "correct_answer": "A",
+        "explanation": "The Markov assumption simplifies joint probabilities by assuming a word depends only on a short, fixed history of N-1 preceding words."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "33. In a Bigram language model (N=2), how is the conditional probability P(w_i | w_{i-1}) estimated from corpus counts?",
+        "options": {
+            "A": "Count(w_i) / Total words in corpus",
+            "B": "Count(w_{i-1}, w_i) / Count(w_{i-1})",
+            "C": "Count(w_{i-1}, w_i) / Total documents in corpus",
+            "D": "Count(w_i) / Count(w_{i-1}, w_i)"
+        },
+        "correct_answer": "B",
+        "explanation": "A bigram model estimates P(w_i | w_{i-1}) as the ratio of bigram co-occurrence count Count(w_{i-1}, w_i) to unigram count Count(w_{i-1})."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "34. What critical problem occurs in N-gram models when encountering an unseen sequence in test data?",
+        "options": {
+            "A": "Gradients explode to infinity during backpropagation",
+            "B": "The count is zero, causing the entire sequence probability to collapse to zero",
+            "C": "The model converts all tokens into character 3-grams automatically",
+            "D": "The context window expands to infinite size"
+        },
+        "correct_answer": "B",
+        "explanation": "Because probability is a chain product of conditional terms, a single unseen N-gram with count 0 forces the overall probability product to zero."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "35. What is the function of 'Laplace (Add-1) Smoothing' in N-gram language modeling?",
+        "options": {
+            "A": "It converts unigram counts into word embedding vectors",
+            "B": "It adds 1 to every N-gram count and adjusts the denominator by vocabulary size V so unseen sequences receive non-zero probabilities",
+            "C": "It removes stop words like 'the' and 'and' from text corpora",
+            "D": "It masks future tokens in decoder self-attention blocks"
+        },
+        "correct_answer": "B",
+        "explanation": "Add-1 smoothing ensures no N-gram has a probability of zero by adding 1 to all numerator counts and scaling the denominator by vocabulary size V."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "36. Why can you not simply increase N to a large number (e.g., N=10) in traditional N-gram models to capture long-range dependencies?",
+        "options": {
+            "A": "Higher N models cannot be evaluated mathematically",
+            "B": "Data sparsity increases exponentially—almost no 10-word sequences repeat in corpora, making counts zero and rendering smoothing ineffective",
+            "C": "Higher N forces models to use one-hot encodings exclusively",
+            "D": "Softmax functions cannot scale beyond 3 dimensions"
+        },
+        "correct_answer": "B",
+        "explanation": "As N grows, unique sequence variations explode exponentially; 10-word sequences almost never repeat, causing massive sparsity where smoothing fails."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "37. In classical Sequence-to-Sequence (Seq2Seq) encoder-decoder architectures (Sutskever et al., 2014), what is the main architectural bottleneck?",
+        "options": {
+            "A": "The encoder must compress the entire variable-length input sequence into a single fixed-size context vector",
+            "B": "The decoder cannot output text tokens",
+            "C": "The model requires character n-gram subword matrices",
+            "D": "The encoder uses teacher forcing during inference"
+        },
+        "correct_answer": "A",
+        "explanation": "Standard Seq2Seq forces the encoder to compress all input sequence information into a single fixed-length hidden vector, causing information loss on long sequences."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "38. What is 'Teacher Forcing' during Seq2Seq RNN decoder training?",
+        "options": {
+            "A": "Passing the model's own prior predicted output token as input to the next step",
+            "B": "Feeding the true ground-truth target token from training data as input to the decoder at each step to stabilize training",
+            "C": "Using human rankings to train a secondary reward model",
+            "D": "Freezing encoder layers while fine-tuning decoder attention heads"
+        },
+        "correct_answer": "B",
+        "explanation": "Teacher forcing supplies the ground-truth target token at step t during training rather than the model's own predicted token, preventing early prediction errors from cascading."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "39. How does Seq2Seq decoder inference differ from Teacher Forcing training?",
+        "options": {
+            "A": "During inference, ground-truth tokens are provided by human annotators in real time",
+            "B": "During inference, ground-truth tokens are unavailable, so the decoder feeds its own previously generated output token as the next input step",
+            "C": "During inference, attention matrices are completely disabled",
+            "D": "During inference, the model uses add-1 Laplace smoothing on logits"
+        },
+        "correct_answer": "B",
+        "explanation": "At inference time, target sequences are unknown; the model autoregressively feeds its own generated token output at step t as input for step t+1."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "40. What primary problem in standard Recurrent Neural Networks (RNNs) led to the development of Long Short-Term Memory (LSTM) networks?",
+        "options": {
+            "A": "Inability to compute matrix multiplication",
+            "B": "Vanishing and exploding gradients during backpropagation through time (BPTT) over long sequences",
+            "C": "Inability to process one-hot encoded inputs",
+            "D": "Lack of softmax activation functions"
+        },
+        "correct_answer": "B",
+        "explanation": "Standard RNNs suffer from vanishing or exploding gradients when backpropagating through many time steps, preventing them from learning long-range dependencies."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "41. What structural components in an LSTM cell allow it to preserve gradient flow and memory over long context windows?",
+        "options": {
+            "A": "Query, Key, and Value scaling matrices",
+            "B": "Gates (Input, Forget, and Output gates) regulating information flow into a constant error carousel (Cell State)",
+            "C": "Character n-gram subword projection layers",
+            "D": "TF-IDF document weighting masks"
+        },
+        "correct_answer": "B",
+        "explanation": "LSTMs introduce a cell state updated via multiplicative gates (forget, input, output gates), preventing gradients from vanishing across long sequences."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "42. What standard evaluation metric measures how well a probabilistic language model predicts a sample text corpus?",
+        "options": {
+            "A": "Perplexity (PPL)",
+            "B": "Singular Value Ratio",
+            "C": "CosSim Accuracy",
+            "D": "BLEU-10 score"
+        },
+        "correct_answer": "A",
+        "explanation": "Perplexity measures the exponential cross-entropy error of a language model; lower perplexity indicates the model is less surprised by the test text."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "43. In an autoregressive neural language model, what training task is optimized during foundational pretraining?",
+        "options": {
+            "A": "Masked term replacement classification",
+            "B": "Next-token prediction (maximizing log-likelihood of observing token w_t given w_1...w_{t-1})",
+            "C": "Pairwise contrastive image-text matching",
+            "D": "Singular Value Decomposition of co-occurrence counts"
+        },
+        "correct_answer": "B",
+        "explanation": "Autoregressive models (like GPT) are trained on next-token prediction, learning to predict the upcoming word given prior context tokens."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "44. What happens when a Bigram language model evaluates a long sentence where subject and verb are separated by 15 words?",
+        "options": {
+            "A": "It tracks the subject perfectly across all 15 words",
+            "B": "It only evaluates the single word immediately preceding the verb, losing track of long-distance subject-verb agreement",
+            "C": "It applies self-attention across all 15 words simultaneously",
+            "D": "It crashes due to matrix non-invertibility"
+        },
+        "correct_answer": "B",
+        "explanation": "Bigram models look back exactly one word; if 15 words intervene between subject and verb, the bigram model cannot see the subject and fails subject-verb agreement."
+    },
+    {
+        "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+        "question": "45. What is the fundamental difference between sequential processing in RNNs and parallel processing in Transformers?",
+        "options": {
+            "A": "RNNs process tokens simultaneously, whereas Transformers iterate token-by-token",
+            "B": "RNNs process tokens sequentially step-by-step (forbidding parallel GPU training), whereas Transformers process all tokens in a sequence simultaneously via self-attention",
+            "C": "RNNs require zero memory, whereas Transformers use no parameters",
+            "D": "RNNs do not support backpropagation"
+        },
+        "correct_answer": "B",
+        "explanation": "RNNs require hidden state h_{t-1} to compute h_t, forcing sequential computation. Transformers compute self-attention across all tokens concurrently, enabling massive GPU parallelization."
+    },
+
+    # =========================================================================
+    # TOPIC 4: Attention Mechanisms & Transformer Architectures (Questions 46–60)
+    # =========================================================================
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "46. What fundamental innovation did Bahdanau et al. (2014) introduce to address Seq2Seq context vector bottlenecks?",
+        "options": {
+            "A": "The Attention Mechanism, allowing decoders to dynamically focus on weighted combinations of all encoder hidden states at each step",
+            "B": "One-Hot encoding linear projections",
+            "C": "Character n-gram subword embeddings",
+            "D": "Reinforcement Learning from Human Feedback"
+        },
+        "correct_answer": "A",
+        "explanation": "Bahdanau attention allowed decoders to look back at all encoder hidden states and dynamically weight relevant positions at every decoding time step."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "47. In the landmark paper 'Attention Is All You Need' (Vaswani et al., 2017), what traditional architectural layers were completely eliminated?",
+        "options": {
+            "A": "Linear projection matrices and Softmax layers",
+            "B": "Recurrent (RNN/LSTM) and Convolutional (CNN) layers",
+            "C": "Feedforward neural networks and residual connections",
+            "D": "Word embedding lookup tables"
+        },
+        "correct_answer": "B",
+        "explanation": "Vaswani et al. replaced recurrent and convolutional layers entirely with self-attention mechanisms, allowing full parallelization during training."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "48. In Self-Attention, how are the Query (Q), Key (K), and Value (V) vectors derived for an input sequence matrix X?",
+        "options": {
+            "A": "Q, K, and V are fixed constant matrices loaded from disk",
+            "B": "X is multiplied by three separate learned projection weight matrices: W_Q, W_K, and W_V",
+            "C": "Q comes from TF-IDF, K from One-Hot vectors, and V from SVD",
+            "D": "Q, K, and V are derived from random noise Gaussian distributions"
+        },
+        "correct_answer": "B",
+        "explanation": "Inputs X are projected into Q, K, and V spaces using three trained projection matrices W_Q, W_K, and W_V."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "49. What is the mathematical formula for Scaled Dot-Product Attention?",
+        "options": {
+            "A": "Attention(Q, K, V) = softmax(Q * K^T / sqrt(d_k)) * V",
+            "B": "Attention(Q, K, V) = sigmoid(Q * V) / d_k",
+            "C": "Attention(Q, K, V) = relu(Q + K^T) * V",
+            "D": "Attention(Q, K, V) = argmax(Q * K) + V"
+        },
+        "correct_answer": "A",
+        "explanation": "Scaled dot-product attention computes compatibility matrix Q*K^T, scales by 1/sqrt(d_k), applies softmax across rows, and multiplies by Value matrix V."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "50. Why is the dot product Q * K^T scaled by dividing by sqrt(d_k) in Scaled Dot-Product Attention?",
+        "options": {
+            "A": "To convert 3-gram character vectors into full word embeddings",
+            "B": "To prevent dot product magnitudes from growing large at high dimensions, which would push softmax gradients into extremely small vanishing regions",
+            "C": "To enforce causal masking on future sequence tokens",
+            "D": "To project Query vectors back into input space"
+        },
+        "correct_answer": "B",
+        "explanation": "For large key dimensions d_k, dot products grow large, pushing softmax into regions with extremely tiny gradients. Scaling by 1/sqrt(d_k) maintains stable gradient flow."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "51. What intuitive role does the 'Query' vector perform in self-attention?",
+        "options": {
+            "A": "It represents what the current token is 'looking for' or asking about other tokens in the sequence",
+            "B": "It acts as a static label summarizing word identity",
+            "C": "It contains the raw content value to be aggregated into output",
+            "D": "It masks future tokens in decoder layers"
+        },
+        "correct_answer": "A",
+        "explanation": "The Query vector represents the current token's search target, probing Key vectors of all tokens to compute relevance scores."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "52. What intuitive role does the 'Key' vector perform in self-attention?",
+        "options": {
+            "A": "It serves as the findable label or profile of a token used to match against incoming Query vectors",
+            "B": "It acts as the final output prediction logits",
+            "C": "It stores the positional sinusoidal encoding offset",
+            "D": "It calculates the inverse document frequency of tokens"
+        },
+        "correct_answer": "A",
+        "explanation": "Key vectors act as labels or index keys; comparing a Query with Keys via dot product yields attention weight compatibility scores."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "53. What intuitive role does the 'Value' vector perform in self-attention?",
+        "options": {
+            "A": "It contains the actual feature content of the token, which gets weighted and summed to form the output context representation",
+            "B": "It computes the loss function gradient during backpropagation",
+            "C": "It stores the teacher forcing ground-truth target tokens",
+            "D": "It enforces zero probabilities on future tokens"
+        },
+        "correct_answer": "A",
+        "explanation": "Value vectors hold the semantic content payload. The final attention output is a weighted linear combination of Value vectors using softmax attention weights."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "54. What is the mechanism and purpose of Multi-Head Attention?",
+        "options": {
+            "A": "Running multiple independent attention blocks ('heads') in parallel to allow the model to attend to information from different representation subspaces simultaneously",
+            "B": "Stacking multiple decision trees on top of Transformer embeddings",
+            "C": "Combining image convolutional filters with character n-grams",
+            "D": "Averaging word vectors across 10 distinct language dictionaries"
+        },
+        "correct_answer": "A",
+        "explanation": "Multi-head attention projects Queries, Keys, and Values h times with distinct learned linear projections, allowing the model to attend to different context relationships concurrently."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "55. Why do Transformer architectures require Positional Encodings added to input embeddings?",
+        "options": {
+            "A": "Because self-attention operations are permutation-invariant and contain no inherent concept of token word order or position",
+            "B": "To prevent gradients from exploding in deep layers",
+            "C": "To convert subwords into one-hot encoding vectors",
+            "D": "To enforce causal masking on decoders"
+        },
+        "correct_answer": "A",
+        "explanation": "Self-attention evaluates set relationships without regard to sequence order. Positional encodings (sinusoidal or learned) inject word-order spatial information into input vectors."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "56. Which key architectural feature distinguishes Decoder-only Transformer models (e.g., GPT family) from Encoder-only models (e.g., BERT)?",
+        "options": {
+            "A": "Decoder models use Masked Causal Self-Attention to prevent tokens from attending to future tokens, enabling autoregressive text generation",
+            "B": "Decoder models do not use attention layers",
+            "C": "Encoder models can only process image patches",
+            "D": "Decoder models rely exclusively on static Word2Vec vectors"
+        },
+        "correct_answer": "A",
+        "explanation": "Decoders employ causal masking in self-attention, setting attention scores for future positions to negative infinity so tokens can only attend to preceding tokens."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "57. What pretraining task characterizes Encoder-only Transformer models like BERT?",
+        "options": {
+            "A": "Masked Language Modeling (MLM), where random tokens are corrupted/masked and the model predicts them using bidirectional context",
+            "B": "Causal left-to-right next-token prediction",
+            "C": "Contrastive image-text caption pairing",
+            "D": "Singular Value Decomposition on co-occurrence counts"
+        },
+        "correct_answer": "A",
+        "explanation": "BERT is an encoder-only model pretrained via Masked Language Modeling (MLM), predicting randomly masked tokens using full left-to-right and right-to-left context."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "58. What primary task family is best suited for Encoder-Decoder Transformer models like T5 and BART?",
+        "options": {
+            "A": "Sequence-to-sequence translation, abstractive summarization, and text re-writing",
+            "B": "Single-word static dictionary lookups",
+            "C": "Unsupervised image noise reduction without text",
+            "D": "Linear regression on numeric tabular data"
+        },
+        "correct_answer": "A",
+        "explanation": "Encoder-decoder architectures excel at sequence-to-sequence transformations, using an unmasked encoder to digest input text and a causal decoder to generate target outputs."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "59. Why is the computational complexity of standard Transformer self-attention quadratic O(N^2) with respect to sequence length N?",
+        "options": {
+            "A": "Because every token computes an attention dot product score against every other token in the sequence matrix Q*K^T",
+            "B": "Because feedforward layers require N^2 hidden units",
+            "C": "Because positional encodings multiply sequence length by vocabulary size",
+            "D": "Because softmax requires computing N^2 square roots"
+        },
+        "correct_answer": "A",
+        "explanation": "Computing Q*K^T requires an N x N similarity matrix for N tokens, resulting in O(N^2) time and memory complexity relative to sequence length N."
+    },
+    {
+        "topic": "Attention Mechanisms & Transformer Architectures",
+        "question": "60. What is 'DeBERTa' (He et al., 2021) and what architectural enhancement does it introduce over standard BERT?",
+        "options": {
+            "A": "It replaces Transformers with recurrent LSTMs",
+            "B": "It introduces disentangled attention matrices that represent content and relative position using separate vector pairs",
+            "C": "It removes positional encodings completely",
+            "D": "It uses one-hot vectors for decoder text generation"
+        },
+        "correct_answer": "B",
+        "explanation": "DeBERTa improves BERT by decoupling content and position representations into disentangled attention matrices, evaluating content-to-content and relative position dependencies independently."
+    },
+
+    # =========================================================================
+    # TOPIC 5: Prompt Engineering, Sampling, Fine-Tuning & Model Alignment (Questions 61–75)
+    # =========================================================================
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "61. How does configuring the Temperature parameter (T) alter token probability distributions during autoregressive LLM decoding?",
+        "options": {
+            "A": "T=0 flattens probability distributions into uniform random noise",
+            "B": "Higher T (e.g., T=1.2) flattens logit distributions, increasing relative sampling probabilities for lower-likelihood tokens and boosting output diversity",
+            "C": "Low T (e.g., T=0.1) causes the model to generate random words",
+            "D": "Temperature modifies model weights during backpropagation"
+        },
+        "correct_answer": "B",
+        "explanation": "Dividing logits by higher T flattens the softmax curve, giving tail tokens higher relative probabilities and yielding more varied, creative outputs."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "62. What decoding strategy is executed when setting Temperature to 0.0 (or near zero)?",
+        "options": {
+            "A": "Greedy Search Decoding (always selecting the single highest-probability token at every step)",
+            "B": "Top-P Nucleus Sampling across 90% probability mass",
+            "C": "Random Uniform Sampling across the full vocabulary",
+            "D": "Beam Search with infinite width"
+        },
+        "correct_answer": "A",
+        "explanation": "As T approaches 0, the softmax distribution sharpens into a point mass at the maximum logit, making the model deterministically select the top token (Greedy Decoding)."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "63. How does 'Top-P (Nucleus) Sampling' restrict token selection during generation?",
+        "options": {
+            "A": "It selects only tokens whose word length is less than P",
+            "B": "It dynamically samples from the smallest set of top tokens whose cumulative probability mass sums to at least P (e.g., P=0.9)",
+            "C": "It fixes the candidate pool to exactly P total tokens regardless of probabilities",
+            "D": "It masks the first P percentage of input context tokens"
+        },
+        "correct_answer": "B",
+        "explanation": "Top-P sampling truncates the tail of the vocabulary by creating a candidate pool of highest-probability tokens whose cumulative probability reaches threshold P."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "64. What is 'Top-K Sampling' during LLM text decoding?",
+        "options": {
+            "A": "Sampling exclusively from the top K fixed number of most probable next tokens, discarding all remaining vocabulary tokens",
+            "B": "Sampling tokens whose characters contain K subwords",
+            "C": "Filtering the prompt to contain K keywords",
+            "D": "Retaining K attention heads in multi-head attention"
+        },
+        "correct_answer": "A",
+        "explanation": "Top-K sampling caps the generation candidate pool to the top K highest probability tokens, setting probabilities for all other vocabulary tokens to 0."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "65. What fundamental distinction separates a 'Pretrained Base Model' (e.g., Qwen2.5-0.5B base) from an 'Instruction-Tuned Model' (e.g., Qwen2.5-0.5B-Instruct)?",
+        "options": {
+            "A": "Base models can only process numbers; instruction models process text",
+            "B": "Base models are only trained to predict text continuations, whereas instruction-tuned models are fine-tuned to follow user queries, answer questions, and execute conversational tasks",
+            "C": "Base models have 100x more parameters than instruction models",
+            "D": "Instruction models eliminate Transformer decoder layers"
+        },
+        "correct_answer": "B",
+        "explanation": "Base models are raw text continuers. Instruction-tuning adapts models to recognize user intent, answer questions, and act as conversational AI assistants."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "66. What are the core components of an effective prompt according to structured prompting guidelines (e.g., for Microsoft 365 Copilot)?",
+        "options": {
+            "A": "One-hot encodings, SVD matrices, and Laplace smoothing constants",
+            "B": "Goal (Task), Context, Sources (Data), and Expectations (Format/Style constraints)",
+            "C": "Temperature, Top-P, Top-K, and Random Seeds",
+            "D": "Queries, Keys, Values, and Softmax scaling parameters"
+        },
+        "correct_answer": "B",
+        "explanation": "Effective prompt design incorporates four core elements: Goal, Context, Data Sources, and Format Expectations."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "67. What is 'Few-Shot Prompting'?",
+        "options": {
+            "A": "Training an LLM on 3 gradient descent epochs",
+            "B": "Providing a few concrete input-output demonstration examples directly within the prompt context before the query",
+            "C": "Sampling 3 output variations at high temperature",
+            "D": "Fine-tuning model weights using 5 labeled datasets"
+        },
+        "correct_answer": "B",
+        "explanation": "Few-shot prompting provides exemplar input-output pairs inside the prompt to demonstrate expected formatting and reasoning patterns to the model without weight updates."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "68. What are the three sequential stages of Reinforcement Learning from Human Feedback (RLHF)?",
+        "options": {
+            "A": "1) Tokenization, 2) Forward pass, 3) Softmax decoding",
+            "B": "1) Supervised Fine-Tuning (SFT) on demonstrations, 2) Training a Reward Model on human preference rankings, 3) Optimizing the LLM policy via RL (e.g., PPO)",
+            "C": "1) One-Hot Encoding, 2) SVD decomposition, 3) FastText subword summation",
+            "D": "1) Masked language modeling, 2) Teacher forcing, 3) Laplace smoothing"
+        },
+        "correct_answer": "B",
+        "explanation": "RLHF proceeds in three steps: SFT on human demonstration pairs, training a Reward Model on ranked completion pairs, and fine-tuning the LLM using PPO against the Reward Model."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "69. In Hugging Face model deployment architecture, what is the conceptual difference between the 'Pretrained Body' and a 'Task Head'?",
+        "options": {
+            "A": "The body stores text prompts; the head stores temperature settings",
+            "B": "The body is the core pretrained Transformer that outputs token vector representations; the task head is a small specialized output layer (e.g., classification head) that converts vectors into task predictions",
+            "C": "The body executes image generation; the head executes text tokenization",
+            "D": "The body uses one-hot vectors; the head uses SVD"
+        },
+        "correct_answer": "B",
+        "explanation": "The pretrained Transformer 'body' extracts rich contextual feature vectors. Swapping the final top 'head' layer allows the same body to perform sentiment analysis, QA, or zero-shot classification."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "70. How does 'Zero-Shot Classification' operate in modern Transformer pipelines without task training examples?",
+        "options": {
+            "A": "It converts document words into one-hot encodings and computes cosine angles",
+            "B": "It formulates classification as an NLI (Natural Language Inference) premise-hypothesis task, testing candidate labels provided at runtime",
+            "C": "It fine-tunes all model weights using 10,000 labeled samples",
+            "D": "It uses add-1 Laplace smoothing across document collections"
+        },
+        "correct_answer": "B",
+        "explanation": "Zero-shot classifiers leverage NLI-pretrained models to evaluate whether input text entails candidate label hypotheses (e.g., 'This text is about {label}') created dynamically."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "71. What is 'Reinforcement Learning from AI Feedback' (RLAIF) or 'Constitutional AI' (e.g., Anthropic Assistant)?",
+        "options": {
+            "A": "Using human annotators to write all feedback labels manually",
+            "B": "Using an AI model to critique completions and generate preference feedback rankings against written guidelines (a constitution) to train the reward model",
+            "C": "Disabling reinforcement learning entirely during post-training",
+            "D": "Training diffusion models using character n-gram rewards"
+        },
+        "correct_answer": "B",
+        "explanation": "RLAIF / Constitutional AI replaces or augments human labellers by using an LLM to evaluate model responses against constitutional principles and generate preference data."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "72. What is the operational trade-off between In-Context Prompt Engineering and Full Parameter Fine-Tuning?",
+        "options": {
+            "A": "Prompt engineering changes model weights permanently, whereas fine-tuning is zero-cost",
+            "B": "Prompt engineering requires no weight updates or training compute but depends on context window limits, whereas fine-tuning requires compute and datasets but bakes tone, format, and domain knowledge directly into model weights",
+            "C": "Fine-tuning reduces vocabulary size by 90%",
+            "D": "Prompt engineering eliminates the need for decoding temperature settings"
+        },
+        "correct_answer": "B",
+        "explanation": "Prompt engineering works instantly without weight updates but uses context tokens. Fine-tuning updates weights to embed specialized behaviors and domain knowledge directly."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "73. In Hugging Face's pipeline architecture, what are the three sequential internal stages packaged inside `pipeline('text-generation')`?",
+        "options": {
+            "A": "1) Tokenization (text to input IDs), 2) Model Forward Pass (input IDs to logits), 3) Post-Processing / Decoding (logits to generated text)",
+            "B": "1) SVD decomposition, 2) FastText subword summation, 3) Laplace smoothing",
+            "C": "1) One-Hot encoding, 2) Teacher forcing, 3) Attention scaling",
+            "D": "1) Image blurring, 2) Denoising score estimation, 3) Latent sampling"
+        },
+        "correct_answer": "A",
+        "explanation": "Hugging Face pipelines automate three steps: converting text to token IDs via the tokenizer, running model inference to produce logits, and decoding logits into output text."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "74. What is 'Flan-T5' (Chung et al., 2022) and what training methodology created it?",
+        "options": {
+            "A": "An encoder-only model created via masked image pretraining",
+            "B": "A T5 model instruction-finetuned across 1,836 conversational and reasoning tasks, including Chain-of-Thought datasets",
+            "C": "A diffusion model designed for text-to-image synthesis",
+            "D": "A static Word2Vec dictionary model"
+        },
+        "correct_answer": "B",
+        "explanation": "Flan-T5 is produced by instruction fine-tuning T5 models across a massive mixture of over 1,800 tasks, dramatically boosting zero-shot and reasoning performance."
+    },
+    {
+        "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+        "question": "75. What is the 'Lost in the Middle' phenomenon observed in long-context LLMs?",
+        "options": {
+            "A": "Models lose parameter weights in hidden layers during inference",
+            "B": "Models recall information located at the beginning or end of long context windows much better than facts placed in the middle of long prompts",
+            "C": "Tokenizers drop middle subword characters in long words",
+            "D": "Attention heads fail when temperature is set to 0.5"
+        },
+        "correct_answer": "B",
+        "explanation": "LLM recall accuracy exhibits a U-shaped curve; information placed at the start or end of long prompts is retrieved effectively, while facts buried in the middle are frequently missed."
+    }
+];
+
+
+
+
+    const container = document.getElementById("quizContainer");
+
+    quizData.forEach((q, qIndex) => {
+        let qDiv = document.createElement("div");
+        qDiv.className = "question-card";
+        qDiv.innerHTML = `<div class="question-title">${q.question}</div>`;
+        
+        q.options.forEach((opt, oIndex) => {
+            qDiv.innerHTML += `
+                <label>
+                    <input type="radio" name="question_${qIndex}" value="${oIndex}">
+                    ${opt}
+                </label>`;
+        });
+        qDiv.innerHTML += `<div class="explanation" id="exp_${qIndex}">💡 <b>Explanation:</b> ${q.explanation}</div>`;
+        container.appendChild(qDiv);
+    });
+
+    function gradeQuiz() {
+        let score = 0;
+        quizData.forEach((q, qIndex) => {
+            const selected = document.querySelector(`input[name="question_${qIndex}"]:checked`);
+            const expDiv = document.getElementById(`exp_${qIndex}`);
+            expDiv.style.display = "block";
+            
+            if (selected && parseInt(selected.value) === q.answer) {
+                score++;
+                selected.parentElement.style.background = "#d4edda";
+            } else if (selected) {
+                selected.parentElement.style.background = "#f8d7da";
+            }
+        });
+
+        const resultsDiv = document.getElementById("results");
+        resultsDiv.style.display = "block";
+        resultsDiv.style.background = "#e8f0fe";
+        resultsDiv.style.color = "#1a73e8";
+        resultsDiv.innerHTML = `🎉 Your Final Score: ${score} / ${quizData.length}`;
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+</script>
+</body>
+</html>"""
+
+# This automatically downloads the file named 'index.html' directly to your computer
+with open("index.html", "w") as f:
+    f.write(html_content)
+
+print("✅ Success! Your 'index.html' file has been generated and downloaded.")
