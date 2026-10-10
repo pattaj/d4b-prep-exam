@@ -23,14 +23,22 @@
     <!-- Left Navigation Menu -->
     <div class="sidebar" id="sidebar">
         <button class="sidebar-close" onclick="toggleMenu()">✕</button>
-        <h3>📚 Topics Menu</h3>
-        <div id="menuContainer"></div>
+        
+        <!-- Modules Section (Fetches JSON) -->
+        <h3>🗂️ Modules</h3>
+        <div id="moduleContainer"></div>
+
+        <!-- Topics Section (Populated dynamically after module load) -->
+        <h3 style="margin-top: 25px;">📚 Topics</h3>
+        <div id="menuContainer">
+            <p style="font-size: 13px; color: #666; padding: 0 10px;">Select a module first...</p>
+        </div>
     </div>
 
     <!-- Main Content Area -->
     <div class="main-content">
         <h1 id="mainTitle">🎓 Master's Exam Review</h1>
-        <p style="text-align:center; color:#666; font-size: 18px; margin-top: 30px;" id="instructionsText">👈 Please select a topic from the menu to begin.</p>
+        <p style="text-align:center; color:#666; font-size: 18px; margin-top: 30px;" id="instructionsText">👈 Please select a Module from the menu to begin.</p>
         
         <!-- The Quiz Container -->
         <form id="quizForm">
@@ -66,10 +74,8 @@
     </div>
 </div>
 
-<!-- 1. Load Question Data First -->
-<script src="question.js"></script>
-<!-- 2. Load App Logic Second -->
-<script src="app.js"></script>
+<!-- Load Modern ES6 App Logic -->
+<script type="module" src="app.js"></script>
 
 </body>
 </html>
