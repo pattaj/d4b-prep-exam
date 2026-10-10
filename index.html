@@ -5,17 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master's Exam Review</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 20px; }
-        .container { max-width: 650px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        h1 { color: #1a73e8; font-size: 24px; text-align: center; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        
+        /* Layout Structure */
+        .app-layout { display: flex; flex: 1; max-width: 1100px; margin: 0 auto; width: 100%; padding: 20px; box-sizing: border-box; gap: 20px; }
+        
+        /* Sidebar Menu */
+        .sidebar { width: 280px; background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); height: fit-content; position: sticky; top: 20px; }
+        .sidebar h3 { font-size: 16px; color: #1a73e8; margin-top: 0; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+        .menu-btn { display: block; width: 100%; text-align: left; background: #f8f9fa; border: 1px solid #ddd; padding: 10px 12px; margin-bottom: 8px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: 500; transition: 0.2s; color: #333; }
+        .menu-btn:hover { background: #e8f0fe; border-color: #1a73e8; color: #1a73e8; }
+        .menu-btn.active { background: #1a73e8; color: white; border-color: #1a73e8; font-weight: bold; }
+
+        /* Main Content Area */
+        .main-content { flex: 1; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { color: #1a73e8; font-size: 24px; text-align: center; margin-top: 0; }
+        
         .topic-header { background: #e8f0fe; color: #1a73e8; padding: 10px; border-radius: 6px; font-weight: bold; margin-top: 25px; margin-bottom: 10px; font-size: 15px; }
         .question-card { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
         .question-title { font-weight: 600; margin-bottom: 10px; font-size: 16px; }
         label { display: block; padding: 10px; margin: 5px 0; background: #f8f9fa; border-radius: 8px; cursor: pointer; border: 1px solid #ddd; transition: 0.2s; }
         label:hover { background: #e8f0fe; border-color: #1a73e8; }
         input[type="radio"] { margin-right: 10px; }
-        button { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 14px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 30px; }
-        button:hover { background: #1557b0; }
+        
+        button.submit-btn { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 14px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 30px; }
+        button.submit-btn:hover { background: #1557b0; }
+        
         #results { margin-top: 25px; padding: 20px; border-radius: 10px; font-size: 18px; text-align: center; font-weight: bold; display: none; background: #e8f0fe; color: #1a73e8; }
         .analytics-box { margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: left; display: none; }
         .analytics-title { font-size: 16px; font-weight: bold; margin-bottom: 10px; color: #333; border-bottom: 2px solid #1a73e8; padding-bottom: 5px; }
@@ -23,27 +38,45 @@
         .focus-needed { background: #f8d7da; color: #721c24; }
         .mastered { background: #d4edda; color: #155724; }
         .explanation { font-size: 13px; color: #555; margin-top: 8px; padding-left: 10px; border-left: 3px solid #1a73e8; display: none; }
+
+        /* Mobile Responsive adjustment */
+        @media (max-width: 768px) {
+            .app-layout { flex-direction: column; padding: 10px; }
+            .sidebar { width: 100%; position: static; margin-bottom: 15px; }
+        }
     </style>
 </head>
 <body>
-<div class="container">
-    <h1>🎓 Master's Exam Review</h1>
-    <p style="text-align:center; color:#666;">Tap your answers below and submit to view your score and topic analytics.</p>
-    
-    <form id="quizForm">
-        <div id="quizContainer"></div>
-        <button type="button" onclick="gradeQuiz()">Submit Quiz & View Analytics</button>
-    </form>
-    
-    <div id="results">
-        <div id="scoreText"></div>
-        <div id="analyticsSection" class="analytics-box">
-            <div class="analytics-title">📊 Topic Performance Analytics</div>
-            <div id="analyticsContent"></div>
+
+<div class="app-layout">
+    <!-- Left Navigation Menu -->
+    <div class="sidebar">
+        <h3>📚 Topics Menu</h3>
+        <div id="menuContainer"></div>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h1>🎓 Master's Exam Review</h1>
+        <p style="text-align:center; color:#666;" id="instructionsText">Select a topic from the left menu or view all questions below.</p>
+        
+        <form id="quizForm">
+            <div id="quizContainer"></div>
+            <button type="button" class="submit-btn" onclick="gradeQuiz()">Submit Quiz & View Analytics</button>
+        </form>
+        
+        <div id="results">
+            <div id="scoreText"></div>
+            <div id="analyticsSection" class="analytics-box">
+                <div class="analytics-title">📊 Topic Performance Analytics</div>
+                <div id="analyticsContent"></div>
+            </div>
         </div>
     </div>
-</div>  
+</div>
+    
 <script>
+    
     const quizData = [
     // =========================================================================
     // TOPIC 1: Generative AI & Machine Learning Foundations (Questions 1–15)
@@ -966,71 +999,116 @@
     }
 ];
 
-  const container = document.getElementById("quizContainer");
+    let currentFilter = "ALL";
 
-    quizData.forEach((q, qIndex) => {
-        let qDiv = document.createElement("div");
-        qDiv.className = "question-card";
+    // 1. Build the Left Sidebar Menu automatically based on unique topics
+    function buildMenu() {
+        const menuContainer = document.getElementById("menuContainer");
+        menuContainer.innerHTML = `<button class="menu-btn active" onclick="filterQuestions('ALL', this)">📂 Show All Topics</button>`;
 
-        if(q.topic) {
-            let topicDiv = document.createElement("div");
-            topicDiv.className = "topic-header";
-            topicDiv.innerText = "📁 " + q.topic;
-            qDiv.appendChild(topicDiv);
-        }
+        let topics = [...new Set(quizData.map(q => q.topic))];
+        topics.forEach(topic => {
+            menuContainer.innerHTML += `<button class="menu-btn" onclick="filterQuestions('${topic}', this)">📁 ${topic}</button>`;
+        });
+    }
 
-        let titleDiv = document.createElement("div");
-        titleDiv.className = "question-title";
-        titleDiv.innerText = q.question;
-        qDiv.appendChild(titleDiv);
+    // 2. Filter and Render Questions
+    function renderQuiz(filter = "ALL") {
+        currentFilter = filter;
+        const container = document.getElementById("quizContainer");
+        container.innerHTML = "";
+
+        quizData.forEach((q, qIndex) => {
+            if (filter !== "ALL" && q.topic !== filter) return;
+
+            let qDiv = document.createElement("div");
+            qDiv.className = "question-card";
+
+            if (filter === "ALL" && q.topic) {
+                let topicDiv = document.createElement("div");
+                topicDiv.className = "topic-header";
+                topicDiv.innerText = "📁 " + q.topic;
+                qDiv.appendChild(topicDiv);
+            }
+
+            let titleDiv = document.createElement("div");
+            titleDiv.className = "question-title";
+            titleDiv.innerText = q.question;
+            qDiv.appendChild(titleDiv);
+            
+            for (let key in q.options) {
+                let optText = q.options[key];
+                qDiv.innerHTML += `
+                    <label>
+                        <input type="radio" name="question_${qIndex}" value="${key}">
+                        <b>${key}:</b> ${optText}
+                    </label>`;
+            }
+            
+            let expDiv = document.createElement("div");
+            expDiv.className = "explanation";
+            expDiv.id = `exp_${qIndex}`;
+            expDiv.innerHTML = `💡 <b>Explanation:</b> ${q.explanation}`;
+            qDiv.appendChild(expDiv);
+
+            container.appendChild(qDiv);
+        });
+    }
+
+    function filterQuestions(topic, btnElement) {
+        // Update active menu styling
+        document.querySelectorAll('.menu-btn').forEach(btn => btn.classList.remove('active'));
+        btnElement.classList.add('active');
+
+        renderQuiz(topic);
         
-        for (let key in q.options) {
-            let optText = q.options[key];
-            qDiv.innerHTML += `
-                <label>
-                    <input type="radio" name="question_${qIndex}" value="${key}">
-                    <b>${key}:</b> ${optText}
-                </label>`;
-        }
-        
-        let expDiv = document.createElement("div");
-        expDiv.className = "explanation";
-        expDiv.id = `exp_${qIndex}`;
-        expDiv.innerHTML = `💡 <b>Explanation:</b> ${q.explanation}`;
-        qDiv.appendChild(expDiv);
+        // Reset results display when switching topics
+        document.getElementById("results").style.display = "none";
+    }
 
-        container.appendChild(qDiv);
-    });
-
+    // 3. Grading Logic
     function gradeQuiz() {
         let score = 0;
+        let answeredCount = 0;
         let topicStats = {};
 
         quizData.forEach((q, qIndex) => {
+            // Only grade questions currently visible under the active filter (or all)
+            if (currentFilter !== "ALL" && q.topic !== currentFilter) return;
+
             const selected = document.querySelector(`input[name="question_${qIndex}"]:checked`);
             const expDiv = document.getElementById(`exp_${qIndex}`);
-            expDiv.style.display = "block";
+            if (expDiv) expDiv.style.display = "block";
 
             let topic = q.topic || "General Review";
             if (!topicStats[topic]) {
                 topicStats[topic] = { total: 0, correct: 0 };
             }
             topicStats[topic].total++;
-            
-            if (selected && selected.value === q.correct_answer) {
-                score++;
-                topicStats[topic].correct++;
-                selected.parentElement.style.background = "#d4edda";
-            } else if (selected) {
-                selected.parentElement.style.background = "#f8d7da";
+
+            if (selected) {
+                answeredCount++;
+                if (selected.value === q.correct_answer) {
+                    score++;
+                    topicStats[topic].correct++;
+                    selected.parentElement.style.background = "#d4edda";
+                } else {
+                    selected.parentElement.style.background = "#f8d7da";
+                }
             }
         });
 
-        document.getElementById("scoreText").innerHTML = `🎉 Your Final Score: ${score} / ${quizData.length}`;
+        if (answeredCount === 0) {
+            alert("Please answer at least one question before submitting!");
+            return;
+        }
+
+        document.getElementById("scoreText").innerHTML = `🎉 Score for current view: ${score} / ${answeredCount}`;
 
         let analyticsHtml = "";
         for (let topic in topicStats) {
             let stats = topicStats[topic];
+            if (stats.total === 0) continue;
             let percentage = Math.round((stats.correct / stats.total) * 100);
             let statusClass = percentage < 70 ? "focus-needed" : "mastered";
             let statusText = percentage < 70 ? "⚠️ Needs More Focus" : "✅ Mastered";
@@ -1047,6 +1125,10 @@
         
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
+
+    // Initialize Menu and Quiz on Load
+    buildMenu();
+    renderQuiz("ALL");
 </script>
 </body>
 </html>
