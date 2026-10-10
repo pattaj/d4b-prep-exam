@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,34 +7,45 @@
     <title>Master's Exam Review</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 20px; }
-        .container { max-width: 600px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .container { max-width: 650px; margin: 0 auto; background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         h1 { color: #1a73e8; font-size: 24px; text-align: center; }
-        .topic-header { background: #e8f0fe; color: #1a73e8; padding: 10px; border-radius: 6px; font-weight: bold; margin-top: 20px; margin-bottom: 10px; font-size: 14px; }
+        .topic-header { background: #e8f0fe; color: #1a73e8; padding: 10px; border-radius: 6px; font-weight: bold; margin-top: 25px; margin-bottom: 10px; font-size: 15px; }
         .question-card { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
         .question-title { font-weight: 600; margin-bottom: 10px; font-size: 16px; }
         label { display: block; padding: 10px; margin: 5px 0; background: #f8f9fa; border-radius: 8px; cursor: pointer; border: 1px solid #ddd; transition: 0.2s; }
         label:hover { background: #e8f0fe; border-color: #1a73e8; }
         input[type="radio"] { margin-right: 10px; }
-        button { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 12px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 20px; }
+        button { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 14px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 30px; }
         button:hover { background: #1557b0; }
-        #results { margin-top: 20px; padding: 15px; border-radius: 8px; font-size: 18px; text-align: center; font-weight: bold; display: none; }
+        #results { margin-top: 25px; padding: 20px; border-radius: 10px; font-size: 18px; text-align: center; font-weight: bold; display: none; background: #e8f0fe; color: #1a73e8; }
+        .analytics-box { margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: left; display: none; }
+        .analytics-title { font-size: 16px; font-weight: bold; margin-bottom: 10px; color: #333; border-bottom: 2px solid #1a73e8; padding-bottom: 5px; }
+        .analytics-item { font-size: 14px; margin-bottom: 8px; padding: 6px; border-radius: 4px; }
+        .focus-needed { background: #f8d7da; color: #721c24; }
+        .mastered { background: #d4edda; color: #155724; }
         .explanation { font-size: 13px; color: #555; margin-top: 8px; padding-left: 10px; border-left: 3px solid #1a73e8; display: none; }
     </style>
 </head>
 <body>
 <div class="container">
     <h1>🎓 Master's Exam Review</h1>
-    <p style="text-align:center; color:#666;">Tap your answers below and submit to check your score.</p>
+    <p style="text-align:center; color:#666;">Tap your answers below and submit to view your score and topic analytics.</p>
     
     <form id="quizForm">
         <div id="quizContainer"></div>
-        <button type="button" onclick="gradeQuiz()">Submit Quiz</button>
+        <button type="button" onclick="gradeQuiz()">Submit Quiz & View Analytics</button>
     </form>
     
-    <div id="results"></div>
+    <div id="results">
+        <div id="scoreText"></div>
+        <div id="analyticsSection" class="analytics-box">
+            <div class="analytics-title">📊 Topic Performance Analytics</div>
+            <div id="analyticsContent"></div>
+        </div>
+    </div>
 </div>
 
-<script>
+<script>    
     const quizData = [
     # =========================================================================
     # TOPIC 1: Generative AI & Machine Learning Foundations (Questions 1–15)
@@ -956,17 +968,16 @@
     }
 ];
 
-    const container = document.getElementById("quizContainer");
+const container = document.getElementById("quizContainer");
 
     quizData.forEach((q, qIndex) => {
         let qDiv = document.createElement("div");
         qDiv.className = "question-card";
 
-        // Display topic header if available
         if(q.topic) {
             let topicDiv = document.createElement("div");
             topicDiv.className = "topic-header";
-            topicDiv.innerText = q.topic;
+            topicDiv.innerText = "📁 " + q.topic;
             qDiv.appendChild(topicDiv);
         }
 
@@ -975,14 +986,14 @@
         titleDiv.innerText = q.question;
         qDiv.appendChild(titleDiv);
         
-        q.options.forEach((opt) => {
-            let optLetter = opt.charAt(0); // Extracts 'A', 'B', 'C', or 'D'
+        for (let key in q.options) {
+            let optText = q.options[key];
             qDiv.innerHTML += `
                 <label>
-                    <input type="radio" name="question_${qIndex}" value="${optLetter}">
-                    ${opt}
+                    <input type="radio" name="question_${qIndex}" value="${key}">
+                    <b>${key}:</b> ${optText}
                 </label>`;
-        });
+        }
         
         let expDiv = document.createElement("div");
         expDiv.className = "explanation";
@@ -995,24 +1006,49 @@
 
     function gradeQuiz() {
         let score = 0;
+        let topicStats = {};
+
         quizData.forEach((q, qIndex) => {
             const selected = document.querySelector(`input[name="question_${qIndex}"]:checked`);
             const expDiv = document.getElementById(`exp_${qIndex}`);
             expDiv.style.display = "block";
+
+            let topic = q.topic || "General Review";
+            if (!topicStats[topic]) {
+                topicStats[topic] = { total: 0, correct: 0 };
+            }
+            topicStats[topic].total++;
             
             if (selected && selected.value === q.correct_answer) {
                 score++;
+                topicStats[topic].correct++;
                 selected.parentElement.style.background = "#d4edda";
             } else if (selected) {
                 selected.parentElement.style.background = "#f8d7da";
             }
         });
 
-        const resultsDiv = document.getElementById("results");
-        resultsDiv.style.display = "block";
-        resultsDiv.style.background = "#e8f0fe";
-        resultsDiv.style.color = "#1a73e8";
-        resultsDiv.innerHTML = `🎉 Your Final Score: ${score} / ${quizData.length}`;
+        // Display Total Score
+        document.getElementById("scoreText").innerHTML = `🎉 Your Final Score: ${score} / ${quizData.length}`;
+
+        // Build Topic Analytics breakdown
+        let analyticsHtml = "";
+        for (let topic in topicStats) {
+            let stats = topicStats[topic];
+            let percentage = Math.round((stats.correct / stats.total) * 100);
+            let statusClass = percentage < 70 ? "focus-needed" : "mastered";
+            let statusText = percentage < 70 ? "⚠️ Needs More Focus" : "✅ Mastered";
+
+            analyticsHtml += `
+                <div class="analytics-item ${statusClass}">
+                    <b>${topic}</b>: ${stats.correct}/${stats.total} correct (${percentage}%) — <i>${statusText}</i>
+                </div>`;
+        }
+
+        document.getElementById("analyticsContent").innerHTML = analyticsHtml;
+        document.getElementById("analyticsSection").style.display = "block";
+        document.getElementById("results").style.display = "block";
+        
         window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
     }
 </script>
