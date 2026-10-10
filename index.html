@@ -30,12 +30,14 @@
     <!-- Main Content Area -->
     <div class="main-content">
         <h1 id="mainTitle">🎓 Master's Exam Review</h1>
-        <p style="text-align:center; color:#666;" id="instructionsText">Select a topic from the menu or test yourself below.</p>
+        <p style="text-align:center; color:#666; font-size: 18px; margin-top: 30px;" id="instructionsText">👈 Please select a topic from the menu to begin.</p>
         
         <!-- The Quiz Container -->
         <form id="quizForm">
             <div id="quizContainer"></div>
-            <button type="button" class="btn" id="submitQuizBtn" onclick="gradeQuiz()">Submit Quiz & View Analytics</button>
+            
+            <!-- Submit Button (Hidden until a topic is selected) -->
+            <button type="button" class="btn" id="submitQuizBtn" onclick="gradeQuiz()" style="display: none;">Submit Quiz & View Analytics</button>
             
             <!-- Hidden Review Buttons -->
             <div class="action-buttons" id="reviewActionBtns" style="display:none; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
@@ -65,7 +67,7 @@
 </div>
 
 <!-- 1. Load Question Data First -->
-<script src="question.js"></script>
+<script src="questions.js"></script>
 <!-- 2. Load App Logic Second -->
 <script src="app.js"></script>
 
