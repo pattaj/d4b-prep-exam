@@ -52,22 +52,20 @@ const buildTopicMenu = () => {
 // 3. ASYNC DATA FETCHING
 // =========================================================
 window.loadModule = async (moduleId, btnElement) => {
-    // Highlight the selected module button
     document.querySelectorAll('.module-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
 
     try {
-        // Fetch the corresponding JSON file
         const response = await fetch(`./data/${moduleId}.json`);
         
         if (!response.ok) throw new Error("Network response was not ok");
         
-        currentQuizData = await response.json();
+        const rawData = await response.json();
         
-        // Build the topics for this module and render everything
+        // CRITICAL: Attach an original index to each question so grading doesn't break when shuffled
+        currentQuizData = rawData.map((q, index) => ({ ...q, originalIndex: index }));
+        
         buildTopicMenu();
-        
-        // Automatically start the quiz with 'ALL' topics selected for this module
         filterQuestions("ALL", document.querySelector('.topic-btn'));
         
     } catch (error) {
@@ -77,17 +75,14 @@ window.loadModule = async (moduleId, btnElement) => {
 };
 
 // =========================================================
-// 4. QUIZ RENDERING LOGIC
+// 4. QUIZ RENDERING LOGIC (WITH PER-TOPIC SHUFFLING)
 // =========================================================
 window.filterQuestions = (topic, btnElement) => {
-    // Highlight the selected topic button
     document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
     
-    // Trigger retakeQuiz, which handles shuffling and rendering
     window.retakeQuiz(topic);
     
-    // Close menu on mobile after selection
     if(window.innerWidth <= 768) window.toggleMenu();
 };
 
@@ -98,42 +93,57 @@ const renderQuiz = (filter) => {
 
     if (filter === "NONE" || currentQuizData.length === 0) return;
 
-    currentQuizData.forEach((q, qIndex) => {
-        // Skip questions that don't match the selected topic
-        if (filter !== "ALL" && q.topic !== filter) return;
+    // 1. Determine which topics we need to render
+    let topicsToRender = filter === "ALL" 
+        ? [...new Set(currentQuizData.map(q => q.topic))] 
+        : [filter];
 
-        let qDiv = document.createElement("div");
-        qDiv.className = "question-card";
+    // 2. Render each topic block one by one
+    topicsToRender.forEach(topicName => {
+        
+        // Get only the questions for this specific topic
+        let topicQuestions = currentQuizData.filter(q => q.topic === topicName);
+        
+        // 🎲 SHUFFLE the questions ONLY within this topic
+        shuffleArray(topicQuestions);
 
-        // Show topic header only if viewing "ALL" topics
-        if (filter === "ALL" && q.topic) {
+        // Render Topic Header if viewing "ALL"
+        if (filter === "ALL") {
             let topicDiv = document.createElement("div");
             topicDiv.className = "topic-header";
-            topicDiv.innerText = "📁 " + q.topic;
-            qDiv.appendChild(topicDiv);
+            topicDiv.innerText = "📁 " + topicName;
+            container.appendChild(topicDiv);
         }
 
-        let titleDiv = document.createElement("div");
-        titleDiv.className = "question-title";
-        titleDiv.innerText = q.question;
-        qDiv.appendChild(titleDiv);
-        
-        for (let key in q.options) {
-            let optText = q.options[key];
-            qDiv.innerHTML += `
-                <label>
-                    <input type="radio" name="question_${qIndex}" value="${key}">
-                    <b>${key}:</b> ${optText}
-                </label>`;
-        }
-        
-        let expDiv = document.createElement("div");
-        expDiv.className = "explanation";
-        expDiv.id = `exp_${qIndex}`;
-        expDiv.innerHTML = `💡 <b>Explanation:</b><br>${q.explanation}`;
-        qDiv.appendChild(expDiv);
+        // Render the shuffled questions
+        topicQuestions.forEach((q) => {
+            let qIndex = q.originalIndex; // We use the original index for HTML names
 
-        container.appendChild(qDiv);
+            let qDiv = document.createElement("div");
+            qDiv.className = "question-card";
+
+            let titleDiv = document.createElement("div");
+            titleDiv.className = "question-title";
+            titleDiv.innerText = q.question;
+            qDiv.appendChild(titleDiv);
+            
+            for (let key in q.options) {
+                let optText = q.options[key];
+                qDiv.innerHTML += `
+                    <label>
+                        <input type="radio" name="question_${qIndex}" value="${key}">
+                        <b>${key}:</b> ${optText}
+                    </label>`;
+            }
+            
+            let expDiv = document.createElement("div");
+            expDiv.className = "explanation";
+            expDiv.id = `exp_${qIndex}`;
+            expDiv.innerHTML = `💡 <b>Explanation:</b><br>${q.explanation}`;
+            qDiv.appendChild(expDiv);
+
+            container.appendChild(qDiv);
+        });
     });
 };
 
@@ -151,12 +161,10 @@ window.gradeQuiz = () => {
         if (!document.querySelector(`input[name="question_${qIndex}"]:checked`)) unanswered++;
     });
 
-    // If unanswered questions exist, ask the user if they want to proceed
+    // Prompt user if there are unanswered questions
     if (unanswered > 0) {
         const proceed = confirm(`Are you sure you want to submit?\n\nThere are still ${unanswered} question(s) unanswered. Unanswered questions will be marked as incorrect.`);
-        if (!proceed) {
-            return; // User clicked "Cancel", keep them on the quiz page
-        }
+        if (!proceed) return;
     }
 
     // 2. Grading Pass
@@ -171,27 +179,20 @@ window.gradeQuiz = () => {
         if (!topicStats[topic]) topicStats[topic] = { total: 0, correct: 0 };
         topicStats[topic].total++;
 
-        // Safely check answer (Handles if selected is null/unanswered)
         if (selected && selected.value === q.correct_answer) {
             score++;
             topicStats[topic].correct++;
             selected.parentElement.style.background = "#d4edda"; 
             selected.parentElement.style.borderColor = "#28a745";
         } else {
-            // If they answered incorrectly, highlight their wrong answer in red
             if (selected) {
                 selected.parentElement.style.background = "#f8d7da"; 
                 selected.parentElement.style.borderColor = "#dc3545";
             }
-            
-            // Highlight the correct answer with a green border so they know what they missed
             const correctInput = document.querySelector(`input[name="question_${qIndex}"][value="${q.correct_answer}"]`);
-            if (correctInput) {
-                correctInput.parentElement.style.border = "2px solid #28a745";
-            }
+            if (correctInput) correctInput.parentElement.style.border = "2px solid #28a745";
         }
         
-        // Disable inputs after grading so they can't be changed
         document.querySelectorAll(`input[name="question_${qIndex}"]`).forEach(input => input.disabled = true);
     });
 
@@ -219,7 +220,7 @@ window.gradeQuiz = () => {
     }
     document.getElementById("analyticsContent").innerHTML = analyticsHtml;
 
-    // Switch Views to Analytics
+    // Switch Views
     document.getElementById("quizForm").style.display = "none";
     document.getElementById("instructionsText").style.display = "none";
     document.getElementById("mainTitle").style.display = "none";
@@ -243,10 +244,7 @@ window.showAnalytics = () => {
 };
 
 window.retakeQuiz = (topic = currentFilter) => {
-    // 🎲 Shuffle the questions randomly every time the quiz starts/restarts!
-    shuffleArray(currentQuizData);
-    
-    // Render the shuffled questions
+    // Calling renderQuiz will now automatically shuffle the questions inside their own topics!
     renderQuiz(topic);
     
     document.getElementById("fullAnalyticsView").style.display = "none";
