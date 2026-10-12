@@ -20,12 +20,11 @@
 <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
 <div class="app-layout">
-    <!-- Left Navigation Menu -->
+    <!-- Left Navigation Menu (Now with scrollbars) -->
     <div class="sidebar" id="sidebar">
         <button class="sidebar-close" onclick="toggleMenu()">✕</button>
         
         <h3>🗂️ Modules</h3>
-        <!-- Modules and their nested topics will be generated here -->
         <div id="moduleContainer"></div>
     </div>
 
@@ -38,6 +37,13 @@
         <form id="quizForm">
             <div id="quizContainer"></div>
             
+            <!-- NEW: Pagination Controls -->
+            <div id="paginationControls" class="pagination-controls" style="display: none;">
+                <button type="button" class="btn btn-outline" id="prevPageBtn" onclick="prevPage()">⬅ Previous</button>
+                <button type="button" class="btn btn-outline" id="nextPageBtn" onclick="nextPage()">Next ➡</button>
+            </div>
+            
+            <!-- Submit Button (Shows only on the last page) -->
             <button type="button" class="btn" id="submitQuizBtn" onclick="gradeQuiz()" style="display: none;">Submit Quiz & View Analytics</button>
             
             <div class="action-buttons" id="reviewActionBtns" style="display:none; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
