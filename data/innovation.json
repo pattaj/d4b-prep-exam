@@ -1,0 +1,194 @@
+[
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "1. According to Joseph Schumpeter (1934, 1942), what is 'creative destruction' in innovation theory?",
+    "options": {
+      "A": "The gradual improvement of existing products with minimal market risk",
+      "B": "The continuous process of simultaneous creation of new enterprises and destruction of old ones",
+      "C": "A corporate policy aimed at dismantling R&D departments to reduce operational overhead",
+      "D": "The intentional design of products with planned obsolescence to force upgrades"
+    },
+    "correct_answer": "B",
+    "explanation": "Schumpeter defined creative destruction as the continuous process where new enterprises and industries are simultaneously created while old ones are destroyed, serving as the ultimate driver of economic growth."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "2. How is a 'competence-destroying discontinuity' classified in innovation literature (Schumpeter, Tushman)?",
+    "options": {
+      "A": "An innovation that builds directly on the existing know-how embodied in current technology",
+      "B": "Small incremental changes in product quality that lower manufacturing costs",
+      "C": "An innovation that renders obsolete the expertise required to master the replaced technology",
+      "D": "A corporate restructuring that eliminates administrative roles while preserving technical skills"
+    },
+    "correct_answer": "C",
+    "explanation": "Discontinuities represent breaks in technological trajectories; competence-destroying discontinuities specifically render existing expertise obsolete, whereas competence-enhancing discontinuities build upon existing know-how."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "3. According to Heany's (1983) 'Degrees of Innovation' taxonomy, when is an innovation categorized as a 'Major Innovation'?",
+    "options": {
+      "A": "When the market is established, the business serves it, but design effort is minor",
+      "B": "When the market is NOT established, the business is NOT serving it, customer feature knowledge is 'No', and major product & process design effort is required",
+      "C": "When an existing product line receives minor style changes without process modifications",
+      "D": "When a company enters a known market with a minor feature upgrade"
+    },
+    "correct_answer": "B",
+    "explanation": "In Heany's taxonomy, a 'Major Innovation' occurs when the market is not established, the business is not serving the market, customers do not know the features, and major design effort is required for both product and process."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "4. In the comprehensive framework by Sundbo (1998) and Kochetkov (2023), which type of innovation is defined as 'a novel solution to a social problem that is more effective, efficient, or sustainable, creating value primarily for society'?",
+    "options": {
+      "A": "Open Innovation",
+      "B": "Agile Innovation",
+      "C": "Social Innovation",
+      "D": "Incremental Innovation"
+    },
+    "correct_answer": "C",
+    "explanation": "Social innovation is defined within the comprehensive framework as a novel solution to a social problem whose value created accrues primarily to society rather than private individuals alone."
+  },
+  {
+    "topic": "Design & Innovation Process",
+    "question": "5. In the Double Diamond design framework presented in the D4B Innovation Session, what are the two main 'spaces' of the innovation process?",
+    "options": {
+      "A": "Strategic Space and Operational Space",
+      "B": "Problem Space and Solution Space",
+      "C": "Internal Space and External Space",
+      "D": "Invention Space and Commercialization Space"
+    },
+    "correct_answer": "B",
+    "explanation": "The Double Diamond model splits the design innovation process into two primary domains: the Problem Space (Problem Articulation & Selection) and the Solution Space (Concept Generation & Concept Selection/Development)."
+  },
+  {
+    "topic": "Design & Innovation Process",
+    "question": "6. During the 'Problem Space' stage of the Double Diamond model, what does the 'Diverge' phase involve?",
+    "options": {
+      "A": "Limiting production numbers and choosing a single concept",
+      "B": "Studying competitors, gathering feedback from existing clients, and analyzing market data to broaden understanding",
+      "C": "Designing the final prototype for immediate manufacturing",
+      "D": "Selecting a single narrow problem statement to execute"
+    },
+    "correct_answer": "B",
+    "explanation": "Diverging in the Problem Space means expanding perspective by gathering customer feedback, analyzing market data, and studying competitors before narrowing down (converging) on the specific problem."
+  },
+  {
+    "topic": "Design & Innovation Process",
+    "question": "7. What characterizes 'Converging' in the 'Solution Space' of the Double Diamond framework?",
+    "options": {
+      "A": "Exploring multiple technical solutions and investigating new materials",
+      "B": "Generating as many unconstrained ideas as possible without evaluation",
+      "C": "Selecting and developing specific concepts, finalizing layouts, or limiting production scope for execution",
+      "D": "Re-evaluating customer needs from scratch"
+    },
+    "correct_answer": "C",
+    "explanation": "Converging in the Solution Space narrows down multiple generated concepts into final selected solutions, layouts, or production specifications."
+  },
+  {
+    "topic": "Design & Innovation Process",
+    "question": "8. According to Christensen (1997) and Rothaermel (2015), how does a 'Disruptive Innovation' typically enter the market?",
+    "options": {
+      "A": "By launching a high-priced luxury product aimed at premium customers from day one",
+      "B": "By creeping in 'from below' with an initially lower-performing but more accessible offer that eventually displaces incumbents",
+      "C": "By making minor cosmetic updates to existing products serving established customers",
+      "D": "By relying exclusively on government tax subsidies"
+    },
+    "correct_answer": "B",
+    "explanation": "Disruptive innovation creeps in from below with a simpler, lower-performing, or more accessible offering, progressively improving until it displaces incumbent market leaders."
+  },
+  {
+    "topic": "Futures Thinking & Foresight Frameworks",
+    "question": "9. In Futures Thinking methodology, how is 'Futures Thinking' distinguished from traditional forecasting?",
+    "options": {
+      "A": "Futures Thinking uses a single deterministic mathematical equation to predict exact dates",
+      "B": "Futures Thinking assumes the future is fixed and linear",
+      "C": "Futures Thinking explores multiple plausible, possible, and preferable futures rather than predicting a single projected path",
+      "D": "Futures Thinking focuses exclusively on quarterly financial auditing"
+    },
+    "correct_answer": "C",
+    "explanation": "Futures Thinking emphasizes that 'futures are always plural'—exploring a spectrum of projected, probable, plausible, possible, and preferable futures rather than relying on a single linear forecast."
+  },
+  {
+    "topic": "Futures Thinking & Foresight Frameworks",
+    "question": "10. In the Voros Futures Cone model, which category represents the baseline 'business as usual' future extrapolated from current trends?",
+    "options": {
+      "A": "Preposterous Future",
+      "B": "Projected Future",
+      "C": "Preferable Future",
+      "D": "Plausible Future"
+    },
+    "correct_answer": "B",
+    "explanation": "The 'Projected' future in the Voros Cone represents the default extrapolated baseline ('business as usual'), whereas 'Preferable' involves value judgments of what should happen."
+  },
+  {
+    "topic": "Futures Thinking & Foresight Frameworks",
+    "question": "11. What is the key distinction between a 'Weak Signal' (Whisper) and a 'Megatrend' in Horizon Scanning?",
+    "options": {
+      "A": "Weak signals are global macro-forces, whereas megatrends are single unverified rumors",
+      "B": "Weak signals (whispers) are early signs of potentially significant change before becoming established trends, whereas megatrends are large-scale, long-term global shifts",
+      "C": "Megatrends only apply to technology, while weak signals only apply to politics",
+      "D": "Weak signals always represent immediate crises requiring emergency firefighting"
+    },
+    "correct_answer": "B",
+    "explanation": "Horizon scanning distinguishes between 'weak signals' (early, subtle whispers of emerging change) and 'megatrends' (deep, long-term structural shifts shaping society and industries over coming decades)."
+  },
+  {
+    "topic": "Futures Thinking & Foresight Frameworks",
+    "question": "12. In the Three Horizons Model used in strategic futures thinking, what does 'Horizon 1' represent?",
+    "options": {
+      "A": "Far future paradigms and radical new systems",
+      "B": "The current dominant system and 'business as usual' operational state",
+      "C": "The emerging transitional zone where innovations challenge existing norms",
+      "D": "Speculative scenarios that are impossible to realize"
+    },
+    "correct_answer": "B",
+    "explanation": "Horizon 1 represents the present dominant system ('Now / Business as usual'), Horizon 2 represents emerging transitional innovations, and Horizon 3 represents long-term new paradigms."
+  },
+  {
+    "topic": "Cultural & Creative Sectors Innovation",
+    "question": "13. According to the OECD report 'The Culture Fix' (2022), how did self-employment rates in Cultural and Creative Sectors (CCS) compare to the rest of the business economy?",
+    "options": {
+      "A": "CCS had significantly lower self-employment rates (5% vs 25%)",
+      "B": "Self-employment rates were identical at 10%",
+      "C": "CCS had a notably higher share of self-employment (18% vs 12%)",
+      "D": "Self-employment in CCS was non-existent due to state monopolies"
+    },
+    "correct_answer": "C",
+    "explanation": "OECD data highlights that cultural and creative sectors exhibit a higher rate of self-employment (18%) compared to the rest of the business economy (12%)."
+  },
+  {
+    "topic": "Cultural & Creative Sectors Innovation",
+    "question": "14. How did employment growth in OECD Cultural and Creative Sectors perform relative to overall employment growth prior to the pandemic?",
+    "options": {
+      "A": "CCS employment growth outpaced overall employment growth (13.4% vs 9.1%)",
+      "B": "CCS employment declined by 15% across all OECD countries",
+      "C": "CCS employment grew at half the rate of traditional heavy manufacturing",
+      "D": "Overall employment grew by 25% while CCS remained completely static"
+    },
+    "correct_answer": "A",
+    "explanation": "The OECD report notes that growth in cultural and creative employment (13.4%) outpaced growth in overall employment (9.1%) across most OECD countries."
+  },
+  {
+    "topic": "Cultural & Creative Sectors Innovation",
+    "question": "15. What core policy guidance does the OECD report 'The Culture Fix' emphasize regarding public budget allocations for culture?",
+    "options": {
+      "A": "Culture should be treated as a luxury line item that is 'first to invest, last to cut'",
+      "B": "Culture can no longer be viewed as a 'nice to have' or 'last to invest, first to cut' budget line, but as a core economic and social driver",
+      "C": "Public investment in culture should be eliminated entirely in favor of private funding",
+      "D": "Cultural spending should only occur during economic booms and stopped during recoveries"
+    },
+    "correct_answer": "B",
+    "explanation": "The OECD report emphasizes that culture must be mainstreamed across policy portfolios and can no longer be treated as a 'nice to have' or 'last to invest, first to cut' item during economic planning."
+  },
+  {
+    "topic": "Cultural & Creative Sectors Innovation",
+    "question": "16. In the Barcelona Chamber of Commerce's 'Design&Plug' initiative highlighted by the OECD, what primary approach was used to foster business innovation?",
+    "options": {
+      "A": "Replacing human workers with automated machinery in traditional factories",
+      "B": "Introducing creative methodologies (design thinking, gamification, improvisation) to help SMEs create new services and cross-sector collaborations",
+      "C": "Imposing heavy tariffs on international creative imports",
+      "D": "Restricting creative entrepreneurs from pitching to consolidated businesses"
+    },
+    "correct_answer": "B",
+    "explanation": "Design&Plug introduced creative methodologies like design thinking, gamification, improvisation, and scripting to foster cross-disciplinary collaboration and help SMEs develop innovative services."
+  }
+]
