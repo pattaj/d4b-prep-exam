@@ -8,8 +8,9 @@ let currentModuleId = null; // Tracks which module is active
 
 const availableModules = [
     { id: "gen-ai", title: "Generative AI" },
-    { id: "ai-for-business", title: "AI for Business" }
-    { id: "innovation", title: "Innovation" }
+    { id: "ai-for-business", title: "AI for Business" },
+    { id: "innovation", title: "Innovation" },
+    { id: "dt", title: "Digital Transformatioin" }
 ];
 
 const shuffleArray = (array) => {
