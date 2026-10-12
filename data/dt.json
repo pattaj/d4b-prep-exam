@@ -1,0 +1,182 @@
+[
+  {
+    "topic": "Overview & Definitions of Digital Transformation",
+    "question": "1. According to Gregory Vial (2019), how is Digital Transformation (DT) defined?",
+    "options": {
+      "A": "A static upgrade of IT hardware to decrease operational maintenance costs",
+      "B": "A process where organizations alter value creation processes using information, computing, communication, and connectivity technologies",
+      "C": "The complete replacement of human labor with autonomous robotic processes",
+      "D": "A temporary marketing strategy to improve public relations in technology markets"
+    },
+    "correct_answer": "B",
+    "explanation": "Vial (2019) defines DT as a process aimed at improving an entity by triggering significant changes through combinations of information, computing, communication, and connectivity technologies, altering value creation processes."
+  },
+  {
+    "topic": "Overview & Definitions of Digital Transformation",
+    "question": "2. What are the three distinct phases of Digital Transformation identified in the course materials?",
+    "options": {
+      "A": "Automation, Optimization, and Integration",
+      "B": "Digitizing, Digitalization, and Digital Transformation",
+      "C": "Planning, Execution, and Maintenance",
+      "D": "Infrastructural, Sectoral, and Global"
+    },
+    "correct_answer": "B",
+    "explanation": "The course materials outline three sequential phases: Digitizing (converting analog to digital), Digitalization (restructuring social/business domains around digital media), and Digital Transformation (profound change creating new co-created business models)."
+  },
+  {
+    "topic": "Overview & Definitions of Digital Transformation",
+    "question": "3. Which of the following is an example of 'Digitization' rather than 'Digitalization' or 'Digital Transformation'?",
+    "options": {
+      "A": "Moving from paper invoicing to e-invoicing systems",
+      "B": "Healthcare providers offering telemedicine platforms",
+      "C": "Scanning physical photos to digital image files",
+      "D": "Creating customer self-service web portals"
+    },
+    "correct_answer": "C",
+    "explanation": "Scanning physical photos to digital images is a classic example of Digitization (converting analog data into digital form without changing value-creating activities)."
+  },
+  {
+    "topic": "Overview & Definitions of Digital Transformation",
+    "question": "4. Moving from physical paper invoicing to e-invoicing systems represents which level of digital transition?",
+    "options": {
+      "A": "Digitization",
+      "B": "Digitalization",
+      "C": "Digital Transformation",
+      "D": "Datafication"
+    },
+    "correct_answer": "B",
+    "explanation": "Implementing e-invoicing systems or digital workflows is categorized as Digitalization, as it restructures processes around digital communication tools."
+  },
+  {
+    "topic": "Digital Capabilities & Strategic Leadership",
+    "question": "5. According to research on successful transformations, what is a required component of Leadership Capabilities?",
+    "options": {
+      "A": "Delegating all digital decisions exclusively to external IT consultants",
+      "B": "Strong, visible, top-down leadership commitment to define and sustain a vision",
+      "C": "Relying purely on bottom-up employee experiments without executive governance",
+      "D": "Focusing solely on hardware acquisition while ignoring organizational culture"
+    },
+    "correct_answer": "B",
+    "explanation": "Studies highlighted in the source material show that every successful digital transformation had strong, visible, top-down leadership commitment."
+  },
+  {
+    "topic": "Digital Capabilities & Strategic Leadership",
+    "question": "6. What shift does Ebert & Duarte (2018) describe as the 'Copernican revolution' in Digital Transformation?",
+    "options": {
+      "A": "Placing IT infrastructure at the center of corporate strategy",
+      "B": "Placing products and services at the center of market expansion",
+      "C": "Placing the customer and co-creation of value at the center",
+      "D": "Replacing human managers with automated algorithmic decision-making"
+    },
+    "correct_answer": "C",
+    "explanation": "The 'Copernican revolution' refers to moving away from having products or services at the center, placing the customer and co-creation of value based on knowledge exchange at the center."
+  },
+  {
+    "topic": "Digital Capabilities & Strategic Leadership",
+    "question": "7. In the Burberry case study, how did CEO Angela Ahrendts and Christopher Bailey address fragmented customer views?",
+    "options": {
+      "A": "By outsourcing all customer service to regional third-party vendors",
+      "B": "By partnering with Salesforce to deploy CRM modules across the entire business for 'Burberry World'",
+      "C": "By closing physical retail stores to focus exclusively on third-party e-commerce sites",
+      "D": "By removing centralized brand oversight and giving full autonomy to local store managers"
+    },
+    "correct_answer": "B",
+    "explanation": "Burberry collaborated with Salesforce to deploy CRM modules enterprise-wide, uniting e-commerce and store interactions under the unified 'Burberry World' experience."
+  },
+  {
+    "topic": "Big Data & Platform Society",
+    "question": "8. According to van Dijck, Poell & de Waal (2018), what are the three core mechanisms of the platform society?",
+    "options": {
+      "A": "Digitization, Automation, and Cloudification",
+      "B": "Datafication, Commodification, and Selection",
+      "C": "Regulation, Monetization, and Globalization",
+      "D": "Invention, Diffusion, and Adoption"
+    },
+    "correct_answer": "B",
+    "explanation": "The three core mechanisms defining the platform society are Datafication (quantifying aspects of human life), Commodification (turning data/attention into tradable commodities), and Selection (filtering content via algorithms)."
+  },
+  {
+    "topic": "Big Data & Platform Society",
+    "question": "9. How is 'Datafication' specifically defined in the context of platform society?",
+    "options": {
+      "A": "The physical storage of servers in data centers",
+      "B": "The conversion of wide aspects of human experience (movements, emotions, heartbeats) into quantified digital flows",
+      "C": "The legal requirement to encrypt user passwords in database tables",
+      "D": "The process of selling hardware devices to consumers"
+    },
+    "correct_answer": "B",
+    "explanation": "Datafication is defined as converting previously unquantified human activities, relations, and attributes into quantified, storable, and analysable digital flows."
+  },
+  {
+    "topic": "Big Data & Platform Society",
+    "question": "10. What milestone in 2000 transformed the Web from single autonomous websites into connected platform ecosystems?",
+    "options": {
+      "A": "Google launching its first search engine algorithm",
+      "B": "eBay launching the first open API",
+      "C": "Netflix transitioning from DVDs to online streaming",
+      "D": "The enactment of the European Union Digital Markets Act"
+    },
+    "correct_answer": "B",
+    "explanation": "Since eBay launched the first open API in 2000, interconnected APIs enabled third parties to access platform data and build new apps, transforming the Web into platform ecosystems."
+  },
+  {
+    "topic": "Surveillance Capitalism & Platform Power",
+    "question": "11. How does Shoshana Zuboff (2019) define 'Surveillance Capitalism'?",
+    "options": {
+      "A": "An economy that relies on government agencies monitoring telecommunications",
+      "B": "An economy that profits not from selling goods, but from predicting human behaviors",
+      "C": "A business model focused on manufacturing physical security cameras and sensors",
+      "D": "A public utility system designed to protect citizen privacy online"
+    },
+    "correct_answer": "B",
+    "explanation": "Zuboff defines surveillance capitalism as an economy that profits from collecting data to improve predictive models and profit from behavioral predictions rather than traditional goods sales."
+  },
+  {
+    "topic": "Surveillance Capitalism & Platform Power",
+    "question": "12. How do major tech companies ('Big Five') strategically expand their technological and economic dominance?",
+    "options": {
+      "A": "By operating strictly within search engines and avoiding traditional industries",
+      "B": "By combining infrastructural platforms with acquisitions or partnerships in sectoral markets (e.g., Amazon buying Whole Foods)",
+      "C": "By surrendering proprietary code to open-source public foundations",
+      "D": "By limiting user data collection to basic user contact details"
+    },
+    "correct_answer": "B",
+    "explanation": "Tech giants accumulate power by leveraging core infrastructural platforms and investing in sectoral presence through acquisitions (e.g., Amazon buying Whole Foods) or strategic stakes (e.g., Google in Uber)."
+  },
+  {
+    "topic": "Governance, Data Rights & EU Regulations",
+    "question": "13. What is the primary objective of the EU's Digital Services Act (DSA) and Digital Markets Act (DMA)?",
+    "options": {
+      "A": "To mandate that all private tech platforms be nationalized by European governments",
+      "B": "To restore balance between the market, civil society, and the state",
+      "C": "To ban the use of Application Programming Interfaces (APIs) across Europe",
+      "D": "To prevent non-European citizens from accessing European cloud platforms"
+    },
+    "correct_answer": "B",
+    "explanation": "The Digital Services Act and Digital Markets Act are legal frameworks developed by the EU to restore balance among the market, civic society, and the state."
+  },
+  {
+    "topic": "Governance, Data Rights & EU Regulations",
+    "question": "14. Under proposed data sovereignty frameworks, what does 'Data Portability' require?",
+    "options": {
+      "A": "The requirement to store all user data on physical external hard drives",
+      "B": "The ability for users to transfer their personal data from one platform (e.g., Google Drive) to another (e.g., OneDrive)",
+      "C": "The permanent prohibition against transferring data across national borders",
+      "D": "The automatic deletion of user profiles after 30 days of inactivity"
+    },
+    "correct_answer": "B",
+    "explanation": "Data portability gives users the right and capability to take their data from one platform service provider to another seamlessly."
+  },
+  {
+    "topic": "AI Systems & Organizational Workflows",
+    "question": "15. In modern digital transformation practices, what role do tools like Stella and Copilot Agents play?",
+    "options": {
+      "A": "Replacing top executive leadership in defining corporate vision",
+      "B": "Automating document processing, workflow management, and project compliance tasks",
+      "C": "Eliminating the need for cloud infrastructure and network connectivity",
+      "D": "Restricting open-source software development in educational institutions"
+    },
+    "correct_answer": "B",
+    "explanation": "Source materials highlight practical AI applications where tools like Stella automate document processing and Copilot Agents assist with project compliance and workflow administration."
+  }
+]
