@@ -61,13 +61,18 @@ window.toggleModule = async (moduleId, btnElement) => {
     document.querySelectorAll('.module-btn').forEach(btn => btn.classList.remove('active'));
     btnElement.classList.add('active');
 
-    // If already loaded, just toggle visibility
+    // 1. If already loaded, just toggle visibility INSTANTLY
     if (loadedModules[moduleId]) {
         topicsContainer.classList.toggle('open');
         return;
     }
 
-    // If not loaded, fetch it
+    // 2. Add visual loading feedback so the UI doesn't feel frozen
+    const originalText = btnElement.innerHTML;
+    btnElement.innerHTML = `⏳ Loading...`;
+    btnElement.style.opacity = "0.7";
+
+    // 3. Fetch the data
     try {
         const response = await fetch(`./data/${moduleId}.json`);
         if (!response.ok) throw new Error("Network response was not ok");
@@ -85,6 +90,10 @@ window.toggleModule = async (moduleId, btnElement) => {
     } catch (error) {
         console.error("Error loading module:", error);
         alert(`Could not load ${moduleId}.json. Make sure you are running a local server.`);
+    } finally {
+        // 4. Restore the original button text instantly after it loads
+        btnElement.innerHTML = originalText;
+        btnElement.style.opacity = "1";
     }
 };
 
