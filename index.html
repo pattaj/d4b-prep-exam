@@ -24,15 +24,9 @@
     <div class="sidebar" id="sidebar">
         <button class="sidebar-close" onclick="toggleMenu()">✕</button>
         
-        <!-- Modules Section (Fetches JSON) -->
         <h3>🗂️ Modules</h3>
+        <!-- Modules and their nested topics will be generated here -->
         <div id="moduleContainer"></div>
-
-        <!-- Topics Section (Populated dynamically after module load) -->
-        <h3 style="margin-top: 25px;">📚 Topics</h3>
-        <div id="menuContainer">
-            <p style="font-size: 13px; color: #666; padding: 0 10px;">Select a module first...</p>
-        </div>
     </div>
 
     <!-- Main Content Area -->
@@ -44,10 +38,8 @@
         <form id="quizForm">
             <div id="quizContainer"></div>
             
-            <!-- Submit Button (Hidden until a topic is selected) -->
             <button type="button" class="btn" id="submitQuizBtn" onclick="gradeQuiz()" style="display: none;">Submit Quiz & View Analytics</button>
             
-            <!-- Hidden Review Buttons -->
             <div class="action-buttons" id="reviewActionBtns" style="display:none; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
                 <button type="button" class="btn btn-outline" onclick="showAnalytics()">📊 Back to Analytics</button>
                 <button type="button" class="btn" onclick="retakeQuiz()">🔄 Retake This Section</button>
@@ -70,6 +62,18 @@
                 <button type="button" class="btn btn-outline" onclick="reviewAnswers()">👀 Review Answers</button>
                 <button type="button" class="btn" onclick="retakeQuiz()">🔄 Retake This Section</button>
             </div>
+        </div>
+    </div>
+</div>
+
+<!-- CUSTOM MODAL POPUP -->
+<div id="customModal" class="modal-overlay hidden">
+    <div class="modal-content">
+        <h3 style="margin-top:0; color:#dc3545;">⚠️ Unanswered Questions</h3>
+        <p id="modalMessage"></p>
+        <div class="modal-actions">
+            <button id="modalCancelBtn" class="btn btn-outline" style="margin-top:0;">No, Keep Working</button>
+            <button id="modalConfirmBtn" class="btn" style="margin-top:0; background:#dc3545;">Yes, Submit Anyway</button>
         </div>
     </div>
 </div>
