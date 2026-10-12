@@ -1,16 +1,20 @@
 // =========================================================
 // 1. STATE & CONFIGURATION
 // =========================================================
-let loadedModules = {}; // Caches fetched modules: { "generative-ai": [data], "ai-business": [data] }
+let loadedModules = {}; 
 let currentQuizData = []; 
 let currentFilter = "NONE"; 
-let currentModuleId = null; // Tracks which module is active
+let currentModuleId = null; 
+
+// Pagination State
+let currentPage = 1;
+const QUESTIONS_PER_PAGE = 5;
 
 const availableModules = [
     { id: "gen-ai", title: "Generative AI" },
     { id: "ai-for-business", title: "AI for Business" },
     { id: "innovation", title: "Innovation" },
-    { id: "dt", title: "Digital Transformatioin" }
+    { id: "dt", title: "Digital Transformation" }
 ];
 
 const shuffleArray = (array) => {
@@ -23,11 +27,12 @@ const shuffleArray = (array) => {
 const showQuizView = () => {
     document.getElementById("fullAnalyticsView").style.display = "none";
     document.getElementById("quizForm").style.display = "block";
-    document.getElementById("submitQuizBtn").style.display = "block";
+    
     document.getElementById("instructionsText").style.display = "block";
-    document.getElementById("instructionsText").innerText = "Tap your answers below and submit to view your score and analytics.";
+    document.getElementById("instructionsText").innerText = "Tap your answers below and navigate using Next/Previous.";
     document.getElementById("mainTitle").style.display = "block";
     document.getElementById("reviewActionBtns").style.display = "none";
+    
     window.scrollTo(0, 0);
 };
 
@@ -39,14 +44,12 @@ window.toggleMenu = () => {
 };
 
 // =========================================================
-// 2. UI NAVIGATION & MENU LOGIC (COLLAPSIBLE)
+// 2. UI NAVIGATION & MENU LOGIC
 // =========================================================
 const buildModuleMenu = () => {
     const modContainer = document.getElementById("moduleContainer");
     modContainer.innerHTML = "";
-    
     availableModules.forEach(mod => {
-        // Build the Module Button and an empty container for its topics underneath
         modContainer.innerHTML += `
             <div class="module-group">
                 <button class="menu-btn module-btn" onclick="toggleModule('${mod.id}', this)">📁 ${mod.title}</button>
@@ -59,41 +62,32 @@ const buildModuleMenu = () => {
 window.toggleModule = async (moduleId, btnElement) => {
     const topicsContainer = document.getElementById(`topics-${moduleId}`);
     
-    // Toggle active styles on module buttons
     document.querySelectorAll('.module-btn').forEach(btn => btn.classList.remove('active'));
     btnElement.classList.add('active');
 
-    // 1. If already loaded, just toggle visibility INSTANTLY
     if (loadedModules[moduleId]) {
         topicsContainer.classList.toggle('open');
         return;
     }
 
-    // 2. Add visual loading feedback so the UI doesn't feel frozen
     const originalText = btnElement.innerHTML;
     btnElement.innerHTML = `⏳ Loading...`;
     btnElement.style.opacity = "0.7";
 
-    // 3. Fetch the data
     try {
         const response = await fetch(`./data/${moduleId}.json`);
         if (!response.ok) throw new Error("Network response was not ok");
         
         const rawData = await response.json();
-        // Save to cache with original index
         loadedModules[moduleId] = rawData.map((q, index) => ({ ...q, originalIndex: index }));
         
-        // Build nested topic menu for this module
         buildTopicMenu(moduleId, topicsContainer);
-        
-        // Open the container
         topicsContainer.classList.add('open');
         
     } catch (error) {
         console.error("Error loading module:", error);
-        alert(`Could not load ${moduleId}.json. Make sure you are running a local server.`);
+        alert(`Could not load ${moduleId}.json.`);
     } finally {
-        // 4. Restore the original button text instantly after it loads
         btnElement.innerHTML = originalText;
         btnElement.style.opacity = "1";
     }
@@ -101,24 +95,59 @@ window.toggleModule = async (moduleId, btnElement) => {
 
 const buildTopicMenu = (moduleId, container) => {
     let topics = [...new Set(loadedModules[moduleId].map(q => q.topic))];
-    
     let html = `<button class="menu-btn topic-btn" onclick="filterQuestions('${moduleId}', 'ALL', this)">📂 All Topics</button>`;
     topics.forEach(topic => {
         html += `<button class="menu-btn topic-btn" onclick="filterQuestions('${moduleId}', '${topic}', this)">📄 ${topic}</button>`;
     });
-    
     container.innerHTML = html;
 };
 
 // =========================================================
-// 3. QUIZ RENDERING LOGIC
+// 3. PAGINATION LOGIC
+// =========================================================
+const updatePaginationUI = () => {
+    const cards = document.querySelectorAll('.question-card');
+    const totalPages = Math.ceil(cards.length / QUESTIONS_PER_PAGE);
+    
+    // Hide/Show cards based on current page
+    cards.forEach((card, index) => {
+        if (index >= (currentPage - 1) * QUESTIONS_PER_PAGE && index < currentPage * QUESTIONS_PER_PAGE) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+
+    const prevBtn = document.getElementById('prevPageBtn');
+    const nextBtn = document.getElementById('nextPageBtn');
+    const submitBtn = document.getElementById('submitQuizBtn');
+    const paginationControls = document.getElementById('paginationControls');
+
+    if (cards.length > 0) {
+        paginationControls.style.display = 'flex';
+        prevBtn.style.display = currentPage > 1 ? 'block' : 'none';
+        nextBtn.style.display = currentPage < totalPages ? 'block' : 'none';
+        
+        // Only show Submit button on the very last page
+        submitBtn.style.display = currentPage === totalPages ? 'block' : 'none';
+    } else {
+        paginationControls.style.display = 'none';
+        submitBtn.style.display = 'none';
+    }
+    
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+window.nextPage = () => { currentPage++; updatePaginationUI(); };
+window.prevPage = () => { currentPage--; updatePaginationUI(); };
+
+// =========================================================
+// 4. QUIZ RENDERING LOGIC
 // =========================================================
 window.filterQuestions = (moduleId, topic, btnElement) => {
-    // Set active module data
     currentModuleId = moduleId;
     currentQuizData = loadedModules[moduleId];
 
-    // Highlight topic
     document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
     
@@ -191,10 +220,14 @@ const renderQuiz = (filter, isRetake = false) => {
             container.appendChild(qDiv);
         });
     });
+
+    // Reset pagination to Page 1 every time we render a new quiz
+    currentPage = 1;
+    updatePaginationUI();
 };
 
 // =========================================================
-// 4. CUSTOM MODAL PROMISE LOGIC
+// 5. MODAL & GRADING LOGIC
 // =========================================================
 const confirmSubmission = (unansweredCount) => {
     return new Promise((resolve) => {
@@ -204,19 +237,16 @@ const confirmSubmission = (unansweredCount) => {
 
         document.getElementById('modalConfirmBtn').onclick = () => {
             modal.classList.add('hidden');
-            resolve(true); // User clicked yes
+            resolve(true);
         };
         document.getElementById('modalCancelBtn').onclick = () => {
             modal.classList.add('hidden');
-            resolve(false); // User clicked no
+            resolve(false);
         };
     });
 };
 
-// =========================================================
-// 5. GRADING & ANALYTICS LOGIC (ASYNC)
-// =========================================================
-window.gradeQuiz = async () => { // <--- Note the async!
+window.gradeQuiz = async () => { 
     let score = 0, totalInView = 0, unanswered = 0;
     let topicStats = {};
 
@@ -226,7 +256,6 @@ window.gradeQuiz = async () => { // <--- Note the async!
         if (!document.querySelector(`input[name="question_${qIndex}"]:checked`)) unanswered++;
     });
 
-    // Wait for custom modal response if there are unanswered questions
     if (unanswered > 0) {
         const proceed = await confirmSubmission(unanswered);
         if (!proceed) return;
@@ -294,7 +323,12 @@ window.reviewAnswers = () => {
     document.getElementById("fullAnalyticsView").style.display = "none";
     document.getElementById("quizForm").style.display = "block";
     document.getElementById("submitQuizBtn").style.display = "none";
+    document.getElementById("paginationControls").style.display = "none"; // Hide pagination for review
     document.getElementById("reviewActionBtns").style.display = "flex";
+    
+    // Un-hide all questions so user can review everything on one page
+    document.querySelectorAll('.question-card').forEach(card => card.style.display = 'block');
+    
     window.scrollTo(0, 0);
 };
 
