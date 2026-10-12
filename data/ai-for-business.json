@@ -1,151 +1,391 @@
 [
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "1. According to the intelligent agent paradigm presented by Peter Norvig, how does artificial intelligence differ from traditional computer science?",
+    "topic": "Introduction to AI and its History",
+    "question": "1. How does Peter Norvig define the core distinction between traditional computer science and artificial intelligence?",
     "options": {
-      "A": "Traditional computer science focuses on hardware design, whereas AI focuses purely on software execution.",
+      "A": "Traditional computer science focuses on physical hardware, whereas AI focuses strictly on software algorithms.",
       "B": "Traditional computer science does the right thing efficiently when defined in advance, whereas AI does the right thing efficiently when what that means is not known in advance.",
-      "C": "Traditional computer science relies strictly on neural networks, whereas AI relies on rule-based algorithmic systems.",
+      "C": "Traditional computer science relies on neural networks, whereas AI relies on rule-based decision trees.",
       "D": "Traditional computer science operates at run-time, whereas AI shifts problem-solving entirely to design-time."
     },
     "correct_answer": "B",
-    "explanation": "Peter Norvig defines computer science as doing the right thing, efficiently, when you can define what that means in advance, whereas AI is doing the right thing, efficiently, when you don't know what that means in advance, shifting focus from design-time to run-time."
+    "explanation": "Peter Norvig defines computer science as doing the right thing efficiently when you can define what that means in advance, whereas AI is doing the right thing efficiently when you don't know what that means in advance."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "2. How does an algorithmic AI system differ from a learning-based AI system in terms of how it is constructed?",
+    "topic": "Introduction to AI and its History",
+    "question": "2. What fundamental shift occurs when transitioning from traditional computer science to artificial intelligence according to the intelligent agent paradigm?",
     "options": {
-      "A": "Algorithmic AI is written directly by programmers, whereas learning-based AI combines a general learning system written by programmers with training data provided by domain experts.",
-      "B": "Algorithmic AI is built by domain experts without code, whereas learning-based AI requires no data.",
-      "C": "Algorithmic AI requires deep neural networks, while learning-based AI relies solely on hardcoded logic.",
-      "D": "Algorithmic AI continuously updates its weights during execution, whereas learning-based AI remains static."
+      "A": "A shift from empirical sciences to pure mathematical proofs.",
+      "B": "A shift from design-time problem-solving to run-time adaptation and execution.",
+      "C": "A shift from software automation to physical hardware manufacturing.",
+      "D": "A shift from stochastic processing to deterministic logic tables."
+    },
+    "correct_answer": "B",
+    "explanation": "The intelligent agent paradigm shifts problem solving from design-time (defining explicit rules ahead of time) to run-time (evaluating actions and adapting dynamically in an environment)."
+  },
+  {
+    "topic": "Introduction to AI and its History",
+    "question": "3. According to the AI definition matrix (Russell & Norvig framework), what are the four dimensions used to categorize AI definitions?",
+    "options": {
+      "A": "Systems that think like humans, think rationally, act like humans, and act rationally.",
+      "B": "Systems that classify data, cluster data, optimize search, and generate text.",
+      "C": "Systems that predict outcomes, analyze databases, program GPUs, and enforce rules.",
+      "D": "Systems that evaluate heuristics, execute PDDL, build trees, and train models."
     },
     "correct_answer": "A",
-    "explanation": "Algorithmic AI programs are written directly by programmers, whereas learning-based AI combines a general learning system written by programmers with training data added by domain experts to learn patterns."
+    "explanation": "The classic AI framework categorizes AI definitions along two axes: thought vs. behavior, and human performance vs. rationality (ideal intelligence)."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "3. In supervised machine learning, what is the primary objective when learning an unknown function f(x) = y?",
+    "topic": "Introduction to AI and its History",
+    "question": "4. Which quadrant of the AI definition matrix represents the 'Ideal concept of Intelligence' focused on thought processes and reasoning?",
     "options": {
-      "A": "To cluster unlabelled input data into distinct topological groups.",
-      "B": "To predict the output y' for a new input x' based on given (x, y) training examples while minimizing a loss metric.",
-      "C": "To maximize an external environment reward through trial and error without training examples.",
-      "D": "To eliminate feature dimensionality without evaluating error against correct outputs."
-    },
-    "correct_answer": "B",
-    "explanation": "Supervised learning is formally defined as searching for an approximation to an unknown function f(x) = y given training pairs (x, y), where the model learns to predict outputs for new inputs while minimizing the loss between learned outputs and correct examples."
-  },
-  {
-    "topic": "Fundamentals of AI for Business",
-    "question": "4. In machine learning performance evaluation, how are underfitting and overfitting distinguished?",
-    "options": {
-      "A": "Underfitting occurs when test error is zero, while overfitting occurs when training error is zero.",
-      "B": "Underfitting happens when model capacity is too high, while overfitting occurs when model capacity is too low.",
-      "C": "Underfitting occurs when the model cannot obtain a sufficiently low error on the training set, while overfitting occurs when there is a large gap between training error and test error.",
-      "D": "Underfitting indicates high variance, whereas overfitting indicates high bias."
+      "A": "Systems that act like humans (Empirical Sciences)",
+      "B": "Systems that think like humans (Empirical Sciences)",
+      "C": "Systems that think rationally (Mathematics/Engineering)",
+      "D": "Systems that act like humans (Behavioral Psychology)"
     },
     "correct_answer": "C",
-    "explanation": "Underfitting means the model lacks capacity/expressiveness to obtain low error on training data (high bias), whereas overfitting occurs when the gap between training error and test error is too large because the model is over-optimized for training data and memorizes noise (high variance)."
+    "explanation": "Systems that 'think rationally' represent the ideal mathematical and engineering concept of intelligence focused on mental faculties and computational logic."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "5. When splitting a dataset for machine learning model development, what is the specific role of the validation set?",
+    "topic": "Introduction to AI and its History",
+    "question": "5. In the agentic AI hierarchy diagram, where does Machine Learning sit relative to Deep Learning and Generative AI?",
     "options": {
-      "A": "To teach the model its initial weights and adjust raw parameters.",
-      "B": "To fine-tune model hyperparameters and prevent overfitting.",
-      "C": "To provide final performance evaluation on unseen data after deployment.",
-      "D": "To replace missing attributes and remove duplicate records during data cleaning."
+      "A": "Machine Learning is a small subset inside Generative AI.",
+      "B": "Machine Learning encompasses Deep Learning, which in turn encompasses Generative AI as a nested subfield.",
+      "C": "Machine Learning and Deep Learning are completely separate, non-overlapping fields.",
+      "D": "Machine Learning sits strictly outside Artificial Intelligence."
     },
     "correct_answer": "B",
-    "explanation": "Datasets are partitioned into three parts: the training set teaches the model and adjusts parameters, the validation set fine-tunes hyperparameters and prevents overfitting, and the test set evaluates generalization on unseen data."
+    "explanation": "The nested AI hierarchy shows Artificial Intelligence at the outer layer, encompassing Machine Learning, which contains Deep Learning, which contains Generative AI."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "6. According to the taxonomy of bias in data, what is 'automation bias'?",
+    "topic": "Introduction to AI and its History",
+    "question": "6. According to the introductory AI lecture, what constitutes an 'Intelligent Agent'?",
     "options": {
-      "A": "When the data used to train machine learning models does not represent the diversity of the customer base.",
-      "B": "When automated decisions override social and cultural considerations.",
-      "C": "When humans tamper with AI inputs to create biased results.",
-      "D": "When oversimplified personalization makes biased assumptions for a group or individual."
+      "A": "A hardcoded static database that stores relational records.",
+      "B": "A system (computer program or physical robot) that perceives its environment, acts autonomously, and directs actions toward achieving specific goals.",
+      "C": "A specialized GPU processor designed exclusively for matrix multiplication.",
+      "D": "An unlabelled dataset containing continuous numeric attributes."
     },
     "correct_answer": "B",
-    "explanation": "In data bias classification, automation bias happens when automated decisions override social and cultural considerations. Dataset bias arises from unrepresentative training samples, and association bias reinforces cultural stereotypes."
+    "explanation": "An intelligent agent observes its environment, influences it through actions, and utilizes integrated AI capabilities to achieve predefined or learned goals."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "7. What defines 'classical planning' within automated planning systems?",
+    "topic": "Introduction to AI and its History",
+    "question": "7. What are the key empirical sciences vs. mathematics/engineering divisions in defining artificial intelligence?",
     "options": {
-      "A": "Planning under partial observability, stochastic state transitions, and dynamic environment changes.",
-      "B": "Finding a sequence of actions from an initial state to a goal state in a static, deterministic, and fully observable environment.",
-      "C": "Model-free reinforcement learning using environmental trial-and-error rewards.",
-      "D": "Randomized search without domain formalisms or explicit goal states."
+      "A": "Hardware design vs. software engineering",
+      "B": "Human-centered fidelity (acting/thinking like humans) vs. Rationality-centered ideals (acting/thinking rationally)",
+      "C": "Supervised learning vs. Unsupervised learning",
+      "D": "Classical planning vs. Constraint programming"
     },
     "correct_answer": "B",
-    "explanation": "Classical planning is defined as finding a sequence of actions that leads from an initial state to a goal state in a state-space search setting where the environment is static, deterministic, and fully observable."
+    "explanation": "Empirical sciences measure fidelity to human performance (Human-Centered), while mathematics and engineering focus on ideal concepts of rational intelligence (Rationality-Centered)."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "8. What language is widely used to formally describe planning domains and problem instances in classical planning tools like FastDownward?",
+    "topic": "Introduction to AI and its History",
+    "question": "8. In the history of AI presentation, how is the historical development trajectory of artificial intelligence characterized?",
     "options": {
-      "A": "CUDA (Compute Unified Device Architecture)",
-      "B": "PDDL (Planning Domain Definition Language)",
-      "C": "JSON (JavaScript Object Notation)",
-      "D": "UML (Unified Modeling Language)"
+      "A": "A linear, unbroken line of exponential growth without setback.",
+      "B": "Cycles of progress and breakthroughs (AI springs/booms) followed by periods of disappointment and reduced funding (AI winters).",
+      "C": "A static field that remained unchanged until the invention of GPUs in 2020.",
+      "D": "A discipline that completely replaced traditional computer science in the 1960s."
     },
     "correct_answer": "B",
-    "explanation": "PDDL (Planning Domain Definition Language) is the standardized language widely used to define planning domains (actions, predicates) and problem instances (initial state, goal state) in classical planning systems."
+    "explanation": "The history of AI is marked by alternating cycles of intense enthusiasm/funding (booms) and severe slowdowns/funding drops (AI winters)."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "9. How do GPUs differ fundamentally from CPUs in terms of processing architecture and workload suitability?",
+    "topic": "Introduction to AI and its History",
+    "question": "9. Which organization is highlighted in the introductory slides as a major international professional association for artificial intelligence?",
     "options": {
-      "A": "CPUs handle massive parallel tasks with thousands of cores, while GPUs execute sequential tasks with low latency.",
-      "B": "CPUs excel at sequential tasks with low latency using limited cores, while GPUs specialize in massive parallelism and high throughput across thousands of cores.",
-      "C": "CPUs are designed exclusively for deep learning, while GPUs manage OS file storage tasks.",
-      "D": "CPUs lack memory caches, while GPUs rely strictly on low-speed system DRAM."
+      "A": "IEEE-CUDA",
+      "B": "AAAI (Association for the Advancement of Artificial Intelligence)",
+      "C": "DBMS-Global",
+      "D": "PDDL Alliance"
     },
     "correct_answer": "B",
-    "explanation": "CPUs are designed for sequential tasks with fast response/low latency using limited cores (typically 4–64), whereas GPUs feature thousands of cores optimized for massive parallelism and high throughput across large datasets."
+    "explanation": "AAAI (Association for the Advancement of Artificial Intelligence) is highlighted as a leading international scientific society devoted to AI."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "10. In accelerated computing hardware, which specialized hardware processor is designed specifically for deep learning workloads?",
+    "topic": "Introduction to AI and its History",
+    "question": "10. What does the introductory slide deck identify as current key emerging trends in artificial intelligence?",
     "options": {
-      "A": "FPGA (Field Programmable Gate Array)",
-      "B": "TPU (Tensor Processing Unit)",
-      "C": "CPU (Central Processing Unit)",
-      "D": "SRAM (Static Random-Access Memory)"
+      "A": "Abandoning neural networks in favor of manual spreadsheets.",
+      "B": "Focusing on explainability, efficiency, creativity, and ethical considerations.",
+      "C": "Replacing all cloud computing with single-core CPU microcontrollers.",
+      "D": "Eliminating human oversight across all high-risk applications."
     },
     "correct_answer": "B",
-    "explanation": "TPUs (Tensor Processing Units) are designed specifically for deep learning workloads, GPUs handle broader parallel computing, and FPGAs are customizable hardware used for specialized tasks like financial trading."
+    "explanation": "Current trends in AI focus on model explainability, energy/compute efficiency, generative creativity, and responsible ethical considerations."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "11. What key European regulatory framework establishes governance standards and ethical requirements for Trustworthy AI?",
+    "topic": "Introduction to AI and its History",
+    "question": "11. Which field of AI sits at the core foundation of Neural Networks according to the Agentic AI hierarchy diagram?",
     "options": {
-      "A": "The Digital Millennium Copyright Act (DMCA)",
-      "B": "The EU AI Act and Ethics Guidelines for Trustworthy AI",
-      "C": "The IEEE Algorithmic Accountability Agreement",
-      "D": "The International PDDL Compliance Standard"
+      "A": "Symbolic PDDL planning",
+      "B": "Machine Learning fundamentals (including optimization algorithms, backpropagation, and activation functions)",
+      "C": "Relational database schema management",
+      "D": "Hardware clock-speed throttling"
     },
     "correct_answer": "B",
-    "explanation": "The EU AI Act along with the Ethical Guidelines for Trustworthy AI set the legal and ethical framework for responsible AI deployment, risk management, and regulatory compliance in business."
+    "explanation": "Neural networks build directly on core machine learning fundamentals such as optimization algorithms (SGD, Adam), activation functions, and backpropagation."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "12. Which data normalization technique rescales feature values into a bounded range between 0 and 1 using dataset minimum and maximum values?",
+    "topic": "Introduction to AI and its History",
+    "question": "12. In the intelligent agent paradigm, what can serve as the 'environment' influenced by the agent?",
     "options": {
-      "A": "Z-score standardization",
-      "B": "Min-Max scaling",
-      "C": "Log transformation",
-      "D": "Decimal scaling"
+      "A": "Only physical chessboards",
+      "B": "Cities, mines, stock markets, the web, or physical surroundings",
+      "C": "Only GPU VRAM memory blocks",
+      "D": "Only offline text files"
     },
     "correct_answer": "B",
-    "explanation": "Min-Max scaling applies the formula (x - min) / (max - min) to scale values strictly into a range while preserving the underlying distribution shape."
+    "explanation": "Norvig's intelligent agent paradigm notes that environments can be digital or physical, including cities, mines, financial stock markets, or the web."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "13. In unsupervised machine learning, how is model performance evaluated when neither target output labels nor reward signals are provided?",
+    "topic": "Introduction to AI and its History",
+    "question": "13. What is the relationship between Deep Learning and Neural Networks as shown in the AI hierarchy?",
+    "options": {
+      "A": "Deep Learning represents advancements in multi-layer neural network architectures (such as CNNs, RNNs, LSTMs, and Transformers).",
+      "B": "Deep Learning is a subset of classical relational databases.",
+      "C": "Neural Networks were invented to replace Deep Learning.",
+      "D": "Deep Learning excludes multi-layer perceptrons."
+    },
+    "correct_answer": "A",
+    "explanation": "Deep Learning expands on fundamental neural networks through deep multi-layer architectures including CNNs, LSTMs, and Transformer models."
+  },
+  {
+    "topic": "Introduction to AI and its History",
+    "question": "14. According to the summary of the introductory lecture, what is the ultimate goal of the broad field of AI?",
+    "options": {
+      "A": "To create machines capable of performing intelligent tasks like perception, reasoning, learning, and autonomous action.",
+      "B": "To replace human workers in all industries immediately.",
+      "C": "To build faster database disk drives.",
+      "D": "To eliminate the need for data preparation in computer science."
+    },
+    "correct_answer": "A",
+    "explanation": "The broader goal of artificial intelligence is creating systems capable of intelligent behaviors—perceiving, reasoning, learning, and acting autonomously."
+  },
+  {
+    "topic": "Introduction to AI and its History",
+    "question": "15. What role does 'run-time' play in artificial intelligence compared to 'design-time' in conventional software engineering?",
+    "options": {
+      "A": "AI systems push decision-making to design-time by hardcoding all possible execution paths.",
+      "B": "AI systems evaluate choices, optimize actions, and handle uncertainty dynamically at run-time rather than relying on fixed pre-programmed rules.",
+      "C": "Run-time is only relevant for hardware cooling fans.",
+      "D": "Design-time and run-time are identical in AI systems."
+    },
+    "correct_answer": "B",
+    "explanation": "AI shifts problem-solving to run-time, enabling the system to evaluate state changes, perceive context, and adapt its behavior dynamically."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "1. In foundational AI, how is a search problem formally defined?",
+    "options": {
+      "A": "By a dataset, a GPU architecture, and a loss function.",
+      "B": "By a state space, initial state, actions, transition model, and goal test.",
+      "C": "By a PDDL domain file, a database catalog, and a primary key.",
+      "D": "By training error, validation error, and test error."
+    },
+    "correct_answer": "B",
+    "explanation": "Formulating a search problem requires defining the state space, initial state, available actions, transition model (f(state, action) = new state), and goal test."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "2. What is the fundamental difference between uninformed (blind) search and informed search algorithms?",
+    "options": {
+      "A": "Uninformed search uses deep neural networks, while informed search uses decision trees.",
+      "B": "Uninformed search has no information about how close a state is to the goal, whereas informed search uses domain heuristics to guide exploration.",
+      "C": "Uninformed search guarantees zero execution time, while informed search runs infinitely.",
+      "D": "Uninformed search operates only on GPUs, while informed search operates on CPUs."
+    },
+    "correct_answer": "B",
+    "explanation": "Uninformed search algorithms (BFS, DFS) explore state spaces blindly without domain clues, while informed search algorithms (A*) use heuristic estimates to guide search."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "3. In local search algorithms (such as for the 8-Queens problem), what unique characteristic sets them apart from classical path-finding search?",
+    "options": {
+      "A": "They keep track of every state visited from the start node.",
+      "B": "The path taken to reach the goal state is irrelevant; search operates only on the current state and its immediate neighbors.",
+      "C": "They require labeled training data with ground-truth target outputs.",
+      "D": "They operate exclusively in non-deterministic environments."
+    },
+    "correct_answer": "B",
+    "explanation": "In local search, the path to the goal is irrelevant. The algorithm evaluates the current configuration and moves to neighboring states to optimize a goal state."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "4. What is the state space size for a complete state formulation of the 8-Queens problem where one queen is placed per column?",
+    "options": {
+      "A": "64 (8 x 8)",
+      "B": "8^8 (approximately 16 million configurations)",
+      "C": "8! (40,320 configurations)",
+      "D": "2^8 (256 configurations)"
+    },
+    "correct_answer": "B",
+    "explanation": "With 8 queens and 8 possible row choices for each of the 8 columns, a complete state formulation yields an 8^8 (~16.7 million) state space."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "5. In the 8-Queens local search example, how does a greedy sequence move queens on the board?",
+    "options": {
+      "A": "By randomly shuffling all 8 queens until no attacks occur.",
+      "B": "By evaluating neighboring row placements for each column and choosing the move that minimizes attacking queen pairs.",
+      "C": "By running backpropagation on a convolutional neural network.",
+      "D": "By executing a breadth-first search across all 16 million states."
+    },
+    "correct_answer": "B",
+    "explanation": "Local search evaluates neighboring state configurations (e.g., shifting a queen in a column) and greedily picks the neighbor that minimizes constraint violations."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "6. What is the evaluation function used in the A* search algorithm?",
+    "options": {
+      "A": "f(n) = g(n) * h(n)",
+      "B": "f(n) = g(n) + h(n), where g(n) is the cost from the start to node n and h(n) is the estimated heuristic cost to the goal.",
+      "C": "f(n) = Precision / Recall",
+      "D": "f(n) = Training Error - Test Error"
+    },
+    "correct_answer": "B",
+    "explanation": "A* evaluates nodes using f(n) = g(n) + h(n), combining path cost so far g(n) with estimated remaining cost h(n)."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "7. What condition must a heuristic function h(n) satisfy to guarantee that A* tree search is optimal?",
+    "options": {
+      "A": "It must always overestimate the actual remaining cost.",
+      "B": "It must be admissible, meaning it never overestimates the actual cost to reach the goal state.",
+      "C": "It must equal zero for all non-goal states.",
+      "D": "It must be computed using a trained deep neural network."
+    },
+    "correct_answer": "B",
+    "explanation": "An admissible heuristic never overestimates the true cost to reach the goal, ensuring A* search returns an optimal (shortest/lowest cost) path."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "8. What is 'adversarial search' primarily used for in foundational AI?",
+    "options": {
+      "A": "Cleaning missing values in relational database tables.",
+      "B": "Navigating decision-making in competitive, multi-agent environments such as game playing (e.g., chess, tic-tac-toe).",
+      "C": "Allocating parallel threads on GPU CUDA cores.",
+      "D": "Generating synthetic text using LLMs."
+    },
+    "correct_answer": "B",
+    "explanation": "Adversarial search handles competitive environments with opponent agents trying to minimize the player's outcome (e.g., Minimax search)."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "9. In constraint satisfaction problems (CSPs), how are explicit constraints defined?",
+    "options": {
+      "A": "As gradient descent learning rates.",
+      "B": "As specific rules or restrictions that limit allowable combinations of values assigned to variables.",
+      "C": "As primary key indices in SQL databases.",
+      "D": "As VRAM memory buffer limits."
+    },
+    "correct_answer": "B",
+    "explanation": "Explicit constraints specify allowed or forbidden combinations of variable assignments (e.g., no two adjacent regions can share the same color)."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "10. Which search evaluation criterion measures the memory requirements of a search algorithm?",
+    "options": {
+      "A": "Time complexity",
+      "B": "Space complexity",
+      "C": "Optimality",
+      "D": "Completeness"
+    },
+    "correct_answer": "B",
+    "explanation": "Space complexity measures the maximum memory required by a search algorithm during execution."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "11. How does Breadth-First Search (BFS) explore a state-space graph?",
+    "options": {
+      "A": "By expanding the deepest unexpanded node first.",
+      "B": "Layer by layer, expanding all shallowest nodes first before moving deeper.",
+      "C": "By selecting nodes with the highest heuristic h(n) value.",
+      "D": "By randomly picking nodes without tracking visited states."
+    },
+    "correct_answer": "B",
+    "explanation": "BFS expands nodes level by level (using a FIFO queue), ensuring it finds the shortest path in unweighted state graphs."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "12. Why is Depth-First Search (DFS) sometimes preferred over BFS despite not guaranteeing optimal path length?",
+    "options": {
+      "A": "DFS requires zero CPU processing time.",
+      "B": "DFS has much lower space complexity, requiring memory proportional only to the maximum path depth.",
+      "C": "DFS always finds the goal in one step.",
+      "D": "DFS uses heuristic functions automatically."
+    },
+    "correct_answer": "B",
+    "explanation": "DFS stores only the current path and unexpanded sibling nodes (LIFO stack), resulting in a linear memory footprint O(bm) compared to BFS's exponential O(b^d)."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "13. What problem formulation is used when all state components are present in the initial configuration and modified locally?",
+    "options": {
+      "A": "Incremental state formulation",
+      "B": "Complete state formulation",
+      "C": "Unsupervised cluster formulation",
+      "D": "Relational foreign key formulation"
+    },
+    "correct_answer": "B",
+    "explanation": "Complete state formulation starts with all elements placed in the state (e.g., all 8 queens on the board) and modifies positions to solve constraints."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "14. What occurs when a search algorithm is described as 'complete'?",
+    "options": {
+      "A": "It executes in less than 1 millisecond.",
+      "B": "It is guaranteed to find a solution if one exists, or correctly report that no solution exists.",
+      "C": "It uses 100% of available GPU memory.",
+      "D": "It eliminates the need for a goal test."
+    },
+    "correct_answer": "B",
+    "explanation": "Completeness guarantees that an algorithm will find a solution whenever a valid solution exists in the state space."
+  },
+  {
+    "topic": "Foundational AI & Problem-Solving Search",
+    "question": "15. In real-world applications like route planning on a map, how are map locations represented in a formal search space?",
+    "options": {
+      "A": "As discrete states (nodes) connected by action transitions (road segments/edges) with associated step costs.",
+      "B": "As continuous weights in a feedforward perceptron.",
+      "C": "As primary key attributes in a PDDL file.",
+      "D": "As CUDA thread blocks in VRAM."
+    },
+    "correct_answer": "A",
+    "explanation": "Navigation maps translate into state graphs where intersections are states, road connections are actions, and distances/travel times are step costs."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "1. According to the introductory machine learning framework, what three components form every machine learning algorithm?",
+    "options": {
+      "A": "Data, Hyperparameters, and Neural Architectures",
+      "B": "Representation, Evaluation, and Optimization",
+      "C": "Supervision, Classification, and Clustering",
+      "D": "Pretraining, Fine-tuning, and Inference"
+    },
+    "correct_answer": "B",
+    "explanation": "Every machine learning algorithm consists of Representation (model hypotheses), Evaluation (objective/loss function), and Optimization (search strategy)."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "2. In supervised machine learning, what is the mathematical goal when training on dataset pairs (x, y)?",
+    "options": {
+      "A": "To cluster unlabelled input data into distinct groups.",
+      "B": "To find an approximation function f(x) that accurately maps input x to output label y on unseen data.",
+      "C": "To maximize scalar reward signals through trial-and-error interactions.",
+      "D": "To eliminate feature attributes without evaluating error."
+    },
+    "correct_answer": "B",
+    "explanation": "Supervised learning searches for an approximation function f(x) = y given labeled training examples (x, y) to generalize to new inputs."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "3. How is unsupervised machine learning evaluated given that no correct labels or rewards are provided?",
     "options": {
       "A": "By calculating accuracy against ground-truth labels on a test set.",
       "B": "By measuring reconstruction error or pattern distribution fit relative to the input data.",
@@ -153,30 +393,870 @@
       "D": "By measuring cross-entropy loss against human annotations."
     },
     "correct_answer": "B",
-    "explanation": "In unsupervised learning, no correct outputs or rewards are given; the goal is to discover underlying structures (like clusters or lower-dimensional projections), evaluated via reconstruction error or distribution patterns."
+    "explanation": "In unsupervised learning, no output labels exist; algorithms uncover inherent structure, evaluated by reconstruction error or distribution fit."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "14. Which search strategy in artificial intelligence uses heuristic functions to guide search space exploration efficiently toward a goal state?",
+    "topic": "Introduction to Machine Learning",
+    "question": "4. What characterizes reinforcement learning compared to supervised and unsupervised learning?",
     "options": {
-      "A": "Uninformed search",
-      "B": "Informed search (such as A*)",
-      "C": "Blind depth-first search",
-      "D": "Brute-force exhaustive search"
+      "A": "It relies strictly on fixed static tables in relational databases.",
+      "B": "An agent learns optimal action policies through trial-and-error interactions with an environment guided by scalar reward signals.",
+      "C": "It requires pre-classified target labels for every input instance.",
+      "D": "It performs dimensionality reduction on unstructured images without feedback."
     },
     "correct_answer": "B",
-    "explanation": "Informed search strategies, such as A*, utilize domain heuristics to guide the search towards goal states efficiently, outperforming uninformed (blind) search strategies."
+    "explanation": "Reinforcement learning involves an agent learning state-action mapping functions via environmental feedback (rewards/penalties)."
   },
   {
-    "topic": "Fundamentals of AI for Business",
-    "question": "15. How does optimal planning differ from suboptimal (satisficing) planning in automated planning systems?",
+    "topic": "Introduction to Machine Learning",
+    "question": "5. In machine learning model evaluation, how is 'generalization error' defined?",
     "options": {
-      "A": "Optimal planning guarantees that returned plans have minimal overall cost, whereas suboptimal planning permits returned plans to be suboptimal.",
-      "B": "Optimal planning requires non-deterministic environments, whereas suboptimal planning requires fully static environments.",
-      "C": "Optimal planning relies on deep reinforcement learning, while suboptimal planning relies on PDDL.",
-      "D": "Optimal planning yields probabilistic action sets, while suboptimal planning guarantees zero execution time."
+      "A": "The error measured strictly on the training dataset.",
+      "B": "The expected error measured on previously unseen test or validation data.",
+      "C": "The time taken to compile a Python script.",
+      "D": "The percentage of missing records in a database table."
+    },
+    "correct_answer": "B",
+    "explanation": "Generalization error measures a model's performance on unseen data drawn from the true underlying data distribution."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "6. What happens during machine learning 'overfitting'?",
+    "options": {
+      "A": "The model cannot obtain a sufficiently low error on the training dataset.",
+      "B": "The gap between training error and test error becomes too large because the model memorizes noise in the training set.",
+      "C": "The model capacity is too simple to capture basic patterns.",
+      "D": "The test error is lower than the training error."
+    },
+    "correct_answer": "B",
+    "explanation": "Overfitting occurs when a high-capacity model fits noise and specific quirks of the training data, leading to poor generalization on unseen test data."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "7. What is 'underfitting' in machine learning?",
+    "options": {
+      "A": "When the model performs perfectly on unseen test data.",
+      "B": "When a model lacks expressiveness/capacity and fails to achieve a sufficiently low error even on the training dataset.",
+      "C": "When the model memorizes the training data completely.",
+      "D": "When cross-validation fold variance is zero."
+    },
+    "correct_answer": "B",
+    "explanation": "Underfitting occurs when the model is too simple (high bias) to capture the underlying pattern in the training dataset."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "8. In binary classification evaluation, how is 'Precision' calculated from a confusion matrix?",
+    "options": {
+      "A": "TP / (TP + FN)",
+      "B": "TP / (TP + FP)",
+      "C": "(TP + TN) / Total",
+      "D": "TN / (TN + FP)"
+    },
+    "correct_answer": "B",
+    "explanation": "Precision measures the proportion of positive predictions that were actually correct: TP / (TP + FP)."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "9. How is 'Recall' (Sensitivity) calculated from a binary classification confusion matrix?",
+    "options": {
+      "A": "TP / (TP + FN)",
+      "B": "TP / (TP + FP)",
+      "C": "FP / (FP + TN)",
+      "D": "TN / (TN + FN)"
     },
     "correct_answer": "A",
-    "explanation": "In classical planning, optimal planning guarantees that returned plans are optimal (minimal total cost), whereas suboptimal (satisficing) planning allows plans that are not strictly cost-minimal in order to save computational time."
+    "explanation": "Recall measures the proportion of actual positive instances that were correctly identified: TP / (TP + FN)."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "10. What does the F1-Score represent in machine learning model evaluation?",
+    "options": {
+      "A": "The simple arithmetic average of Precision and Accuracy.",
+      "B": "The harmonic mean of Precision and Recall: 2 * (Precision * Recall) / (Precision + Recall).",
+      "C": "The difference between Training Error and Test Error.",
+      "D": "The ratio of True Positives to False Negatives."
+    },
+    "correct_answer": "B",
+    "explanation": "F1-Score provides a balanced single metric by taking the harmonic mean of Precision and Recall."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "11. What is the specific role of the 'Validation Set' in dataset splitting?",
+    "options": {
+      "A": "To train the initial parameters and raw weights of the model.",
+      "B": "To fine-tune model hyperparameters and prevent overfitting during development.",
+      "C": "To replace the need for a final test set.",
+      "D": "To perform raw database record insertion."
+    },
+    "correct_answer": "B",
+    "explanation": "The validation set is used to compare candidate models, tune hyperparameters, and select the best model before final test set evaluation."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "12. Why can a training error of zero be misleading when evaluating a Machine Learning model (e.g., a KNN model with k=1)?",
+    "options": {
+      "A": "Because KNN models cannot run on CPUs.",
+      "B": "Because the model may have simply memorized the training points without learning generalizable patterns.",
+      "C": "Because training error is always higher than test error.",
+      "D": "Because k=1 guarantees severe underfitting."
+    },
+    "correct_answer": "B",
+    "explanation": "A KNN model with k=1 looks up the exact training point, yielding 0 training error, but it easily overfits to noise and generalizes poorly."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "13. In machine learning terminology, what is 'Bias'?",
+    "options": {
+      "A": "The sensitivity of predictions to small changes in the training set.",
+      "B": "The systematic error caused by an overly simplistic model assumption that fails to capture underlying data relationships.",
+      "C": "The GPU clock speed variation during model training.",
+      "D": "The ratio of positive to negative classes in a dataset."
+    },
+    "correct_answer": "B",
+    "explanation": "Bias measures error introduced by simplifying assumptions in the model (e.g., assuming linear relationship for non-linear data)."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "14. In machine learning terminology, what is 'Variance'?",
+    "options": {
+      "A": "The error introduced by fitting noisy fluctuations in a specific training dataset.",
+      "B": "The difference between DBMS schema views.",
+      "C": "The number of hidden layers in a PDDL solver.",
+      "D": "The percentage of correct predictions on the training set."
+    },
+    "correct_answer": "A",
+    "explanation": "Variance refers to how much a model's predicted function changes when trained on a different subset of data (high variance = overfitting)."
+  },
+  {
+    "topic": "Introduction to Machine Learning",
+    "question": "15. What proportion of total project effort is typically spent on data collection, cleaning, and preparation before ML model training?",
+    "options": {
+      "A": "Less than 5%",
+      "B": "The vast majority of project effort (frequently estimated at up to 80%).",
+      "C": "Exactly 50% across all project types.",
+      "D": "0%, because ML models clean raw data automatically."
+    },
+    "correct_answer": "B",
+    "explanation": "Data preparation—cleaning, formatting, handling missing records, feature engineering—consumes most of the practical engineering time in real-world ML."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "1. What is the core definition of a Database Management System (DBMS)?",
+    "options": {
+      "A": "A physical server containing GPU microprocessors.",
+      "B": "A collection of computer programs that enables users to create, maintain, protect, and control multi-user access to a database.",
+      "C": "A machine learning model used for clustering unstructured text.",
+      "D": "A PDDL planner used in classical planning."
+    },
+    "correct_answer": "B",
+    "explanation": "A DBMS is software designed to manage, create, query, and maintain database structures while ensuring concurrent access and security."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "2. What is a 'Primary Key' in a relational database table?",
+    "options": {
+      "A": "A field that connects two GPU memory channels.",
+      "B": "A unique identifier for each record in a database table, ensuring no two rows share the exact same value in that column.",
+      "C": "A hyperparameter used to regularize neural network training.",
+      "D": "An unstructured text document containing reviews."
+    },
+    "correct_answer": "B",
+    "explanation": "A primary key uniquely identifies each record/tuple in a relational database table, guaranteeing record uniqueness."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "3. What is the function of a 'Foreign Key' in relational database design?",
+    "options": {
+      "A": "To compress unstructured image data before feeding it to a neural network.",
+      "B": "To establish a relationship between two tables by referencing the primary key of another table.",
+      "C": "To accelerate matrix multiplication on CUDA cores.",
+      "D": "To store model accuracy metrics on validation sets."
+    },
+    "correct_answer": "B",
+    "explanation": "A foreign key creates relational links between tables by pointing to the primary key in another table."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "4. What makes a database system 'self-describing' according to database architecture fundamentals?",
+    "options": {
+      "A": "It automatically generates Python ML code.",
+      "B": "It contains a database catalog or data dictionary with metadata describing table structures, column data types, and constraints.",
+      "C": "It operates without needing a CPU coordinator.",
+      "D": "It infers missing labels using reinforcement learning."
+    },
+    "correct_answer": "B",
+    "explanation": "Databases are self-describing because metadata defining tables, columns, constraints, and relationships is stored in a catalog inside the DBMS."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "5. In relational database terminology, what is a single row in a relation called?",
+    "options": {
+      "A": "An attribute",
+      "B": "A tuple (or record/instance)",
+      "C": "A schema",
+      "D": "A heuristic"
+    },
+    "correct_answer": "B",
+    "explanation": "In the relational model, each horizontal row in a table is formally called a tuple (representing a single record)."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "6. How does 'Unstructured Data' differ from 'Structured Data'?",
+    "options": {
+      "A": "Unstructured data is stored in SQL tables, while structured data is stored as images.",
+      "B": "Unstructured data lacks a predefined schema or table format (e.g., raw text, images, audio) and requires feature extraction before use in classical ML.",
+      "C": "Unstructured data contains primary keys, whereas structured data does not.",
+      "D": "Unstructured data cannot be processed by artificial intelligence."
+    },
+    "correct_answer": "B",
+    "explanation": "Structured data adheres to rigid tabular schemas (rows/columns), while unstructured data (text, video, audio) requires feature representation."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "7. What is 'Semi-Structured Data'?",
+    "options": {
+      "A": "Data stored on magnetic tapes.",
+      "B": "Data that possesses organizational tags or hierarchy (e.g., JSON, XML, log files) without adhering to a rigid relational database schema.",
+      "C": "Data that has been processed by a TPU.",
+      "D": "Data with a training error of zero."
+    },
+    "correct_answer": "B",
+    "explanation": "Semi-structured data contains internal organizational markers (like JSON keys or XML tags) but lacks a strict relational tabular schema."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "8. What technique is commonly used to extract structured numerical features from raw unstructured text data for ML?",
+    "options": {
+      "A": "Min-Max scaling",
+      "B": "Tokenization, TF-IDF, or word embeddings",
+      "C": "A* search tree expansion",
+      "D": "FastDownward PDDL translation"
+    },
+    "correct_answer": "B",
+    "explanation": "Natural language text requires feature extraction techniques like tokenization, TF-IDF vectorization, or dense word embeddings."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "9. What feature engineering requirement is critical when preparing time-series dataset features for machine learning?",
+    "options": {
+      "A": "Randomly shuffling all rows across time steps.",
+      "B": "Preserving strict temporal order when creating lag features and rolling averages to prevent future data leakage.",
+      "C": "Converting all time timestamps into primary keys.",
+      "D": "Using k-means clustering on time columns."
+    },
+    "correct_answer": "B",
+    "explanation": "Time-series data requires preserving temporal sequence so that lag features do not accidentally leak future observations into past predictions."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "10. In database transaction processing, what does 'atomicity' ensure?",
+    "options": {
+      "A": "That queries execute in parallel across 1000 GPUs.",
+      "B": "That a sequence of database operations behaves as a single indivisible unit—either all operations succeed or none take effect.",
+      "C": "That data is split into training, validation, and test sets.",
+      "D": "That primary keys are numeric integers."
+    },
+    "correct_answer": "B",
+    "explanation": "Atomicity ensures that all steps in a database transaction complete successfully; if any step fails, the entire transaction is rolled back."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "11. What phase of database design focuses on mapping business requirements into an Entity-Relationship (ER) model?",
+    "options": {
+      "A": "Physical design",
+      "B": "Conceptual design",
+      "C": "Hardware benchmarking",
+      "D": "Hyperparameter optimization"
+    },
+    "correct_answer": "B",
+    "explanation": "Conceptual design translates organizational needs into high-level ER diagrams defining entities, attributes, and relationships."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "12. What phase of database design translates a conceptual ER model into actual relational tables, columns, and foreign key constraints?",
+    "options": {
+      "A": "Logical design",
+      "B": "Physical design",
+      "C": "Feature scaling",
+      "D": "Uninformed search"
+    },
+    "correct_answer": "A",
+    "explanation": "Logical design maps the conceptual schema into a specific data model (such as the relational table schema with primary/foreign keys)."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "13. What is a 'Data Catalog' used for by a DBMS and database users?",
+    "options": {
+      "A": "Storing neural network weights.",
+      "B": "Storing metadata describing database schemas, table definitions, column types, and constraints.",
+      "C": "Rendering 3D graphics scenes.",
+      "D": "Running PDDL planners."
+    },
+    "correct_answer": "B",
+    "explanation": "The data catalog acts as a central repository storing metadata about database objects, structures, and access rules."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "14. What are 'Lag Features' in time-series data preparation?",
+    "options": {
+      "A": "Network latency delays measured in milliseconds.",
+      "B": "Prior time-step observation values used as input features to predict future outcomes.",
+      "C": "Features that reduce GPU utilization.",
+      "D": "Missing values in database tables."
+    },
+    "correct_answer": "B",
+    "explanation": "Lag features use past values (e.g., sales at t-1, t-2) as predictor variables for future time step predictions."
+  },
+  {
+    "topic": "Data and Datasets for AI",
+    "question": "15. In a dataset used for supervised machine learning, what do 'features' and 'labels' represent?",
+    "options": {
+      "A": "Features represent output predictions; labels represent input columns.",
+      "B": "Features represent input attributes (predictors); labels represent ground-truth target outputs.",
+      "C": "Features represent primary keys; labels represent foreign keys.",
+      "D": "Features represent CPU cores; labels represent GPU VRAM."
+    },
+    "correct_answer": "B",
+    "explanation": "In supervised learning, features are input attributes (x) used to train the model, and labels are target outcomes (y) to be predicted."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "1. What standardized language is widely used to formally describe planning domains and problem instances in classical planning tools like FastDownward?",
+    "options": {
+      "A": "SQL (Structured Query Language)",
+      "B": "PDDL (Planning Domain Definition Language)",
+      "C": "CUDA C++",
+      "D": "JSON-LD"
+    },
+    "correct_answer": "B",
+    "explanation": "PDDL is the standard formal language used in automated planning to define domain actions/predicates and problem initial/goal states."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "2. What are the two primary files defined when specifying a planning problem in PDDL?",
+    "options": {
+      "A": "A CSV dataset file and a SQL query file.",
+      "B": "A Domain file (defining predicates and actions) and a Problem file (defining objects, initial state, and goal state).",
+      "C": "A Python script file and a CUDA header file.",
+      "D": "A Training file and a Testing file."
+    },
+    "correct_answer": "B",
+    "explanation": "PDDL separates the general world rules into a Domain file and the specific instance details (objects, initial state, goal) into a Problem file."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "3. How does Constraint Programming (e.g., using Google OR-Tools CP-SAT) differ from Symbolic Planning (e.g., FastDownward)?",
+    "options": {
+      "A": "Symbolic planning handles physical hardware, while Constraint Programming handles text files.",
+      "B": "Symbolic planning focuses on finding logical action sequences, whereas Constraint Programming manages numerical resources, time bounds, worker capacity, and mathematical limits.",
+      "C": "Symbolic planning requires GPUs, while Constraint Programming requires TPUs.",
+      "D": "Symbolic planning generates images, while Constraint Programming clusters data."
+    },
+    "correct_answer": "B",
+    "explanation": "Symbolic planning solves logical step sequencing, whereas Constraint Programming (CP-SAT) handles resource limits, temporal bounds, and worker capacities."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "4. In manufacturing scheduling, what is 'Makespan'?",
+    "options": {
+      "A": "The time required to compile a PDDL domain file.",
+      "B": "The total elapsed duration of time required to complete all scheduled operations from start to finish.",
+      "C": "The GPU memory bandwidth limit.",
+      "D": "The ratio of Precision to Recall."
+    },
+    "correct_answer": "B",
+    "explanation": "Makespan is the total time length of a schedule from the start of the first task to the completion of the final task."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "5. What defines 'Optimal Planning' versus 'Satisficing Planning' in automated planning systems?",
+    "options": {
+      "A": "Optimal planning guarantees finding a plan with minimal total cost or time, whereas satisficing planning accepts any valid plan to reduce computational search time.",
+      "B": "Optimal planning requires unlabelled data, whereas satisficing planning requires supervised labels.",
+      "C": "Optimal planning is used for GPUs, whereas satisficing planning is used for CPUs.",
+      "D": "Optimal planning excludes goal tests."
+    },
+    "correct_answer": "A",
+    "explanation": "Optimal planners guarantee minimal cost/makespan plans, while satisficing planners trade cost optimality for faster execution times."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "6. In a PDDL action definition, what must be satisfied before an action can be legally executed in a state?",
+    "options": {
+      "A": "The action's effects",
+      "B": "The action's preconditions",
+      "C": "The DBMS primary key constraint",
+      "D": "The loss function gradient"
+    },
+    "correct_answer": "B",
+    "explanation": "Preconditions specify the logical state conditions that must evaluate to true for an action to be applicable."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "7. In PDDL action specifications, what do 'effects' describe?",
+    "options": {
+      "A": "The time required to train a neural network.",
+      "B": "How the state changes (which logical predicates are added or deleted) after the action is executed.",
+      "C": "The amount of VRAM consumed by the planner.",
+      "D": "The precision score of the search tree."
+    },
+    "correct_answer": "B",
+    "explanation": "Action effects define the state transition result by specifying literals added to or deleted from the current state."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "8. What tool is explicitly highlighted in the planning slides for constraint-based manufacturing assembly line scheduling?",
+    "options": {
+      "A": "PyTorch CUDA",
+      "B": "OR-Tools CP-SAT (Constraint Programming SAT solver)",
+      "C": "MongoDB DBMS",
+      "D": "OpenCL Kernel"
+    },
+    "correct_answer": "B",
+    "explanation": "Google OR-Tools CP-SAT solver is highlighted for constraint-based scheduling with worker and precedence constraints."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "9. In constraint programming formulations, what are the primary decision variables in job-shop or assembly scheduling?",
+    "options": {
+      "A": "Neural network weights and biases",
+      "B": "Task start times, durations, and resource assignments",
+      "C": "Primary key values and foreign key indices",
+      "D": "CPU clock frequencies"
+    },
+    "correct_answer": "B",
+    "explanation": "Scheduling CP models formulate decision variables around task start times, execution intervals, and resource allocations."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "10. What type of search strategy does the FastDownward planner use to find action sequences?",
+    "options": {
+      "A": "Random unguided walking",
+      "B": "Heuristic state-space search",
+      "C": "Unsupervised k-means clustering",
+      "D": "Backpropagation through time"
+    },
+    "correct_answer": "B",
+    "explanation": "FastDownward translates PDDL into state representations and uses domain-independent heuristic search to find plan paths."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "11. When should an engineer prefer Constraint Programming over Symbolic Planning?",
+    "options": {
+      "A": "When the domain has no numerical rules or time limits.",
+      "B": "When the problem heavily involves resource limits, worker capacity, time windows, and mathematical optimization rather than purely symbolic action ordering.",
+      "C": "When the problem lacks a goal state.",
+      "D": "When building graphics rendering pipelines."
+    },
+    "correct_answer": "B",
+    "explanation": "Constraint programming excels when managing quantitative bounds, resource capacities, overlap constraints, and schedule optimization."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "12. What is an assembly line sequencing precedence constraint?",
+    "options": {
+      "A": "A rule stating that GPUs must process data before CPUs.",
+      "B": "A constraint specifying that a specific task must be completed before another task can begin.",
+      "C": "A requirement that all database tables have foreign keys.",
+      "D": "A rule limiting neural network depth."
+    },
+    "correct_answer": "B",
+    "explanation": "Precedence constraints establish strict task ordering (e.g., Task A must finish before Task B can start)."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "13. In classical automated planning models, what assumption is made about state transitions?",
+    "options": {
+      "A": "Transitions are stochastic and unpredictable.",
+      "B": "Transitions are deterministic, static, and fully observable.",
+      "C": "Transitions are managed by reinforcement learning agents.",
+      "D": "Transitions require human approval at every step."
+    },
+    "correct_answer": "B",
+    "explanation": "Classical planning assumes a deterministic, fully observable, static world where actions have known, predictable outcomes."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "14. How does automated planning contribute to industrial supply chain and manufacturing operations?",
+    "options": {
+      "A": "By replacing all physical workers with database records.",
+      "B": "By generating optimal or feasible operation sequences that minimize downtime, optimize resource usage, and respect complex dependencies.",
+      "C": "By converting unstructured video files into structured tables.",
+      "D": "By eliminating the need for quality control."
+    },
+    "correct_answer": "B",
+    "explanation": "Automated planning optimizes complex operations—logistics, assembly lines, robotics—by systematically scheduling steps within constraints."
+  },
+  {
+    "topic": "Automated Planning & Constraint Solving",
+    "question": "15. What role do heuristics play in modern classical planners like FastDownward?",
+    "options": {
+      "A": "They calculate exact neural network gradients.",
+      "B": "They estimate the remaining distance/cost from the current state to the goal state to prune unpromising search branches.",
+      "C": "They validate database foreign key integrity.",
+      "D": "They allocate VRAM across CUDA blocks."
+    },
+    "correct_answer": "B",
+    "explanation": "Heuristics guide state search toward goal states efficiently, enabling planners to navigate massive state spaces without exhaustive searching."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "1. How do CPUs and GPUs fundamentally differ in processor design and architecture?",
+    "options": {
+      "A": "CPUs handle massive parallel throughput, while GPUs excel at single-threaded low latency.",
+      "B": "CPUs specialize in sequential tasks with low latency using a few powerful cores, whereas GPUs specialize in massive parallelism using thousands of smaller cores.",
+      "C": "CPUs lack internal cache memory, while GPUs rely exclusively on system DRAM.",
+      "D": "CPUs execute matrix operations faster than GPUs."
+    },
+    "correct_answer": "B",
+    "explanation": "CPUs are optimized for low-latency sequential operations with a few high-clock cores; GPUs focus on massive parallel throughput across thousands of cores."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "2. In the CPU/GPU computing paradigm, what functional analogy is given for the CPU versus the GPU?",
+    "options": {
+      "A": "CPU = worker; GPU = manager.",
+      "B": "CPU = coordinator/manager; GPU = many workers executing parallel operations simultaneously.",
+      "C": "CPU = database; GPU = hard drive.",
+      "D": "CPU = PDDL planner; GPU = heuristic."
+    },
+    "correct_answer": "B",
+    "explanation": "The CPU acts as the central coordinator delegating heavy parallel matrix workloads to thousands of GPU worker cores."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "3. What hardware accelerator is designed specifically for deep learning tensor operations?",
+    "options": {
+      "A": "CPU",
+      "B": "TPU (Tensor Processing Unit)",
+      "C": "FPGA",
+      "D": "SRAM"
+    },
+    "correct_answer": "B",
+    "explanation": "TPUs (Tensor Processing Units) are Google's custom-designed ASICs built explicitly to accelerate deep learning tensor computations."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "4. What hardware accelerator is customizable for specialized low-latency applications like high-frequency financial trading?",
+    "options": {
+      "A": "FPGA (Field Programmable Gate Array)",
+      "B": "VRAM",
+      "C": "DBMS",
+      "D": "PDDL"
+    },
+    "correct_answer": "A",
+    "explanation": "FPGAs offer reconfigurable hardware logic, making them ideal for ultra-low latency specialized applications like high-frequency trading."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "5. Why are GPUs dramatically faster than CPUs for neural network training and matrix multiplication?",
+    "options": {
+      "A": "Because neural networks do not require memory access.",
+      "B": "Because matrix operations can be decomposed into thousands of independent parallel dot products distributed simultaneously across GPU cores.",
+      "C": "Because GPUs avoid using floating-point math.",
+      "D": "Because GPUs run at higher clock frequencies than CPUs."
+    },
+    "correct_answer": "B",
+    "explanation": "Matrix multiplications in neural networks consist of thousands of independent multiply-accumulate operations that GPUs execute in parallel."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "6. What is NVIDIA's proprietary parallel computing platform and programming model for GPUs?",
+    "options": {
+      "A": "OpenCL",
+      "B": "CUDA (Compute Unified Device Architecture)",
+      "C": "CP-SAT",
+      "D": "FastDownward"
+    },
+    "correct_answer": "B",
+    "explanation": "CUDA is NVIDIA's proprietary platform allowing developers to program GPU cores for general-purpose parallel computing (GPGPU)."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "7. Which open standard software framework allows cross-platform heterogeneous computing across CPUs, GPUs, and other hardware?",
+    "options": {
+      "A": "CUDA",
+      "B": "OpenCL",
+      "C": "PyTorch",
+      "D": "TensorFlow"
+    },
+    "correct_answer": "B",
+    "explanation": "OpenCL is an open royalty-free standard maintained by Khronos Group for parallel programming across heterogeneous hardware architectures."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "8. What next-generation professional GPU model is highlighted in the lecture slides for enterprise AI workloads?",
+    "options": {
+      "A": "NVIDIA GTX 1080",
+      "B": "NVIDIA RTX 6000 PRO Blackwell Max-Q",
+      "C": "Intel Core i9",
+      "D": "AMD Ryzen 9"
+    },
+    "correct_answer": "B",
+    "explanation": "The slides feature the NVIDIA RTX 6000 PRO Blackwell Max-Q as a high-performance, energy-efficient enterprise GPU."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "9. How much VRAM does the NVIDIA RTX 6000 PRO Blackwell Max-Q feature?",
+    "options": {
+      "A": "12 GB",
+      "B": "96 GB of high-bandwidth VRAM",
+      "C": "16 GB",
+      "D": "512 MB"
+    },
+    "correct_answer": "B",
+    "explanation": "The RTX 6000 PRO Blackwell Max-Q comes equipped with 96 GB of high-bandwidth memory for large AI models."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "10. What advantage does having 96 GB of high-bandwidth VRAM provide in enterprise AI pipelines?",
+    "options": {
+      "A": "It eliminates the need for Python.",
+      "B": "It enables training, fine-tuning, and inference of large AI/LLM models on a single GPU, reducing the need for multi-GPU setups.",
+      "C": "It converts relational databases into text files.",
+      "D": "It replaces search heuristics."
+    },
+    "correct_answer": "B",
+    "explanation": "96 GB VRAM permits fitting entire large models and long context windows directly into GPU memory, avoiding multi-GPU cluster complexity."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "11. When should computing workloads remain on a CPU rather than being offloaded to a GPU?",
+    "options": {
+      "A": "For massive matrix multiplications and neural network backpropagation.",
+      "B": "For sequential tasks, decision-heavy logic with complex branching, web servers, and database operations.",
+      "C": "For 3D graphics rendering.",
+      "D": "For vector similarity search across millions of embeddings."
+    },
+    "correct_answer": "B",
+    "explanation": "CPUs excel at workloads dominated by complex branching, sequential logic, single-thread responsiveness, and traditional database query processing."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "12. What memory architecture feature inside GPUs enables fast data sharing within a processing block?",
+    "options": {
+      "A": "Shared memory / L1 cache within Streaming Multiprocessors (SMs)",
+      "B": "External HDD storage",
+      "C": "Database catalog metadata",
+      "D": "System BIOS ROM"
+    },
+    "correct_answer": "A",
+    "explanation": "On-chip shared memory / L1 cache inside Streaming Multiprocessors (SMs) provides high-speed, low-latency communication among threads in a block."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "13. Which modern speech-to-text transcription architecture is mentioned in the lecture as an ideal workload for high-VRAM GPUs?",
+    "options": {
+      "A": "Google PageRank",
+      "B": "OpenAI Whisper",
+      "C": "FastDownward Planner",
+      "D": "OR-Tools CP-SAT"
+    },
+    "correct_answer": "B",
+    "explanation": "OpenAI Whisper speech-to-text transcription models rely heavily on GPU acceleration for fast transformer audio processing."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "14. How do high-dimensional embedding vectors used in vector databases benefit from GPU acceleration?",
+    "options": {
+      "A": "By converting text into primary key integers.",
+      "B": "Vector similarity calculations (such as cosine similarity across millions of embeddings) are highly parallelizable matrix operations.",
+      "C": "By removing the need for VRAM.",
+      "D": "By running PDDL goal tests."
+    },
+    "correct_answer": "B",
+    "explanation": "Vector database searches compute distance/similarity across large embedding matrices, an operation highly suited for GPU parallelization."
+  },
+  {
+    "topic": "GPU Accelerated Data Analysis & Hardware",
+    "question": "15. What key architectural trade-off distinguishes GPU design philosophy from CPU design philosophy?",
+    "options": {
+      "A": "GPUs prioritize low single-thread latency over parallel bandwidth.",
+      "B": "GPUs prioritize total data throughput and parallel volume over individual task response latency.",
+      "C": "GPUs exclude memory caches entirely.",
+      "D": "GPUs execute sequential logic faster than CPUs."
+    },
+    "correct_answer": "B",
+    "explanation": "GPUs trade single-thread response latency for massive parallel throughput, optimizing for processing huge batches of data simultaneously."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "1. How does the EU AI Act categorize artificial intelligence applications under its regulatory framework?",
+    "options": {
+      "A": "By open-source vs. proprietary software licenses.",
+      "B": "Using a risk-based pyramid approach: Unacceptable risk, High risk, Transparency ('Impersonation') risk, and Minimal/No risk.",
+      "C": "By GPU hardware clock speed requirements.",
+      "D": "By database table primary key constraints."
+    },
+    "correct_answer": "B",
+    "explanation": "The EU AI Act classifies AI systems based on societal risk into four levels: Unacceptable, High, Transparency, and Minimal/No risk."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "2. Under the EU AI Act, what is the legal status of AI applications classified as 'Unacceptable Risk' (e.g., government social scoring)?",
+    "options": {
+      "A": "Permitted with no restrictions.",
+      "B": "Strictly prohibited.",
+      "C": "Permitted subject to paying a registration fee.",
+      "D": "Required to run on GPUs."
+    },
+    "correct_answer": "B",
+    "explanation": "Unacceptable risk applications (e.g., social scoring, cognitive behavioral manipulation) pose clear threats to fundamental rights and are banned."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "3. What mandatory requirement is imposed on 'High-Risk' AI systems (such as recruitment screening or medical devices) under Title III of the EU AI Act?",
+    "options": {
+      "A": "They must be made 100% open source.",
+      "B": "Mandatory risk management systems, high-quality representative datasets, technical documentation, logging/traceability, human oversight, and robust cybersecurity.",
+      "C": "They must use reinforcement learning instead of supervised learning.",
+      "D": "They must run on TPU hardware."
+    },
+    "correct_answer": "B",
+    "explanation": "High-risk AI systems must comply with strict ex-ante conformity assessments, risk management, data quality, logging, human oversight, and security standards."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "4. What obligation applies to AI applications categorized under 'Transparency / Impersonation Risk' (such as AI chatbots or synthetic media)?",
+    "options": {
+      "A": "They are strictly prohibited.",
+      "B": "They are permitted but subject to explicit information/transparency obligations informing users they are interacting with an AI system.",
+      "C": "They must be audited by FastDownward planners.",
+      "D": "They must use SQL databases."
+    },
+    "correct_answer": "B",
+    "explanation": "Systems posing transparency risks (chatbots, deepfakes) are permitted provided users are clearly informed that they are interacting with AI."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "5. In the Target pregnancy prediction case study, what ethical conflict arose regarding predictive analytics?",
+    "options": {
+      "A": "Target used illegible database primary keys.",
+      "B": "The tension between legal data usage for accurate statistical prediction versus invading personal privacy by inferring undisclosed sensitive life events.",
+      "C": "Target's GPU server overheated.",
+      "D": "Target failed to use PDDL domain files."
+    },
+    "correct_answer": "B",
+    "explanation": "Target's model legally analyzed shopping habits to accurately predict pregnancy, but sending coupons revealed private undisclosed information to family members."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "6. What is 'Automation Bias' as defined in AI ethics and decision-making literature?",
+    "options": {
+      "A": "When automated systems execute faster on GPUs.",
+      "B": "The tendency for human decision-makers to blindly trust and accept automated machine outputs over social context or critical human judgment.",
+      "C": "When datasets contain unequal numbers of rows.",
+      "D": "When primary keys fail to index properly."
+    },
+    "correct_answer": "B",
+    "explanation": "Automation bias occurs when humans defer judgment to automated decisions, overriding social, cultural, or contextual factors."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "7. What is 'Association Bias' in machine learning datasets?",
+    "options": {
+      "A": "When neural networks use backpropagation.",
+      "B": "When AI models reinforce cultural stereotypes or unfair historical associations present in training data.",
+      "C": "When foreign keys connect relational tables.",
+      "D": "When heuristic functions overestimate path costs."
+    },
+    "correct_answer": "B",
+    "explanation": "Association bias happens when algorithms learn and amplify historical cultural or social stereotypes present in training datasets."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "8. What is 'Dataset Bias'?",
+    "options": {
+      "A": "When data is stored on GPUs.",
+      "B": "When training data fails to accurately represent the true diversity or real-world distribution of the target population.",
+      "C": "When a DBMS uses SQL.",
+      "D": "When a model achieves 100% accuracy."
+    },
+    "correct_answer": "B",
+    "explanation": "Dataset bias occurs when training samples are unrepresentative or skewed, leading to reduced model fairness and performance on underrepresented groups."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "9. Which key European Commission policy document outlined the seven core requirements for 'Trustworthy AI'?",
+    "options": {
+      "A": "The DMCA Copyright Standard",
+      "B": "Ethics Guidelines for Trustworthy AI (2019)",
+      "C": "The CUDA Programming Manual",
+      "D": "The PDDL Specification 2.0"
+    },
+    "correct_answer": "B",
+    "explanation": "The High-Level Expert Group on AI presented the 'Ethics Guidelines for Trustworthy AI' defining key requirements for lawful, ethical, and robust AI."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "10. What requirement ensures that humans remain in ultimate control of AI system outcomes in critical domains?",
+    "options": {
+      "A": "Hyperparameter fine-tuning",
+      "B": "Human-in-the-loop oversight (human-on-the-loop / human-in-command measures)",
+      "C": "Automatic GPU thread allocation",
+      "D": "Min-Max scaling"
+    },
+    "correct_answer": "B",
+    "explanation": "Human oversight measures guarantee that human operators can monitor, intervene, or override AI system decisions in high-risk applications."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "11. What ethical principle addresses ensuring AI system decisions can be audited, explained, and understood by affected parties?",
+    "options": {
+      "A": "Data Leakage",
+      "B": "Transparency and Explainability",
+      "C": "Overfitting",
+      "D": "Space Complexity"
+    },
+    "correct_answer": "B",
+    "explanation": "Transparency and explainability require that AI operations, limitations, and decision pathways are understandable and traceable for stakeholders."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "12. How does the EU AI Act address AI applications categorized as 'Minimal or No Risk' (e.g., AI video games or spam filters)?",
+    "options": {
+      "A": "Strictly banned across Europe.",
+      "B": "Permitted with no new legal restrictions under the AI Act.",
+      "C": "Subject to mandatory ex-ante conformity assessments.",
+      "D": "Required to publish source code."
+    },
+    "correct_answer": "B",
+    "explanation": "Minimal or no risk systems represent the majority of AI applications today and are permitted without additional AI Act regulatory burdens."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "13. In predictive analytics and consumer profiling, what privacy risk occurs when an algorithm infers sensitive traits without direct user disclosure?",
+    "options": {
+      "A": "High space complexity",
+      "B": "Inadvertent exposure of non-disclosed private information through inferred behavioral patterns.",
+      "C": "Underfitting",
+      "D": "Foreign key violation"
+    },
+    "correct_answer": "B",
+    "explanation": "Algorithms can infer highly private life events (health conditions, pregnancy, political alignment) from routine metadata, infringing on privacy expectations."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "14. What technical documentation requirement is enforced on high-risk AI system providers under the EU AI Act?",
+    "options": {
+      "A": "Publishing code on public forums.",
+      "B": "Maintaining detailed technical documentation and logging capabilities to ensure full auditability and traceability.",
+      "C": "Deleting all training data after deployment.",
+      "D": "Using strictly CPU servers."
+    },
+    "correct_answer": "B",
+    "explanation": "Providers of high-risk AI systems must maintain technical documentation and continuous logging to enable post-market monitoring and regulatory auditability."
+  },
+  {
+    "topic": "Ethical and Social Implications of AI",
+    "question": "15. What social implication of AI is highlighted regarding the impact of automation on employment and culture?",
+    "options": {
+      "A": "AI eliminates the need for organizational governance.",
+      "B": "The transformation of work routines, skill requirements, and cultural education necessitating organizational ethical literacy and responsible AI governance.",
+      "C": "AI guarantees zero unemployment across all sectors.",
+      "D": "AI prevents changes in business models."
+    },
+    "correct_answer": "B",
+    "explanation": "AI transforms employment, work processes, and education, requiring organizations to cultivate ethical literacy and governance to mitigate social disruption."
   }
 ]
