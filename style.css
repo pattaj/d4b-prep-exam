@@ -1,47 +1,18 @@
 /* =========================================
    1. BASE & RESET
    ========================================= */
-body { 
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-    background: #f4f6f9; 
-    color: #333; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
-    flex-direction: column; 
-    min-height: 100vh; 
-    overflow-x: hidden; 
-}
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #333; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; overflow-x: hidden; }
 
 /* =========================================
-   2. LAYOUT STRUCTURE
+   2. LAYOUT STRUCTURE (Fully Dynamic)
    ========================================= */
-.app-layout { 
-    display: flex; 
-    flex: 1; 
-    max-width: 1100px; 
-    margin: 0 auto; 
-    width: 100%; 
-    padding: 20px; 
-    box-sizing: border-box; 
-    gap: 25px; 
-    position: relative; 
-}
+.app-layout { display: flex; flex: 1; max-width: 1200px; margin: 0 auto; width: 100%; padding: 20px; box-sizing: border-box; gap: 25px; position: relative; align-items: flex-start; }
 
-/* Main Content Area */
-.main-content { 
-    flex: 1; 
-    background: #fff; 
-    padding: 30px; 
-    border-radius: 12px; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-    width: 100%; 
-    box-sizing: border-box; 
-}
+.main-content { flex: 1; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); width: 100%; box-sizing: border-box; min-width: 0; /* Prevents flex blowout on mobile */ }
 h1 { color: #1a73e8; font-size: 24px; text-align: center; margin-top: 0; }
 
 /* =========================================
-   3. SIDEBAR & ACCORDION MENU
+   3. SIDEBAR & ACCORDION MENU (With Scrollbars)
    ========================================= */
 .sidebar { 
     width: 280px; 
@@ -49,75 +20,36 @@ h1 { color: #1a73e8; font-size: 24px; text-align: center; margin-top: 0; }
     padding: 20px; 
     border-radius: 12px; 
     box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
-    height: fit-content; 
     position: sticky; 
     top: 20px; 
     flex-shrink: 0;
-}
-.sidebar h3 { 
-    font-size: 16px; 
-    color: #1a73e8; 
-    margin-top: 0; 
-    border-bottom: 2px solid #e8f0fe; 
-    padding-bottom: 10px; 
+    
+    /* Dynamic Scrollbar Properties */
+    max-height: calc(100vh - 40px);
+    overflow-y: auto;
+    overflow-x: auto;
 }
 
-/* Base Menu Button */
-.menu-btn { 
-    display: block; 
-    width: 100%; 
-    text-align: left; 
-    background: #f8f9fa; 
-    border: 1px solid #ddd; 
-    padding: 10px 12px; 
-    border-radius: 6px; 
-    cursor: pointer; 
-    font-size: 14px; 
-    font-weight: 500; 
-    transition: 0.2s; 
-    color: #333; 
-    box-sizing: border-box;
-}
+/* Custom Scrollbar Styling for Sidebar */
+.sidebar::-webkit-scrollbar { width: 6px; height: 6px; }
+.sidebar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 4px; }
+.sidebar::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 4px; }
+.sidebar::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
 
-/* Module Button Styling */
+.sidebar h3 { font-size: 16px; color: #1a73e8; margin-top: 0; border-bottom: 2px solid #e8f0fe; padding-bottom: 10px; }
+
+/* Menus */
+.menu-btn { display: block; width: 100%; text-align: left; background: #f8f9fa; border: 1px solid #ddd; padding: 10px 12px; border-radius: 6px; cursor: pointer; font-size: 14px; font-weight: 500; transition: 0.2s; color: #333; box-sizing: border-box; white-space: normal; }
 .module-group { margin-bottom: 10px; }
-.module-btn { 
-    background: #e8f0fe; 
-    border-color: #c6d8f9; 
-    color: #1a73e8; 
-    font-size: 14px; 
-    padding: 12px;
-}
+.module-btn { background: #e8f0fe; border-color: #c6d8f9; color: #1a73e8; font-size: 14px; padding: 12px; }
 .module-btn:hover { background: #d2e3fc; }
 .module-btn.active { background: #1557b0; color: white; border-color: #1557b0; }
 
-/* Nested Topics Styling (Collapsible) */
-.topics-container { 
-    padding-left: 10px; 
-    margin-top: 5px; 
-    border-left: 2px solid #c6d8f9; 
-    margin-left: 15px; 
-    display: none; /* Hidden by default */
-}
+.topics-container { padding-left: 10px; margin-top: 5px; border-left: 2px solid #c6d8f9; margin-left: 15px; display: none; }
 .topics-container.open { display: block; }
-
-.topic-btn { 
-    background: transparent; 
-    border: none; 
-    border-radius: 4px; 
-    padding: 10px; 
-    margin-top: 4px;
-    font-size: 13px; 
-    color: #555; 
-}
+.topic-btn { background: transparent; border: none; border-radius: 4px; padding: 10px; margin-top: 4px; font-size: 13px; color: #555; }
 .topic-btn:hover { background: #f1f3f4; }
-.topic-btn.active { 
-    background: #e8f0fe; 
-    color: #1a73e8; 
-    font-weight: bold; 
-    border-left: 3px solid #1a73e8; 
-    border-radius: 0 4px 4px 0;
-}
+.topic-btn.active { background: #e8f0fe; color: #1a73e8; font-weight: bold; border-left: 3px solid #1a73e8; border-radius: 0 4px 4px 0; }
 
 /* =========================================
    4. QUIZ UI
@@ -131,12 +63,16 @@ input[type="radio"] { margin-right: 12px; transform: scale(1.2); cursor: pointer
 .explanation { font-size: 14px; color: #555; margin-top: 15px; padding: 15px; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #1a73e8; display: none; line-height: 1.6; }
 
 /* =========================================
-   5. BUTTONS
+   5. BUTTONS & PAGINATION
    ========================================= */
 button.btn { display: block; width: 100%; background: #1a73e8; color: white; border: none; padding: 16px; font-size: 16px; border-radius: 8px; cursor: pointer; font-weight: bold; margin-top: 20px; transition: 0.2s; box-sizing: border-box; }
 button.btn:hover { background: #1557b0; }
 button.btn-outline { background: #fff; color: #1a73e8; border: 2px solid #1a73e8; }
 button.btn-outline:hover { background: #e8f0fe; }
+
+.pagination-controls { display: flex; gap: 15px; margin-top: 20px; }
+.pagination-controls button { flex: 1; margin-top: 0; padding: 12px; }
+
 .action-buttons { display: flex; gap: 15px; justify-content: center; margin-top: 25px; flex-wrap: wrap; }
 .action-buttons button { flex: 1; min-width: 200px; margin-top: 0; }
 
@@ -149,7 +85,7 @@ button.btn-outline:hover { background: #e8f0fe; }
 .modal-content h3 { font-size: 20px; margin-top: 0; }
 .modal-content p { font-size: 16px; color: #555; line-height: 1.5; margin-bottom: 25px; }
 .modal-actions { display: flex; gap: 15px; }
-.modal-actions button { flex: 1; margin-top: 0; }
+.modal-actions button { flex: 1; margin-top: 0; padding: 12px; }
 
 /* =========================================
    7. ANALYTICS DASHBOARD
@@ -158,7 +94,7 @@ button.btn-outline:hover { background: #e8f0fe; }
 .score-circle { width: 140px; height: 140px; border-radius: 50%; background: #1a73e8; color: white; display: flex; align-items: center; justify-content: center; font-size: 40px; font-weight: bold; margin: 20px auto; flex-direction: column; line-height: 1.2; box-shadow: 0 4px 10px rgba(26,115,232,0.3); }
 .score-circle small { font-size: 16px; font-weight: normal; opacity: 0.9; }
 .score-feedback { font-size: 20px; font-weight: bold; margin-bottom: 30px; color: #333; }
-.analytics-box { margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 25px; border-radius: 12px; text-align: left; }
+.analytics-box { margin-top: 20px; background: #fff; border: 1px solid #ddd; padding: 25px; border-radius: 12px; text-align: left; overflow-x: auto; }
 .analytics-title { font-size: 18px; font-weight: bold; margin-bottom: 15px; color: #333; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
 .analytics-item { font-size: 15px; margin-bottom: 10px; padding: 12px; border-radius: 8px; }
 .focus-needed { background: #f8d7da; color: #721c24; border-left: 4px solid #dc3545; }
@@ -175,11 +111,12 @@ button.btn-outline:hover { background: #e8f0fe; }
 
 @media (max-width: 768px) {
     .mobile-header { display: flex; }
-    .app-layout { padding: 15px; margin: 0; gap: 0; }
+    .app-layout { padding: 15px; margin: 0; gap: 0; flex-direction: column; }
     h1 { display: none; } 
-    .sidebar { position: fixed; top: 0; left: 0; height: 100vh; width: 280px; z-index: 999; margin: 0; border-radius: 0; transform: translateX(-100%); overflow-y: auto; box-shadow: 4px 0 15px rgba(0,0,0,0.1); }
+    .sidebar { position: fixed; top: 0; left: 0; height: 100vh; width: 280px; z-index: 999; margin: 0; border-radius: 0; transform: translateX(-100%); transition: transform 0.3s ease; max-height: 100vh; }
     .sidebar.open { transform: translateX(0); }
     .sidebar-close { display: block; }
     .overlay.active { display: block; opacity: 1; }
-    .action-buttons button { width: 100%; flex: unset; }
+    .action-buttons button, .pagination-controls button { width: 100%; flex: unset; }
+    .pagination-controls { flex-direction: column; }
 }
