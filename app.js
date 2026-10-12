@@ -10,6 +10,14 @@ const availableModules = [
     { id: "ai-for-business", title: "AI for Business" }
 ];
 
+// Helper Function: Randomizes the order of an array (Fisher-Yates Shuffle)
+const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+};
+
 // =========================================================
 // 2. UI NAVIGATION & MENU LOGIC
 // =========================================================
@@ -25,7 +33,6 @@ const buildModuleMenu = () => {
     modContainer.innerHTML = "";
     
     availableModules.forEach(mod => {
-        // Creates a button that will trigger the async fetch
         modContainer.innerHTML += `<button class="menu-btn module-btn" onclick="loadModule('${mod.id}', this)">📁 ${mod.title}</button>`;
     });
 };
@@ -59,11 +66,13 @@ window.loadModule = async (moduleId, btnElement) => {
         
         // Build the topics for this module and render everything
         buildTopicMenu();
+        
+        // Automatically start the quiz with 'ALL' topics selected for this module
         filterQuestions("ALL", document.querySelector('.topic-btn'));
         
     } catch (error) {
         console.error("Error loading module:", error);
-        alert(`Could not load ${moduleId}.json. Remember, you must run this on a local server (like Live Server in VS Code) for fetch() to work!`);
+        alert(`Could not load ${moduleId}.json. Remember, you must run this on a local server for fetch() to work!`);
     }
 };
 
@@ -75,8 +84,10 @@ window.filterQuestions = (topic, btnElement) => {
     document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
     
+    // Trigger retakeQuiz, which handles shuffling and rendering
     window.retakeQuiz(topic);
     
+    // Close menu on mobile after selection
     if(window.innerWidth <= 768) window.toggleMenu();
 };
 
@@ -88,11 +99,13 @@ const renderQuiz = (filter) => {
     if (filter === "NONE" || currentQuizData.length === 0) return;
 
     currentQuizData.forEach((q, qIndex) => {
+        // Skip questions that don't match the selected topic
         if (filter !== "ALL" && q.topic !== filter) return;
 
         let qDiv = document.createElement("div");
         qDiv.className = "question-card";
 
+        // Show topic header only if viewing "ALL" topics
         if (filter === "ALL" && q.topic) {
             let topicDiv = document.createElement("div");
             topicDiv.className = "topic-header";
@@ -131,19 +144,22 @@ window.gradeQuiz = () => {
     let score = 0, totalInView = 0, unanswered = 0;
     let topicStats = {};
 
-    // Validation Pass
+    // 1. Validation Pass
     currentQuizData.forEach((q, qIndex) => {
         if (currentFilter !== "ALL" && q.topic !== currentFilter) return;
         totalInView++;
         if (!document.querySelector(`input[name="question_${qIndex}"]:checked`)) unanswered++;
     });
 
+    // If unanswered questions exist, ask the user if they want to proceed
     if (unanswered > 0) {
-        alert(`Please answer all questions before submitting! You have ${unanswered} question(s) left.`);
-        return;
+        const proceed = confirm(`Are you sure you want to submit?\n\nThere are still ${unanswered} question(s) unanswered. Unanswered questions will be marked as incorrect.`);
+        if (!proceed) {
+            return; // User clicked "Cancel", keep them on the quiz page
+        }
     }
 
-    // Grading Pass
+    // 2. Grading Pass
     currentQuizData.forEach((q, qIndex) => {
         if (currentFilter !== "ALL" && q.topic !== currentFilter) return;
 
@@ -155,20 +171,31 @@ window.gradeQuiz = () => {
         if (!topicStats[topic]) topicStats[topic] = { total: 0, correct: 0 };
         topicStats[topic].total++;
 
-        if (selected.value === q.correct_answer) {
+        // Safely check answer (Handles if selected is null/unanswered)
+        if (selected && selected.value === q.correct_answer) {
             score++;
             topicStats[topic].correct++;
             selected.parentElement.style.background = "#d4edda"; 
             selected.parentElement.style.borderColor = "#28a745";
         } else {
-            selected.parentElement.style.background = "#f8d7da"; 
-            selected.parentElement.style.borderColor = "#dc3545";
+            // If they answered incorrectly, highlight their wrong answer in red
+            if (selected) {
+                selected.parentElement.style.background = "#f8d7da"; 
+                selected.parentElement.style.borderColor = "#dc3545";
+            }
+            
+            // Highlight the correct answer with a green border so they know what they missed
+            const correctInput = document.querySelector(`input[name="question_${qIndex}"][value="${q.correct_answer}"]`);
+            if (correctInput) {
+                correctInput.parentElement.style.border = "2px solid #28a745";
+            }
         }
-        // Disable inputs after grading
+        
+        // Disable inputs after grading so they can't be changed
         document.querySelectorAll(`input[name="question_${qIndex}"]`).forEach(input => input.disabled = true);
     });
 
-    // Analytics Calculation
+    // 3. Analytics Calculation
     let percentage = Math.round((score / totalInView) * 100);
     document.getElementById("overallScoreCircle").innerHTML = `${percentage}%<br><small>${score}/${totalInView}</small>`;
     
@@ -192,7 +219,7 @@ window.gradeQuiz = () => {
     }
     document.getElementById("analyticsContent").innerHTML = analyticsHtml;
 
-    // View Switching
+    // Switch Views to Analytics
     document.getElementById("quizForm").style.display = "none";
     document.getElementById("instructionsText").style.display = "none";
     document.getElementById("mainTitle").style.display = "none";
@@ -216,6 +243,10 @@ window.showAnalytics = () => {
 };
 
 window.retakeQuiz = (topic = currentFilter) => {
+    // 🎲 Shuffle the questions randomly every time the quiz starts/restarts!
+    shuffleArray(currentQuizData);
+    
+    // Render the shuffled questions
     renderQuiz(topic);
     
     document.getElementById("fullAnalyticsView").style.display = "none";
