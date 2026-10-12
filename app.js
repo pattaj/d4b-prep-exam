@@ -4,18 +4,34 @@
 let currentQuizData = []; // Holds the fetched JSON data
 let currentFilter = "NONE"; 
 
-// Define your JSON files here (must match the names in your /data/ folder)
+// Define your JSON files here
 const availableModules = [
     { id: "gen-ai", title: "Generative AI" },
     { id: "ai-for-business", title: "AI for Business" }
 ];
 
-// Helper Function: Randomizes the order of an array (Fisher-Yates Shuffle)
+// Helper Function: Randomizes the order of an array
 const shuffleArray = (array) => {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
+};
+
+// Helper Function: Sets up the UI for taking the quiz
+const showQuizView = () => {
+    document.getElementById("fullAnalyticsView").style.display = "none";
+    document.getElementById("quizForm").style.display = "block";
+    document.getElementById("submitQuizBtn").style.display = "block";
+    
+    const instructionEl = document.getElementById("instructionsText");
+    instructionEl.style.display = "block";
+    instructionEl.innerText = "Tap your answers below and submit to view your score and analytics.";
+    
+    document.getElementById("mainTitle").style.display = "block";
+    document.getElementById("reviewActionBtns").style.display = "none";
+    
+    window.scrollTo(0, 0);
 };
 
 // =========================================================
@@ -31,7 +47,6 @@ window.toggleMenu = () => {
 const buildModuleMenu = () => {
     const modContainer = document.getElementById("moduleContainer");
     modContainer.innerHTML = "";
-    
     availableModules.forEach(mod => {
         modContainer.innerHTML += `<button class="menu-btn module-btn" onclick="loadModule('${mod.id}', this)">📁 ${mod.title}</button>`;
     });
@@ -41,7 +56,6 @@ const buildTopicMenu = () => {
     const menuContainer = document.getElementById("menuContainer");
     menuContainer.innerHTML = `<button class="menu-btn topic-btn active" onclick="filterQuestions('ALL', this)">📂 Show All Topics</button>`;
 
-    // Extract unique topics from the currently loaded JSON data
     let topics = [...new Set(currentQuizData.map(q => q.topic))];
     topics.forEach(topic => {
         menuContainer.innerHTML += `<button class="menu-btn topic-btn" onclick="filterQuestions('${topic}', this)">📄 ${topic}</button>`;
@@ -57,57 +71,66 @@ window.loadModule = async (moduleId, btnElement) => {
 
     try {
         const response = await fetch(`./data/${moduleId}.json`);
-        
         if (!response.ok) throw new Error("Network response was not ok");
         
         const rawData = await response.json();
         
-        // CRITICAL: Attach an original index to each question so grading doesn't break when shuffled
+        // Save the original index so grading works even if array is shuffled later
         currentQuizData = rawData.map((q, index) => ({ ...q, originalIndex: index }));
         
         buildTopicMenu();
+        
+        // Initial load: DO NOT shuffle (pass false)
         filterQuestions("ALL", document.querySelector('.topic-btn'));
         
     } catch (error) {
         console.error("Error loading module:", error);
-        alert(`Could not load ${moduleId}.json. Remember, you must run this on a local server for fetch() to work!`);
+        alert(`Could not load ${moduleId}.json. Make sure you are running a local server.`);
     }
 };
 
 // =========================================================
-// 4. QUIZ RENDERING LOGIC (WITH PER-TOPIC SHUFFLING)
+// 4. QUIZ RENDERING LOGIC (WITH DYNAMIC NUMBERING)
 // =========================================================
 window.filterQuestions = (topic, btnElement) => {
     document.querySelectorAll('.topic-btn').forEach(btn => btn.classList.remove('active'));
     if(btnElement) btnElement.classList.add('active');
     
-    window.retakeQuiz(topic);
+    // When clicking the menu, NEVER shuffle. Load in original order.
+    renderQuiz(topic, false);
+    showQuizView();
     
     if(window.innerWidth <= 768) window.toggleMenu();
 };
 
-const renderQuiz = (filter) => {
+window.retakeQuiz = (topic = currentFilter) => {
+    // When clicking "Retake", DO shuffle!
+    renderQuiz(topic, true);
+    showQuizView();
+};
+
+const renderQuiz = (filter, isRetake = false) => {
     currentFilter = filter;
     const container = document.getElementById("quizContainer");
     container.innerHTML = "";
 
     if (filter === "NONE" || currentQuizData.length === 0) return;
 
-    // 1. Determine which topics we need to render
     let topicsToRender = filter === "ALL" 
         ? [...new Set(currentQuizData.map(q => q.topic))] 
         : [filter];
 
-    // 2. Render each topic block one by one
     topicsToRender.forEach(topicName => {
-        
-        // Get only the questions for this specific topic
         let topicQuestions = currentQuizData.filter(q => q.topic === topicName);
         
-        // 🎲 SHUFFLE the questions ONLY within this topic
-        shuffleArray(topicQuestions);
+        // SHUFFLE only if it is a Retake. Otherwise sort back to original order.
+        if (isRetake) {
+            shuffleArray(topicQuestions);
+        } else {
+            topicQuestions.sort((a, b) => a.originalIndex - b.originalIndex);
+        }
 
-        // Render Topic Header if viewing "ALL"
+        // Render Topic Header
         if (filter === "ALL") {
             let topicDiv = document.createElement("div");
             topicDiv.className = "topic-header";
@@ -115,16 +138,21 @@ const renderQuiz = (filter) => {
             container.appendChild(topicDiv);
         }
 
-        // Render the shuffled questions
-        topicQuestions.forEach((q) => {
-            let qIndex = q.originalIndex; // We use the original index for HTML names
+        // Render Questions
+        topicQuestions.forEach((q, loopIndex) => {
+            let qIndex = q.originalIndex; // Original ID for grading
+            let displayNumber = loopIndex + 1; // Always 1, 2, 3...
+
+            // Strip out any hardcoded numbers from the JSON (e.g. "1. ", "12. ")
+            let cleanQuestionText = q.question.replace(/^\d+\.\s*/, '');
 
             let qDiv = document.createElement("div");
             qDiv.className = "question-card";
 
             let titleDiv = document.createElement("div");
             titleDiv.className = "question-title";
-            titleDiv.innerText = q.question;
+            // Dynamically inject the perfect display number
+            titleDiv.innerText = `${displayNumber}. ${cleanQuestionText}`;
             qDiv.appendChild(titleDiv);
             
             for (let key in q.options) {
@@ -220,7 +248,7 @@ window.gradeQuiz = () => {
     }
     document.getElementById("analyticsContent").innerHTML = analyticsHtml;
 
-    // Switch Views
+    // Switch Views to Analytics
     document.getElementById("quizForm").style.display = "none";
     document.getElementById("instructionsText").style.display = "none";
     document.getElementById("mainTitle").style.display = "none";
@@ -243,28 +271,10 @@ window.showAnalytics = () => {
     window.scrollTo(0, 0);
 };
 
-window.retakeQuiz = (topic = currentFilter) => {
-    // Calling renderQuiz will now automatically shuffle the questions inside their own topics!
-    renderQuiz(topic);
-    
-    document.getElementById("fullAnalyticsView").style.display = "none";
-    document.getElementById("quizForm").style.display = "block";
-    document.getElementById("submitQuizBtn").style.display = "block";
-    
-    const instructionEl = document.getElementById("instructionsText");
-    instructionEl.style.display = "block";
-    instructionEl.innerText = "Tap your answers below and submit to view your score and analytics.";
-    
-    document.getElementById("mainTitle").style.display = "block";
-    document.getElementById("reviewActionBtns").style.display = "none";
-    
-    window.scrollTo(0, 0);
-};
-
 // =========================================================
 // 6. INITIALIZATION
 // =========================================================
 window.onload = () => {
     buildModuleMenu();
-    renderQuiz("NONE"); 
+    renderQuiz("NONE", false); 
 };
