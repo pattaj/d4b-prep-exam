@@ -15,4 +15,4 @@ Simply open `index.html` in your web browser to launch the application.
 ## Copyright and Usage
 © 2026 by JANE PATTA. All rights reserved. 
 
-This project is for personal learning purposes. If you wish to use, adapt, or distribute any part of this code or question bank, please contact the author for explicit permission first.
+This project is for personal learning purposes. If you wish to use, adapt, or distribute any part of this code or question bank, please contact the author at jane.patta.2820@gmail.com for explicit permission first.
