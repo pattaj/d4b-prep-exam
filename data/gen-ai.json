@@ -180,6 +180,66 @@
     "explanation": "Deep learning leverages multi-layered neural networks to automatically extract hierarchical features directly from raw data, bypassing manual feature engineering."
   },
   {
+    "topic": "Generative AI & Machine Learning Foundations",
+    "question": "16. In the context of AI model training, how do Supervised, Unsupervised, and Self-Supervised Learning differ during LLM pretraining and post-training?",
+    "options": {
+      "A": "Supervised uses unlabelled text; Unsupervised requires manual human annotations; Self-supervised uses RLHF rewards",
+      "B": "Self-supervised pretraining learns language structure from raw unlabelled text via next-token prediction, whereas Supervised Fine-Tuning (SFT) uses explicit prompt-response instruction pairs",
+      "C": "Supervised learning eliminates neural weights; Self-supervised requires rule-based decision trees",
+      "D": "Unsupervised learning is used exclusively for reinforcement learning alignment"
+    },
+    "correct_answer": "B",
+    "explanation": "Foundation models use self-supervised learning on raw text to learn general representations, followed by supervised fine-tuning (SFT) on curated instruction-response pairs."
+  },
+  {
+    "topic": "Generative AI & Machine Learning Foundations",
+    "question": "17. What is the primary operational purpose of a 'Latent Space' in generative models like VAEs and Diffusion models?",
+    "options": {
+      "A": "To compress high-dimensional raw data (e.g., pixels) into a lower-dimensional continuous manifold where semantic features can be interpolated",
+      "B": "To execute one-hot word lookup tables",
+      "C": "To replace backpropagation during model training",
+      "D": "To store prompt engineering system instructions"
+    },
+    "correct_answer": "A",
+    "explanation": "A latent space maps complex high-dimensional input features onto a continuous, lower-dimensional manifold where models can sample, manipulate, and generate new content."
+  },
+  {
+    "topic": "Generative AI & Machine Learning Foundations",
+    "question": "18. What is 'Mode Collapse' in Generative Adversarial Network (GAN) training?",
+    "options": {
+      "A": "When the Discriminator accuracy drops to exactly 0%",
+      "B": "When the Generator produces only a limited variety or single type of output sample that fools the Discriminator rather than learning the full data distribution",
+      "C": "When latent space dimensions expand to infinity",
+      "D": "When text prompts fail to condition cross-attention layers"
+    },
+    "correct_answer": "B",
+    "explanation": "Mode collapse occurs when a GAN's Generator finds a narrow subset of realistic outputs that trick the Discriminator, failing to represent the full diversity of the real dataset."
+  },
+  {
+    "topic": "Generative AI & Machine Learning Foundations",
+    "question": "19. According to Pedro Domingos' taxonomy, which tribe of machine learning relies on Genetic Algorithms and Evolutionary Programming as its master algorithm?",
+    "options": {
+      "A": "Symbolists",
+      "B": "Connectionists",
+      "C": "Evolutionaries",
+      "D": "Bayesians"
+    },
+    "correct_answer": "C",
+    "explanation": "The Evolutionaries tribe originates from biology and uses genetic algorithms and fitness evaluation to evolve model structures."
+  },
+  {
+    "topic": "Generative AI & Machine Learning Foundations",
+    "question": "20. What is the fundamental distinction between Parametric and Non-Parametric models in machine learning?",
+    "options": {
+      "A": "Parametric models summarize data into a fixed number of parameters (weights) regardless of dataset size, whereas Non-Parametric model complexity grows with data size",
+      "B": "Parametric models cannot be trained using gradient descent",
+      "C": "Non-parametric models are restricted exclusively to neural networks",
+      "D": "Parametric models require zero training compute"
+    },
+    "correct_answer": "A",
+    "explanation": "Parametric models (like deep neural networks) compress all learned knowledge into a fixed parameter count, while non-parametric models (like k-NN) retain data samples directly."
+  },
+  {
     "topic": "Natural Language Processing & Vector Representations",
     "question": "1. What is the central concept underlying distributionally learned word embeddings?",
     "options": {
@@ -360,6 +420,66 @@
     "explanation": "Subword tokenization prevents huge sparse vocabularies while ensuring any unseen word can be broken down into familiar subword units rather than unknown tokens."
   },
   {
+    "topic": "Natural Language Processing & Vector Representations",
+    "question": "16. How does GloVe (Global Vectors for Word Representation) combine the advantages of global matrix factorization and local context windows?",
+    "options": {
+      "A": "By training a log-bilinear model on global word-word co-occurrence statistics, fitting logarithm ratios of co-occurrence probabilities",
+      "B": "By using one-hot encodings with Laplace smoothing",
+      "C": "By running bidirectional LSTMs on raw character sequences",
+      "D": "By applying contrastive vision-language learning"
+    },
+    "correct_answer": "A",
+    "explanation": "GloVe combines the global statistics of matrix factorization (like SVD) with the local context window advantages of Word2Vec by fitting a log-bilinear model on co-occurrence counts."
+  },
+  {
+    "topic": "Natural Language Processing & Vector Representations",
+    "question": "17. Why is Cosine Similarity preferred over Euclidean Distance when evaluating semantic similarity between dense word vectors?",
+    "options": {
+      "A": "Cosine similarity measures vector directional orientation independent of vector length/magnitude, preventing word frequency from distorting semantic distance",
+      "B": "Euclidean distance cannot be calculated in spaces with over 3 dimensions",
+      "C": "Cosine similarity converts dense vectors back into sparse one-hot arrays",
+      "D": "Euclidean distance forces vectors to sum to 1.0"
+    },
+    "correct_answer": "A",
+    "explanation": "Cosine similarity evaluates the angle between vectors regardless of magnitude, isolating semantic direction from magnitude distortions caused by word frequency."
+  },
+  {
+    "topic": "Natural Language Processing & Vector Representations",
+    "question": "18. In subword tokenization algorithms like Byte-Pair Encoding (BPE), how is the tokenizer vocabulary trained from a raw text corpus?",
+    "options": {
+      "A": "By iteratively identifying and merging the most frequently co-occurring adjacent character or byte pairs until reaching the target vocabulary size",
+      "B": "By splitting text exclusively on whitespace characters",
+      "C": "By calculating SVD on character co-occurrence matrices",
+      "D": "By training a forward-pass LSTM on unigrams"
+    },
+    "correct_answer": "A",
+    "explanation": "BPE starts at the individual character level and iteratively merges the most frequent symbol pairs in the corpus until the designated vocabulary size is reached."
+  },
+  {
+    "topic": "Natural Language Processing & Vector Representations",
+    "question": "19. How do static embeddings (e.g., Word2Vec) and contextualized embeddings (e.g., BERT/ELMo) behave when processing homonyms like 'apple' (fruit) vs. 'Apple' (company)?",
+    "options": {
+      "A": "Static embeddings assign the exact same vector ID regardless of context, whereas contextual embeddings output distinct dynamic vectors calculated from surrounding words",
+      "B": "Static embeddings change vectors dynamically, whereas contextual embeddings remain constant",
+      "C": "Both architectures assign identical vectors to all words",
+      "D": "Contextual embeddings discard word vectors entirely"
+    },
+    "correct_answer": "A",
+    "explanation": "Static embeddings assign a single fixed lookup vector per word token ID, while contextual embedding models generate dynamic representations conditioned on surrounding sentence context."
+  },
+  {
+    "topic": "Natural Language Processing & Vector Representations",
+    "question": "20. How does Stemming differ from Lemmatization in classical NLP text preprocessing?",
+    "options": {
+      "A": "Stemming applies crude heuristic rules to trim word affixes (often producing non-words), whereas Lemmatization uses morphological analysis and dictionaries to return valid base forms (lemmata)",
+      "B": "Stemming requires deep neural networks; Lemmatization uses rule-based IF statements",
+      "C": "Stemming preserves full sentence context; Lemmatization operates on byte pairs",
+      "D": "Stemming is used exclusively for image tokenization"
+    },
+    "correct_answer": "A",
+    "explanation": "Stemming chops off word ends using crude heuristics (e.g., 'running' -> 'runn'), while Lemmatization leverages morphological rules and vocabulary dictionaries to return valid root words (e.g., 'better' -> 'good')."
+  },
+  {
     "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
     "question": "1. What is the fundamental definition of a probabilistic Language Model (LM)?",
     "options": {
@@ -424,7 +544,7 @@
     "question": "6. Why can you not simply increase N to a large number (e.g., N=10) in traditional N-gram models to capture long-range dependencies?",
     "options": {
       "A": "Higher N models cannot be evaluated mathematically",
-      "B": "Data sparsity increases exponentially—almost no 10-word sequences repeat in corpora, making counts zero and rendering smoothing ineffective",
+      "B": "Data sparsity increases exponentially\u2014almost no 10-word sequences repeat in corpora, making counts zero and rendering smoothing ineffective",
       "C": "Higher N forces models to use one-hot encodings exclusively",
       "D": "Softmax functions cannot scale beyond 3 dimensions"
     },
@@ -538,6 +658,66 @@
     },
     "correct_answer": "B",
     "explanation": "RNNs require hidden state h_{t-1} to compute h_t, forcing sequential computation. Transformers compute self-attention across all tokens concurrently, enabling massive GPU parallelization."
+  },
+  {
+    "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+    "question": "16. Why does unrolling Backpropagation Through Time (BPTT) across hundreds of steps cause gradients to vanish in vanilla Recurrent Neural Networks?",
+    "options": {
+      "A": "Repeated multiplication by weight matrices with eigenvalues smaller than 1.0 causes gradient magnitudes to decay exponentially toward zero",
+      "B": "Softmax activation functions output values greater than 100",
+      "C": "BPTT disables hidden state calculations completely",
+      "D": "One-hot input vectors cannot be differentiated"
+    },
+    "correct_answer": "A",
+    "explanation": "In vanilla RNNs, repeated matrix multiplication during backpropagation through time causes gradient terms to decay exponentially if weight eigenvalues are < 1, preventing long-range learning."
+  },
+  {
+    "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+    "question": "17. What specific mathematical role does the 'Forget Gate' perform inside an LSTM cell at time step t?",
+    "options": {
+      "A": "It computes a sigmoid activation (f_t = \u03c3(W_f \u00b7 [h_{t-1}, x_t] + b_f)) outputting values between 0 and 1 to determine what fraction of previous cell state C_{t-1} to retain",
+      "B": "It calculates the cross-entropy loss against ground truth target words",
+      "C": "It converts character n-grams into dense embedding projections",
+      "D": "It masks future tokens in decoder multi-head attention"
+    },
+    "correct_answer": "A",
+    "explanation": "The forget gate produces a sigmoid value between 0 (completely discard) and 1 (completely keep) that multiplies the previous cell state C_{t-1} elementwise."
+  },
+  {
+    "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+    "question": "18. How does a Gated Recurrent Unit (GRU) streamline the classic LSTM cell architecture to reduce computational parameters?",
+    "options": {
+      "A": "It merges cell state and hidden state into a single state vector, and combines forget and input gates into a single 'Update Gate'",
+      "B": "It removes activation functions completely",
+      "C": "It replaces recurrent steps with self-attention projection matrices",
+      "D": "It forces vocabulary sizes to remain under 1,000 words"
+    },
+    "correct_answer": "A",
+    "explanation": "GRUs simplify LSTMs by combining the cell and hidden states and merging input/forget gates into an update gate, reducing parameter count while preserving long-term memory capacity."
+  },
+  {
+    "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+    "question": "19. How is Perplexity (PPL) mathematically derived from Cross-Entropy Loss (L) in language model evaluation?",
+    "options": {
+      "A": "Perplexity is the exponentiation of cross-entropy loss: PPL = exp(L)",
+      "B": "Perplexity is the inverse square root of cross-entropy loss: PPL = 1 / sqrt(L)",
+      "C": "Perplexity is cross-entropy loss multiplied by total vocabulary size V",
+      "D": "Perplexity is the log ratio of unigrams to bigrams"
+    },
+    "correct_answer": "A",
+    "explanation": "Perplexity is calculated as e^L (or 2^L depending on log base), representing the effective branching factor or uncertainty of the model when predicting the next word."
+  },
+  {
+    "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
+    "question": "20. How does Add-k (Lidstone) Smoothing modify traditional Laplace Add-1 Smoothing in N-gram models?",
+    "options": {
+      "A": "Instead of adding 1, it adds a fractional positive constant k (where 0 < k < 1) to count frequencies, preventing over-allocation of probability mass to unseen sequences",
+      "B": "It multiplies all counts by k squared",
+      "C": "It eliminates the vocabulary size term from the denominator",
+      "D": "It converts N-gram models into decoder-only transformers"
+    },
+    "correct_answer": "A",
+    "explanation": "Lidstone smoothing adds a fractional parameter k (e.g., k=0.5) to avoid shifting too much probability mass from seen N-grams to unseen N-grams."
   },
   {
     "topic": "Attention Mechanisms & Transformer Architectures",
@@ -720,6 +900,66 @@
     "explanation": "DeBERTa improves BERT by decoupling content and position representations into disentangled attention matrices, evaluating content-to-content and relative position dependencies independently."
   },
   {
+    "topic": "Attention Mechanisms & Transformer Architectures",
+    "question": "16. What is the role of Layer Normalization (LayerNorm) in Transformer block architectures, and how does Pre-LN differ from Post-LN?",
+    "options": {
+      "A": "LayerNorm normalizes activation distributions across hidden dimensions per token to stabilize training; Pre-LN applies normalization before sub-layers enabling cleaner gradient flow in deep models",
+      "B": "LayerNorm converts activation logits into discrete token integers",
+      "C": "Post-LN eliminates the need for residual skip connections",
+      "D": "LayerNorm is applied exclusively to input one-hot vectors"
+    },
+    "correct_answer": "A",
+    "explanation": "LayerNorm stabilizes activation distributions across layer dimensions. Applying LayerNorm before self-attention and FFN sub-layers (Pre-LN) prevents vanishing/exploding gradients in deep networks."
+  },
+  {
+    "topic": "Attention Mechanisms & Transformer Architectures",
+    "question": "17. Why is Rotary Position Embedding (RoPE) widely adopted in modern decoder LLMs (such as LLaMA and Qwen) over static absolute positional encodings?",
+    "options": {
+      "A": "RoPE multiplies Query and Key vectors by a complex rotation matrix dependent on relative token distance, enabling natural extrapolation to longer context lengths",
+      "B": "RoPE eliminates the need for Query and Key matrices",
+      "C": "RoPE converts 2D attention matrices into 1D scalar outputs",
+      "D": "RoPE forces attention matrices to be symmetric"
+    },
+    "correct_answer": "A",
+    "explanation": "RoPE encodes position by rotating Query and Key vectors in complex 2D planes, preserving relative token distances and allowing better performance generalization on longer context sequences."
+  },
+  {
+    "topic": "Attention Mechanisms & Transformer Architectures",
+    "question": "18. How does FlashAttention (Dao et al.) drastically accelerate Transformer training and inference without changing mathematical attention outputs?",
+    "options": {
+      "A": "By tiling attention matrix computation into small blocks in fast GPU SRAM memory, avoiding reading/writing the huge N x N attention matrix to slow High-Bandwidth Memory (HBM)",
+      "B": "By dropping 50% of tokens at random during self-attention",
+      "C": "By converting all floating point weights into binary 1-bit integers",
+      "D": "By replacing matrix multiplication with addition"
+    },
+    "correct_answer": "A",
+    "explanation": "FlashAttention avoids GPU memory IO bottlenecks by computing exact softmax attention in SRAM block tiles, dramatically reducing memory bandwidth bottlenecks and speeding up execution."
+  },
+  {
+    "topic": "Attention Mechanisms & Transformer Architectures",
+    "question": "19. What critical function do Residual Connections (Skip Connections) serve inside every Transformer layer block?",
+    "options": {
+      "A": "They add the layer input directly to its sub-layer output (x + SubLayer(x)), providing an unimpeded gradient highway during backpropagation",
+      "B": "They mask future tokens during decoder self-attention",
+      "C": "They calculate inverse document frequency weights",
+      "D": "They project subword tokens into character 3-grams"
+    },
+    "correct_answer": "A",
+    "explanation": "Residual connections pass the un-transformed input directly forward, allowing backpropagating gradients to flow directly through deep network layers without vanishing."
+  },
+  {
+    "topic": "Attention Mechanisms & Transformer Architectures",
+    "question": "20. How does Grouped-Query Attention (GQA) reduce KV cache memory footprints during LLM inference compared to Multi-Head Attention (MHA)?",
+    "options": {
+      "A": "GQA groups multiple Query heads to share a single Key and Value head, reducing KV cache memory bandwidth while preserving multi-head representation quality",
+      "B": "GQA converts all Query heads into scalar numbers",
+      "C": "GQA disables multi-head attention during training steps",
+      "D": "GQA forces Key and Value heads to equal total vocabulary size"
+    },
+    "correct_answer": "A",
+    "explanation": "GQA partitions Query heads into groups that share single Key/Value heads, significantly shrinking the memory bandwidth required to store and read the KV cache during generation."
+  },
+  {
     "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
     "question": "1. How does configuring the Temperature parameter (T) alter token probability distributions during autoregressive LLM decoding?",
     "options": {
@@ -898,5 +1138,305 @@
     },
     "correct_answer": "B",
     "explanation": "LLM recall accuracy exhibits a U-shaped curve; information placed at the start or end of long prompts is retrieved effectively, while facts buried in the middle are frequently missed."
+  },
+  {
+    "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+    "question": "16. Why does Chain-of-Thought (CoT) Prompting (Wei et al., 2022) significantly improve performance on multi-step math and logical reasoning tasks?",
+    "options": {
+      "A": "By prompting the model to generate intermediate reasoning tokens ('Let's think step by step'), it allocates extra autoregressive decoding computational steps to decompose logic",
+      "B": "CoT fine-tunes model weights using backpropagation during prompt processing",
+      "C": "CoT forces the decoder to use greedy search at temperature 0",
+      "D": "CoT bypasses context window limitations"
+    },
+    "correct_answer": "A",
+    "explanation": "Autoregressive LLMs compute a fixed amount of computation per output token. Generating intermediate step-by-step reasoning tokens gives the model extra computational steps to arrive at correct answers."
+  },
+  {
+    "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+    "question": "17. How does Low-Rank Adaptation (LoRA) enable parameter-efficient fine-tuning (PEFT) of large language models?",
+    "options": {
+      "A": "It freezes base model weights W_0 and injects trainable low-rank decomposition matrices (A and B where \u0394W = A \u00b7 B) into attention layers, reducing trainable parameters by 99%",
+      "B": "It quantizes all float32 weights into 1-bit integers",
+      "C": "It prunes 90% of feedforward layers randomly",
+      "D": "It replaces transformer self-attention with convolutional filters"
+    },
+    "correct_answer": "A",
+    "explanation": "LoRA freezes original model weights W_0 and trains two small low-rank matrices A and B (rank r << d) to model weight updates \u0394W = A\u00b7B, achieving fine-tuning performance at a fraction of compute memory."
+  },
+  {
+    "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+    "question": "18. How does Direct Preference Optimization (DPO) simplify LLM alignment compared to traditional PPO-based RLHF?",
+    "options": {
+      "A": "DPO mathematically re-formulates the RL reward objective, directly training the language model policy on pairwise preference data using a simple classification loss without a separate reward model or PPO loop",
+      "B": "DPO uses rule-based IF-THEN filters to reject bad words",
+      "C": "DPO requires human annotators to write exact model gradient vectors",
+      "D": "DPO disables temperature sampling during decoding"
+    },
+    "correct_answer": "A",
+    "explanation": "DPO derives an analytical mapping between optimal reward functions and policy probabilities, allowing the model to be aligned directly on preferred vs dispreferred text pairs without training a standalone reward model or tuning PPO hyper-parameters."
+  },
+  {
+    "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+    "question": "19. What primary limitation of LLMs does Retrieval-Augmented Generation (RAG) address?",
+    "options": {
+      "A": "RAG retrieves relevant up-to-date document passages from a vector database and injects them into the context window at query time, reducing hallucinations and providing verifiable source grounding without retraining model weights",
+      "B": "RAG reduces prompt context lengths to under 10 tokens",
+      "C": "RAG converts text generation models into audio synthesizers",
+      "D": "RAG eliminates the need for tokenizers"
+    },
+    "correct_answer": "A",
+    "explanation": "RAG bridges static parametric model knowledge with external dynamic document sources, retrieving grounded passages at query time to prevent factual hallucinations."
+  },
+  {
+    "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
+    "question": "20. In LLM API chat completion formats, what is the hierarchical purpose of the 'System Prompt' (or System Message)?",
+    "options": {
+      "A": "To establish global persona rules, operational boundaries, formatting restrictions, and safety guardrails that dictate how the model must process all subsequent User messages",
+      "B": "To store past conversation history memory across sessions",
+      "C": "To provide few-shot dataset classification scores",
+      "D": "To adjust GPU hardware fan speeds"
+    },
+    "correct_answer": "A",
+    "explanation": "The System Prompt establishes the authoritative operating context, instructions, safety guardrails, and role definitions that govern model behavior across user interactions."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "1. What is the role of a Variational Autoencoder (VAE) inside Latent Diffusion Models like Stable Diffusion?",
+    "options": {
+      "A": "To compress high-resolution images into a lower-dimensional latent space where noise reduction occurs efficiently",
+      "B": "To convert text prompts into one-hot frequency vectors",
+      "C": "To align audio frequencies with character n-grams",
+      "D": "To replace Transformer multi-head attention layers"
+    },
+    "correct_answer": "A",
+    "explanation": "In Latent Diffusion, a VAE encoder squeezes pixel-space images into a compressed latent space (e.g. 8x spatial compression) so that denoising steps run rapidly on consumer GPUs."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "2. How does text conditioning guide image generation in a Diffusion Model?",
+    "options": {
+      "A": "By concatenating text string lengths to image resolution dimensions",
+      "B": "By passing text prompt embeddings from CLIP/T5 into Cross-Attention mechanisms inside the U-Net or Transformer backbone layers",
+      "C": "By converting text into Laplace add-1 smoothing constants",
+      "D": "By running SVD decomposition on prompt co-occurrence counts"
+    },
+    "correct_answer": "B",
+    "explanation": "Text conditioning uses cross-attention layers, where image feature maps act as Queries and text prompt embeddings (from CLIP or T5) act as Keys and Values to guide feature synthesis."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "3. What is Classifier-Free Guidance (CFG) in text-to-image diffusion models?",
+    "options": {
+      "A": "A mechanism that balances adherence to the text prompt versus visual quality and diversity by combining conditional and unconditional score estimates",
+      "B": "A classifier network that deletes low-resolution images",
+      "C": "A rule-based grammar parser that removes profanity from text prompts",
+      "D": "A algorithm that sets model temperature to zero"
+    },
+    "correct_answer": "A",
+    "explanation": "Classifier-Free Guidance (CFG) pushes the generated sample towards the text prompt by extrapolating predictions between conditional (prompted) and unconditional (empty prompt) denoising steps."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "4. What role does the 'Random Seed' integer play in generative AI media creation?",
+    "options": {
+      "A": "It sets the initial Gaussian noise matrix state, allowing exact reproducibility of synthesized images, audio, or video across identical prompts and settings",
+      "B": "It sets the maximum token length limit",
+      "C": "It controls the learning rate during model backpropagation",
+      "D": "It measures cosine distance between text vectors"
+    },
+    "correct_answer": "A",
+    "explanation": "Fixing the random seed initializes pseudo-random noise generators to the exact same starting tensor, ensuring deterministic reproducibility of generative outputs."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "5. What architectural innovation enables single-step or few-step real-time diffusion models (e.g., SD-Turbo, ADD, LCM)?",
+    "options": {
+      "A": "Model distillation techniques (Adversarial Diffusion Distillation / Consistency Models) that compress 50 multi-step denoising iterations into 1-4 fast steps",
+      "B": "Removing cross-attention layers completely",
+      "C": "Using one-hot vectors for image pixel rendering",
+      "D": "Increasing image resolution by 100x"
+    },
+    "correct_answer": "A",
+    "explanation": "Real-time diffusion distillation (like ADD and Consistency Distillation) trains student networks to map noise to clean outputs in 1-4 steps, bypassing slow 50-step iterative sampling."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "6. How do generative audio architectures like Meta's MusicGen and EnCodec produce high-fidelity music and speech?",
+    "options": {
+      "A": "By tokenizing continuous audio signals into discrete neural audio codes using neural audio codecs (EnCodec) and modeling them autoregressively with Transformers",
+      "B": "By converting audio directly into ASCII text strings",
+      "C": "By running SVD decomposition on co-occurrence counts",
+      "D": "By using rule-based MIDI synthesizers from the 1980s"
+    },
+    "correct_answer": "A",
+    "explanation": "MusicGen uses neural audio codecs (EnCodec) to quantize raw audio waveforms into discrete codebook tokens, which an autoregressive Transformer predicts conditioned on text embeddings."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "7. How do state-of-the-art video generation architectures like OpenAI Sora synthesize extended, photorealistic video clips?",
+    "options": {
+      "A": "By applying Spatiotemporal Diffusion Transformers (DiT) operating on 3D spacetime video latent patches",
+      "B": "By stitching static 2D JPEG images together sequentially with no temporal modeling",
+      "C": "By applying N-gram Markov chains on optical flow vectors",
+      "D": "By using TF-IDF document weights on video metadata text"
+    },
+    "correct_answer": "A",
+    "explanation": "Sora and modern video models decompose video into 3D spacetime latent patches and process them using Diffusion Transformers (DiT) to maintain temporal consistency and spatial geometry."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "8. What is Google SynthID and how does it address AI media provenance and deepfake detection?",
+    "options": {
+      "A": "An imperceptible digital watermark embedded directly into generated image pixels or audio waveforms during synthesis that survives cropping, compression, and editing",
+      "B": "A public registry requiring human creators to upload passport photos",
+      "C": "A text filter that blocks prompt execution",
+      "D": "A database storing every generated image file name"
+    },
+    "correct_answer": "A",
+    "explanation": "SynthID embeds subtle, imperceptible watermarks directly into image latent representations or audio frequency spectra during generation, enabling reliable detection even after transformations."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "9. What is the purpose of the C2PA (Coalition for Content Provenance and Authenticity) technical standard in generative media governance?",
+    "options": {
+      "A": "Attaching cryptographically verifiable manifest metadata to media files recording origin history, AI tool usage, and edit logs",
+      "B": "Compressing MP4 video files into ZIP archives",
+      "C": "Enforcing maximum resolution limits on image generation",
+      "D": "Calculating term frequency-inverse document frequency"
+    },
+    "correct_answer": "A",
+    "explanation": "C2PA provides an open technical specification for embedding tamper-evident cryptographic metadata manifests into digital media to verify content origin and AI generation lineage."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "10. In text-to-image synthesis, what happens if the Classifier-Free Guidance (CFG) scale parameter is set excessively high (e.g., CFG = 30)?",
+    "options": {
+      "A": "The generated image suffers from severe over-saturation, harsh contrast clipping, and unnatural visual artifacts",
+      "B": "The image becomes completely blur-free and photorealistic",
+      "C": "The model generates a blank white canvas",
+      "D": "The random seed is automatically reset to zero"
+    },
+    "correct_answer": "A",
+    "explanation": "Setting CFG too high over-constrains the sampling trajectory, causing extreme color saturation, over-sharpening artifacts, and loss of natural texture."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "11. How does CLIP (Contrastive Language-Image Pretraining) align textual descriptions with visual images in a shared vector embedding space?",
+    "options": {
+      "A": "By jointly training a Text Encoder and Image Encoder on 400M image-text pairs using a contrastive loss that maximizes cosine similarity for correct pairs",
+      "B": "By converting text into one-hot vectors and images into grayscale matrices",
+      "C": "By running SVD decomposition on co-occurrence matrices",
+      "D": "By using rule-based feature extraction for edge detection"
+    },
+    "correct_answer": "A",
+    "explanation": "CLIP uses contrastive learning across dual encoders (text and image) to map matching image-caption pairs to high cosine similarity in a shared multimodal embedding space."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "12. What is the fundamental difference between a GAN Generator and a Diffusion Model Denoising U-Net during image creation?",
+    "options": {
+      "A": "A GAN Generator maps a random noise vector to a complete image in a single forward pass; a Diffusion U-Net iteratively removes noise over multiple sequential steps",
+      "B": "A GAN Generator uses attention layers, while Diffusion models do not",
+      "C": "Diffusion models only produce black-and-white images",
+      "D": "A GAN Generator relies on text-conditioned cross attention"
+    },
+    "correct_answer": "A",
+    "explanation": "GAN Generators synthesize full output images in one single feedforward pass, whereas Diffusion models construct images iteratively through t time steps of score-based noise prediction."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "13. What is an 'Image-to-Image' (Img2Img) diffusion pipeline?",
+    "options": {
+      "A": "A pipeline that takes an existing input image, adds noise up to step t, and denoises it conditioned on a text prompt to modify style or content while preserving structure",
+      "B": "A method for converting JPEG files into PNG format",
+      "C": "A database query that matches duplicate image files",
+      "D": "A loss function measuring pixel squared error"
+    },
+    "correct_answer": "A",
+    "explanation": "Img2Img partially corrupts a user-provided base image with Gaussian noise, then applies text-guided denoising to transform visual style while maintaining underlying layout geometry."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "14. How does Inpainting differ from Outpainting in generative image editing tools?",
+    "options": {
+      "A": "Inpainting generates content inside a user-masked region of an image; Outpainting extends the image canvas beyond its original borders while maintaining context",
+      "B": "Inpainting edits audio tracks; Outpainting edits text files",
+      "C": "Inpainting increases resolution; Outpainting converts images to 3D meshes",
+      "D": "Inpainting uses GANs; Outpainting uses static N-grams"
+    },
+    "correct_answer": "A",
+    "explanation": "Inpainting fills or modifies specific masked interior regions of an image, whereas Outpainting expands visual content outward beyond the original frame boundaries."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "15. Why are Multimodal LLMs (e.g., GPT-4o, Gemini 1.5, LLaVA) replacing separate pipeline systems for vision and language tasks?",
+    "options": {
+      "A": "Because natively processing text, audio, and visual tokens within unified Transformer architectures allows joint cross-modal reasoning and lower latency",
+      "B": "Because single-modal models can no longer execute text tokenization",
+      "C": "Because multimodal models require zero training compute memory",
+      "D": "Because image pixels can be converted directly into one-hot encodings"
+    },
+    "correct_answer": "A",
+    "explanation": "Native multimodal models project images, video, audio, and text into a shared token space within a unified Transformer model, enabling direct cross-modal reasoning without modular handoffs."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "16. In text-to-image diffusion pipelines, what occurs if the Classifier-Free Guidance (CFG) scale is set too low (e.g., CFG = 1.0)?",
+    "options": {
+      "A": "The generated image exhibits high visual diversity but ignores detailed prompt instructions and constraints",
+      "B": "The generated image exhibits over-saturated contrast artifacts",
+      "C": "The model fails to initialize Gaussian noise tensors",
+      "D": "The output resolution drops to 16x16 pixels"
+    },
+    "correct_answer": "A",
+    "explanation": "At low CFG scales (near 1.0), the model relies mostly on unconditional generation, yielding diverse but loosely prompt-adherent outputs."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "17. What is CLIP (Contrastive Language-Image Pre-training) and how does it bridge text prompts with visual synthesis?",
+    "options": {
+      "A": "CLIP jointly trains an Image Encoder and Text Encoder on hundreds of millions of image-caption pairs using contrastive loss, projecting text and images into a shared embedding space",
+      "B": "CLIP converts image pixels directly into ASCII character strings",
+      "C": "CLIP calculates term frequency inverse document weights across image metadata",
+      "D": "CLIP is an audio codec for speech compression"
+    },
+    "correct_answer": "A",
+    "explanation": "CLIP creates a shared multimodal embedding space where text description vectors and image feature vectors can be compared directly using cosine similarity."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "18. What structural capabilities does ControlNet add to pretrained text-to-image diffusion models?",
+    "options": {
+      "A": "ControlNet attaches conditional spatial adapters to diffusion models, enforcing explicit geometric control using depth maps, Canny edges, segmentation masks, or pose skeletons",
+      "B": "ControlNet accelerates generation speeds by 100x without GPU memory",
+      "C": "ControlNet converts diffusion models into autoregressive language decoders",
+      "D": "ControlNet removes text conditioning entirely"
+    },
+    "correct_answer": "A",
+    "explanation": "ControlNet locks original diffusion weights and trains lightweight trainable copies to condition output generation on precise spatial controls like edge maps, depth, or human poses."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "19. Why is Latent Diffusion (e.g., Stable Diffusion) drastically more efficient than Pixel-Space Diffusion (e.g., Imagen or early DDPM)?",
+    "options": {
+      "A": "Latent Diffusion performs noise addition and reverse score estimation in a compressed latent space (e.g., 64x lower spatial dimension), reducing GPU compute memory requirements dramatically",
+      "B": "Pixel-space diffusion cannot process color images",
+      "C": "Latent diffusion eliminates the need for score functions",
+      "D": "Pixel-space diffusion requires custom TPU chips"
+    },
+    "correct_answer": "A",
+    "explanation": "By running diffusion steps in a compressed VAE latent representation rather than full pixel space, Latent Diffusion slashes computational complexity and memory usage by orders of magnitude."
+  },
+  {
+    "topic": "Generative Media & Multimodal Synthesis",
+    "question": "20. What key advantage does a Diffusion Transformer (DiT) architecture offer over traditional U-Net backbones for generative media (such as OpenAI Sora and SD3)?",
+    "options": {
+      "A": "DiT replaces convolutional U-Net layers with Transformer blocks operating on spacetime latent patches, enabling predictable compute parameter scaling laws and superior long-context video modeling",
+      "B": "DiT eliminates positional encodings from video generation",
+      "C": "DiT converts latent tokens into one-hot vectors",
+      "D": "DiT reduces video framerates to 1 fps"
+    },
+    "correct_answer": "A",
+    "explanation": "Diffusion Transformers (DiT) treat image/video latents as sequence patches, unlocking Transformer parameter scaling laws, superior spatial-temporal modeling, and efficient multi-modal attention."
   }
 ]
