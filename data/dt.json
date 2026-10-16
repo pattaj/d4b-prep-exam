@@ -1,902 +1,662 @@
 [
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "1. According to Gregory Vial (2019), how is Digital Transformation (DT) defined?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "1. Company X is an established retail firm where individual departments run independent digital marketing trials and launch separate mobile apps without C-suite oversight or unified strategy. According to Solis and Szymanski (2016), which stage of digital transformation maturity is Company X demonstrating?",
     "options": {
-      "A": "A static IT upgrade aimed solely at reducing hardware maintenance costs",
-      "B": "A process where organizations alter value creation processes using information, computing, communication, and connectivity technologies",
-      "C": "The complete automation of human labor through physical robotics",
-      "D": "A temporary marketing trend focusing on social media engagement"
+      "A": "Business as Usual",
+      "B": "Present and Active",
+      "C": "Formalized",
+      "D": "Strategic"
     },
     "correct_answer": "B",
-    "explanation": "Vial (2019) defines DT as a process aimed at triggering significant changes through combinations of information, computing, communication, and connectivity technologies to alter value creation processes."
+    "explanation": "In Solis & Szymanski's (2016) 6-stage maturity model, 'Present and Active' is characterized by ad-hoc digital experimentation driven by specific individuals or isolated pockets of innovation, but lacking enterprise-level strategy or executive alignment."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "2. What are the three sequential phases of Digital Transformation identified in the course material?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "2. According to Solis and Szymanski (2016), what key organizational shift marks the transition from the 'Strategic' stage to the 'Converged' stage of digital transformation?",
     "options": {
-      "A": "Digitizing, Digitalization, and Digital Transformation",
-      "B": "Automation, Cloudification, and Optimization",
-      "C": "Sensing, Seizing, and Transforming",
-      "D": "Digitization, Infrastructure, and Monetization"
+      "A": "The creation of the first social media accounts by frontline customer service agents.",
+      "B": "The complete replacement of all legacy hardware with public cloud infrastructure.",
+      "C": "A dedicated digital transformation team is formed to guide strategy, infrastructure investments, and customer journey mapping across departments.",
+      "D": "The organization shifts to a purely remote workforce model."
+    },
+    "correct_answer": "C",
+    "explanation": "In the 'Converged' stage (Solis & Szymanski, 2016), dedicated transformation teams take shape to unify strategy, operations, and technology, eliminating departmental silos to create a seamless customer and employee experience."
+  },
+  {
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "3. In Westerman et al.'s (2012) Digital Maturity Matrix, how are 'Digital Fashionistas' categorized regarding Digital Intensity and Transformation Management Intensity?",
+    "options": {
+      "A": "Low Digital Intensity, Low Transformation Management Intensity",
+      "B": "High Digital Intensity, Low Transformation Management Intensity",
+      "C": "Low Digital Intensity, High Transformation Management Intensity",
+      "D": "High Digital Intensity, High Transformation Management Intensity"
+    },
+    "correct_answer": "B",
+    "explanation": "Digital Fashionistas invest heavily in many trendy technology applications (High Digital Intensity), but lack the overarching leadership, vision, and governance (Low Transformation Management Intensity) to integrate them for synergistic ROI."
+  },
+  {
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "4. According to empirical findings in Westerman et al. (2012), which financial advantage do 'Digirati' achieve compared to industry average peers?",
+    "options": {
+      "A": "Digirati achieve 26% higher profitability and 9% higher revenue generation from existing physical capacity.",
+      "B": "Digirati achieve 50% lower operational costs but suffer a 10% decline in net profit margin.",
+      "C": "Digirati achieve equal profitability to Fashionistas but lower market valuations.",
+      "D": "Digirati excel only in revenue generation (+16%) while remaining unprofitable."
     },
     "correct_answer": "A",
-    "explanation": "The course materials outline three sequential phases: Digitizing (converting analog to digital), Digitalization (restructuring domain processes around digital media), and Digital Transformation (profound change creating new value co-creation business models)."
+    "explanation": "Westerman et al. (2012) demonstrated that Digirati combine digital capability and leadership vision to far outperform peers, achieving +26% higher profitability, +9% higher asset efficiency (revenue generation), and +12% higher market valuation."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "3. Which activity best illustrates 'Digitizing' as defined in the source material?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "5. In Gregory Vial's (2019) inductive framework of digital transformation, what is identified as the initial trigger that compels organizations to formulate strategic responses?",
     "options": {
-      "A": "Launching an ecosystem platform like Uber or Netflix",
-      "B": "Converting physical paper documents or records into digital PDF scans",
-      "C": "Restructuring corporate communication around Slack and Microsoft Teams",
-      "D": "Implementing predictive CRM analytics for customer retention"
+      "A": "Internal employee resistance to ERP upgrades.",
+      "B": "Digital technologies causing disruptions in consumer expectations and competitive landscapes.",
+      "C": "Immediate financial insolvency caused by cloud migration costs.",
+      "D": "Decreased broadband connectivity across domestic markets."
     },
     "correct_answer": "B",
-    "explanation": "Digitizing is defined as converting analog data (paper, records, scans) into digital form without altering value-creating activities."
+    "explanation": "Vial's (2019) 8-building-block framework posits that digital technologies act as sources of disruption, altering consumer behaviors and competitive dynamics, which then triggers strategic responses from organizations."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "4. What characterizes the 'Digitalization' phase according to the DT framework?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "6. A hospital system shifts from scanning paper charts into PDF scans (Activity 1) to offering an AI-powered telemedicine ecosystem that dynamically matches patients with specialists and predicts diagnostic risks (Activity 2). How should these two activities be classified based on DT theoretical definitions?",
     "options": {
-      "A": "Simple optical character recognition (OCR) of paper forms",
-      "B": "Restructuring social life and business domains around digital communication and media infrastructures",
-      "C": "The complete dissolution of traditional firm boundaries into global decentralized DAOs",
-      "D": "Purchasing raw computer hardware without updating business logic"
+      "A": "Activity 1 is Digital Transformation; Activity 2 is Digitization.",
+      "B": "Activity 1 is Digitization; Activity 2 is Digital Transformation.",
+      "C": "Both Activity 1 and Activity 2 represent Digitalization.",
+      "D": "Both Activity 1 and Activity 2 represent Digitization."
     },
     "correct_answer": "B",
-    "explanation": "Digitalization refers to the way many domains of social life and business are restructured around digital communication and media infrastructures."
+    "explanation": "Digitization refers to converting physical/analog format into digital bits without altering value creation (Activity 1). Digital Transformation involves profound organizational change and new business/service models leveraging ecosystem connectivity (Activity 2)."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "5. What shift does Ebert & Duarte (2018) describe as the 'Copernican revolution' in Digital Transformation?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "7. According to case analysis in corporate DT studies (DT Overview, 2026), why did Eastman Kodak fail despite inventing the core technology for digital photography?",
     "options": {
-      "A": "Positioning central cloud servers as the primary core of corporate governance",
-      "B": "Shifting from product-centric models to placing the customer and co-creation of value at the center",
-      "C": "Replacing human management entirely with automated algorithmic rules",
-      "D": "Transitioning all software development from proprietary to open-source licenses"
+      "A": "Kodak suffered from severe lack of financial capital to manufacture digital cameras.",
+      "B": "Kodak failed to file patents for digital image sensors.",
+      "C": "Kodak suffered from organizational silos, rigid business model inertia, and reluctance to disrupt its lucrative film revenues.",
+      "D": "Kodak was barred from entering consumer digital markets by European antitrust regulators."
+    },
+    "correct_answer": "C",
+    "explanation": "Kodak's failure is a classic case of strategic inertia and organizational silos: management protected traditional film margins rather than transforming its business model around digital customer value."
+  },
+  {
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "8. In the context of aerospace manufacturing planning and scheduling (Human Factors in Planning), what role do Human Factors play in ensuring operational efficiency?",
+    "options": {
+      "A": "Replacing human schedulers entirely with fully autonomous, unmonitored neural networks.",
+      "B": "Supporting human adaptability, contingency management, and cross-functional communication between planners, IT, and shop-floor execution.",
+      "C": "Standardizing assembly line tasks so workers do not require cognitive decision-making capabilities.",
+      "D": "Eliminating safety buffer times from production schedules."
     },
     "correct_answer": "B",
-    "explanation": "Ebert & Duarte (2018) characterize the shift as a Copernican revolution that moves from product-oriented thinking to placing the customer and value co-creation at the core."
+    "explanation": "Human Factors in planning emphasizes that aerospace production relies on human adaptability and decision-making under disruption; technology must augment, not replace, coordination across planners, engineers, and shop-floor operators."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "6. According to Warner & Wäger (2019), digital transformation is best understood as:",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "9. A Card Sorting Study on AI explainability in aerospace manufacturing revealed that which software design flaw most severely hinders human trust and effective collaboration?",
     "options": {
-      "A": "A fixed position on a matrix grid achieved after acquiring software tools",
-      "B": "An ongoing process of dynamic capability-building involving Sensing, Seizing, and Transforming",
-      "C": "A one-time IT department restructuring completed within a single fiscal quarter",
-      "D": "An external regulatory requirement mandated by international law"
+      "A": "Using clean graphical visualizations of confidence intervals.",
+      "B": "Providing real-time user support options.",
+      "C": "Overburdening shop-floor users with overly complex, technical algorithmic jargon instead of intuitive interface design.",
+      "D": "Allowing operators to view historical system metrics."
+    },
+    "correct_answer": "C",
+    "explanation": "The card-sorting research identified that technical jargon and opaque algorithmic descriptions overload operators cognitively, whereas human-centered explainability requires clear interface design and actionable operational insights."
+  },
+  {
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "10. In Westerman et al. (2012), why are 'Digital Conservatives' often less profitable in fast-moving consumer sectors than Digirati despite having strong transformation governance?",
+    "options": {
+      "A": "They overspend on risky social media campaigns.",
+      "B": "Their extreme prudence and risk-aversion cause them to miss high-ROI digital market opportunities.",
+      "C": "They lack IT department infrastructure completely.",
+      "D": "They suffer from excessive employee turnover due to rapid technological shifts."
     },
     "correct_answer": "B",
-    "explanation": "Warner & Wäger (2019) view digital transformation as an ongoing process of dynamic capability-building through Sensing, Seizing, and Transforming."
+    "explanation": "Conservatives possess solid governance and leadership vision, but their skepticism toward new digital trends causes them to move too cautiously, missing lucrative digital opportunities captured by Digirati and Fashionistas."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "7. In the Burberry case study, what was Burberry's strategic position in 2006 before its digital transformation?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "11. According to Solis and Szymanski (2016), what primary catalyst is driving modern enterprises toward digital transformation across all industries?",
     "options": {
-      "A": "Leading the luxury sector with over 25% annual revenue growth",
-      "B": "Underperforming with only 1-2% annual growth while the luxury sector grew at 12-13%",
-      "C": "Operating exclusively as an e-commerce platform with no brick-and-mortar stores",
-      "D": "Experiencing financial bankruptcy due to supply chain failures"
+      "A": "Mandatory government regulatory quotas for cloud computing.",
+      "B": "Evolving customer behavior, expectations, and the digital customer experience (CX).",
+      "C": "The declining cost of office real estate.",
+      "D": "Pressure from legacy hardware vendors selling mainframe servers."
     },
     "correct_answer": "B",
-    "explanation": "In 2006, Burberry was underperforming with only 1-2% annual growth compared to the luxury sector's 12-13% annual growth rate."
+    "explanation": "Solis & Szymanski's empirical survey highlights that understanding and adapting to changing connected consumer behavior and mapping the digital customer journey is the primary driver of enterprise digital transformation."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "8. What organizational change occurred regarding Burberry's Chief Technology Officer (CTO) during transformation?",
+    "topic": "Digital Transformation, Strategy & Organizational Evolution",
+    "question": "12. In Vial's (2019) research agenda, why are 'Dynamic Capabilities' considered critical for sustained digital transformation success?",
     "options": {
-      "A": "The CTO role was eliminated and merged into human resources",
-      "B": "The CTO moved 'from the back of the bus to the front,' driving transformation directly",
-      "C": "The CTO was restricted purely to managing hardware server rooms",
-      "D": "The CTO was required to report exclusively to external third-party agencies"
+      "A": "They allow firms to perpetually freeze organizational structures after a single IT rollout.",
+      "B": "They enable organizations to continuously sense digital opportunities, seize them, and reconfigure operational assets in response to disruption.",
+      "C": "They eliminate the need for leadership vision or IT governance.",
+      "D": "They replace human labor with automated physical robotics across all administrative functions."
     },
     "correct_answer": "B",
-    "explanation": "Burberry reorganized so technology drove organizational change, symbolized by the CTO moving from the back of the bus to the front to lead transformation."
+    "explanation": "Dynamic capabilities (sensing, seizing, and reconfiguring) allow organizations to continuously adapt their strategies, processes, and value creation paths in fast-changing digital environments."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "9. What strategic partnership did Burberry form to eliminate fragmented customer views across channels?",
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "1. In José van Dijck's (2021) 'Platformization Tree' botanical metaphor, what specific structural component is represented by the 'Trunk'?",
     "options": {
-      "A": "Partnered with Salesforce to deploy CRM modules and establish 'Burberry World'",
-      "B": "Partnered with Amazon to sell all goods on third-party marketplace storefronts",
-      "C": "Partnered with Kodak to produce traditional analog photo catalogs",
-      "D": "Partnered with IBM to build proprietary mainframe server centers"
+      "A": "Subsea fiber-optic cables and microchip foundries.",
+      "B": "Intermediary platforms (e.g., cloud services, search engines, app stores, pay systems, identification logins) controlled by a tech oligopoly.",
+      "C": "Specialized sector apps in primary school education and municipal hospitals.",
+      "D": "Public non-profit community networks."
+    },
+    "correct_answer": "B",
+    "explanation": "Van Dijck's tree metaphor assigns the 'Trunk' to central intermediary platforms (dominated by GAFAM) that control data flows, user identification, search, payment, and cloud storage, linking roots to sectoral branches."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "2. What dynamic process does Van Dijck (2021) describe when Big Tech corporations acquire or integrate hardware devices, cloud architectures, and operating systems to lock users into proprietary ecosystems?",
+    "options": {
+      "A": "Demediation of municipal networks.",
+      "B": "Vertical integration (or platformization of infrastructure).",
+      "C": "Infrastructuralization of primary schools.",
+      "D": "Horizontal fragmentation."
+    },
+    "correct_answer": "B",
+    "explanation": "Vertical integration occurs when tech monopolies extend control downward into physical infrastructure/hardware and upward into sectoral apps, creating a continuous proprietary data stream that prevents interoperability."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "3. According to Van Dijck et al., what are the three core mechanisms through which platform societies operate and process social interactions?",
+    "options": {
+      "A": "Digitization, Automation, and Telecommunication",
+      "B": "Datafication, Commodification, and Algorithmic Selection",
+      "C": "Regulation, Monetization, and Privatization",
+      "D": "Socialization, Globalization, and Bureaucratization"
+    },
+    "correct_answer": "B",
+    "explanation": "Platform societies rely on three foundational mechanisms: Datafication (quantifying activities into data), Commodification (transforming data/attention into value), and Selection (algorithmic filtering and curation)."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "4. In 'Big Data and Platform Society' (10.10.2026), what constitutes the phenomenon of 'Ghost Work' in the global AI economy?",
+    "options": {
+      "A": "Automated scripts that generate synthetic images without human intervention.",
+      "B": "Underpaid, invisible human workers doing manual content moderation, data labeling, and filter training behind AI platforms.",
+      "C": "Employees who telecommute without registering their tax status.",
+      "D": "Robotic process automation executing nightly database backups."
+    },
+    "correct_answer": "B",
+    "explanation": "Ghost work refers to the hidden global labor force (e.g., content moderators paid $1.32-$2.00/hr) who manually review violent content or tag training datasets to make AI models appear seamless."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "5. How does Van Dijck (2021) contrast the American 'Californian Sequoia' platform tree with the proposed 'European Federated Tree' model?",
+    "options": {
+      "A": "The Sequoia is state-owned; the European tree is completely unregulated.",
+      "B": "The Sequoia has a thick, centralized proprietary trunk; the European tree is decentralized, federated, and based on public value principles and data sovereignty.",
+      "C": "The Sequoia relies on open-source code; the European tree prohibits cloud storage.",
+      "D": "The Sequoia excludes mobile devices; the European tree relies exclusively on hardware."
+    },
+    "correct_answer": "B",
+    "explanation": "The Sequoia represents a centralized corporate oligopoly with an ever-expanding proprietary trunk, whereas a European model envisions a federated, interoperable architecture upholding public values and user data sovereignty."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "6. In Livingstone et al. (2024), what major systemic problem is highlighted regarding the 'Googlization of the Classroom'?",
+    "options": {
+      "A": "Google Classroom charges public schools prohibitive subscription fees.",
+      "B": "Schools lack access to basic computer hardware.",
+      "C": "Educational institutions are burdened with complex legal privacy compliance while corporate platforms collect children's personal data.",
+      "D": "Google software fails to function on basic tablet devices."
+    },
+    "correct_answer": "C",
+    "explanation": "Livingstone et al. (2024) document how commercial platforms enter public education, harvesting student data while leaving under-resourced local schools with the unfair burden of navigating complex privacy compliance."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "7. According to the 'Big Data and Platform Society' curriculum, how does platform lock-in create a 'threat of invisibility' for digital content creators?",
+    "options": {
+      "A": "Platforms delete accounts that do not pay monthly rent.",
+      "B": "Opaque algorithmic adjustments can instantly suppress a creator's distribution and reach if they do not comply with platform rules.",
+      "C": "Search engines block hardware IP addresses permanently.",
+      "D": "Users are required to hide their real identity behind avatars."
+    },
+    "correct_answer": "B",
+    "explanation": "Creators and businesses depend on platforms for market access; platforms leverage unilateral algorithm changes or 'threat of invisibility' (shadowbanning/demotion) to enforce power and extract economic surplus."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "8. What is a primary regulatory objective of the European Union's Digital Markets Act (DMA) and Digital Services Act (DSA)?",
+    "options": {
+      "A": "Banning all cross-border electronic commerce in Europe.",
+      "B": "Nationalizing subsea Internet cables.",
+      "C": "Curbing market gatekeeping by Big Tech, enforcing interoperability, data portability, and algorithmic transparency to protect public interest.",
+      "D": "Mandating that all online platforms operate as non-profit charities."
+    },
+    "correct_answer": "C",
+    "explanation": "The DMA and DSA aim to break gatekeeper monopolies, ensure fair market competition, enforce data portability, mandate content moderation accountability, and protect systemic public rights online."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "9. In 'Lecture: The Media in Late Modernity', what characteristically defines Rosa's concept of the 'Acceleration Society'?",
+    "options": {
+      "A": "Slow, deliberative public policy debates regarding environmental protection.",
+      "B": "The compression of time and rapid pace of social, technological, and life-pace changes driven by digital algorithms.",
+      "C": "A decline in global transport speeds.",
+      "D": "The gradual elimination of digital networks in urban centers."
+    },
+    "correct_answer": "B",
+    "explanation": "The Acceleration Society concept describes how modern digital infrastructure compresses temporal dynamics, speeding up technical innovation, social change, and daily life pacing beyond human reflective capacity."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "10. In Van Dijck's platform tree, what layer do specialized services like Google Classroom, Uber Mobility, or NHS Telehealth occupy?",
+    "options": {
+      "A": "The Roots layer",
+      "B": "The Trunk layer",
+      "C": "The Sectoral Branches layer",
+      "D": "The Soil layer"
+    },
+    "correct_answer": "C",
+    "explanation": "Sectoral apps and platforms exist on the 'Branches' of the tree, representing domain-specific applications (health, education, transport, news) that sit atop intermediary trunk services."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "11. What is meant by the assertion that platform technologies are 'negotiable objects, not inevitable forces' (Ferrari, 2025; Big Data 10.10.2026)?",
+    "options": {
+      "A": "Software code is fixed by natural law and cannot be changed by human intervention.",
+      "B": "Technology trajectories are shaped by policy choices, democratic governance, and social design rather than technological determinism.",
+      "C": "Tech monopolies are immune to legal regulation.",
+      "D": "Algorithms automatically negotiate wage contracts with gig workers."
+    },
+    "correct_answer": "B",
+    "explanation": "Rejecting technological determinism, this principle emphasizes that digital platforms are sociotechnical constructs whose rules, architectures, and impacts can be reshaped through human agency and regulation."
+  },
+  {
+    "topic": "Platform Society, Algorithmic Governance & Big Data",
+    "question": "12. In platform economics, how does 'Cross-Sectorization' allow a tech monopoly (e.g., Amazon buying Whole Foods or Google investing in health data) to solidify market domination?",
+    "options": {
+      "A": "By forcing competitors to merge into single public utilities.",
+      "B": "By leveraging central data and cloud infrastructure from its trunk to capture data and leverage power across previously distinct societal sectors.",
+      "C": "By abandoning digital technology to focus on physical real estate.",
+      "D": "By eliminating all advertising expenditures."
+    },
+    "correct_answer": "B",
+    "explanation": "Cross-sectorization occurs when gatekeepers move from intermediary services into diverse physical/societal sectors (healthcare, retail, transport), expanding data extraction and reinforcing ecosystem lock-in."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "1. In Neil Postman's philosophy of technology (cited in D4B Lesson 2), what is meant by the concept of a 'Faustian Bargain'?",
+    "options": {
+      "A": "Technology provides purely beneficial outcomes with zero negative consequences.",
+      "B": "Technology is a fundamental trade-off: every new innovation gives something major while taking away something vital, altering the whole culture.",
+      "C": "A legally binding contract between software developers and end-users.",
+      "D": "A financial investment strategy used by venture capital firms."
+    },
+    "correct_answer": "B",
+    "explanation": "Postman's Faustian Bargain principle asserts that culture always pays a price for technological innovation; technology is never additive/subtractive in isolation, but an ecological change that redistributes power."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "2. D4B Lesson 2 highlights 'Moravec's Paradox' in artificial intelligence. What does this paradox observe?",
+    "options": {
+      "A": "Complex mathematical and logical tasks are extremely difficult for AI, whereas physical walking is trivial.",
+      "B": "High-level reasoning and cognitive tasks (e.g., chess, data analysis) are comparatively easy to automate, whereas basic sensorimotor skills (e.g., physical dexterity, perception) are extremely difficult for AI.",
+      "C": "AI systems require zero electricity to perform physical labor.",
+      "D": "Generative language models possess human emotional empathy."
+    },
+    "correct_answer": "B",
+    "explanation": "Moravec's Paradox points out that artificial intelligence easily surpasses humans in abstract cognitive calculations, but struggles significantly with basic physical, perceptual, and motor skills honed by millions of years of human evolution."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "3. In 'Adaptive Human Robot Collaboration', what primary human state do adaptive cobots dynamically monitor to adjust their real-time behavior?",
+    "options": {
+      "A": "Long-term career aspirations",
+      "B": "Psychological/cognitive states, specifically mental workload and attention, using physiological signals",
+      "C": "Financial income levels",
+      "D": "Spoken dialect and linguistic accent"
+    },
+    "correct_answer": "B",
+    "explanation": "The scoping review shows adaptive cobots monitor worker cognitive workload, stress, and attention via physiological sensors (e.g., heart rate variability, EEG, eye tracking) to dynamically adapt speed, task allocation, and trajectory."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "4. How does Industry 5.0 differ fundamentally from Industry 4.0 in its manufacturing and technological paradigm?",
+    "options": {
+      "A": "Industry 5.0 eliminates computers and returns to manual craftsmanship.",
+      "B": "Industry 4.0 focuses on cyber-physical automation and throughput; Industry 5.0 places human well-being, sustainability, and human-centric collaboration at the center of production.",
+      "C": "Industry 5.0 prioritizes fully autonomous factories with zero human presence.",
+      "D": "Industry 5.0 focuses exclusively on military applications."
+    },
+    "correct_answer": "B",
+    "explanation": "Industry 5.0 shifts focus from pure efficiency and cyber-physical automation (Industry 4.0) to a human-centric, resilient, and sustainable paradigm where robots augment and assist human workers safely."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "5. In the SESTOSENSO project study ('Integrating Cobots in Manufacturing'), what key factor was found to most strongly influence expert trust and safety acceptance among operators?",
+    "options": {
+      "A": "Painting cobots in bright orange colors.",
+      "B": "Transparent algorithmic behavior, robust physical safety protocols, and intuitive human-centric design.",
+      "C": "Increasing the movement speed of robotic arms to maximum velocity.",
+      "D": "Removing emergency stop buttons from factory floors."
+    },
+    "correct_answer": "B",
+    "explanation": "Expert evaluation in the SESTOSENSO study demonstrated that trust and perceived safety depend on predictable cobot motion, active safety sensors, clear communication, and human-centered design principles."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "6. According to literature on AI skills upskilling and reskilling, which types of human competencies remain most resilient against AI displacement?",
+    "options": {
+      "A": "Rote data entry and repetitive mathematical calculation.",
+      "B": "Transversal soft skills, critical thinking, complex problem-solving, empathy, and ethical reasoning.",
+      "C": "Basic document scanning and file sorting.",
+      "D": "Standardized assembly line manual repetition."
+    },
+    "correct_answer": "B",
+    "explanation": "While AI automates structured cognitive and physical routines, human transversal competencies—such as emotional intelligence, critical judgment, creativity, and ethical leadership—remain uniquely resistant to automation."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "7. Neil Postman's metaphor comparing technology insertion to 'dropping a drop of red dye into a glass of water' illustrates that technological change is:",
+    "options": {
+      "A": "Strictly additive, leaving the surrounding environment unchanged.",
+      "B": "Ecological, altering and coloring the entire cultural and operational system.",
+      "C": "Temporary and easily reversed by pouring out the water.",
+      "D": "Confined exclusively to IT department server rooms."
+    },
+    "correct_answer": "B",
+    "explanation": "Postman's red dye metaphor illustrates that technology is ecological: introducing a significant tool (like AI or printing press) alters the entire social and cultural medium rather than remaining isolated."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "8. In adaptive human-robot assembly tasks, what physiological metric is commonly utilized to detect human cognitive overload in real time?",
+    "options": {
+      "A": "Shoe size measurements",
+      "B": "Heart rate variability (HRV) and galvanic skin response (GSR)",
+      "C": "Blood type classification",
+      "D": "Body height fluctuations"
+    },
+    "correct_answer": "B",
+    "explanation": "Physiological sensing in adaptive cobotics relies on metrics like Heart Rate Variability (HRV), Galvanic Skin Response (GSR), and pupillometry to detect cognitive stress and workload spikes."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "9. Why is AI categorized as a 'General Purpose Technology' (GPT) alongside electricity and the steam engine in economic literature?",
+    "options": {
+      "A": "Because it is manufactured exclusively by electric power companies.",
+      "B": "Because it is pervasive across almost all economic sectors, improves continuously over time, and spawns complementary secondary innovations.",
+      "C": "Because its use is restricted to government research facilities.",
+      "D": "Because it replaces all physical raw materials in production."
+    },
+    "correct_answer": "B",
+    "explanation": "General Purpose Technologies (GPTs) are characterized by pervasiveness across industries, continuous technological advancement, and the capacity to generate complementary innovations throughout the economy."
+  },
+  {
+    "topic": "Artificial Intelligence, Human-Robot Collaboration & Workplace Adaptation",
+    "question": "10. In manufacturing, what is the primary operational benefit of combining collaborative robots (cobots) with industrial exoskeletons for human assembly operators?",
+    "options": {
+      "A": "Allowing workers to sleep during factory shifts.",
+      "B": "Reducing physical biomechanical strain while maintaining human flexibility and cognitive decision-making during heavy lifting.",
+      "C": "Replacing human operators entirely within 24 hours.",
+      "D": "Eliminating the need for product quality inspection."
+    },
+    "correct_answer": "B",
+    "explanation": "Exoskeletons reduce physical fatigue and musculoskeletal injuries during heavy tasks, while cobots handle precise repetitive holding, enabling human operators to apply judgment safely without physical strain."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "1. In Henry Jenkins's (2006) foundational report on 21st-century media education, what are the 'Three Core Challenges' facing youth in digital culture?",
+    "options": {
+      "A": "Screen addiction, eye strain, and hardware costs",
+      "B": "The Participation Gap, the Transparency Problem, and the Ethics Challenge",
+      "C": "Bandwidth throttling, copyright piracy, and computer viruses",
+      "D": "Lack of textbooks, teacher shortages, and low test scores"
+    },
+    "correct_answer": "B",
+    "explanation": "Jenkins identifies three core flaws in laissez-faire digital culture: the Participation Gap (unequal access to skills/opportunities), the Transparency Problem (inability to see media framing), and the Ethics Challenge (lack of online moral norms)."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "2. Which of Henry Jenkins's 11 New Media Literacy competencies is defined as 'the ability to pool knowledge and compare notes with others toward a common goal'?",
+    "options": {
+      "A": "Distributed Cognition",
+      "B": "Collective Intelligence",
+      "C": "Transmedia Navigation",
+      "D": "Appropriation"
+    },
+    "correct_answer": "B",
+    "explanation": "Collective Intelligence is the ability to pool knowledge and collaborate asynchronously with online communities (e.g., Wikipedia editing, open-source development) to solve complex problems together."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "3. Jenkins defines 'Distributed Cognition' as:",
+    "options": {
+      "A": "The physical breakdown of server hardware across multiple data centers.",
+      "B": "The ability to interact meaningfully with tools and technological artifacts that expand mental capacities.",
+      "C": "Distributing printed worksheets in traditional classrooms.",
+      "D": "The spread of rumors across social media platforms."
+    },
+    "correct_answer": "B",
+    "explanation": "Distributed Cognition is the capacity to integrate cognitive tools, software, databases, and digital assistants into one's thinking process to solve problems beyond unassisted human memory."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "4. According to UNESCO's (2021) Media and Information Literacy (MIL) curriculum, how is 'Disinformation' formally distinguished from 'Misinformation'?",
+    "options": {
+      "A": "Disinformation is published in newspapers; misinformation is posted on social media.",
+      "B": "Disinformation is false information deliberately created and spread to harm individuals or groups; misinformation is false information spread without malicious intent.",
+      "C": "Disinformation is always true; misinformation is always false.",
+      "D": "Disinformation refers only to environmental statistics."
+    },
+    "correct_answer": "B",
+    "explanation": "UNESCO distinguishes information disorders by intent: Disinformation is intentionally deceptive/harmful falsehood, whereas Misinformation is inaccurate content shared accidentally without malicious intent."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "5. In UNESCO's MIL framework, what is 'Malinformation'?",
+    "options": {
+      "A": "Inaccurate math calculations in elementary textbooks.",
+      "B": "Information based on reality/truth used intentionally to cause harm to a person, organization, or country (e.g., leaking private personal data out of malice).",
+      "C": "Broken hyper-links on educational websites.",
+      "D": "Spam commercial advertisements for clothing."
+    },
+    "correct_answer": "B",
+    "explanation": "Malinformation involves genuine, truthful information used maliciously out of context or illegally (e.g., doxxing, revenge leaks, malicious leaks) to cause intentional harm."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "6. Fitzgerard et al. (2020) emphasize that reading comprehension in digital environments differs from traditional printed texts because online reading requires students to:",
+    "options": {
+      "A": "Memorize exact page numbers of physical books.",
+      "B": "Navigate non-linear hyper-text structures, critically evaluate source credibility on the fly, and synthesize multimodal text, video, and audio elements.",
+      "C": "Read strictly from left to right without stopping.",
+      "D": "Ignore all images and diagrams to focus exclusively on text."
+    },
+    "correct_answer": "B",
+    "explanation": "Digital reading comprehension requires active self-directed navigation through non-linear hyperlinks, real-time credibility checking, and integrating information across multiple media modes."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "7. In Pier Cesare Rivoltella's (2023) analysis of 'New Alphabets, New Cultures', what characterizes a 'Post-Digital' culture?",
+    "options": {
+      "A": "A complete rejection of all electronic technology in favor of paper.",
+      "B": "A state where digital technology is so pervasive and embedded in daily life that it becomes invisible, blending seamlessly into social reality.",
+      "C": "A historical era before the invention of the microchip.",
+      "D": "A society where only computer programmers are permitted to read."
+    },
+    "correct_answer": "B",
+    "explanation": "Post-digital culture does not mean 'after digital' in time, but rather describes an condition where digital technologies are so ubiquitous and taken for granted that they form the mundane fabric of existence."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "8. Which of Jenkins's 11 New Media Literacy skills refers to 'the ability to adopt alternative identities for the purpose of improvisation and discovery'?",
+    "options": {
+      "A": "Play",
+      "B": "Performance",
+      "C": "Simulation",
+      "D": "Networking"
+    },
+    "correct_answer": "B",
+    "explanation": "Performance is the competency to inhabit alternative personas and identities (e.g., roleplay, online simulations, fan video production) to explore diverse perspectives and discover new insights."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "9. In Jenkins's framework, 'Negotiation' as a new media literacy skill refers to:",
+    "options": {
+      "A": "Bargaining for lower prices on e-commerce platforms.",
+      "B": "The ability to travel across diverse online communities, discerning and respecting multiple cultural perspectives, norms, and values.",
+      "C": "Signing employee non-disclosure agreements.",
+      "D": "Configuring router security passwords."
+    },
+    "correct_answer": "B",
+    "explanation": "Negotiation is the social skill of navigating diverse cultural communities online, listening across differences, recognizing alternative community norms, and resolving cultural misunderstandings ethically."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "10. According to UNESCO's Five Laws of Media and Information Literacy, Law 1 states that:",
+    "options": {
+      "A": "Only accredited journalists are entitled to freedom of expression.",
+      "B": "Information, media, and technology are equal in stature and importance for civic engagement and sustainable development, regardless of format.",
+      "C": "Digital platforms must be completely free of commercial advertisements.",
+      "D": "All online information must be verified by government censors prior to publication."
+    },
+    "correct_answer": "B",
+    "explanation": "UNESCO's Law 1 of MIL asserts that all forms of information, media, and communication providers are equal in status and vital for empowering citizens in democratic and development processes."
+  },
+  {
+    "topic": "Media Literacies, Participatory Culture & Digital Education",
+    "question": "11. Henry Jenkins defines 'Appropriation' in participatory culture as:",
+    "options": {
+      "A": "Stealing hardware components from public libraries.",
+      "B": "The ability to meaningfully sample and remix media content to generate new cultural expressions and commentary.",
+      "C": "Filing copyright infringement lawsuits against fan creators.",
+      "D": "Restricting internet access in secondary schools."
+    },
+    "correct_answer": "B",
+    "explanation": "Appropriation is the creative sampling, remixing, mashup, and repurposing of existing media artifacts to construct new meanings and participate in fan/civic culture."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "1. In the empirical research study on the Social Sustainability of Digital Transformation (SOSDIT) in EU-27 countries, which two latent variables were statistically confirmed as the primary building blocks of SOSDIT?",
+    "options": {
+      "A": "Hardware Exports and Subsea Fiber Cabling",
+      "B": "Digital Inclusion (H1 confirmed) and Digital Skills (H3 confirmed)",
+      "C": "E-Commerce Taxes and Corporate Patent Filings",
+      "D": "Social Media Spending and Mobile Roaming Tariffs"
+    },
+    "correct_answer": "B",
+    "explanation": "Structural Equation Modeling (SEM-PLS) in the SOSDIT study proved that Digital Inclusion (equal access to tech/infrastructure) and Digital Skills (workforce reskilling/literacy) are the core statistical determinants of social sustainability."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "2. According to the SOSDIT empirical ranking of EU-27 member states, which three nations achieved the highest social sustainability scores in digital transformation?",
+    "options": {
+      "A": "Greece, Italy, and Spain",
+      "B": "Finland (0.59), Netherlands (0.57), and Denmark (0.56)",
+      "C": "Romania, Bulgaria, and Portugal",
+      "D": "Poland, Hungary, and Slovakia"
+    },
+    "correct_answer": "B",
+    "explanation": "Table 5 of the SOSDIT empirical study lists Finland (0.59), Netherlands (0.57), and Denmark (0.56) as top performers in social sustainability, whereas Romania, Bulgaria, and Portugal ranked lowest."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "3. What direct statistical relationship was proven in the SOSDIT structural equation model regarding income inequality (measured by the Gini coefficient) and a country's SDG achievement?",
+    "options": {
+      "A": "A higher Gini coefficient increases SDG achievement.",
+      "B": "A higher Gini coefficient exerts a direct negative effect on a nation's performance in achieving Sustainable Development Goals (SDGs).",
+      "C": "The Gini coefficient has zero statistical correlation with SDGs.",
+      "D": "Income inequality accelerates digital inclusion in rural areas."
+    },
+    "correct_answer": "B",
+    "explanation": "The PLS-SEM analysis confirmed a significant negative path coefficient between the Gini coefficient and SDG index (-0.308), proving that income inequality directly undermines sustainable development progress."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "4. How many core policy dimensions are established in the OECD 'Going Digital' integrated policy framework?",
+    "options": {
+      "A": "3 dimensions",
+      "B": "7 dimensions (Access, Effective Use, Innovation, Jobs, Social Prosperity, Trust, Market Openness)",
+      "C": "12 dimensions",
+      "D": "22 dimensions"
+    },
+    "correct_answer": "B",
+    "explanation": "The OECD Going Digital framework outlines 7 vectors of policy action: Enhancing Access, Fostering Effective Use, Unleashing Innovation, Navigating Jobs, Fostering Social Prosperity, Strengthening Trust, and Nurturing Market Openness."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "5. In the SOSDIT study, why was Hypothesis H2 ('Digital Privacy and Security is a direct factor of SOSDIT') not statistically confirmed in the PLS-SEM model?",
+    "options": {
+      "A": "Because EU citizens do not care about online privacy.",
+      "B": "Because empirical metrics for ICT trust and privacy in available Eurostat datasets showed lower statistical loading compared to inclusion and skills variables.",
+      "C": "Because SmartPLS software prohibits testing privacy metrics.",
+      "D": "Because privacy laws were abolished across Europe."
+    },
+    "correct_answer": "B",
+    "explanation": "While theoretical literature supports privacy, empirical factor analysis in the SmartPLS model showed that available Eurostat survey indicators for trust/security did not pass the required statistical threshold compared to inclusion and skills."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "6. How does the SOSDIT research define 'Digital Inclusion' in the context of European public policy?",
+    "options": {
+      "A": "Requiring all citizens to purchase smartwatches.",
+      "B": "Ensuring equal access to technology, digital connectivity, and digital services for all members of society to bridge the digital divide.",
+      "C": "Selling discounted laptops exclusively to private corporations.",
+      "D": "Restricting internet usage to working hours."
+    },
+    "correct_answer": "B",
+    "explanation": "Digital Inclusion ensures that underrepresented groups, rural communities, and low-income citizens have equitable access to digital infrastructure, devices, and essential online public services."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "7. According to the SOSDIT empirical findings, what is the impact of a country achieving a high Social Sustainability score on its overall SDG Index performance?",
+    "options": {
+      "A": "It causes a 20% drop in economic GDP.",
+      "B": "It strongly leads to higher performance in reaching Sustainable Development Goals (path coefficient +0.640).",
+      "C": "It has no measurable statistical impact.",
+      "D": "It negatively impacts environmental conservation goals."
+    },
+    "correct_answer": "B",
+    "explanation": "The SOSDIT study proved hypothesis H4: countries prioritizing social sustainability in digital transformation perform significantly higher in attaining the UN Sustainable Development Goals (path coefficient = 0.640, p < 0.001)."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "8. Under the OECD Going Digital framework, why is 'Strengthening Trust' considered an essential policy vector for digital economy growth?",
+    "options": {
+      "A": "Because without consumer and business trust in security, privacy, and digital transactions, adoption stalls and economic potential is lost.",
+      "B": "To ensure that governments can monitor private conversations without warrants.",
+      "C": "To eliminate the need for digital signature standards.",
+      "D": "To prevent foreign companies from selling hardware."
     },
     "correct_answer": "A",
-    "explanation": "Burberry collaborated with Salesforce to deploy enterprise CRM modules, unifying digital and physical touchpoints under 'Burberry World'."
+    "explanation": "OECD's Going Digital framework emphasizes that trust is the fundamental currency of the digital economy; cybersecurity threats, data breaches, and privacy risks destroy consumer confidence and stifle digital adoption."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "10. What cultural value did Burberry reinforce through its internal 'Art & Commerce Award'?",
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "9. In the SOSDIT empirical study, what statistical method was chosen to analyze data from the EU-27 member states?",
     "options": {
-      "A": "Prioritizing cost reduction over creative innovation",
-      "B": "Synergizing creative innovation and commercial excellence",
-      "C": "Rewarding top-down autocratic management decisions",
-      "D": "Eliminating artistic design roles in favor of pure financial accounting"
+      "A": "Basic linear regression on 1,000 corporate surveys.",
+      "B": "Partial Least Squares Structural Equation Modeling (PLS-SEM) using SmartPLS 4, optimized for small sample sizes (N=27 countries).",
+      "C": "Qualitative card sorting interviews only.",
+      "D": "Monte Carlo physical simulation."
     },
     "correct_answer": "B",
-    "explanation": "The Art & Commerce Award recognized teams that best exemplified the synergy between creative innovation and commercial excellence."
+    "explanation": "PLS-SEM was specifically chosen because it excels in testing complex structural models with smaller country-level sample sizes (N=27 EU member states) using Eurostat and World Bank indicators."
   },
   {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "11. Why did Kodak fail to successfully navigate the shift to digital photography despite inventing the digital camera?",
+    "topic": "Social Sustainability & Policy Dimensions",
+    "question": "10. What key practical policy recommendation emerges from the combined findings of the SOSDIT study and OECD Going Digital report?",
     "options": {
-      "A": "It lacked the patent rights required to manufacture digital sensors",
-      "B": "Rigid organizational alignment around its highly profitable analog film business model prevented core re-allocation",
-      "C": "It was legally barred from entering consumer electronics markets",
-      "D": "Digital cameras were rejected by global consumers throughout the 1990s"
+      "A": "Governments should focus investments solely on hardware subsidies for tech monopolies.",
+      "B": "National digital strategies must couple technology deployment with proactive digital skills training, inclusion programs, and inequality reduction to ensure sustainable economic growth.",
+      "C": "Digital transformation should be left entirely to unguided market forces without state policy intervention.",
+      "D": "Digital literacy training should be restricted to university computer science majors."
     },
     "correct_answer": "B",
-    "explanation": "Kodak failed to transform because its business model, capabilities, and culture were tightly anchored to legacy chemical film profits."
-  },
-  {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "12. In 2014, what strategic challenge did Microsoft face before Satya Nadella's leadership shift?",
-    "options": {
-      "A": "Loss of monopoly power in enterprise server operating systems",
-      "B": "Stagnation in mobile touch-screen devices (vs. Apple) and lag in cloud transition (vs. AWS)",
-      "C": "Complete abandonment of Office software applications",
-      "D": "Inability to file technological patents in North America"
-    },
-    "correct_answer": "B",
-    "explanation": "Microsoft struggled in mobile (Windows Mobile was designed for styluses, not touch) and lagged AWS in cloud transition, requiring strategic renewal."
-  },
-  {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "13. How did Microsoft align its culture to support its cloud-first, mobile-first strategic pivot?",
-    "options": {
-      "A": "Shifting from a 'know-it-all' culture to a 'learn-it-all' growth mindset",
-      "B": "Mandating strict rank-and-stack employee terminations every quarter",
-      "C": "Halting all investments in Azure and focusing solely on desktop PC hardware",
-      "D": "Closing all international offices to centralize development in Redmond"
-    },
-    "correct_answer": "A",
-    "explanation": "Under Satya Nadella, Microsoft shifted its corporate culture from a rigid 'know-it-all' posture to an empathetic 'learn-it-all' growth mindset."
-  },
-  {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "14. What essential driver of successful digital transformation is highlighted across empirical studies?",
-    "options": {
-      "A": "Purchasing the most expensive hardware available without updating strategy",
-      "B": "Visible, committed top-down leadership that communicates a clear digital vision",
-      "C": "Eliminating middle management completely to reduce wage expenses",
-      "D": "Relying exclusively on ad-hoc employee initiatives without central governance"
-    },
-    "correct_answer": "B",
-    "explanation": "Studies across digital transformations show that top-down leadership commitment and a clear digital vision are essential for success."
-  },
-  {
-    "topic": "Overview & Definitions of Digital Transformation",
-    "question": "15. How does digital transformation alter traditional value chains into digital ecosystems?",
-    "options": {
-      "A": "By enforcing strict linear supply chains with isolated individual vendors",
-      "B": "By building interconnected platforms that facilitate co-creation of value among multi-sided network participants",
-      "C": "By eliminating external partners and producing everything strictly in-house",
-      "D": "By returning to manual paper transactions to improve security"
-    },
-    "correct_answer": "B",
-    "explanation": "Digital transformation shifts linear value chains into multi-sided digital ecosystems where value is co-created across interconnected players."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "1. How is Artificial Intelligence categorized in economic terms according to D4B Lesson 2?",
-    "options": {
-      "A": "A single-use specialized industrial machine",
-      "B": "A General-Purpose Technology (GPT) comparable to electricity or the steam engine",
-      "C": "A temporary software tool with limited macro-economic reach",
-      "D": "An exclusive financial instrument used only in stock trading"
-    },
-    "correct_answer": "B",
-    "explanation": "AI is framed as a General-Purpose Technology (GPT) characterized by pervasiveness, continuous improvement, and the ability to spawn secondary innovations."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "2. What philosophical perspective on technology from Neil Postman is introduced in the course?",
-    "options": {
-      "A": "Technology is always purely beneficial without any downsides",
-      "B": "Technology is a trade-off—it is both a blessing and a burden ('Faustian bargain')",
-      "C": "Technology has no impact on human culture or work structures",
-      "D": "Technological progress should be halted permanently"
-    },
-    "correct_answer": "B",
-    "explanation": "Postman’s philosophy highlights that every technology involves a trade-off; it brings both advantages and unintended burdens to culture and organizations."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "3. What is Moravec’s Paradox in the context of AI and automation?",
-    "options": {
-      "A": "High-level reasoning requires little computation, but low-level sensorimotor skills require huge computational resources",
-      "B": "Computers excel at human physical movements but fail at complex mathematical calculations",
-      "C": "AI models consume less energy as their parameter sizes increase",
-      "D": "Physical robots are easier to program than simple text-based spreadsheets"
-    },
-    "correct_answer": "A",
-    "explanation": "Moravec’s paradox notes that hard cognitive problems (chess, logic) are computationally easy for AI, while simple human perceptual and physical skills are extremely difficult for machines."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "4. What phenomenon does Hartmut Rosa refer to as 'Social Acceleration'?",
-    "options": {
-      "A": "Cars travelling faster on modern high-speed motorways",
-      "B": "Time-saving technologies being introduced, yet individuals feeling they have less perceived time",
-      "C": "Companies growing their headcount at exponential rates",
-      "D": "Computer processors doubling their clock speeds every year"
-    },
-    "correct_answer": "B",
-    "explanation": "Social acceleration describes the irony of automation where time-saving tech leads to higher expectations and pace, resulting in less perceived leisure time."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "5. According to the 2025 Stanford study on the 'tedious work paradox,' what misalignment exists between workers and AI startups?",
-    "options": {
-      "A": "Workers want creative tasks automated, but startups build administrative tools",
-      "B": "46% of workers want help with repetitive/data-entry tasks, but 41% of startup investments target areas workers prefer to keep",
-      "C": "Workers refuse to use AI for any workplace activity",
-      "D": "Startup investments are 100% aligned with worker desires across all sectors"
-    },
-    "correct_answer": "B",
-    "explanation": "The study reveals a disconnect: workers desire automation for tedious administrative work, whereas startup funding often targets creative domain tasks workers prefer to perform themselves."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "6. According to Deloitte's 2024 survey, what is the top reason employees report using GenAI at work?",
-    "options": {
-      "A": "To replace their human supervisors",
-      "B": "Saving time (84%) and increasing task execution speed (83%)",
-      "C": "Avoiding all communication with team members",
-      "D": "Automatically generating weekly payroll checks"
-    },
-    "correct_answer": "B",
-    "explanation": "Deloitte data shows 84% of surveyed GenAI users report it saves them time and 83% state it increases their work speed."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "7. What are GenAI users primarily doing with the time saved at work according to Deloitte (2024)?",
-    "options": {
-      "A": "Performing more tasks (41%) and engaging in new tasks (39%)",
-      "B": "Leaving work 4 hours early every day",
-      "C": "Disabling all company cybersecurity protocols",
-      "D": "Refusing further professional development training"
-    },
-    "correct_answer": "A",
-    "explanation": "Survey results indicate time saved is predominantly reinvested into performing a higher volume of tasks (41%) or tackling new tasks (39%)."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "8. What distinguishes high-performing AI teams from average teams according to Nate (2025)?",
-    "options": {
-      "A": "Using AI merely to speed up old tasks without rethinking collaboration",
-      "B": "Managing shared context explicitly, enhancing human judgment, and building trust around AI's role",
-      "C": "Banning human review of AI outputs across all departments",
-      "D": "Replacing all team members with autonomous LLM software agents"
-    },
-    "correct_answer": "B",
-    "explanation": "High-performing teams rethink collaboration by managing shared context, maintaining human oversight, and building trust in the team's collaborative process."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "9. What concept did Garry Kasparov popularize to describe human-AI collaboration?",
-    "options": {
-      "A": "The 'Cyborg' protocol",
-      "B": "The 'Centaur' model (combining human strategic judgment with machine calculation)",
-      "C": "The 'Automaton' framework",
-      "D": "The 'Solo Machine' architecture"
-    },
-    "correct_answer": "B",
-    "explanation": "Kasparov popularized the 'Centaur' concept, where humans and AI work together as a team, leveraging complementary strengths."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "10. According to the Human-Autonomy Teaming (HAT) taxonomy, which configuration involves multiple humans and multiple AI agents?",
-    "options": {
-      "A": "Human-AI Collaboration",
-      "B": "Human-multi-AI Collaboration",
-      "C": "Team-AI Collaboration",
-      "D": "Team-multi-AI Collaboration"
-    },
-    "correct_answer": "D",
-    "explanation": "In the HAT taxonomy, 'Team-multi-AI Collaboration' describes a group of humans collaborating with multiple autonomous AI systems."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "11. In the demonstration of AI tools from D4B Lesson 2, what is the primary function of 'Stella'?",
-    "options": {
-      "A": "Delivering real-time legal counseling in courtrooms",
-      "B": "AI-powered tool for document processing and workflow automation to extract and manage product info",
-      "C": "Autonomous driving controller for heavy industrial trucks",
-      "D": "Generating marketing artwork for consumer fashion brands"
-    },
-    "correct_answer": "B",
-    "explanation": "Stella is described as an AI-powered tool for document processing and workflow automation to extract, structure, and manage product information."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "12. What role does a Microsoft Copilot Agent play in project management according to Mark's demonstration?",
-    "options": {
-      "A": "Executing physical building inspections on construction sites",
-      "B": "Assisting in project compliance and administrative activities within EU-funded projects",
-      "C": "Replaces the European Commission's financial audit board",
-      "D": "Translating video audio into sign language in real time"
-    },
-    "correct_answer": "B",
-    "explanation": "The demonstration showed how to build a Copilot Agent specifically to streamline compliance and administrative workflows in EU projects."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "13. What is 'Cognitive Offloading' in the context of workplace AI integration?",
-    "options": {
-      "A": "Turning off computer servers during night shifts",
-      "B": "Using external digital tools/AI to reduce the mental processing load required to complete cognitive tasks",
-      "C": "Erasing employee memory through psychological training",
-      "D": "Transferring hardware ownership from company to employee"
-    },
-    "correct_answer": "B",
-    "explanation": "Cognitive offloading refers to relying on digital tools/AI to handle information storage or computation, lightening human cognitive load."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "14. What risk arises when workers exhibit 'Over-reliance' or 'Mindless Acceptance' of AI outputs?",
-    "options": {
-      "A": "Immediate hardware failure of corporate laptops",
-      "B": "Uncritical acceptance of incorrect AI predictions/hallucinations due to reduced vigilance",
-      "C": "Total loss of internet connectivity across corporate networks",
-      "D": "Excessive manual recalculation of every dataset"
-    },
-    "correct_answer": "B",
-    "explanation": "Over-reliance leads to complacency, where humans fail to verify or critique flawed AI recommendations, passing errors into production."
-  },
-  {
-    "topic": "AI, Organizational Workflows & Human-AI Teaming",
-    "question": "15. What is the core takeaway of the 'Jagged Frontier' model of AI capabilities?",
-    "options": {
-      "A": "AI capability boundaries are smooth and predictable across all domain tasks",
-      "B": "AI performs exceptionally on some complex tasks while failing unexpectedly on seemingly easier nearby tasks",
-      "C": "AI can only perform numerical calculations and never language tasks",
-      "D": "AI performance decreases linearly as data input size increases"
-    },
-    "correct_answer": "B",
-    "explanation": "The 'jagged frontier' illustrates that AI capability boundaries are uneven; AI may excel at difficult cognitive tasks while struggling with adjacent, seemingly simple tasks."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "1. How is Human Factors Engineering (Ergonomics) defined by Guastello (2023)?",
-    "options": {
-      "A": "The study of maximizing hardware clock speeds in server environments",
-      "B": "Applying principles from psychology and engineering to design safe, efficient, and comfortable systems aligned with human capabilities",
-      "C": "Reducing employee wage costs through automated software scheduling",
-      "D": "Designing physical office furniture strictly for aesthetic visual appeal"
-    },
-    "correct_answer": "B",
-    "explanation": "Guastello (2023) defines human factors engineering as incorporating human capabilities and limitations into system design to ensure safety, efficiency, and usability."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "2. What does the Digital Intensity Index (DII) measure within European organizational studies?",
-    "options": {
-      "A": "The total electricity consumption of corporate data centers",
-      "B": "The adoption level of 12 specific digital technologies across businesses",
-      "C": "The average typing speed of office administrative staff",
-      "D": "The number of social media followers a brand accumulates"
-    },
-    "correct_answer": "B",
-    "explanation": "The Digital Intensity Index measures organizational digital maturity based on the adoption of 12 key digital technologies (e.g., ERP, CRM, Cloud, AI)."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "3. In the Technology Acceptance Model (TAM), what does 'Perceived Usefulness' (PU) signify?",
-    "options": {
-      "A": "The monetary price required to license a software tool",
-      "B": "The degree to which a person believes using a system will enhance their job performance",
-      "C": "The physical weight of a computing workstation",
-      "D": "The number of user manuals provided by the software vendor"
-    },
-    "correct_answer": "B",
-    "explanation": "Perceived Usefulness (PU) is defined in TAM as the user's belief that employing a specific technology will improve their work performance."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "4. In the Technology Acceptance Model (TAM), how is 'Perceived Ease of Use' (PEOU) defined?",
-    "options": {
-      "A": "The degree to which a person believes using a system will be effort-free",
-      "B": "The speed at which a computer installs software updates",
-      "C": "The agreement between management and software vendors",
-      "D": "The length of time a device operates on battery power"
-    },
-    "correct_answer": "A",
-    "explanation": "Perceived Ease of Use (PEOU) refers to the user's perception that using the system will require minimal physical or mental effort."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "5. According to TAM frameworks, how does 'Trust' directly influence technology adoption?",
-    "options": {
-      "A": "Trust bypasses all user interface requirements",
-      "B": "Trust positively influences Perceived Usefulness and Behavioral Intention to use a system",
-      "C": "Trust guarantees 100% error-free software code",
-      "D": "Trust replaces the need for user training programs"
-    },
-    "correct_answer": "B",
-    "explanation": "Trust acts as a key mediator in expanded TAM models, directly impacting perceived usefulness, attitude, and behavioral intention to adopt a system."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "6. What occurs in 'Trust Calibration' when a user exhibits 'Over-trust' in an automated system?",
-    "options": {
-      "A": "System disuse and rejection",
-      "B": "Misuse or over-reliance, where users place undue faith in system accuracy without verification",
-      "C": "Optimal system performance with zero human error",
-      "D": "Automatic software encryption"
-    },
-    "correct_answer": "B",
-    "explanation": "Over-trust occurs when perceived trustworthiness exceeds actual system reliability, leading to misuse and failure to spot system errors."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "7. What occurs when a user exhibits 'Under-trust' toward a reliable technology?",
-    "options": {
-      "A": "Over-reliance on automated outputs",
-      "B": "Disuse, where users reject or bypass an effective system in favor of manual methods",
-      "C": "Excessive system speed and throughput",
-      "D": "Immediate system hardware breakdown"
-    },
-    "correct_answer": "B",
-    "explanation": "Under-trust leads to disuse or rejection, where workers refuse to utilize a reliable, functional system."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "8. What is the main objective of User-Centred Design (UCD) as illustrated in course visual materials?",
-    "options": {
-      "A": "Designing systems based solely on what developers prefer to build",
-      "B": "Aligning technological design directly with what users actually need rather than unneeded complexity",
-      "C": "Forcing users to adapt their behavior to rigid software code",
-      "D": "Eliminating all visual user interfaces in favor of command lines"
-    },
-    "correct_answer": "B",
-    "explanation": "User-centred design ensures systems are built around actual user needs and practical workflows, avoiding disconnects between design and utility."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "9. What standardized tool developed by Lewis & Sauro (2009) is widely used to evaluate system usability?",
-    "options": {
-      "A": "System Usability Scale (SUS)",
-      "B": "Digital Intensity Metric (DIM)",
-      "C": "Technological Readiness Index (TRI)",
-      "D": "Ergonomic Stress Questionnaire (ESQ)"
-    },
-    "correct_answer": "A",
-    "explanation": "The System Usability Scale (SUS) is a classic 10-item questionnaire used to assess perceived usability across software and hardware systems."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "10. What evaluation procedure was established by Van Der Laan et al. (1997) to assess user acceptance?",
-    "options": {
-      "A": "A semantic differential scale measuring Useful/Useless and Satisfying/Annoying dimensions",
-      "B": "Measuring heart rate variability during keyboard entry",
-      "C": "Counting the total mouse clicks required to open a file",
-      "D": "A financial return-on-investment (ROI) spreadsheet model"
-    },
-    "correct_answer": "A",
-    "explanation": "Van Der Laan's acceptance scale evaluates technology across two main subscales: usefulness (Useful/Useless) and satisfying/attitude (Pleasant/Unpleasant)."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "11. In research projects like 'Tuples' and 'Sestosenso,' what ergonomic factor is critically evaluated during human-robot collaboration?",
-    "options": {
-      "A": "Robot paint durability under UV light",
-      "B": "Cognitive workload, physical safety, and operator trust calibration during joint tasks",
-      "C": "Electricity billing rates during peak production hours",
-      "D": "Marketing branding logos printed on robotic arms"
-    },
-    "correct_answer": "B",
-    "explanation": "Human-robot collaboration studies evaluate cognitive workload, user safety, and trust calibration to ensure smooth, stress-free joint operation."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "12. Before conducting experimental human testing in European research projects (e.g., Tuples), what formal approvals are required?",
-    "options": {
-      "A": "Approvals from local real estate zoning boards",
-      "B": "Ethical approval from University Ethics Committees and clearance from relevant Works Councils",
-      "C": "Financial clearance from international central banks",
-      "D": "Unanimous agreement from all company shareholders"
-    },
-    "correct_answer": "B",
-    "explanation": "Human participant testing requires formal ethical approval from institutional review boards/ethics committees and compliance with labor union/Works Council regulations."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "13. What is 'Cognitive Workload' in ergonomic evaluation?",
-    "options": {
-      "A": "The total storage space available on a computer's hard drive",
-      "B": "The mental effort and brain processing capacity required for a worker to perform a specific task using a tool",
-      "C": "The physical weight of tools carried by a maintenance engineer",
-      "D": "The total hours an employee works per calendar year"
-    },
-    "correct_answer": "B",
-    "explanation": "Cognitive workload represents the level of mental strain and processing resources demanded from a user while operating a system."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "14. What external variables directly influence Perceived Ease of Use and Perceived Usefulness in TAM?",
-    "options": {
-      "A": "User characteristics, system features, training, documentation, and organizational context",
-      "B": "Global inflation rates and foreign exchange ratios",
-      "C": "Physical server chassis color and desktop wallpaper",
-      "D": "Corporate tax jurisdictions"
-    },
-    "correct_answer": "A",
-    "explanation": "TAM specifies that external variables like user experience, training, system design features, and organizational support shape PEOU and PU."
-  },
-  {
-    "topic": "Human Factors Engineering, Usability & Technology Acceptance",
-    "question": "15. What visual contrast is demonstrated in the course regarding 'User Experience' vs. 'Design'?",
-    "options": {
-      "A": "Design shows a paved right-angled walkway, while User Experience shows a worn dirt path created by actual human foot traffic",
-      "B": "Design is represented by a digital smartphone, while UX is represented by a paper book",
-      "C": "Design represents backend database code, while UX represents optical fiber cables",
-      "D": "Design is always superior to user experience in predicting product success"
-    },
-    "correct_answer": "A",
-    "explanation": "The classic meme shows a paved sidewalk ('Design') bypassed by a natural shortcut dirt path ('User Experience'), highlighting that users naturally take the easiest path."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "1. How do van Dijck, Poell & de Waal (2018) define a 'Platform Society'?",
-    "options": {
-      "A": "A society where physical railway platforms are managed by public state authorities",
-      "B": "A society in which social, economic, and interpersonal traffic increasingly takes place through online platforms operated by private corporations",
-      "C": "An economy based entirely on paper currency and local barter markets",
-      "D": "A political system where voting takes place exclusively via short text messaging"
-    },
-    "correct_answer": "B",
-    "explanation": "Van Dijck et al. define the platform society as one where social and economic traffic flows through private online platforms that form dominant infrastructures."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "2. What are the three core mechanisms of the platform society according to van Dijck et al. (2018)?",
-    "options": {
-      "A": "Digitization, Cloudification, and Virtualization",
-      "B": "Datafication, Commodification, and Selection",
-      "C": "Regulation, Privatization, and Taxation",
-      "D": "Observation, Automation, and Elimination"
-    },
-    "correct_answer": "B",
-    "explanation": "The three fundamental mechanisms of platform societies are Datafication, Commodification, and Selection."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "3. How is 'Datafication' defined in platform society literature?",
-    "options": {
-      "A": "The process of deleting outdated user data from database backups",
-      "B": "Translating non-quantified human experience (movements, emotions, relations) into storable, analysable digital flows",
-      "C": "Purchasing physical storage servers for enterprise data centers",
-      "D": "Mandating password complexity rules for web applications"
-    },
-    "correct_answer": "B",
-    "explanation": "Datafication involves rendering wide aspects of life and human activity into digital data that was previously unquantified."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "4. What occurs during the 'Commodification' process on digital platforms?",
-    "options": {
-      "A": "Platforms distribute physical goods for free without gathering user data",
-      "B": "Transforming user attention, personal profiles, and behavioral predictions into tradable commercial commodities",
-      "C": "Standardizing hardware connectors across consumer electronic devices",
-      "D": "Removing commercial advertisements from public social media networks"
-    },
-    "correct_answer": "B",
-    "explanation": "Commodification turns platform activities, user attention, data profiles, and behavioral predictions into monetizable commodities."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "5. What does the 'Selection' mechanism perform within platform ecosystems?",
-    "options": {
-      "A": "Choosing which computer hardware vendors receive government contracts",
-      "B": "Filtering, ranking, and recommending content, determining what information users see and in what order",
-      "C": "Selecting physical office locations for platform headquarters",
-      "D": "Electing corporate board members through public shareholder votes"
-    },
-    "correct_answer": "B",
-    "explanation": "Selection refers to algorithmic curation—ranking and recommending content to control user visibility and information flows."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "6. What milestone in the year 2000 accelerated the transition from isolated websites to interconnected platform ecosystems?",
-    "options": {
-      "A": "The release of the first commercial web browser by Netscape",
-      "B": "eBay launching the first open Application Programming Interface (API)",
-      "C": "The total shutdown of global telecommunications networks",
-      "D": "The passage of the European General Data Protection Regulation"
-    },
-    "correct_answer": "B",
-    "explanation": "eBay's release of an open API in 2000 pioneered data sharing, enabling external developers to build connected platform software."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "7. Why are major tech platforms described as 'Infrastructural Platforms'?",
-    "options": {
-      "A": "They build physical roads, bridges, and municipal water pipes",
-      "B": "They operate foundational digital services (search, cloud, identity, app stores) upon which thousands of sectoral apps depend",
-      "C": "They are fully owned and operated by state public transport authorities",
-      "D": "They manufacture raw silicon wafers used in computer chips"
-    },
-    "correct_answer": "B",
-    "explanation": "Infrastructural platforms (e.g., Google, Amazon, Microsoft) provide the core digital architecture (cloud, search, OS, ID) that underpins all other platform services."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "8. What paradoxical tension exists in private platforms providing public services (e.g., education, healthcare)?",
-    "options": {
-      "A": "Platforms are non-profit charities that refuse corporate revenue",
-      "B": "They are private corporate entities driven by profit, yet present themselves as neutral public utilities serving common social good",
-      "C": "They operate strictly offline without internet connections",
-      "D": "They are mandated to give away all software code to state governments"
-    },
-    "correct_answer": "B",
-    "explanation": "Platforms claim to deliver public value and democratic empowerment, while operating as profit-driven, centralized corporate structures."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "9. What role do Application Programming Interfaces (APIs) play in platform business models?",
-    "options": {
-      "A": "They function as physical security keys for server rooms",
-      "B": "They act as software bridges allowing external developers to connect, exchange data, and extend the platform's functionality",
-      "C": "They automatically calculate corporate tax liabilities for international transactions",
-      "D": "They restrict internet traffic to local geographic borders"
-    },
-    "correct_answer": "B",
-    "explanation": "APIs allow third-party developers to plug into a platform's ecosystem, enabling data exchange and driving multi-sided network effects."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "10. What are 'Network Effects' in digital platform markets?",
-    "options": {
-      "A": "Increased electricity costs as more servers are plugged into power grids",
-      "B": "Phenomenon where a platform becomes more valuable to users as the total number of participating users increases",
-      "C": "Signal degradation occurring in wireless internet routers over long distances",
-      "D": "Decreasing user satisfaction as platform software is updated"
-    },
-    "correct_answer": "B",
-    "explanation": "Direct and indirect network effects mean each additional user or producer adds value to the network, driving winner-take-all dynamics."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "11. What characterizes a 'Two-Sided' or 'Multi-Sided' platform market?",
-    "options": {
-      "A": "A store that sells products exclusively to a single wholesale buyer",
-      "B": "A platform that facilitates direct interaction and value exchange between two or more distinct user groups (e.g., buyers and sellers, drivers and riders)",
-      "C": "A website that operates only in two national languages",
-      "D": "A software program with two distinct graphical user themes"
-    },
-    "correct_answer": "B",
-    "explanation": "Multi-sided platforms bring together distinct groups (e.g., Uber linking riders and drivers; Airbnb linking hosts and guests) to create value."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "12. How do platform ecosystems challenge traditional firm boundaries?",
-    "options": {
-      "A": "By requiring all workers to be full-time direct employees located in one building",
-      "B": "By shifting value creation outward to external complementors, users, and independent third-party developers",
-      "C": "By eliminating digital technology and returning to physical storefronts",
-      "D": "By outlawing corporate mergers and acquisitions globally"
-    },
-    "correct_answer": "B",
-    "explanation": "Platform ecosystems organize external networks of complementors and users who co-create value outside traditional corporate walls."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "13. What is 'Platform Envelopment'?",
-    "options": {
-      "A": "Wrapping physical platform servers in protective plastic casing",
-      "B": "An entry strategy where an established platform absorbs functions of an adjacent platform, capturing its user base",
-      "C": "Encrypting user emails with multi-factor authentication",
-      "D": "Shutting down secondary platform applications to reduce costs"
-    },
-    "correct_answer": "B",
-    "explanation": "Envelopment occurs when a platform enters an adjacent market by bundling new functions into its existing platform infrastructure."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "14. Why is algorithmic power described as 'Informational Power'?",
-    "options": {
-      "A": "It measures the physical weight of printed user manuals",
-      "B": "Algorithms hold power by deciding what information is visible, suppressed, or prioritized for millions of citizens",
-      "C": "It refers strictly to the speed of electrical transmission across copper wires",
-      "D": "It represents government censorship over broadcast radio frequencies"
-    },
-    "correct_answer": "B",
-    "explanation": "Algorithmic curation exerts informational power by shaping public perception, agenda-setting, and access to knowledge."
-  },
-  {
-    "topic": "Platform Society Mechanisms & Ecosystem Infrastructure",
-    "question": "15. What strategy do 'Big Five' platforms use to expand dominance into sectoral markets?",
-    "options": {
-      "A": "Refusing to acquire any external startup companies",
-      "B": "Combining core infrastructural platform power with strategic acquisitions in sectoral domains (e.g., Amazon buying Whole Foods)",
-      "C": "Operating strictly as non-profit research laboratories",
-      "D": "Limiting their business operations to a single geographic country"
-    },
-    "correct_answer": "B",
-    "explanation": "Tech giants leverage their infrastructural foundation (cloud, data) to enter sectoral domains like retail, healthcare, and transport through M&A."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "1. How does Shoshana Zuboff (2019) define 'Surveillance Capitalism'?",
-    "options": {
-      "A": "A state-run intelligence network designed for national defense",
-      "B": "An economic logic that profits by extracting behavioral data ('behavioral surplus') to build predictive models sold to advertisers",
-      "C": "A business model that sells physical security cameras to homeowners",
-      "D": "A public policy aimed at protecting user online privacy"
-    },
-    "correct_answer": "B",
-    "explanation": "Zuboff defines surveillance capitalism as an accumulation logic where human experience is converted into behavioral surplus used to predict and modify behavior for profit."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "2. What does 'Behavioral Surplus' mean in Zuboff's surveillance capitalism framework?",
-    "options": {
-      "A": "Extra physical storage space remaining on a user's hard drive",
-      "B": "The excess behavioral data collected beyond what is needed for product performance, used to generate predictions about user behavior",
-      "C": "Financial bonuses paid to employees who exhibit positive behavior",
-      "D": "The total hours users spend sleeping without checking digital devices"
-    },
-    "correct_answer": "B",
-    "explanation": "Behavioral surplus refers to data collected above and beyond service requirements, fed into machine intelligence to predict future user actions."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "3. How does Christian Fuchs (2022) analyze platform surveillance in his concept of 'Digital Capitalism'?",
-    "options": {
-      "A": "As a non-profit civic service benefiting global public education",
-      "B": "As a tool for the exploitation of unpaid digital user labor, political power, and ideological control",
-      "C": "As an outdated 19th-century industrial manufacturing model",
-      "D": "As a purely positive scientific advancement in computer engineering"
-    },
-    "correct_answer": "B",
-    "explanation": "Fuchs analyzes digital capitalism through a Marxist lens, viewing platform surveillance as the exploitation of user-generated data labor for capital accumulation."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "4. What core concept do Varoufakis (2023) and Durand (2020) use to describe platform dominance?",
-    "options": {
-      "A": "Democratic Socialism",
-      "B": "Techno-Feudalism (platforms acting as feudal lords collecting rent from platform users/vassals)",
-      "C": "Laissez-faire Free Market Capitalism",
-      "D": "State Mercantilism"
-    },
-    "correct_answer": "B",
-    "explanation": "Techno-feudalism describes a regime where platform owners extract digital 'rents' from creators, businesses, and users who rely on their infrastructure."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "5. What are the three kinds of algorithmic opacity identified by Burrell (2016)?",
-    "options": {
-      "A": "Financial, Legal, and Political",
-      "B": "Intentional (trade secrets), Technical Illiteracy (specialist code), and Intrinsic (billions of parameters in ML models)",
-      "C": "Physical, Optical, and Digital",
-      "D": "Regional, National, and Global"
-    },
-    "correct_answer": "B",
-    "explanation": "Burrell identifies three forms of opacity: intentional concealment, technical barrier/illiteracy, and intrinsic complexity of machine learning models."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "6. What democratic threat was exposed by the Cambridge Analytica scandal in 2013?",
-    "options": {
-      "A": "Physical theft of computer hard drives from election headquarters",
-      "B": "Unauthorized harvesting of personal data from ~90 million Facebook users to deploy micro-targeted ad campaigns intended to manipulate elections",
-      "C": "Satellite jamming of TV broadcast signals during debates",
-      "D": "Complete deletion of national voting registration databases"
-    },
-    "correct_answer": "B",
-    "explanation": "Cambridge Analytica harvested personal data from ~90 million users to build psychological profiles and target voters with manipulative political ads."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "7. How do 'Filter Bubbles' or 'Echo Chambers' impact democratic deliberation?",
-    "options": {
-      "A": "By exposing citizens to diverse viewpoints from around the world",
-      "B": "By isolating users in personalized information environments that reinforce existing beliefs and erode shared epistemic ground",
-      "C": "By forcing all users to read state-sanctioned news outlets",
-      "D": "By automatically fact-checking every user post in real time"
-    },
-    "correct_answer": "B",
-    "explanation": "Algorithmic personalization creates filter bubbles that enclose users within self-reinforcing perspectives, polarising debate and damaging democratic consensus."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "8. Under Article 22 of the EU General Data Protection Regulation (GDPR), what right do citizens possess?",
-    "options": {
-      "A": "The right to receive free internet access from state authorities",
-      "B": "The right not to be subject to solely automated decision-making producing legal effects, and to receive meaningful logic explanations",
-      "C": "The right to demand original source code from private software companies",
-      "D": "The right to operate commercial platforms without paying sales taxes"
-    },
-    "correct_answer": "B",
-    "explanation": "GDPR Art. 22 protects individuals against fully automated decisions with significant legal consequences and mandates rights to explanation."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "9. What obligation does Article 40 of the EU Digital Services Act (DSA 2022) place on Very Large Online Platforms (VLOPs)?",
-    "options": {
-      "A": "To shut down operations across Europe during national elections",
-      "B": "To grant vetted academic researchers access to platform data to audit systemic societal risks",
-      "C": "To convert all platform databases to open-source public domains",
-      "D": "To pay all user ad revenue directly to state treasuries"
-    },
-    "correct_answer": "B",
-    "explanation": "DSA Art. 40 empowers vetted researchers to access data from Very Large Online Platforms to evaluate systemic risks like misinformation and election manipulation."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "10. What is the primary focus of the EU Digital Markets Act (DMA)?",
-    "options": {
-      "A": "Setting maximum prices for consumer electronic devices",
-      "B": "Regulating digital 'gatekeepers' to ensure fair competition, prohibit self-preferencing, and enforce interoperability",
-      "C": "Regulating the physical recycling of computer hardware components",
-      "D": "Establishing state-owned public search engines across EU member states"
-    },
-    "correct_answer": "B",
-    "explanation": "The DMA targets core platform gatekeepers to prevent anti-competitive behavior, self-preferencing, and market lock-in."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "11. What principle defines 'Data Portability' in modern data sovereignty policy?",
-    "options": {
-      "A": "Transporting physical backup hard drives across national borders in secure containers",
-      "B": "The right of users to export their personal data from one platform service provider and transfer it seamlessly to another",
-      "C": "The requirement for data centers to be built on mobile floating barges",
-      "D": "The permanent prohibition against copying data from personal computers"
-    },
-    "correct_answer": "B",
-    "explanation": "Data portability grants users the right to transfer their personal profiles, content, and history between competing services without lock-in."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "12. What does 'Data Sovereignty' refer to in international digital governance?",
-    "options": {
-      "A": "The idea that digital data is subject to the laws and governance frameworks of the country in which it is generated or stored",
-      "B": "The complete exemption of digital platforms from national taxation",
-      "C": "The global rule that all data belongs to international non-profit organizations",
-      "D": "The belief that software code should have its own sovereign diplomatic embassy"
-    },
-    "correct_answer": "A",
-    "explanation": "Data sovereignty asserts that data is subject to the legal protections, jurisdiction, and privacy laws of the nation state where it resides."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "13. What is meant by 'Invisible Labor' in the global AI and data supply chain?",
-    "options": {
-      "A": "Autonomous robots working in dark unlit warehouse facilities",
-      "B": "Low-paid human workers in the Global South performing essential data labeling, content moderation, and RLHF cleaning under poor conditions",
-      "C": "Software engineers who write code without adding comment lines",
-      "D": "Corporate executives who manage IT teams remotely"
-    },
-    "correct_answer": "B",
-    "explanation": "Invisible labor refers to hidden human workers (often in developing regions) who perform necessary data annotation, filtering, and model training behind AI facade."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "14. What distinction does Lyon (2018) make regarding modern AI-driven surveillance?",
-    "options": {
-      "A": "AI surveillance increases costs and requires more physical security personnel",
-      "B": "AI reduces monitoring costs drastically, enabling systematic, automated surveillance across entire national populations",
-      "C": "AI surveillance only functions on desktop computers and cannot track mobile phones",
-      "D": "AI surveillance is illegal in every jurisdiction worldwide"
-    },
-    "correct_answer": "B",
-    "explanation": "Lyon notes that AI automates and scales monitoring, dramatically lowering surveillance costs and extending tracking capabilities population-wide."
-  },
-  {
-    "topic": "Algorithmic Condition, Surveillance Capitalism & Governance",
-    "question": "15. Why do scholars view AI and platform infrastructures as 'Negotiable Objects'?",
-    "options": {
-      "A": "Because their physical hardware prices can be bargained down at local electronics markets",
-      "B": "Because technological design and regulation are shaped by human political, economic, and social choices rather than inevitable natural laws",
-      "C": "Because computer algorithms change their own code randomly every hour",
-      "D": "Because platforms must sign yearly peace treaties with national governments"
-    },
-    "correct_answer": "B",
-    "explanation": "Framing AI as negotiable emphasizes that technological trajectories are determined by social choices, policies, and design decisions rather than technological determinism."
+    "explanation": "Both studies conclude that technology alone does not guarantee well-being; policymakers must actively fund digital inclusion, reskilling/upskilling, and wealth inequality reduction so digitalization benefits all citizens equitably."
   }
 ]
