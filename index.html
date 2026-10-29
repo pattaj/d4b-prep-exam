@@ -33,6 +33,36 @@
     <div class="main-content">
         <h1 id="mainTitle">🎓 Master's Exam Review</h1>
         <p style="text-align:center; color:#666; font-size: 18px; margin-top: 30px;" id="instructionsText">👈 Please select a Module from the menu to begin.</p>
+
+        <p style="text-align:center; color:#666; font-size: 18px; margin-top: 30px;" id="instructionsText">👈 Please select a Module from the menu to begin.</p>
+        
+        <!-- NEW: Mode Toggle Buttons -->
+        <div class="mode-toggle" id="modeToggleContainer" style="display: none;">
+            <button type="button" id="btnQuizMode" class="mode-btn active" onclick="switchMode('QUIZ')">📝 Quiz Mode</button>
+            <button type="button" id="btnFlashcardMode" class="mode-btn" onclick="switchMode('FLASHCARD')">📇 Flashcard Mode</button>
+        </div>
+
+        <!-- NEW: Flashcard Container -->
+        <div id="flashcardView" style="display:none; text-align:center;">
+            <p style="color: #666; margin-bottom: 15px;">Tap the card to flip it!</p>
+            <div class="flashcard-container" onclick="flipCard()">
+                <div class="flashcard" id="flashcardInner">
+                    <div class="flashcard-front">
+                        <div class="fc-question" id="fcFrontText">Loading...</div>
+                    </div>
+                    <div class="flashcard-back">
+                        <div class="fc-answer" id="fcBackAnswer">Loading...</div>
+                        <div class="fc-explanation" id="fcBackExplanation">Loading...</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination-controls" style="justify-content: center; align-items: center; margin-top: 25px;">
+                <button type="button" class="btn btn-outline" style="max-width: 150px;" onclick="prevFlashcard()">⬅ Prev</button>
+                <span id="fcCounter" style="margin: 0 15px; font-weight:bold; font-size: 18px; color: #1a73e8;">1 / 10</span>
+                <button type="button" class="btn btn-outline" style="max-width: 150px;" onclick="nextFlashcard()">Next ➡</button>
+            </div>
+        </div>
         
         <!-- The Quiz Container -->
         <form id="quizForm">
