@@ -1,4 +1,33 @@
 // =========================================================
+// 0. SECURITY MEASURES (Right-click & DevTools deterrents)
+// =========================================================
+(function blockInspection() {
+    // 1. Disable Right-Click (Context Menu)
+    document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+    // 2. Disable common inspection keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+        // Prevent F12
+        if (e.key === 'F12' || e.keyCode === 123) {
+            e.preventDefault();
+        }
+        // Prevent Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+Shift+C
+        if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+            e.preventDefault();
+        }
+        // Prevent Ctrl+U (View Source)
+        if (e.ctrlKey && e.key.toUpperCase() === 'U') {
+            e.preventDefault();
+        }
+    });
+
+    // 3. Anti-Debugger Loop (Freezes DevTools if opened)
+    setInterval(() => {
+        Function('debugger')();
+    }, 100);
+})();
+
+// =========================================================
 // 1. STATE & CONFIGURATION
 // =========================================================
 let loadedModules = {}; 
@@ -109,7 +138,6 @@ const updatePaginationUI = () => {
     const cards = document.querySelectorAll('.question-card');
     const totalPages = Math.ceil(cards.length / QUESTIONS_PER_PAGE);
     
-    // Hide/Show cards based on current page
     cards.forEach((card, index) => {
         if (index >= (currentPage - 1) * QUESTIONS_PER_PAGE && index < currentPage * QUESTIONS_PER_PAGE) {
             card.style.display = 'block';
@@ -128,7 +156,6 @@ const updatePaginationUI = () => {
         prevBtn.style.display = currentPage > 1 ? 'block' : 'none';
         nextBtn.style.display = currentPage < totalPages ? 'block' : 'none';
         
-        // Only show Submit button on the very last page
         submitBtn.style.display = currentPage === totalPages ? 'block' : 'none';
     } else {
         paginationControls.style.display = 'none';
@@ -221,7 +248,6 @@ const renderQuiz = (filter, isRetake = false) => {
         });
     });
 
-    // Reset pagination to Page 1 every time we render a new quiz
     currentPage = 1;
     updatePaginationUI();
 };
@@ -323,10 +349,9 @@ window.reviewAnswers = () => {
     document.getElementById("fullAnalyticsView").style.display = "none";
     document.getElementById("quizForm").style.display = "block";
     document.getElementById("submitQuizBtn").style.display = "none";
-    document.getElementById("paginationControls").style.display = "none"; // Hide pagination for review
+    document.getElementById("paginationControls").style.display = "none"; 
     document.getElementById("reviewActionBtns").style.display = "flex";
     
-    // Un-hide all questions so user can review everything on one page
     document.querySelectorAll('.question-card').forEach(card => card.style.display = 'block');
     
     window.scrollTo(0, 0);
