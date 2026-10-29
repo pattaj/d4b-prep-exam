@@ -135,3 +135,22 @@ button.btn-outline:hover { background: #e8f0fe; }
     .action-buttons button, .pagination-controls button { width: 100%; flex: unset; }
     .pagination-controls { flex-direction: column; }
 }
+
+/* =========================================
+   9. FLASHCARD & MODE TOGGLE
+   ========================================= */
+.mode-toggle { display: flex; justify-content: center; gap: 15px; margin-bottom: 25px; }
+.mode-btn { padding: 10px 20px; border: 2px solid #1a73e8; background: white; color: #1a73e8; border-radius: 25px; cursor: pointer; font-weight: bold; font-size: 15px; transition: 0.2s; }
+.mode-btn.active { background: #1a73e8; color: white; }
+.mode-btn:hover { background: #e8f0fe; color: #1a73e8; }
+
+.flashcard-container { width: 100%; max-width: 600px; height: 350px; margin: 0 auto; perspective: 1000px; cursor: pointer; }
+.flashcard { width: 100%; height: 100%; position: relative; transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1); transform-style: preserve-3d; }
+.flashcard.is-flipped { transform: rotateY(180deg); }
+
+.flashcard-front, .flashcard-back { width: 100%; height: 100%; position: absolute; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px; box-sizing: border-box; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); background: white; border: 2px solid #e8f0fe; overflow-y: auto; }
+.flashcard-back { transform: rotateY(180deg); background: #f8f9fa; border-color: #1a73e8; }
+
+.fc-question { font-size: 20px; font-weight: 600; text-align: center; line-height: 1.4; }
+.fc-answer { font-size: 18px; color: #28a745; font-weight: bold; margin-bottom: 15px; text-align: center; }
+.fc-explanation { font-size: 15px; color: #555; text-align: center; line-height: 1.5; }
