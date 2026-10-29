@@ -34,6 +34,8 @@ let loadedModules = {};
 let currentQuizData = []; 
 let currentFilter = "NONE"; 
 let currentModuleId = null; 
+let currentStudyMode = "QUIZ"; // Can be "QUIZ" or "FLASHCARD"
+let flashcardIndex = 0;
 
 // Pagination State
 let currentPage = 1;
@@ -55,14 +57,21 @@ const shuffleArray = (array) => {
 
 const showQuizView = () => {
     document.getElementById("fullAnalyticsView").style.display = "none";
-    document.getElementById("quizForm").style.display = "block";
-    
-    document.getElementById("instructionsText").style.display = "block";
-    document.getElementById("instructionsText").innerText = "Tap your answers below and navigate using Next/Previous.";
-    document.getElementById("mainTitle").style.display = "block";
     document.getElementById("reviewActionBtns").style.display = "none";
+    document.getElementById("mainTitle").style.display = "block";
     
-    window.scrollTo(0, 0);
+    // Show toggle buttons
+    document.getElementById("modeToggleContainer").style.display = "flex";
+    document.getElementById("instructionsText").style.display = "none";
+    
+    if (currentStudyMode === "QUIZ") {
+        document.getElementById("flashcardView").style.display = "none";
+        document.getElementById("quizForm").style.display = "block";
+    } else {
+        document.getElementById("quizForm").style.display = "none";
+        document.getElementById("flashcardView").style.display = "block";
+        loadFlashcard();
+    }
 };
 
 window.toggleMenu = () => {
@@ -361,6 +370,71 @@ window.showAnalytics = () => {
     document.getElementById("quizForm").style.display = "none";
     document.getElementById("fullAnalyticsView").style.display = "block";
     window.scrollTo(0, 0);
+};
+
+// =========================================================
+// 6. FLASHCARD LOGIC
+// =========================================================
+window.switchMode = (mode) => {
+    currentStudyMode = mode;
+    
+    // Update button styles
+    document.getElementById("btnQuizMode").classList.toggle("active", mode === "QUIZ");
+    document.getElementById("btnFlashcardMode").classList.toggle("active", mode === "FLASHCARD");
+    
+    // Reset flashcard state if switching to it
+    if (mode === "FLASHCARD") {
+        flashcardIndex = 0;
+        document.getElementById("flashcardInner").classList.remove("is-flipped");
+    }
+    
+    showQuizView();
+};
+
+window.flipCard = () => {
+    document.getElementById("flashcardInner").classList.toggle("is-flipped");
+};
+
+const loadFlashcard = () => {
+    // Filter questions based on the current topic filter
+    let activeQuestions = currentFilter === "ALL" 
+        ? currentQuizData 
+        : currentQuizData.filter(q => q.topic === currentFilter);
+
+    if (activeQuestions.length === 0) return;
+
+    let currentQ = activeQuestions[flashcardIndex];
+    let cleanQuestionText = currentQ.question.replace(/^\d+\.\s*/, '');
+    let correctAnswerText = currentQ.options[currentQ.correct_answer];
+
+    // Populate the card
+    document.getElementById("fcFrontText").innerText = cleanQuestionText;
+    document.getElementById("fcBackAnswer").innerText = `✅ ${currentQ.correct_answer}: ${correctAnswerText}`;
+    document.getElementById("fcBackExplanation").innerHTML = currentQ.explanation;
+    
+    // Update Counter
+    document.getElementById("fcCounter").innerText = `${flashcardIndex + 1} / ${activeQuestions.length}`;
+};
+
+window.nextFlashcard = () => {
+    let activeQuestions = currentFilter === "ALL" ? currentQuizData : currentQuizData.filter(q => q.topic === currentFilter);
+    if (flashcardIndex < activeQuestions.length - 1) {
+        document.getElementById("flashcardInner").classList.remove("is-flipped");
+        setTimeout(() => {
+            flashcardIndex++;
+            loadFlashcard();
+        }, 200); // Wait for flip animation before changing text
+    }
+};
+
+window.prevFlashcard = () => {
+    if (flashcardIndex > 0) {
+        document.getElementById("flashcardInner").classList.remove("is-flipped");
+        setTimeout(() => {
+            flashcardIndex--;
+            loadFlashcard();
+        }, 200);
+    }
 };
 
 window.onload = () => {
