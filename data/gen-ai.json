@@ -544,7 +544,7 @@
     "question": "6. Why can you not simply increase N to a large number (e.g., N=10) in traditional N-gram models to capture long-range dependencies?",
     "options": {
       "A": "Higher N models cannot be evaluated mathematically",
-      "B": "Data sparsity increases exponentially\u2014almost no 10-word sequences repeat in corpora, making counts zero and rendering smoothing ineffective",
+      "B": "Data sparsity increases exponentially—almost no 10-word sequences repeat in corpora, making counts zero and rendering smoothing ineffective",
       "C": "Higher N forces models to use one-hot encodings exclusively",
       "D": "Softmax functions cannot scale beyond 3 dimensions"
     },
@@ -675,7 +675,7 @@
     "topic": "N-Gram Models, Recurrent Architectures & Language Modeling",
     "question": "17. What specific mathematical role does the 'Forget Gate' perform inside an LSTM cell at time step t?",
     "options": {
-      "A": "It computes a sigmoid activation (f_t = \u03c3(W_f \u00b7 [h_{t-1}, x_t] + b_f)) outputting values between 0 and 1 to determine what fraction of previous cell state C_{t-1} to retain",
+      "A": "It computes a sigmoid activation (f_t = σ(W_f · [h_{t-1}, x_t] + b_f)) outputting values between 0 and 1 to determine what fraction of previous cell state C_{t-1} to retain",
       "B": "It calculates the cross-entropy loss against ground truth target words",
       "C": "It converts character n-grams into dense embedding projections",
       "D": "It masks future tokens in decoder multi-head attention"
@@ -1155,13 +1155,13 @@
     "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
     "question": "17. How does Low-Rank Adaptation (LoRA) enable parameter-efficient fine-tuning (PEFT) of large language models?",
     "options": {
-      "A": "It freezes base model weights W_0 and injects trainable low-rank decomposition matrices (A and B where \u0394W = A \u00b7 B) into attention layers, reducing trainable parameters by 99%",
+      "A": "It freezes base model weights W_0 and injects trainable low-rank decomposition matrices (A and B where ΔW = A · B) into attention layers, reducing trainable parameters by 99%",
       "B": "It quantizes all float32 weights into 1-bit integers",
       "C": "It prunes 90% of feedforward layers randomly",
       "D": "It replaces transformer self-attention with convolutional filters"
     },
     "correct_answer": "A",
-    "explanation": "LoRA freezes original model weights W_0 and trains two small low-rank matrices A and B (rank r << d) to model weight updates \u0394W = A\u00b7B, achieving fine-tuning performance at a fraction of compute memory."
+    "explanation": "LoRA freezes original model weights W_0 and trains two small low-rank matrices A and B (rank r << d) to model weight updates ΔW = A·B, achieving fine-tuning performance at a fraction of compute memory."
   },
   {
     "topic": "Prompt Engineering, Sampling, Fine-Tuning & Model Alignment",
@@ -1438,5 +1438,245 @@
     },
     "correct_answer": "A",
     "explanation": "Diffusion Transformers (DiT) treat image/video latents as sequence patches, unlocking Transformer parameter scaling laws, superior spatial-temporal modeling, and efficient multi-modal attention."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "1. What is the fundamental architecture and primary advantage of Retrieval-Augmented Generation (RAG) over pure LLM fine-tuning for enterprise knowledge bases?",
+    "options": {
+      "A": "RAG modifies the underlying transformer attention weights, eliminating the need for context windows",
+      "B": "RAG retrieves relevant external text chunks at query time and pastes them into the prompt, allowing models to cite sources without costly retraining",
+      "C": "RAG replaces vector embeddings with one-hot encoding matrices to prevent hallucinations",
+      "D": "RAG retrains the model body on thousands of GPUs every time a new document is added"
+    },
+    "correct_answer": "B",
+    "explanation": "RAG operates by indexing documents into vector chunks, retrieving top matches per query, and inserting them into the context window. This grounds the answer in external truth without modifying model parameters."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "2. In the 3-step RAG pipeline (Indexing, Retrieval, Generation), when is the 'Indexing' phase executed?",
+    "options": {
+      "A": "Dynamically during every user query in real time",
+      "B": "Once upfront before queries arrive (and updated whenever underlying documents change), by chunking text and storing vector embeddings in a database",
+      "C": "After the LLM generates its response to verify factual accuracy",
+      "D": "During the pretraining phase of foundation models like GPT-4"
+    },
+    "correct_answer": "B",
+    "explanation": "Indexing is an offline pre-processing step performed once (or upon document updates) where documents are split into chunks, transformed into embedding vectors, and saved in a vector database."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "3. [Scenario] An e-commerce company notices their customer support RAG system generates incorrect return policy advice when a user asks about 'money back', because the policy document uses the word 'refund'. How does semantic vector search resolve this issue compared to keyword search?",
+    "options": {
+      "A": "Semantic search forces the user to retype their query using exact keyword matches",
+      "B": "Semantic search converts words/chunks into dense vector embeddings where 'money back' and 'refund' sit close together in vector space, finding the chunk regardless of exact phrasing",
+      "C": "Semantic search retrains the LLM tokenizer on e-commerce dictionary definitions",
+      "D": "Semantic search uses Bigram frequency tables to eliminate non-matching tokens"
+    },
+    "correct_answer": "B",
+    "explanation": "Unlike keyword search (TF-IDF) which requires exact term matches, semantic vector search measures distance in high-dimensional embedding space (e.g. via cosine similarity), recognizing that 'money back' and 'refund' share semantic meaning."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "4. [Scenario] A law firm feeds a 100-page contract into a long-context LLM, but the model fails to reference a critical indemnity clause located on page 45. What known phenomenon explains this failure?",
+    "options": {
+      "A": "Vanishing gradient during backpropagation",
+      "B": "The 'Lost in the Middle' effect, where LLMs recall information at the beginning or end of long context prompts much better than information placed in the middle",
+      "C": "Mode collapse in autoregressive decoders",
+      "D": "Subword tokenization collapse"
+    },
+    "correct_answer": "B",
+    "explanation": "Research (Liu et al., 2023) proves that language models exhibit a U-shaped performance curve in long context windows: retrieval accuracy is highest for facts near the top or bottom of the prompt, and drops significantly for facts buried in the middle."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "5. How does a Chunking strategy impact RAG performance when processing structured financial tables or complex multi-column documents?",
+    "options": {
+      "A": "Chunking has zero impact on retrieval accuracy as long as the vector database is large",
+      "B": "Splitting text too aggressively can inadvertently separate table headers from numerical rows, destroying context and leading to inaccurate retrieved chunks",
+      "C": "Chunking automatically converts table cells into one-hot encoded integers",
+      "D": "Chunking increases the parameter count of the generator LLM"
+    },
+    "correct_answer": "B",
+    "explanation": "If document chunking boundaries cut through a table, the header row and numerical data rows end up in separate chunks, causing semantic vector search to lose crucial row-header associations."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "6. What is the role of an 'LLM-as-a-Judge' or Faithfulness Evaluator (e.g., Vectara HHEM or secondary auditor model) in an enterprise RAG system?",
+    "options": {
+      "A": "It converts text inputs into speech audio files for accessibility",
+      "B": "It evaluates generated answers sentence-by-sentence against retrieved source chunks to verify whether every claim is explicitly supported by the text",
+      "C": "It fine-tunes the base model's self-attention projection matrices",
+      "D": "It generates synthetic images to accompany text responses"
+    },
+    "correct_answer": "B",
+    "explanation": "Faithfulness evaluators or judge models automatically audit generated answers against retrieved context chunks, flagging unsupported claims or hallucinations before outputs are shown to users."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "7. [Scenario] An enterprise RAG system frequently retrieves irrelevant document chunks when users ask questions on out-of-scope topics (e.g., asking a healthcare bot about mortgage rates). What mitigation strategy should be implemented in the retrieval step?",
+    "options": {
+      "A": "Increase model Temperature to 1.5 to encourage creative guesses",
+      "B": "Set a minimum similarity score threshold (e.g. cosine score < 0.4); if no retrieved chunk meets the threshold, prompt the model to answer 'Information not found in sources'",
+      "C": "Disable vector embeddings and use random sampling",
+      "D": "Switch from a Decoder model to an Encoder-only model"
+    },
+    "correct_answer": "B",
+    "explanation": "Establishing a similarity threshold prevents low-scoring irrelevant chunks from polluting the prompt context, allowing the system to safely return an out-of-scope refusal."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "8. What is 'Hybrid Search' in modern enterprise retrieval architectures?",
+    "options": {
+      "A": "Combining image diffusion with text-to-speech generation",
+      "B": "Combining sparse keyword search (e.g., BM25/TF-IDF) with dense vector semantic search to catch both exact technical product codes/names and conceptual meaning",
+      "C": "Combining supervised fine-tuning with reinforcement learning",
+      "D": "Combining one-hot vectors with character n-grams"
+    },
+    "correct_answer": "B",
+    "explanation": "Hybrid search merges keyword search (excellent for rare part numbers, acronyms, and proper nouns) with dense vector search (excellent for conceptual meaning and synonyms)."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "9. What is the purpose of a 'Reranker' model (e.g., Cross-Encoder) placed after initial vector retrieval in an Advanced RAG pipeline?",
+    "options": {
+      "A": "To compress the context window into 10 tokens",
+      "B": "To perform a secondary, highly precise re-scoring of the top candidate chunks and place the single most relevant chunk at the very beginning of the prompt to avoid 'Lost in the Middle' errors",
+      "C": "To update model weights during user sessions",
+      "D": "To convert markdown text into PDF formatting"
+    },
+    "correct_answer": "B",
+    "explanation": "A Reranker uses a cross-encoder to thoroughly re-evaluate the top retrieved chunks against the query, ensuring the highest quality chunk is positioned at the top of the prompt."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "10. In a grounded prompt for RAG, why is it critical to include explicit citation instructions (e.g., 'Cite the chunk number in brackets like [1]')?",
+    "options": {
+      "A": "It speeds up GPU matrix multiplication during inference",
+      "B": "It enables human auditability, allowing staff to verify generated claims directly against source documents and catch subtle errors",
+      "C": "It decreases context window memory usage",
+      "D": "It replaces the need for vector embeddings"
+    },
+    "correct_answer": "B",
+    "explanation": "Grounding prompts with bracketed citations enforce traceability, allowing human reviewers or auditing scripts to verify that generated figures or claims match the cited source."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "11. [Scenario] A bank wants to deploy an internal chatbot to help staff query 50,000 PDF compliance manuals. The compliance team mandates zero tolerance for made-up policies, strict source traceability, and instant updates whenever a regulation changes. Which technology approach best satisfies these constraints?",
+    "options": {
+      "A": "Full pretraining of a new 70B parameter base model from scratch",
+      "B": "Fine-tuning an existing base LLM on all compliance PDFs",
+      "C": "Retrieval-Augmented Generation (RAG) paired with a Vector Database, similarity thresholds, and explicit citation prompts",
+      "D": "Few-shot prompting without external retrieval or documents"
+    },
+    "correct_answer": "C",
+    "explanation": "RAG provides grounded answers with source citations and instantaneous index updates when policies change, whereas pretraining/fine-tuning are expensive, lack source citations, and hallucinate."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "12. What vector metric is most commonly used in vector databases (e.g., Pinecone, Qdrant, Chroma) to calculate similarity between query embeddings and document chunk embeddings?",
+    "options": {
+      "A": "Hamming distance on one-hot arrays",
+      "B": "Cosine Similarity (or normalized Dot Product), measuring the angle between two dense embedding vectors in high-dimensional space",
+      "C": "Add-1 Laplace smoothing ratio",
+      "D": "Perplexity score"
+    },
+    "correct_answer": "B",
+    "explanation": "Cosine similarity calculates the cosine of the angle between two embedding vectors in multidimensional space; values closer to 1.0 indicate high semantic similarity."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "13. What is 'Naive RAG' compared to 'Advanced RAG'?",
+    "options": {
+      "A": "Naive RAG uses RNNs; Advanced RAG uses linear regression",
+      "B": "Naive RAG directly pastes top vector matches into the prompt, whereas Advanced RAG incorporates pre-retrieval optimization (query expansion/rewriting), post-retrieval optimization (reranking/filtering), and modular index structures",
+      "C": "Naive RAG operates without a language model",
+      "D": "Naive RAG requires human annotators to write responses manually"
+    },
+    "correct_answer": "B",
+    "explanation": "Naive RAG simply retrieves and pastes text. Advanced RAG optimizes query generation, filters/reranks chunks, and manages index structures to maximize factual retrieval accuracy."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "14. [Scenario] A medical diagnostic assistant built with RAG is tested on 1,000 patient queries. In 8% of cases, the system returns an answer containing an accurate medical fact, but the cited source document contains no mention of that fact. How is this error classified in RAG evaluation?",
+    "options": {
+      "A": "High retrieval precision",
+      "B": "Unfaithful generation / Extrapolated hallucination (answering from model parametric memory rather than grounded source context)",
+      "C": "Context window overflow",
+      "D": "Temperature zero clipping"
+    },
+    "correct_answer": "B",
+    "explanation": "When an LLM pulls facts from its internal pretrained parametric memory rather than relying strictly on the retrieved context, it breaks grounding (unfaithful generation), creating compliance risks."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "15. What is the role of 'Document Pre-processing & Parsing' prior to vector embedding in a RAG pipeline?",
+    "options": {
+      "A": "Compressing text into single-character tokens",
+      "B": "Extracting clean text, headers, metadata, and visual structure from raw PDFs, HTML, or DOCX files so chunking algorithms can split text along logical boundaries",
+      "C": "Calculating perplexity scores across internet corpora",
+      "D": "Fine-tuning transformer decoder projection layers"
+    },
+    "correct_answer": "B",
+    "explanation": "Parsing converts unstructured files (PDFs, slides, web pages) into clean structured text with metadata, ensuring chunks preserve logical context like section headings and page numbers."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "16. In RAG system evaluation, what are the two core metrics known as 'RAG Triad' or 'Grounding Metrics'?",
+    "options": {
+      "A": "Perplexity and BLEU score",
+      "B": "Context Relevance (did retrieval find the right chunks?) and Groundedness / Faithfulness (is the generated response strictly backed by those chunks?)",
+      "C": "One-hot sparsity and SVD rank",
+      "D": "Temperature and Top-P threshold"
+    },
+    "correct_answer": "B",
+    "explanation": "Evaluating RAG requires checking Context Relevance (retrieval quality) and Groundedness/Faithfulness (generation quality relative to retrieved context)."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "17. [Scenario] A corporate knowledge assistant needs to respect strict user permission roles (e.g. HR staff can view salary documents, but general staff cannot). At what stage of the RAG pipeline should access control filtering be enforced?",
+    "options": {
+      "A": "In the prompt post-processing step after the LLM generates the text",
+      "B": "During the Retrieval / Vector Search stage (metadata filtering), ensuring unauthorized document chunks are never retrieved or injected into the prompt context",
+      "C": "During pretraining of the base foundation model",
+      "D": "By setting model Temperature to 0.0"
+    },
+    "correct_answer": "B",
+    "explanation": "Access control must be enforced at retrieval time using vector metadata filtering so unauthorized text chunks are never exposed to the LLM context window."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "18. How does 'Query Rewriting / Expansion' improve retrieval performance in Advanced RAG?",
+    "options": {
+      "A": "It translates the query into binary machine code",
+      "B": "It uses an LLM to reformulate vague user queries, add context, or break complex questions into multiple sub-queries before searching the vector index",
+      "C": "It removes all vowels from the query string",
+      "D": "It replaces semantic vector search with one-hot matrix multiplication"
+    },
+    "correct_answer": "B",
+    "explanation": "Query expansion/rewriting transforms conversational or ambiguous user prompts into clean, search-optimized queries that match the vocabulary of indexed document chunks."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "19. What is 'Modular RAG'?",
+    "options": {
+      "A": "A RAG system built without neural networks",
+      "B": "An architecture that integrates specialized interchangeable modules like routing, search, memory, knowledge graph traversal, and iterative multi-step retrieval loops",
+      "C": "A model fine-tuned on single-word dictionary terms",
+      "D": "A database storing raw audio waveforms"
+    },
+    "correct_answer": "B",
+    "explanation": "Modular RAG expands beyond linear search-and-generate pipelines by incorporating dynamic routing, knowledge graph reasoning, and iterative feedback loops."
+  },
+  {
+    "topic": "Grounding, Retrieval-Augmented Generation (RAG) & Vector Search",
+    "question": "20. Why is a Continuous Test Set / Regression Evaluation Loop essential for maintaining production RAG systems?",
+    "options": {
+      "A": "Because vector database indexes degrade automatically every 24 hours",
+      "B": "To systematically re-evaluate system accuracy against a fixed suite of golden Q&A test cases whenever prompt templates, chunking parameters, or embedding models are updated",
+      "C": "To train the generator LLM from scratch on daily user chat logs",
+      "D": "To reset temperature and top-k hyperparameters"
+    },
+    "correct_answer": "B",
+    "explanation": "Running automated regression tests against a golden benchmark dataset ensures that changes to chunk sizes, prompts, or embedding models do not introduce accuracy regressions."
   }
 ]
