@@ -13,1190 +13,1430 @@
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "2. An enterprise notices ad-hoc digital initiatives springing up across sales and marketing departments, but lacks executive sponsorship and cross-departmental coordination. Which stage of Solis & Szymanski's (2016) maturity model is this?",
-    "options": {
-      "A": "Business as Usual",
-      "B": "Formalized",
-      "C": "Present and Active",
-      "D": "Converged"
-    },
-    "correct_answer": "C",
-    "explanation": "'Present and Active' features small, isolated digital experiments emerging in departments with enthusiasm but without executive leadership or long-term alignment."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "3. A retail bank appoints a Chief Digital Officer, formalizes digital transformation roadmaps, and allocates dedicated governance resources across departments. Which stage of Solis & Szymanski (2016) has the firm reached?",
+    "question": "2. An executive team notices that various departments have started independent, ad-hoc digital experiments with social media and mobile apps, but without any centralized strategy or shared metrics. Which Solis & Szymanski stage is this?",
     "options": {
       "A": "Formalized",
-      "B": "Strategic",
+      "B": "Present and Active",
       "C": "Converged",
       "D": "Innovative and Adaptive"
     },
-    "correct_answer": "C",
-    "explanation": "The 'Converged' stage is marked by a dedicated digital transformation team driving governance, resource allocation, and integrating digital initiatives into core business operations."
+    "correct_answer": "B",
+    "explanation": "The 'Present and Active' stage is characterized by localized, spontaneous digital experimentation driven by enthusiastic pockets within the company without formal governance."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "4. A multinational logistics firm constantly scans emerging tech trends, partners with external startup ecosystems, and treats digital adaptation as a continuous journey. Which maturity stage does this reflect?",
+    "question": "3. A retail bank formalizes digital transformation by appointing a Chief Digital Officer (CDO) and mapping initial customer journeys, yet operational silos still prevent seamless integration across legacy branches. Which stage reflects this current state?",
     "options": {
-      "A": "Strategic",
-      "B": "Converged",
-      "C": "Formalized",
+      "A": "Business as Usual",
+      "B": "Formalized",
+      "C": "Converged",
       "D": "Innovative and Adaptive"
     },
-    "correct_answer": "D",
-    "explanation": "'Innovative and Adaptive' represents the final maturity stage where digital innovation becomes central to organizational culture, fostering rapid adaptation to shifting markets."
+    "correct_answer": "B",
+    "explanation": "In the 'Formalized' stage, experimentation becomes intentional and structured with executive backing, though legacy organizational silos still persist."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "5. According to Westerman et al. (2012), a company that invests heavily in cutting-edge mobile apps and AI tools but lacks top-down transformation management vision is categorized as:",
+    "question": "4. A global logistics company aligns its digital roadmap directly with long-term business goals, creating a dedicated cross-functional transformation team to overhaul core operations. According to Solis & Szymanski, what stage is this?",
     "options": {
-      "A": "Beginners",
-      "B": "Fashionistas",
-      "C": "Conservatives",
-      "D": "Digirati"
+      "A": "Strategic",
+      "B": "Present and Active",
+      "C": "Innovative and Adaptive",
+      "D": "Business as Usual"
+    },
+    "correct_answer": "A",
+    "explanation": "The 'Strategic' stage occurs when individual digital efforts unite under a cohesive strategy mapped to broader corporate objectives and formal investment."
+  },
+  {
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "5. A healthcare network integrates all patient touchpoints, cloud infrastructure, and data analytics into a unified, dedicated digital transformation team across the entire enterprise. Which maturity stage is reached?",
+    "options": {
+      "A": "Formalized",
+      "B": "Converged",
+      "C": "Present and Active",
+      "D": "Business as Usual"
     },
     "correct_answer": "B",
-    "explanation": "Fashionistas have high digital intensity (investing heavily in technology) but low transformation management intensity, leading to uncoordinated investments and wasted capital."
+    "explanation": "In the 'Converged' stage, a dedicated digital transformation team guides strategy and operations, breaking down silos to form a unified customer and operational ecosystem."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "6. A financial firm possesses strong corporate governance, prudent leadership, and robust IT-business relationships, but hesitates to adopt emerging digital tools. Which Westerman et al. (2012) archetype is this?",
+    "question": "6. An enterprise establishes a permanent innovation lab that continuously tests emerging technologies (like IoT and GenAI) to proactively disrupt its own business model before competitors do. What is this final stage?",
     "options": {
-      "A": "Beginners",
-      "B": "Fashionistas",
-      "C": "Conservatives",
-      "D": "Digirati"
+      "A": "Innovative and Adaptive",
+      "B": "Strategic",
+      "C": "Formalized",
+      "D": "Business as Usual"
     },
-    "correct_answer": "C",
-    "explanation": "Conservatives possess strong transformation management capabilities and executive vision, but exercise extreme caution regarding digital intensity, missing market opportunities."
+    "correct_answer": "A",
+    "explanation": "'Innovative and Adaptive' is the highest stage where digital transformation becomes an ongoing, ingrained cultural capability that constantly evaluates emerging tech."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "7. A luxury brand like Burberry combines strong executive vision with comprehensive investments in unified ERP systems and in-store digital customer experiences. Westerman et al. (2012) classify this firm as:",
+    "question": "7. Firm A spends heavily on cutting-edge digital portals and automation tools but lacks strong leadership to drive organizational change or train staff. According to Westerman et al. (2012), which archetype does Firm A belong to?",
     "options": {
-      "A": "Fashionistas",
-      "B": "Conservatives",
+      "A": "Conservatives",
+      "B": "Fashionistas",
       "C": "Digirati",
       "D": "Beginners"
     },
-    "correct_answer": "C",
-    "explanation": "Digirati (or Digital Masters) excel in both digital intensity and transformation management intensity, driving enterprise-wide value and outperforming industry peers."
+    "correct_answer": "B",
+    "explanation": "Fashionistas have high Digital Intensity (heavy spending on digital features) but low Transformation Management Intensity (weak governance and culture)."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "8. Westerman et al. (2012) empirically demonstrated that Digirati firms outperform their industry competitors across key financial metrics. Which set of numbers accurately reflects this advantage?",
+    "question": "8. Firm B boasts strong corporate governance, prudent leadership, and a clear vision, but hesitates to invest in new digital technologies, preferring legacy IT systems. According to Westerman et al., Firm B is a:",
     "options": {
-      "A": "+10% revenue, +5% valuation",
-      "B": "+26% profitability, +9% revenue efficiency, +12% market valuation",
-      "C": "+50% market share, +30% ROI",
-      "D": "+15% profitability, +25% growth"
+      "A": "Fashionista",
+      "B": "Conservative",
+      "C": "Digirati",
+      "D": "Beginner"
     },
     "correct_answer": "B",
-    "explanation": "Westerman et al. found that Digirati earn 26% higher profitability, generate 9% more revenue from physical assets, and achieve 12% higher market valuation."
+    "explanation": "Conservatives exhibit high Transformation Management Intensity (strong vision, governance) but low Digital Intensity (cautious tech investment)."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "9. According to Gregory Vial (2019), what serves as the primary catalyst that triggers the structural building blocks of digital transformation in an industry?",
+    "question": "9. A multinational enterprise combines high digital intensity (advanced cloud platforms, AI) with high transformation management intensity (strong digital culture, executive vision). According to Westerman et al., this company is a:",
     "options": {
-      "A": "Government subsidies",
-      "B": "Digital disruption altering consumer expectations and competitive landscapes",
-      "C": "Internal employee demands for remote work",
-      "D": "Lower hardware costs"
-    },
-    "correct_answer": "B",
-    "explanation": "Vial's inductive framework posits that digital technologies cause digital disruptions in the external environment, forcing firms to formulate strategic responses."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "10. A health system converts physical paper medical records into searchable PDF files without changing clinical workflows or diagnostic processes. This operation is best defined as:",
-    "options": {
-      "A": "Digitization",
-      "B": "Digitalization",
-      "C": "Digital Transformation",
-      "D": "Datafication"
+      "A": "Digirati",
+      "B": "Fashionista",
+      "C": "Conservative",
+      "D": "Beginner"
     },
     "correct_answer": "A",
-    "explanation": "Digitization refers specifically to converting analog information into a digital format (bits), without altering underlying business processes or organizational structures."
+    "explanation": "Digirati excel in both dimensions—Digital Intensity and Transformation Management Intensity—allowing them to outperform industry peers significantly."
   },
   {
     "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "11. A hospital restructures its patient intake workflows by implementing automated digital scheduling software and real-time electronic triage systems. This operational shift represents:",
+    "question": "10. In Westerman et al.'s empirical study of digital maturity across global industries, what performance advantage did Digirati achieve in terms of profitability compared to industry averages?",
+    "options": {
+      "A": "+9% higher profitability",
+      "B": "+26% higher profitability",
+      "C": "+50% higher profitability",
+      "D": "+12% higher profitability"
+    },
+    "correct_answer": "B",
+    "explanation": "Westerman et al. (2012) found empirically that Digirati were 26% more profitable than their industry peers, while achieving 9% higher revenue generation efficiency."
+  },
+  {
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "11. According to Gregory Vial's (2019) inductive framework, what primary trigger forces organizations to initiate digital transformation strategies?",
+    "options": {
+      "A": "Internal routine maintenance requirements",
+      "B": "Digital technologies acting as sources of market disruption",
+      "C": "Decreasing internet bandwidth costs",
+      "D": "Mandatory government taxation updates"
+    },
+    "correct_answer": "B",
+    "explanation": "Vial's (2019) framework establishes that digital technologies create structural disruptions in customer behavior and competitive dynamics, forcing organizations to formulate strategic responses."
+  },
+  {
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "12. A bank scans paper application forms and saves them as searchable PDF documents without altering its approval workflow. What level of technological adoption does this represent?",
+    "options": {
+      "A": "Digital Transformation",
+      "B": "Digitization",
+      "C": "Digitalization",
+      "D": "Platformization"
+    },
+    "correct_answer": "B",
+    "explanation": "Digitization refers strictly to converting analog information into digital format (bits) without changing underlying operational processes or business models."
+  },
+  {
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "13. A hospital restructures its patient intake process by deploying an automated portal that coordinates scheduling, doctor assignments, and billing. This workflow-level transformation is best described as:",
     "options": {
       "A": "Digitization",
       "B": "Digitalization",
-      "C": "Business Model Pivot",
-      "D": "Datafication"
-    },
-    "correct_answer": "B",
-    "explanation": "Digitalization leverages digital technologies to alter business processes, workflow efficiency, and departmental interactions, beyond mere format conversion."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "12. A car manufacturer transitions from selling personal vehicles to offering an on-demand, subscription-based mobility platform integrated with smart city transit. This fundamental shift is:",
-    "options": {
-      "A": "Digitization",
-      "B": "Digitalization",
-      "C": "Digital Transformation",
-      "D": "Process Automation"
-    },
-    "correct_answer": "C",
-    "explanation": "Digital transformation is the holistic reconfiguration of business models, value creation paths, and customer interactions driven by digital technologies."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "13. In the case study of Kodak presented in digital transformation literature, what was the primary cause of the company's ultimate bankruptcy despite inventing digital photography?",
-    "options": {
-      "A": "Lack of technical patents",
-      "B": "Organizational silos, strategic inertia, and fear of cannibalizing film sales",
-      "C": "Insufficient financial capital",
-      "D": "Government antitrust intervention"
-    },
-    "correct_answer": "B",
-    "explanation": "Kodak failed due to organizational silos and strategic inertia; management protected its lucrative film revenue rather than pivoting aggressively to digital imaging."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "14. In an aerospace manufacturing card sorting study on AI Decision Support Systems, engineers rated technical jargon as a major barrier. What element was identified as most critical for building trust?",
-    "options": {
-      "A": "Black-box neural network accuracy",
-      "B": "Interface usability, user support, and eXplainable AI (XAI) transparency",
-      "C": "Proprietary code access",
-      "D": "Automated override controls"
-    },
-    "correct_answer": "B",
-    "explanation": "The card sorting study revealed that operational clarity, intuitive UI, and explainable AI transparency are vital for human operators to trust industrial AI systems."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "15. According to Human Factors Engineering in production planning, why do fully automated scheduling algorithms often fail on the shop floor without human planner oversight?",
-    "options": {
-      "A": "Algorithms run too slowly",
-      "B": "Unforeseen shop-floor disruptions require human adaptability, implicit knowledge, and contingency management",
-      "C": "Computers cannot store shift data",
-      "D": "Planners reject all computer recommendations"
-    },
-    "correct_answer": "B",
-    "explanation": "Human factors literature highlights that human planners possess tacit knowledge and cognitive adaptability needed to manage real-time shop floor contingencies that static algorithms miss."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "16. During a Digital Maturity Assessment, an enterprise evaluates its leadership commitment, culture of innovation, and change management programs. Which assessment dimension is being tested?",
-    "options": {
-      "A": "Digital Readiness",
-      "B": "Strategy and Culture / Governance",
-      "C": "Green Digitalization",
-      "D": "Data Storage"
-    },
-    "correct_answer": "B",
-    "explanation": "European Digital Maturity Assessment tools evaluate 'Strategy and Culture' to measure how leadership fosters innovation and continuous change management."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "17. Mining company Codelco automated its underground mining operations with remote-controlled machinery to improve worker safety and operational yield. Codelco represents a firm that:",
-    "options": {
-      "A": "Failed to achieve digital ROI",
-      "B": "Used technology to transform core operational processes and safety culture",
-      "C": "Operated purely as a Fashionista",
-      "D": "Focused exclusively on customer marketing"
-    },
-    "correct_answer": "B",
-    "explanation": "Codelco used digital technology to transform hazardous operational processes into automated, knowledge-intensive operations while reshaping corporate culture."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "18. According to Solis & Szymanski (2016), what serves as the primary external catalyst driving corporate digital transformation initiatives?",
-    "options": {
-      "A": "Decreasing cloud storage fees",
-      "B": "Changing customer experience expectations and digital behaviors",
-      "C": "New accounting standards",
-      "D": "Supply chain regionalization"
-    },
-    "correct_answer": "B",
-    "explanation": "Research confirms that customer experience shifts are the single biggest driver forcing businesses to map digital user journeys and modernize operations."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "19. A firm moving from Stage 3 (Formalized) to Stage 4 (Strategic) in Solis & Szymanski's model begins to evaluate new metrics beyond web traffic. Which metrics appear in Stage 4?",
-    "options": {
-      "A": "Pageviews and clicks only",
-      "B": "Customer Lifetime Value (CLV), multi-departmental KPIs, and revenue impact",
-      "C": "Number of social media followers",
-      "D": "Server uptime percentages"
-    },
-    "correct_answer": "B",
-    "explanation": "Transitioning to Stage 4 involves aligning metrics with strategic roadmaps, focusing on Customer Lifetime Value, integrated customer journeys, and bottom-line performance."
-  },
-  {
-    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
-    "question": "20. Asian Paints initially built strong executive vision, IT governance, and enterprise systems before launching customer-facing apps. According to Westerman et al., Asian Paints took which path?",
-    "options": {
-      "A": "Fashionista-first path",
-      "B": "Transformation management-first path to Digirati status",
-      "C": "Beginner regression path",
-      "D": "Uncoordinated silo expansion"
-    },
-    "correct_answer": "B",
-    "explanation": "Asian Paints first built transformation management capabilities (vision, governance) across the enterprise, providing a firm foundation to deploy digital intensity successfully."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "1. In José van Dijck's (2021) 'Platformization Tree' botanical metaphor, what structural layer is represented by subsea fiber-optic cables, microchips, and cloud data centers?",
-    "options": {
-      "A": "The Branches",
-      "B": "The Trunk",
-      "C": "The Roots",
-      "D": "The Leaves"
-    },
-    "correct_answer": "C",
-    "explanation": "In Van Dijck's tree framework, 'Roots' represent hardware, physical cables, microchips, data centers, and internet protocols that support all digital platforms."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "2. In Van Dijck's (2021) metaphor, what component is represented by intermediary big tech platforms (cloud infrastructure, single sign-on logins, app stores, payment systems)?",
-    "options": {
-      "A": "The Roots",
-      "B": "The Trunk",
-      "C": "The Sectoral Branches",
-      "D": "The Twigs"
-    },
-    "correct_answer": "B",
-    "explanation": "The 'Trunk' comprises intermediary platforms (dominated by GAFAM) that control crucial digital infrastructure like identification, cloud storage, search, and payment."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "3. When Big Tech companies expand into primary schools by bundling Chromebooks with cloud storage and personalized learning apps, Van Dijck describes this process as platform expansion into:",
-    "options": {
-      "A": "The Roots layer",
-      "B": "Sectoral Branches (e.g., Education, Healthcare)",
-      "C": "Non-digital offline markets",
-      "D": "Hardware manufacturing"
-    },
-    "correct_answer": "B",
-    "explanation": "Sectoral branches represent specific societal domains (education, health, news, finance) being reconfigured by intermediary trunk platforms."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "4. According to Van Dijck, Poell, & de Waal (2018), what are the three core mechanisms that drive a platform society?",
-    "options": {
-      "A": "Automation, Robotics, 3D Printing",
-      "B": "Datafication, Commodification, Algorithmic Selection",
-      "C": "Digitization, Encryption, Virtualization",
-      "D": "Socialization, Monetization, Globalization"
-    },
-    "correct_answer": "B",
-    "explanation": "The three foundational mechanisms of platform societies are Datafication (turning life into data), Commodification (monetizing data/activities), and Selection (algorithmic filtering)."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "5. The systemic transformation of everyday social interactions, economic traffic, and civic activities into digital data flows is defined by platform theorists as:",
-    "options": {
-      "A": "Digitization",
-      "B": "Datafication",
-      "C": "Commodification",
+      "C": "Business Model Disruption",
       "D": "Infrastructuralization"
     },
     "correct_answer": "B",
-    "explanation": "Datafication is the process of quantifying and translating social actions, behaviors, and relationships into digital data streams for analysis and monetization."
+    "explanation": "Digitalization involves leveraging digital technologies to alter and optimize organizational workflows and processes, going beyond simple data conversion."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "6. A social network algorithm dynamically adjusts user newsfeeds to show content that maximizes emotional engagement and ad views. This mechanism is best categorized as:",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "14. An auto manufacturer transitions from selling physical cars to offering a subscription-based 'mobility-as-a-service' platform leveraging IoT data and cloud analytics. This fundamental shift is:",
     "options": {
-      "A": "Datafication",
-      "B": "Algorithmic Selection",
-      "C": "Vertical Integration",
-      "D": "Data Sovereignty"
+      "A": "Digitization",
+      "B": "Digital Transformation",
+      "C": "Process Automation",
+      "D": "Hardware Renewal"
     },
     "correct_answer": "B",
-    "explanation": "Algorithmic selection refers to automated curation and filtering decisions made by algorithms to determine which content, products, or users become visible."
+    "explanation": "Digital Transformation fundamentally redefines the business model, value proposition, and customer relationships through technological integration."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "7. In Livingstone et al.'s (2024) study 'Googlization of the Classroom', what major concern is raised regarding public schools deploying commercial EdTech tools?",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "15. Kodak famously invented the digital camera in 1975 but failed to commercialize it successfully, eventually filing for bankruptcy in 2012. According to course case study analysis, why did Kodak fail?",
     "options": {
-      "A": "High subscription costs",
-      "B": "Opaque data harvesting of children's personal data funnelled into commercial ad profiles",
-      "C": "Slow internet speeds",
-      "D": "Lack of teacher training"
+      "A": "Kodak lacked technical engineers capable of building digital sensors.",
+      "B": "Organizational silos, rigid business model inertia tied to film margins, and strategic blind spots prevented timely adaptation.",
+      "C": "Digital photography was banned by international trade regulations.",
+      "D": "Kodak spent zero dollars on marketing its products."
     },
     "correct_answer": "B",
-    "explanation": "Livingstone et al. argue that deploying Google Classroom funnels children's public educational data into commercial corporate stacks, threatening student privacy rights."
+    "explanation": "Kodak suffered from core rigidity and organizational silos—protecting its highly profitable film business rather than embracing the disruptive digital ecosystem it helped create."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "8. What term describes the invisible gig workers paid extremely low wages ($1.32-$2.00/hr) in developing nations to moderate graphic content and label AI datasets?",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "16. Under CEO Angela Ahrendts, luxury fashion brand Burberry revitalized its global brand value by turning its stores into 'living digital spaces' and unifying online/offline inventory. What key driver enabled this transformation?",
     "options": {
-      "A": "Digital Masters",
-      "B": "Ghost Work / Microwork",
-      "C": "Knowledge Workers",
-      "D": "Prosumers"
+      "A": "Complete abandonment of brick-and-mortar retail stores",
+      "B": "Cohesive executive leadership, brand alignment, and treating digital as a core customer experience driver",
+      "C": "Replacing all human sales associates with autonomous robots",
+      "D": "Outsourcing 100% of garment manufacturing to third-party platforms"
     },
     "correct_answer": "B",
-    "explanation": "Platform research highlights 'Ghost Work'—an invisible global crowd workforce performing content moderation and data labeling under precarious, low-wage conditions."
+    "explanation": "Burberry succeeded by establishing clear top-down digital vision, blending digital and physical customer experiences, and treating technology as integral to brand identity."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "9. When intermediary platforms like Google or Amazon become so essential that society cannot function without them, Van Dijck refers to this process as:",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "17. Microsoft successfully pivoted under CEO Satya Nadella from a desktop-centric OS business model toward a cloud-first (Azure) ecosystem model. According to case study analysis, what cultural shift was essential?",
     "options": {
-      "A": "Infrastructuralization",
-      "B": "Cross-sectorization",
-      "C": "Decentralization",
-      "D": "Demediating"
-    },
-    "correct_answer": "A",
-    "explanation": "Infrastructuralization occurs when private platforms turn into indispensable public-like utilities (similar to water or electricity grids) that dictate online traffic."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "10. How does Van Dijck contrast the American 'Californian Sequoia' platform model with the proposed European platform model?",
-    "options": {
-      "A": "Californian model is state-run; European is unregulated",
-      "B": "Californian model relies on market monopoly; European model advocates federated governance grounded in public values",
-      "C": "Both models are identical in architecture",
-      "D": "Californian model bans ad tracking"
-    },
-    "correct_answer": "B",
-    "explanation": "The US model relies on corporate market monopolies, whereas the European model emphasizes democratic principles, public value protection, and federated data governance."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "11. The EU Digital Services Act (DSA) and Digital Markets Act (DMA) were enacted primarily to address which platform society issue?",
-    "options": {
-      "A": "Promoting hardware export tariffs",
-      "B": "Regulating big tech market dominance, enforcing data portability, and ensuring content transparency",
-      "C": "Banning social media for adults",
-      "D": "Funding telecom monopolies"
-    },
-    "correct_answer": "B",
-    "explanation": "The DSA and DMA act as landmark regulatory frameworks designed to curb platform monopolies, mandate algorithmic transparency, and ensure fair market access."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "12. Sociologist Hartmut Rosa's concept of the 'Acceleration Society' in late-modern media theory describes how digital platforms affect human time by:",
-    "options": {
-      "A": "Expanding leisure time dramatically",
-      "B": "Compressing time, accelerating social interactions, and creating constant temporal urgency",
-      "C": "Slowing down economic production",
-      "D": "Eliminating multi-tasking"
-    },
-    "correct_answer": "B",
-    "explanation": "Late-modernity media theory highlights temporal acceleration: digital connectivity accelerates communication pace, compressing time and creating constant availability expectations."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "13. What phenomenon occurs when users cannot leave a dominant social platform because all their contacts and data history are tied to it?",
-    "options": {
-      "A": "Network lock-in effect",
-      "B": "Open-source mobility",
-      "C": "Data sovereignty",
-      "D": "Dememediation"
+      "A": "Moving from a 'know-it-all' culture to a 'learn-it-all' culture emphasizing empathy and cloud collaboration",
+      "B": "Firing all hardware engineers and closing the Xbox division",
+      "C": "Refusing to allow Microsoft software to run on competing platforms like iOS or Android",
+      "D": "Relying strictly on legacy Windows license sales"
     },
     "correct_answer": "A",
-    "explanation": "The platform lock-in (or network effect) creates strong switching costs, making it difficult for users or institutions to migrate to alternative public platforms."
+    "explanation": "Satya Nadella led a profound cultural shift from a rigid 'know-it-all' culture to an empathetic, growth-mindset 'learn-it-all' culture, enabling cloud-first ecosystem partnerships."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "14. When a platform allows third-party software developers to build applications using its underlying data feeds and identification systems, it is utilizing:",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "18. In Vial's (2019) research agenda, what role do 'dynamic capabilities' play during digital transformation?",
     "options": {
-      "A": "Closed firewalls",
-      "B": "Application Programming Interfaces (APIs)",
-      "C": "Analog protocols",
-      "D": "Manual export files"
-    },
-    "correct_answer": "B",
-    "explanation": "APIs allow external developers to plug into a platform's infrastructure, facilitating data flows and extending the platform's ecosystem into new sectors."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "15. In platform governance theory, 'Data Sovereignty' is defined as:",
-    "options": {
-      "A": "Corporate ownership of all user data",
-      "B": "The right and technical capability of citizens and nations to control their own data storage, processing, and privacy",
-      "C": "Government seizure of private servers",
-      "D": "Free public access to copyrighted movies"
-    },
-    "correct_answer": "B",
-    "explanation": "Data sovereignty empowers individuals and institutions to retain control over where their data resides, who accesses it, and under what legal or ethical terms."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "16. Which platform strategy involves connecting user data gathered in one sector (e.g., search queries) with services in completely different sectors (e.g., healthcare or autonomous cars)?",
-    "options": {
-      "A": "Cross-sectorization",
-      "B": "Hardware containment",
-      "C": "Siloed accounting",
-      "D": "Analog diversification"
+      "A": "They allow organizations to continuously sense market shifts, seize opportunities, and reconfigure organizational assets.",
+      "B": "They refer strictly to the processing speed of central server CPUs.",
+      "C": "They eliminate the need for human management in corporate settings.",
+      "D": "They guarantee immediate 100% stock price increases."
     },
     "correct_answer": "A",
-    "explanation": "Cross-sectorization allows platform conglomerates to leverage data dominance in core services (search, cloud) to dominate emerging sectors like mobility, health, and finance."
+    "explanation": "Dynamic capabilities enable an organization to adapt, reconfigure internal competencies, and continuously realign resources in response to fast-changing digital environments."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "17. According to Livingstone et al. (2024), why are local schools ill-equipped to enforce GDPR compliance when adopting commercial EdTech software?",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "19. An enterprise creates an independent digital venture unit outside its legacy hierarchy to experiment with disruptive AI tools. Which organizational design strategy does this represent?",
     "options": {
-      "A": "Teachers dislike computers",
-      "B": "Schools lack technical/legal resources to audit opaque corporate data collection practices",
-      "C": "EdTech contracts are short",
-      "D": "Students refuse to use passwords"
-    },
-    "correct_answer": "B",
-    "explanation": "Livingstone et al. highlight that responsibility for complex data protection compliance is unfairly offloaded onto individual schools that lack legal and technical auditing resources."
-  },
-  {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "18. A rideshare platform calculates driver payouts, assigns fares, and evaluates driver performance using automated metrics without human managerial intervention. This is an example of:",
-    "options": {
-      "A": "Algorithmic Management",
-      "B": "Participatory Democracy",
-      "C": "Analog Scheduling",
-      "D": "Human Factors Engineering"
+      "A": "Structural ambidexterity / dual operating system",
+      "B": "Total centralization",
+      "C": "Complete liquidation",
+      "D": "Legacy lock-in"
     },
     "correct_answer": "A",
-    "explanation": "Algorithmic management replaces human managers with automated data tracking, mathematical optimization, and algorithmic discipline over gig workers."
+    "explanation": "Creating a separate innovation unit alongside legacy operations is an example of structural ambidexterity, balancing core operational efficiency with disruptive innovation."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "19. The concept of 'Commodification' in platform societies refers to:",
+    "topic": "Digital Transformation, Maturity Models & Strategic Evolution",
+    "question": "20. According to research on digital transformation barriers, what factor is most frequently cited as the primary cause of digital initiative failures?",
     "options": {
-      "A": "Giving away open-source code for free",
-      "B": "Transforming online user activities, data, and social attention into tradeable economic commodities",
-      "C": "Manufacturing physical computers",
-      "D": "Banning commercial advertising"
+      "A": "Lack of available hardware tools",
+      "B": "Cultural resistance and organizational inertia",
+      "C": "Inability to send emails",
+      "D": "Overabundance of financial budget"
     },
     "correct_answer": "B",
-    "explanation": "Commodification turns user content, relationships, and behavioral data into monetizable assets sold to advertisers or third-party data brokers."
+    "explanation": "Across digital transformation literature (Vial, Solis & Szymanski, Westerman), organizational culture, employee resistance, and leadership inertia are the primary barriers to transformation."
   },
   {
-    "topic": "Platform Society, Algorithmic Governance & Big Data",
-    "question": "20. What risk does Van Dijck identify when public institutions (such as universities and public broadcasting) rely entirely on Big Tech cloud infrastructures?",
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "1. A regional development agency uses Eurostat's Digital Intensity Index (DII) to assess local small-and-medium enterprises (SMEs). What does the DII specifically measure?",
     "options": {
-      "A": "Lower storage capacity",
-      "B": "Erosion of public values, loss of institutional autonomy, and dependence on private corporate agendas",
-      "C": "Excessive governmental regulation",
-      "D": "Faster internet speeds"
+      "A": "The physical weight of electronic machinery imported by a country",
+      "B": "The degree of digital technology integration in business operations based on 12 key indicator criteria",
+      "C": "The total number of hours workers spend on personal social media",
+      "D": "The electricity consumption of server rooms"
     },
     "correct_answer": "B",
-    "explanation": "Relying on commercial tech stacks subjects public institutions to private corporate business logic, eroding public values and democratic independence."
+    "explanation": "Eurostat's Digital Intensity Index (DII) evaluates enterprise digital adoption across 12 criteria (e.g., cloud use, AI adoption, e-commerce, ERP systems) categorizing firms into maturity levels."
   },
   {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "1. According to Neil Postman's philosophy of technology cited in D4B Lesson 2, every major technological innovation represents a 'Faustian Bargain'. What does this mean?",
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "2. In Everett Rogers' Diffusion of Innovations theory, what percentage of a social system's population is classified as 'Innovators'?",
     "options": {
-      "A": "Technology is purely beneficial and solves all social problems",
-      "B": "Technology is inherently evil and must be rejected",
-      "C": "Technology gives something major but also takes away something vital in return",
-      "D": "Technology only impacts financial markets"
-    },
-    "correct_answer": "C",
-    "explanation": "Postman's Faustian Bargain concept posits that technology always involves a trade-off: it gives strategic capabilities but exacts unforeseen cultural, social, or cognitive costs."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "2. Postman uses the metaphor of 'dropping red dye into a beaker of water' to explain that technological change is ecological rather than additive. What does this imply?",
-    "options": {
-      "A": "Adding AI to a company leaves the old structure unchanged except for one department",
-      "B": "Technology changes the entire system and culture as a whole",
-      "C": "Technology can be easily contained and isolated",
-      "D": "Old processes always disappear completely"
+      "A": "13.5%",
+      "B": "2.5%",
+      "C": "34%",
+      "D": "16%"
     },
     "correct_answer": "B",
-    "explanation": "An ecological shift means adding a new technology (like AI) alters the entire organizational ecosystem and social culture, rather than simply adding a tool."
+    "explanation": "Rogers' adoption curve assigns 2.5% to Innovators (venturesome risk-takers), followed by Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), and Laggards (16%)."
   },
   {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "3. Artificial Intelligence is classified as a 'General Purpose Technology' (GPT). Which group of historical innovations shares this same classification?",
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "3. A department within a firm is eager to adopt an AI scheduling tool because members perceive a high strategic advantage and serve as opinion leaders for other units. In Rogers' model, this group represents:",
     "options": {
-      "A": "The typewriter, the fax machine, the pager",
-      "B": "The steam engine, electricity, and the computer",
-      "C": "The assembly line, the clock, the telephone",
-      "D": "The pocket calculator, the MP3 player, the DVD"
+      "A": "Laggards",
+      "B": "Early Adopters",
+      "C": "Late Majority",
+      "D": "Innovators"
     },
     "correct_answer": "B",
-    "explanation": "General Purpose Technologies (GPTs) like electricity, steam power, and AI are pervasive, continuously improve over time, and spawn wave after wave of downstream innovation across all industries."
+    "explanation": "Early Adopters (13.5%) are respected opinion leaders who evaluate innovations early and serve as role models for the broader organization once strategic benefits are clear."
   },
   {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "4. Moravec's Paradox in artificial intelligence and robotics demonstrates that:",
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "4. According to Rogers, an innovation diffuses rapidly when potential adopters perceive that it offers a significant improvement over existing solutions. Which innovation attribute does this describe?",
     "options": {
-      "A": "High-level cognitive calculations are easy for AI, but basic physical dexterity and sensorimotor skills are extremely difficult",
-      "B": "Physical walking is easy for robots, but playing chess is impossible",
-      "C": "AI learns human emotions faster than math",
-      "D": "Robots require more electricity than supercomputers"
+      "A": "Relative Advantage",
+      "B": "Complexity",
+      "C": "Trialability",
+      "D": "Observability"
     },
     "correct_answer": "A",
-    "explanation": "Moravec's Paradox reveals that high-level abstract reasoning (math, chess) requires minimal computational effort for AI, whereas sensorimotor skills (walking, picking up fragile objects) require massive computational resources."
+    "explanation": "Relative Advantage is the degree to which an innovation is perceived as better than the idea or practice it supersedes."
   },
   {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "5. How does Industry 5.0 explicitly differentiate itself from Industry 4.0 in manufacturing theory?",
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "5. A software team hesitates to adopt a new digital tool because it requires a complete departure from established departmental norms and workflows. Which of Rogers' 5 innovation attributes is causing friction?",
     "options": {
-      "A": "Industry 5.0 aims to eliminate human workers entirely using dark factories",
-      "B": "Industry 4.0 is tech-driven automation; Industry 5.0 is value-driven, placing human well-being, sustainability, and resilience at the center",
-      "C": "Industry 5.0 focuses exclusively on steam-powered automation",
-      "D": "Industry 4.0 rejects internet connectivity"
-    },
-    "correct_answer": "B",
-    "explanation": "Industry 5.0 evolves beyond Industry 4.0's focus on cyber-physical automation by re-centering human workers, worker well-being, sustainability, and system resilience."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "6. In adaptive Human-Robot Collaboration (HRC), how do modern collaborative robots (cobots) adjust their execution speed and assistance level during a joint assembly task?",
-    "options": {
-      "A": "By running on pre-programmed fixed timers regardless of human movement",
-      "B": "By monitoring worker physiological signals (heart rate variability, skin conductance) and cognitive workload in real time",
-      "C": "By asking the worker written questions every minute",
-      "D": "By stopping permanently whenever a human touches them"
-    },
-    "correct_answer": "B",
-    "explanation": "Scoping studies show adaptive cobots utilize real-time physiological sensors (ECG, GSR) and eye-tracking to detect human cognitive fatigue and adjust movement dynamics dynamically."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "7. In the SESTOSENSO EU-funded project on integrating cobots in manufacturing, what factor was identified as most critical for building worker trust during deployment?",
-    "options": {
-      "A": "Hiding the cobot behind glass barriers",
-      "B": "Ensuring transparent cobot intent, predictable movement behavior, and active worker involvement in safety design",
-      "C": "Increasing the robot's physical speed to maximum",
-      "D": "Replacing human operators with remote managers"
-    },
-    "correct_answer": "B",
-    "explanation": "The SESTOSENSO study found worker trust and safety perceptions depend heavily on cobot motion predictability, user-friendly interfaces, and human-centered design."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "8. According to research on AI impact on skills, which type of human capabilities are considered resilient 'bulwarks' against AI job displacement?",
-    "options": {
-      "A": "Basic repetitive data entry",
-      "B": "Transversal soft skills such as critical thinking, empathy, complex negotiation, and ethical judgment",
-      "C": "Manual arithmetic calculations",
-      "D": "Rote memory recall"
-    },
-    "correct_answer": "B",
-    "explanation": "While AI automates routine cognitive and manual tasks, uniquely human transversal skills—empathy, adaptability, critical inquiry, and social leadership—remain resistant to automation."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "9. A vehicle assembly plant integrates passive industrial exoskeletons alongside cobots to support workers lifting heavy doors. This human-machine integration primarily aims to:",
-    "options": {
-      "A": "Replace human physical presence",
-      "B": "Reduce ergonomic strain, prevent musculoskeletal injuries, and enhance human physical capabilities",
-      "C": "Increase factory noise levels",
-      "D": "Track worker bathroom breaks"
-    },
-    "correct_answer": "B",
-    "explanation": "Exoskeletons and cobots in Industry 5.0 focus on ergonomic assistance, reducing physical fatigue and long-term injury risks for aging assembly workers."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "10. The concept of Human-Robot 'Coefficiency' in industrial ergonomics suggests that during collaborative tasks, human operators view the human-cobot team as:",
-    "options": {
-      "A": "Two completely hostile, competing entities",
-      "B": "A single, integrated holistic unit aiming to maximize overall task efficiency rather than individual speed",
-      "C": "A master-slave relationship where the robot rules",
-      "D": "A temporary glitch in factory planning"
-    },
-    "correct_answer": "B",
-    "explanation": "Coefficiency theory posits that effective HRC leads workers to perceive human and machine as a unified team, adapting fluidly to optimize joint outcome."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "11. According to AI upskilling literature, what is the main goal of 'Proactive Reskilling' initiatives in manufacturing organizations?",
-    "options": {
-      "A": "Firing workers whose tasks are partially automated",
-      "B": "Training existing employees in advanced digital and collaborative skills before AI deployment disrupts their roles",
-      "C": "Reducing overall employee pay",
-      "D": "Outsourcing all engineering tasks"
-    },
-    "correct_answer": "B",
-    "explanation": "Proactive reskilling identifies capability gaps early, preparing workers to operate alongside AI tools and transition into higher-value supervisory roles."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "12. Why is eXplainable AI (XAI) particularly critical in high-stakes environments like aerospace assembly Decision Support Systems?",
-    "options": {
-      "A": "It makes AI code run twice as fast",
-      "B": "It enables human operators to understand the reasoning behind AI recommendations, ensuring safety and accountability",
-      "C": "It removes the need for human safety audits",
-      "D": "It generates marketing slogans automatically"
-    },
-    "correct_answer": "B",
-    "explanation": "XAI provides interpretable decision paths so human technicians can verify algorithmic logic, preventing catostrophic errors in high-stakes assembly."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "13. What psychological risk is associated with workers operating alongside poorly designed cobots with unpredictable movement paths?",
-    "options": {
-      "A": "Decreased heart rate",
-      "B": "High cognitive fatigue, anxiety, and loss of trust in automated systems",
-      "C": "Excessive sleepiness",
-      "D": "Immediate mastery of robotics"
-    },
-    "correct_answer": "B",
-    "explanation": "Unpredictable cobot behavior elevates worker stress and cognitive load, leading to anxiety, reduced task performance, and rejection of technology."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "14. According to the EU Up-Skill project, what key shift must occur in manufacturing management to achieve human-technology balance?",
-    "options": {
-      "A": "Viewing workers merely as labor costs to be automated out",
-      "B": "Recognizing skilled workers as tacit knowledge experts whose tacit judgment enhances machine precision",
-      "C": "Banning all digital software from shop floors",
-      "D": "Automating management while leaving manual labor untouched"
-    },
-    "correct_answer": "B",
-    "explanation": "The Up-Skill initiative highlights that human expertise and tacit shop-floor knowledge are vital assets that complement and refine machine automation."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "15. In a card sorting study evaluating AI system attributes, how did aerospace experts classify 'opaque black-box algorithms'?",
-    "options": {
-      "A": "Highly desirable for quick action",
-      "B": "Major barriers that undermine operator confidence and safety verification",
-      "C": "Essential for corporate privacy",
-      "D": "Irrelevant to daily operations"
-    },
-    "correct_answer": "B",
-    "explanation": "Black-box AI models that hide logic create operator distrust, making technicians reluctant to follow recommendations in safety-critical manufacturing."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "16. Which of the following scenarios best demonstrates 'Human-Centric Digitalization' under Industry 5.0 guidelines?",
-    "options": {
-      "A": "Monitoring worker eye movements to dock pay for distraction",
-      "B": "Using ergonomic sensors and cobots to assist workers with heavy lifting while giving workers control to override robot speed",
-      "C": "Replacing all human assembly workers with fixed robotic arms",
-      "D": "Mandating 12-hour shifts driven by algorithmic line speed"
-    },
-    "correct_answer": "B",
-    "explanation": "Human-centric digitalization prioritizes worker health, safety, and operational agency, using technology to augment rather than subjugate human workers."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "17. How does Generative AI impact administrative writing and referencing tasks in organizational workflows, according to D4B Lesson 2?",
-    "options": {
-      "A": "It completely fails at draft text creation",
-      "B": "It delivers massive speed and productivity gains for initial drafting, but requires human review to correct inaccuracies",
-      "C": "It eliminates the need for human domain expertise",
-      "D": "It runs slower than manual typing"
-    },
-    "correct_answer": "B",
-    "explanation": "GenAI drastically accelerates content synthesis and drafting, though human expertise remains essential to audit for hallucinations and maintain quality."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "18. What is the primary operational challenge identified in 'Human Factors in Planning' within complex manufacturing environments?",
-    "options": {
-      "A": "Lack of digital storage space for spreadsheets",
-      "B": "Bridging gaps between high-level IT schedules and unpredictable shop-floor execution through human adaptability",
-      "C": "Planners refusing to use email",
-      "D": "Excessive availability of raw materials"
-    },
-    "correct_answer": "B",
-    "explanation": "Human planners act as crucial bridges, adjusting rigid automated schedules to accommodate real-time machine breakdowns, material delays, and worker availability."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "19. In physiological workload studies during human-cobot tasks, which combination of biological metrics is commonly recorded?",
-    "options": {
-      "A": "Body height and shoe size",
-      "B": "Heart Rate Variability (HRV), Galvanic Skin Response (GSR), and eye-gaze tracking",
-      "C": "Blood type and cholesterol",
-      "D": "Fingerprint scans and voice pitch"
-    },
-    "correct_answer": "B",
-    "explanation": "HRV, GSR (sweat gland activity), and eye-tracking provide non-invasive, objective measures of real-time stress and cognitive workload."
-  },
-  {
-    "topic": "AI, Human-Robot Collaboration & Workplace Adaptation",
-    "question": "20. According to AI Job Replacement Theory, which job roles are most vulnerable to near-term AI automation?",
-    "options": {
-      "A": "High-empathy roles requiring physical adaptability (e.g., physical therapists)",
-      "B": "Routine, rules-based cognitive and administrative tasks with predictable data inputs",
-      "C": "Strategic leaders facing novel crisis management",
-      "D": "Artisanal craftspersons working with non-standardized materials"
-    },
-    "correct_answer": "B",
-    "explanation": "Tasks characterized by structured rules, repetitive data processing, and predictable logic face the highest risk of algorithmic replacement."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "1. Henry Jenkins (2006) defines 'Participatory Culture' as one where average citizens and youth actively produce, remix, and circulate media. What are the 3 core challenges Jenkins identifies that justify media education?",
-    "options": {
-      "A": "Digital Divide, Speed Problem, Cost Gap",
-      "B": "Participation Gap, Transparency Problem, Ethics Challenge",
-      "C": "Copyright Violation, Laziness, Hardware Shortage",
-      "D": "Filter Bubbles, Censorship, Monopolies"
-    },
-    "correct_answer": "B",
-    "explanation": "Jenkins specifies three key problems: the Participation Gap (unequal access to skills/tools), Transparency Problem (unawareness of media framing), and Ethics Challenge (navigating online social norms)."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "2. In Jenkins's 11 New Media Literacies, 'Collective Intelligence' is defined as:",
-    "options": {
-      "A": "The ability to memorize encyclopedias individually",
-      "B": "The ability to pool knowledge and compare notes with others toward a common goal",
-      "C": "A supercomputer network",
-      "D": "Following top-down instructions"
-    },
-    "correct_answer": "B",
-    "explanation": "Collective Intelligence involves pooling open-source knowledge, problem-solving collectively, and relying on distributed group expertise."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "3. According to Jenkins (2006), the literacy skill of 'Appropriation' refers to:",
-    "options": {
-      "A": "Stealing hardware from school labs",
-      "B": "The ability to meaningfully sample, remix, and transform existing media content into new creative works",
-      "C": "Paying subscription fees on platforms",
-      "D": "Blocking advertisements"
-    },
-    "correct_answer": "B",
-    "explanation": "Appropriation is the cultural practice of taking existing media fragments, sampling them, and remixing them to express new meanings within participatory communities."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "4. Jenkins defines 'Transmedia Navigation' as the competency to:",
-    "options": {
-      "A": "Drive boats using GPS",
-      "B": "Follow the flow of stories and information across multiple media modalities and platforms",
-      "C": "Translate text into foreign languages automatically",
-      "D": "Switch TV channels rapidly"
-    },
-    "correct_answer": "B",
-    "explanation": "Transmedia Navigation allows individuals to track narrative threads, characters, and data streams as they expand across books, film, games, and online platforms."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "5. UNESCO's (2021) Media and Information Literacy (MIL) curriculum frames access to reliable, factual information primarily as:",
-    "options": {
-      "A": "A luxury product reserved for paying subscribers",
-      "B": "A fundamental public good essential for democracy, peace, and sustainable development",
-      "C": "An optional hobby for tech enthusiasts",
-      "D": "A government secret"
-    },
-    "correct_answer": "B",
-    "explanation": "UNESCO emphasizes MIL as a vital public good that empowers citizens to critically evaluate media, protect democratic discourse, and support SDGs."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "6. In UNESCO's information taxonomy, 'Misinformation' is distinguished from 'Disinformation' because Misinformation is:",
-    "options": {
-      "A": "Deliberately created to cause harm and financial damage",
-      "B": "False information shared without malicious intent to deceive",
-      "C": "True information used out of context to attack someone",
-      "D": "Information published only in printed books"
-    },
-    "correct_answer": "B",
-    "explanation": "Misinformation involves false content shared inadvertently without intent to harm, whereas Disinformation is intentionally fabricated to deceive or manipulate."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "7. UNESCO defines 'Malinformation' as:",
-    "options": {
-      "A": "Computer virus code",
-      "B": "Genuine, accurate information used maliciously to inflict harm on individuals or public interest",
-      "C": "Spelling errors in news reports",
-      "D": "Fictional movie scripts"
-    },
-    "correct_answer": "B",
-    "explanation": "Malinformation refers to accurate, private, or sensitive information exposed deliberately with malice (e.g., doxxing, revenge leaks) to cause harm."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "8. Fitzgerard et al. (2020) examine digital reading comprehension. How does reading non-linear digital hypertexts differ cognitively from reading traditional printed books?",
-    "options": {
-      "A": "Digital reading requires no active decision-making",
-      "B": "Digital reading requires continuous self-regulation, evaluating hyperlink relevance, and synthesizing multi-modal cues",
-      "C": "Printed reading causes higher eye strain but lower memory retention",
-      "D": "Digital reading is always faster and deeper"
-    },
-    "correct_answer": "B",
-    "explanation": "Reading online hypertexts places heavy cognitive demands on self-regulation, evaluating source credibility on the fly, and integrating non-linear links."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "9. Pier Cesare Rivoltella (2023) argues in 'New Alphabets, New Cultures' that modern society has entered a 'Post-Digital' era. What defines this shift?",
-    "options": {
-      "A": "Society has abandoned computers to return to paper",
-      "B": "Digital technology is so pervasive and ubiquitous that it dissolves into everyday life, blurring physical and digital boundaries",
-      "C": "Digital platforms are banned by governments",
-      "D": "The internet has shut down"
-    },
-    "correct_answer": "B",
-    "explanation": "The post-digital condition means digital technologies are no longer novel artifacts but omnipresent, invisible substrates that condition all social life."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "10. In Rivoltella's (2023) framework, 'Mediatisation' refers to:",
-    "options": {
-      "A": "Taking aspirin for headaches",
-      "B": "The process whereby social institutions and cultural practices adapt to the operational logics of media platforms",
-      "C": "Repairing television screens",
-      "D": "Cancelling newspaper subscriptions"
-    },
-    "correct_answer": "B",
-    "explanation": "Mediatisation describes how institutions (politics, religion, education) restructure their core practices to fit media formats and visibility rules."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "11. Jenkins's skill of 'Distributed Cognition' involves:",
-    "options": {
-      "A": "Memorizing phone numbers without tools",
-      "B": "Using technical tools and external artifacts (e.g., databases, software) to expand mental processing capacity",
-      "C": "Splitting a group into isolated rooms",
-      "D": "Ignoring computer calculations"
-    },
-    "correct_answer": "B",
-    "explanation": "Distributed Cognition is the ability to interact fluidly with technological tools that extend cognitive memory, calculation, and analytical capability."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "12. Jenkins defines 'Judgment' in media literacy as the capacity to:",
-    "options": {
-      "A": "Judge people by their profile photos",
-      "B": "Evaluate the credibility, bias, and reliability of different information sources",
-      "C": "File lawsuits against news channels",
-      "D": "Write movie reviews"
-    },
-    "correct_answer": "B",
-    "explanation": "Judgment is the critical skill of assessing information quality, detecting underlying bias, and verifying source authority in noisy digital environments."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "13. What is the 'Transparency Problem' identified in Jenkins's participatory culture research?",
-    "options": {
-      "A": "Computer monitors being see-through",
-      "B": "Young people's failure to recognize how media technologies frame perception and influence worldviews",
-      "C": "Lack of open-source software",
-      "D": "Clear privacy policies on websites"
-    },
-    "correct_answer": "B",
-    "explanation": "The Transparency Problem highlights that media users often consume media passively without realizing how commercial design and algorithms shape their choices."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "14. In UNESCO's Five Laws of Media and Information Literacy, Law 1 states that information and communication are vital for every citizen. Law 2 asserts that:",
-    "options": {
-      "A": "Only news journalists need literacy skills",
-      "B": "Every citizen is a creator and user of information, and MIL is a universal human right",
-      "C": "Social media should be restricted to universities",
-      "D": "Information must be paid for"
-    },
-    "correct_answer": "B",
-    "explanation": "UNESCO Law 2 highlights that MIL is for all citizens—men and women alike—and is intertwined with freedom of expression and civic participation."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "15. How does Rivoltella (2023) describe the emergence of 'Hybrid Third Spaces' in modern digital education?",
-    "options": {
-      "A": "Building physical libraries next to parks",
-      "B": "Educational environments that seamlessly combine physical classrooms, online networks, and real-world experiential learning",
-      "C": "Underground research laboratories",
-      "D": "Virtual reality video game arenas"
-    },
-    "correct_answer": "B",
-    "explanation": "Hybrid third spaces dissolve traditional boundaries between formal school desks and informal digital spaces, creating fluid learning environments."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "16. According to Jenkins, the skill of 'Visualization' entails:",
-    "options": {
-      "A": "Closing one's eyes to imagine stories",
-      "B": "The ability to interpret and create visual representations of complex data and concepts",
-      "C": "Watching television movies",
-      "D": "Painting oil portraits"
-    },
-    "correct_answer": "B",
-    "explanation": "Visualization involves synthesizing complex information streams into clear visual maps, diagrams, and data representations to aid understanding."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "17. A high school student creates a fan-edited video combining movie clips with custom music to critique a social issue. Under Jenkins's framework, this activity demonstrates:",
-    "options": {
-      "A": "Plagiarism and delinquency",
-      "B": "Appropriation, Multimodal Literacy, and Participatory Culture engagement",
-      "C": "Lack of focus",
-      "D": "Strict compliance with traditional text"
-    },
-    "correct_answer": "B",
-    "explanation": "Remixing media fragments into new commentary exemplifies Appropriation and creative participation within contemporary youth culture."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "18. UNESCO's MIL framework emphasizes 'Critical Thinking' when consuming digital news primarily to combat:",
-    "options": {
-      "A": "High internet subscription costs",
-      "B": "Disinformation, echo chambers, and algorithmic manipulation during democratic elections",
-      "C": "Print newspaper bankruptcy",
-      "D": "Slow download speeds"
-    },
-    "correct_answer": "B",
-    "explanation": "Critical thinking skills enable citizens to decode manipulative narratives, verify facts, and resist emotional political polarization online."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "19. In Fitzgerard et al. (2020), 'Multimodality' in learning environments refers to:",
-    "options": {
-      "A": "Using only written printed textbooks",
-      "B": "Integrating text, images, video, audio, and interactive elements to construct meaning",
-      "C": "Listening to radio broadcasts exclusively",
-      "D": "Studying one subject at a time"
-    },
-    "correct_answer": "B",
-    "explanation": "Multimodality combines varied semiotic modes (visual, textual, auditory) to enrich comprehension and cater to complex digital communication."
-  },
-  {
-    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
-    "question": "20. Jenkins's skill of 'Negotiation' involves the ability to:",
-    "options": {
-      "A": "Bargain for cheaper computer parts",
-      "B": "Travel across diverse virtual communities, respecting alternative norms and mediating cultural differences",
-      "C": "Demand higher grades from teachers",
-      "D": "Block users with different opinions"
-    },
-    "correct_answer": "B",
-    "explanation": "Negotiation is the social competence needed to enter varied online communities, navigate diverse cultural perspectives, and resolve conflicts constructively."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "1. In the empirical study 'Social Sustainability of Digital Transformation (SOSDIT) in EU-27 Countries', what statistical methodology was used to model country performance?",
-    "options": {
-      "A": "Simple qualitative interviews",
-      "B": "Partial Least Squares Structural Equation Modeling (PLS-SEM) on Eurostat and World Bank data",
-      "C": "Laboratory chemistry experiments",
-      "D": "Unweighted voting polls"
-    },
-    "correct_answer": "B",
-    "explanation": "The SOSDIT study applied Structural Equation Modeling (PLS-SEM) to empirical macro-level indicators across all 27 European Union member states."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "2. According to the SOSDIT empirical study, which two core factors constitute the foundational pillars of social sustainability in digital transformation?",
-    "options": {
-      "A": "5G network speed and microchip exports",
-      "B": "Digital Inclusion and Digital Skills",
-      "C": "E-commerce revenue and social media accounts",
-      "D": "Robotic automation and patent counts"
-    },
-    "correct_answer": "B",
-    "explanation": "The PLS-SEM model proved that Digital Inclusion (equitable access) and Digital Skills (workforce competence) are the primary determinants of SOSDIT."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "3. Which three EU-27 countries achieved the highest overall SOSDIT rankings in the empirical evaluation?",
-    "options": {
-      "A": "Greece, Italy, Spain",
-      "B": "Finland (0.59), Netherlands (0.57), and Denmark (0.56)",
-      "C": "Poland, Hungary, Romania",
-      "D": "Germany, France, Belgium"
-    },
-    "correct_answer": "B",
-    "explanation": "Finland, the Netherlands, and Denmark ranked top in EU-27 for social sustainability of digital transformation due to superior digital inclusion and public skills programs."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "4. The SOSDIT study established a statistically significant relationship regarding income inequality. What is the impact of a country's Gini coefficient on its Sustainable Development Goals (SDG) performance?",
-    "options": {
-      "A": "A higher Gini coefficient increases SDG performance",
-      "B": "The Gini coefficient has zero impact on SDGs",
-      "C": "The Gini coefficient exerts a direct INVERSE (negative) effect on SDG performance",
-      "D": "Income inequality only affects environmental goals"
-    },
-    "correct_answer": "C",
-    "explanation": "The study demonstrated an inverse relationship: higher income inequality (higher Gini coefficient) severely impairs a nation's capacity to achieve the UN SDGs."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "5. The OECD 'Going Digital' integrated policy framework outlines how many core policy vectors to guide national digital transformation strategies?",
-    "options": {
-      "A": "3 vectors",
-      "B": "7 core policy vectors (Access, Use, Innovation, Jobs, Society, Trust, Market Openness)",
-      "C": "12 vectors",
-      "D": "20 vectors"
-    },
-    "correct_answer": "B",
-    "explanation": "The OECD Going Digital framework establishes 7 integrated dimensions to help governments formulate whole-of-economy digital policies."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "6. Which OECD Going Digital policy dimension focuses specifically on protecting citizens from cyber threats, ensuring data privacy, and building online confidence?",
-    "options": {
-      "A": "Promoting Access",
-      "B": "Fostering Innovation",
-      "C": "Strengthening Trust",
-      "D": "Market Openness"
-    },
-    "correct_answer": "C",
-    "explanation": "The 'Trust' dimension addresses risk management, digital security, privacy safeguards, and consumer protection in digital transactions."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "7. According to the OECD Going Digital report, why must national digital policies be 'whole-of-government' rather than siloed in technology ministries?",
-    "options": {
-      "A": "To increase government staff sizes",
-      "B": "Because digital transformation affects all economic sectors, labor markets, education, taxation, and social cohesion simultaneously",
-      "C": "Because IT ministries are being abolished",
-      "D": "To satisfy international accounting rules"
-    },
-    "correct_answer": "B",
-    "explanation": "Digital transformation is cross-cutting; isolated tech policies fail to address broader economic impacts on labor, taxation, regional inequality, and welfare."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "8. In the SOSDIT study framework, 'Digital Inclusion' is operationally measured by:",
-    "options": {
-      "A": "The price of flagship smartphones",
-      "B": "Equitable access to high-speed internet infrastructure, affordable connectivity, and hardware across all demographic groups",
-      "C": "The number of software patents filed",
-      "D": "Corporate profit margins in tech"
-    },
-    "correct_answer": "B",
-    "explanation": "Digital Inclusion ensures that vulnerable, rural, or low-income citizens are not excluded from digital access and public e-services."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "9. How does high SOSDIT performance directly support the achievement of UN Sustainable Development Goal 10 (Reduced Inequalities)?",
-    "options": {
-      "A": "By giving free computers to wealthy corporations",
-      "B": "By ensuring digital skills and economic opportunities are distributed equitably across disadvantaged regions and marginalized groups",
-      "C": "By banning rural internet connections",
-      "D": "By automating public healthcare out of existence"
-    },
-    "correct_answer": "B",
-    "explanation": "Socially sustainable digitalization prevents technological divides from exacerbating socio-economic disparities, advancing SDG 10 targets."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "10. What risk does the OECD report highlight regarding the rapid digital transformation of labor markets if proactive policy intervention is absent?",
-    "options": {
-      "A": "Complete wage equality across all workers",
-      "B": "Job displacement, skill polarizations, and widening wage gaps between high-skilled tech workers and low-skilled manual workers",
-      "C": "Immediate shortage of physical office desks",
-      "D": "Elimination of all taxes"
-    },
-    "correct_answer": "B",
-    "explanation": "Without active reskilling, digitalization risks polarizing labor markets, benefiting tech-literate workers while stagnating wages for displaced routine labor."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "11. Under the OECD Going Digital framework, 'Market Openness' refers to policy actions that:",
-    "options": {
-      "A": "Impose strict tariffs on foreign software",
-      "B": "Reduce barriers to trade in digital goods/services, encourage foreign investment, and foster competitive digital ecosystems",
-      "C": "Close national borders to internet traffic",
-      "D": "Nationalize private e-commerce companies"
-    },
-    "correct_answer": "B",
-    "explanation": "Market Openness promotes cross-border data flows, non-discriminatory trade rules, and competitive digital markets to drive innovation."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "12. Why is 'Digital Resilience' considered a critical pillar of social sustainability during global crises (e.g., pandemics, supply chain shocks)?",
-    "options": {
-      "A": "It allows governments to turn off the power grid",
-      "B": "It enables public institutions, healthcare, and education to continue operating seamlessly through remote digital infrastructures",
-      "C": "It eliminates the need for emergency healthcare",
-      "D": "It forces citizens to work 24/7"
-    },
-    "correct_answer": "B",
-    "explanation": "Digital resilience ensures essential societal functions (education, public relief, health services) remain operational amidst external disruptions."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "13. In the SOSDIT empirical study, which region of Europe generally exhibited lower scores in social sustainability metrics, highlighting regional disparities?",
-    "options": {
-      "A": "Nordic countries",
-      "B": "Parts of Southern and Eastern European member states with lower digital inclusion scores",
-      "C": "Central Europe exclusively",
-      "D": "All EU countries scored identically"
-    },
-    "correct_answer": "B",
-    "explanation": "The study revealed significant regional divides, where several Southern and Eastern EU nations lagged behind Nordic leaders in digital skills and inclusion."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "14. What policy recommendation does the SOSDIT study offer to EU policymakers to ensure digital transformation does not leave citizens behind?",
-    "options": {
-      "A": "Focus subsidies exclusively on large multinational tech firms",
-      "B": "Target public investments toward digital inclusion initiatives, lifelong learning programs, and reducing income inequality",
-      "C": "Dismantle Eurostat statistical monitoring",
-      "D": "Replace public schools with online ad platforms"
-    },
-    "correct_answer": "B",
-    "explanation": "Authors recommend allocating public resources toward inclusive digital skills programs and social welfare policies that mitigate income inequality."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "15. The OECD Going Digital indicator for 'Civic Engagement' measures:",
-    "options": {
-      "A": "The number of video games played per household",
-      "B": "The percentage of citizens using digital government tools to participate in public consultations and civic discourse",
-      "C": "Tax rates on digital cameras",
-      "D": "The speed of municipal fiber optics"
-    },
-    "correct_answer": "B",
-    "explanation": "Civic engagement gauges how effectively digital government platforms empower citizens to participate in public policymaking and democratic debate."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "16. According to the OECD, how does digital transformation impact productivity growth across different firms in an economy?",
-    "options": {
-      "A": "All firms experience identical productivity gains instantly",
-      "B": "A widening productivity gap exists between frontier digital firms and lagging non-digital firms",
-      "C": "Small firms outperform tech giants without technology",
-      "D": "Productivity decreases for all digital adopters"
-    },
-    "correct_answer": "B",
-    "explanation": "OECD research identifies a growing productivity divergence: global frontier firms harness digital tech for massive gains, while lagging firms struggle to adopt."
-  },
-  {
-    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "17. Which indicator is used by the European Commission and Eurostat to assess basic and advanced digital competencies among the general population?",
-    "options": {
-      "A": "Digital Skills Index (DSI)",
-      "B": "Gross Domestic Product (GDP) per capita",
-      "C": "Inflation Rate",
-      "D": "Patents per million residents"
+      "A": "Compatibility",
+      "B": "Trialability",
+      "C": "Observability",
+      "D": "Relative Advantage"
     },
     "correct_answer": "A",
-    "explanation": "The Digital Skills Index (DSI) measures user competence across information literacy, communication, problem-solving, and software creation."
+    "explanation": "Compatibility refers to how consistent an innovation is with existing values, past experiences, and needs of potential adopters. Low compatibility increases adoption friction."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "6. A company reduces employee anxiety around a new AI document processor by allowing staff to test it on small pilot tasks for two weeks before full deployment. Which Rogers attribute is leveraged?",
+    "options": {
+      "A": "Trialability",
+      "B": "Observability",
+      "C": "Relative Advantage",
+      "D": "Complexity"
+    },
+    "correct_answer": "A",
+    "explanation": "Trialability is the degree to which an innovation may be experimented with on a limited basis before making a full commitment."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "7. In a Harvard Business School and Boston Consulting Group (BCG) study on AI capabilities, what is the 'Jagged Frontier' concept?",
+    "options": {
+      "A": "A geographical border where cellular data coverage drops significantly",
+      "B": "The uneven boundary of AI capabilities where AI excels at certain complex tasks but unexpectedly fails at seemingly similar adjacent tasks",
+      "C": "The physical razor edges of robotic manufacturing arms",
+      "D": "A legal dispute over international trademark limits"
+    },
+    "correct_answer": "B",
+    "explanation": "The 'Jagged Frontier' describes how AI capability boundaries are non-intuitive: AI can perform tasks of high complexity easily while failing at seemingly basic or adjacent tasks."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "8. Consultants using Generative AI for tasks *inside* the Jagged Frontier experienced a ~40% performance boost. However, when using AI for tasks *outside* the frontier without critical validation, what happened?",
+    "options": {
+      "A": "Their performance improved by 100%.",
+      "B": "Their accuracy dropped significantly due to blind trust and AI hallucinations (falling into the 'falling off the cliff' trap).",
+      "C": "The computers shut down permanently.",
+      "D": "There was zero change in performance."
+    },
+    "correct_answer": "B",
+    "explanation": "When workers blindly trust AI for tasks outside its frontier capability, performance degrades because they accept plausible-sounding hallucinations without verification."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "9. In the context of AI task integration, what is 'cognitive offloading'?",
+    "options": {
+      "A": "Exporting hard drives to external cloud storage",
+      "B": "Using external tools or AI systems to reduce the mental processing load required to perform a task",
+      "C": "Sleeplessness caused by excessive screen exposure",
+      "D": "Deleting user account passwords"
+    },
+    "correct_answer": "B",
+    "explanation": "Cognitive offloading is the use of physical or digital artifacts (e.g., AI prompts, calculators, automated schedulers) to reduce internal cognitive load."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "10. What risk arises when workers engage in excessive or uncritical cognitive offloading to AI systems?",
+    "options": {
+      "A": "Loss of critical thinking skills, deskilling, and overreliance on automated outputs",
+      "B": "Immediate hardware overheating",
+      "C": "Excessive manual handwriting speed",
+      "D": "Higher emotional empathy"
+    },
+    "correct_answer": "A",
+    "explanation": "Overreliance on AI for cognitive tasks can lead to deskilling, reduced situational awareness, and a loss of domain expertise over time."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "11. The EU-funded TUPLES project focuses on 'Trustworthy Planning and Scheduling' in high-stakes domain application scenarios. What hybrid approach does TUPLES combine?",
+    "options": {
+      "A": "Combining data-driven AI efficiency with model-based reliability and human-in-the-loop explainability",
+      "B": "Combining paper spreadsheets with manual filing cabinets",
+      "C": "Replacing all human decision-makers with fully autonomous neural networks",
+      "D": "Eliminating software algorithms entirely"
+    },
+    "correct_answer": "A",
+    "explanation": "TUPLES brings together data-driven machine learning (for efficiency) and model-based AI (for formal safety guarantees) with human-centric explainability."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "12. In Human Factors Engineering (HFE), what is the primary objective when designing digital tools for complex industrial environments?",
+    "options": {
+      "A": "Maximizing server processor clock speed regardless of layout",
+      "B": "Optimizing human well-being, reducing cognitive workload, minimizing human errors, and enhancing usability",
+      "C": "Replacing human operators as quickly as possible",
+      "D": "Minimizing hardware development costs by eliminating user testing"
+    },
+    "correct_answer": "B",
+    "explanation": "Human Factors Engineering focuses on system usability, safety, error reduction, and aligning technical tools with human cognitive/physical capabilities."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "13. In the closed card sorting study conducted by Morandini et al. with Airbus professionals, what system attribute was identified as most critical for building trust in AI decision support systems?",
+    "options": {
+      "A": "High algorithmic jargon and complex mathematical notation",
+      "B": "Interface clarity, actionable user support, and transparent explainability",
+      "C": "Bright neon color schemes on monitor displays",
+      "D": "Restricting user access to data logs"
+    },
+    "correct_answer": "B",
+    "explanation": "Morandini et al. showed that industry professionals demand user-centered explainability, intuitive interface design, and actionable context over technical jargon."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "14. When evaluating an organization's digital transformation readiness, what does a SWOT analysis evaluate?",
+    "options": {
+      "A": "Software, Web, Optics, and Telecommunications",
+      "B": "Strengths, Weaknesses, Opportunities, and Threats affecting technology adoption",
+      "C": "System Wide Operational Testing",
+      "D": "Sales, Warehouse, Order, and Transportation"
+    },
+    "correct_answer": "B",
+    "explanation": "A SWOT analysis evaluates internal Strengths and Weaknesses along with external Opportunities and Threats shaping organizational strategy."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "15. What metric does Eurostat use alongside DII to track digital transformation progress in European businesses?",
+    "options": {
+      "A": "DESI (Digital Economy and Society Index)",
+      "B": "GNP per capita only",
+      "C": "Facebook Like counts",
+      "D": "Paper consumption rates"
+    },
+    "correct_answer": "A",
+    "explanation": "The DESI (Digital Economy and Society Index) tracks Europe's overall digital performance, human capital, connectivity, and integration of digital tech."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "16. In Rogers' adoption model, which group represents the final 16% of adopters who are skeptical of change and bound by tradition?",
+    "options": {
+      "A": "Laggards",
+      "B": "Late Majority",
+      "C": "Early Majority",
+      "D": "Innovators"
+    },
+    "correct_answer": "A",
+    "explanation": "Laggards (16%) are the last to adopt an innovation, often possess limited resources, and exhibit high skepticism toward new methods."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "17. An AI assistant in legal practice provides research summaries with 95% accuracy but occasionally fabricates case citations. To prevent errors, lawyers must maintain what role?",
+    "options": {
+      "A": "Complete automation",
+      "B": "Human-in-the-loop oversight and critical verification",
+      "C": "Passive observer",
+      "D": "Uncritical acceptance"
+    },
+    "correct_answer": "B",
+    "explanation": "Human-in-the-loop protocols ensure expert human judgment checks and validates AI outputs, preventing hallucinations in high-stakes domains."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "18. What is 'Observability' in Rogers' Diffusion of Innovations theory?",
+    "options": {
+      "A": "The degree to which the results of an innovation are visible to others in the social system",
+      "B": "Monitoring worker keystrokes with spyware",
+      "C": "The cost of buying telescope equipment",
+      "D": "Inability to see software source code"
+    },
+    "correct_answer": "A",
+    "explanation": "Observability means that when peers easily see the positive outcomes of an innovation, they are much more likely to adopt it themselves."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "19. In the BCG/Harvard study, what two distinct patterns of AI usage were identified among consultants?",
+    "options": {
+      "A": "'Centaurs' (dividing tasks between human and AI) and 'Cyborgs' (deeply integrating human and AI work in real-time)",
+      "B": "'Hackers' and 'Coders'",
+      "C": "'Sellers' and 'Buyers'",
+      "D": "'Laggards' and 'Pioneers'"
+    },
+    "correct_answer": "A",
+    "explanation": "The study identified 'Centaurs' (who clearly delineate tasks between human and AI) and 'Cyborgs' (who blend human intuition and AI generation continuously)."
+  },
+  {
+    "topic": "Digital Transformation Design Methodologies, Tools & Innovation Diffusion",
+    "question": "20. Why is user-centered design (UCD) crucial when introducing AI scheduling tools to shop-floor manufacturing planners?",
+    "options": {
+      "A": "It ensures the tool aligns with human cognitive workflows, mitigating resistance and operational errors.",
+      "B": "It reduces the need for electrical wiring.",
+      "C": "It guarantees that the software will never require updates.",
+      "D": "It eliminates the need for software licenses."
+    },
+    "correct_answer": "A",
+    "explanation": "UCD involves end-users early in the design process to create tools that fit actual cognitive demands and shop-floor constraints, preventing friction."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "1. Neil Postman argued that technological change is a 'Faustian bargain'. What does this concept imply for AI adoption in organizations?",
+    "options": {
+      "A": "Technology brings purely beneficial outcomes with zero negative consequences.",
+      "B": "Every technological gain is accompanied by a corresponding loss or compromise that alters culture and work.",
+      "C": "Technology is entirely neutral and has no impact on human culture.",
+      "D": "AI can only be purchased through magical contracts."
+    },
+    "correct_answer": "B",
+    "explanation": "Postman's 'Faustian Bargain' framework asserts that technology always gives and takes away; new tools bring efficiency while simultaneously disrupting skills and social structures."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "2. Postman uses the metaphor of 'dropping red dye into a beaker of water' to describe technological integration. What does this metaphor illustrate?",
+    "options": {
+      "A": "Technology is an isolated tool that leaves the rest of the organization unchanged.",
+      "B": "Technology causes an ecological shift, fundamentally altering the entire organizational environment.",
+      "C": "Technology is temporary and evaporates quickly.",
+      "D": "AI tools only affect the IT department."
+    },
+    "correct_answer": "B",
+    "explanation": "Postman emphasizes that technological change is ecological, not additive: adding a major technology like AI recolors and changes the whole system."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "3. Why is Artificial Intelligence classified as a General Purpose Technology (GPT)?",
+    "options": {
+      "A": "It can only perform one specific calculation in accounting.",
+      "B": "It is pervasive across sectors, continuously improves, and spawns downstream innovation, similar to steam power or electricity.",
+      "C": "It is provided free of charge by governments.",
+      "D": "It only operates on handheld mobile devices."
+    },
+    "correct_answer": "B",
+    "explanation": "GPTs (like steam engines, electricity, and AI) are defined by pervasiveness across the economy, ongoing technological improvement, and fostering secondary innovations."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "4. A company finds that an AI system easily performs complex statistical computations but struggles with basic physical dexterity and common-sense spatial reasoning. What theoretical principle explains this?",
+    "options": {
+      "A": "Moravec's Paradox",
+      "B": "Moore's Law",
+      "C": "Metcalfe's Law",
+      "D": "Postman's Law"
+    },
+    "correct_answer": "A",
+    "explanation": "Moravec's Paradox notes that high-level abstract reasoning requires relatively little computation for AI, whereas low-level sensorimotor skills evolved over millions of years require immense computational effort."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "5. What is the fundamental shift in perspective between Industry 4.0 and Industry 5.0 as articulated by the European Commission?",
+    "options": {
+      "A": "Industry 4.0 focuses on cyber-physical automation and efficiency, whereas Industry 5.0 prioritizes human-centricity, sustainability, and resilience.",
+      "B": "Industry 5.0 replaces all human workers with autonomous AI.",
+      "C": "Industry 4.0 focuses on green energy, while Industry 5.0 focuses strictly on financial profits.",
+      "D": "There is zero difference between Industry 4.0 and 5.0."
+    },
+    "correct_answer": "A",
+    "explanation": "Industry 5.0 complements Industry 4.0 by placing worker well-being, human-centric design, environmental sustainability, and supply chain resilience at the core of production."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "6. In the EU SESTOSENSO project, collaborative robots (cobots) use physiological sensors (e.g., HRV, GSR) during assembly tasks. What is the purpose of this data?",
+    "options": {
+      "A": "To dynamically adjust cobot speed and behavior in real-time based on worker stress and cognitive workload",
+      "B": "To record worker heartbeats for health insurance penalization",
+      "C": "To measure environmental room temperature",
+      "D": "To replace human assembly workers with autonomous arms"
+    },
+    "correct_answer": "A",
+    "explanation": "SESTOSENSO uses non-invasive physiological monitoring (Heart Rate Variability, Galvanic Skin Response) to adapt cobot movements dynamically to the operator's mental stress and workload."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "7. What is 'human-robot coefficiency' in modern cobotic manufacturing environments?",
+    "options": {
+      "A": "The combined operational synergy where human flexibility and cognitive judgment complement robot precision and force without safety risks",
+      "B": "The total electrical cost of running a robot arm",
+      "C": "Calculating how many robots can fit in a physical warehouse",
+      "D": "Measuring robot breakdown frequencies"
+    },
+    "correct_answer": "A",
+    "explanation": "Coefficiency emphasizes collaborative synergy—maximizing human cognitive strengths and physical ergonomics alongside robot physical endurance and repeatability."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "8. As AI automates routine cognitive and technical tasks, which skills become crucial for workers according to workforce upskilling literature?",
+    "options": {
+      "A": "Manual filing and physical typing speed",
+      "B": "Transversal soft skills: critical thinking, emotional intelligence, empathy, and complex problem-solving",
+      "C": "Memorizing phone numbers",
+      "D": "Manual assembly line repetition"
+    },
+    "correct_answer": "B",
+    "explanation": "As AI handles technical and routine cognitive tasks, uniquely human skills—critical thinking, emotional intelligence, creativity, and ethics—become essential for career resilience."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "9. An aerospace manufacturing facility implements an AI decision support tool for scheduling. Workers express reluctance because the system offers 'black box' recommendations. What intervention addresses this?",
+    "options": {
+      "A": "Implementing eXplainable AI (XAI) features that clarify reasoning and rationale",
+      "B": "Threatening workers with immediate pay cuts",
+      "C": "Removing all display monitors",
+      "D": "Forcing workers to follow recommendations blindly"
+    },
+    "correct_answer": "A",
+    "explanation": "XAI (eXplainable AI) provides transparent, interpretable rationales for AI suggestions, fostering trust and enabling operators to make informed decisions."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "10. In AI Job Replacement Theory, which types of tasks are most vulnerable to immediate AI displacement?",
+    "options": {
+      "A": "High-empathy counseling and crisis negotiation",
+      "B": "Routine, highly standardized cognitive and analytical tasks with structured data inputs",
+      "C": "Complex physical plumbing in unpredictable environments",
+      "D": "Creative fine-art painting"
+    },
+    "correct_answer": "B",
+    "explanation": "Tasks featuring standardized rules, structured data processing, and repetitive analytical steps are most susceptible to automated AI replacement."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "11. An exoskeleton is introduced to assist logistics workers lifting heavy crates. Human Factors Engineering evaluations must check for what negative side effect?",
+    "options": {
+      "A": "Physical discomfort, altered gait kinematics, or compensatory strain on secondary muscle groups",
+      "B": "Excessive internet downloads",
+      "C": "Overproduction of paper shipping labels",
+      "D": "Immediate battery depletion"
+    },
+    "correct_answer": "A",
+    "explanation": "HFE assesses physical ergonomics to ensure assistive devices like exoskeletons do not shift strain onto other body parts or cause long-term musculoskeletal imbalances."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "12. What is the Exposure-Complementarity Matrix used for in organizational workforce planning?",
+    "options": {
+      "A": "Mapping corporate tax liabilities across offshore accounts",
+      "B": "Evaluating job roles based on their exposure to AI automation versus the potential for AI to complement and augment human work",
+      "C": "Calculating solar panel sunlight exposure on office roofs",
+      "D": "Tracking employee vacation days"
+    },
+    "correct_answer": "B",
+    "explanation": "The Exposure-Complementarity Matrix categorizes roles to determine whether AI will replace tasks or enhance human performance through collaborative augmentation."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "13. In the TUPLES project, pilot assistance scheduling tools combine AI planning with human pilot decision-making. What is the primary safety benefit?",
+    "options": {
+      "A": "Allowing pilots to sleep throughout the entire flight",
+      "B": "Reducing pilot cognitive overload during emergencies while ensuring pilot authority over flight trajectory",
+      "C": "Eliminating the need for air traffic control towers",
+      "D": "Cutting fuel costs by flying at lower altitudes"
+    },
+    "correct_answer": "B",
+    "explanation": "AI planning tools in aviation assist pilots during complex contingency events by filtering options, while maintaining pilot authority for ultimate safety."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "14. What psychological risk can arise when operators work alongside autonomous cobots in high-speed manufacturing lines without proper human-centric design?",
+    "options": {
+      "A": "Increased stress, loss of autonomy, and fear of physical collision or replacement",
+      "B": "Excessive boredom from having zero tasks",
+      "C": "Hyperactivity and uncontrollable laughter",
+      "D": "Improved vision clarity"
+    },
+    "correct_answer": "A",
+    "explanation": "Inadequate human-centric design in cobotics can lead to cognitive anxiety, perceived loss of agency, and fear regarding safety or job security."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "15. A law firm uses GenAI to draft contract templates. Instead of replacing junior associates, the firm trains them to act as critical editors. What paradigm shift is this?",
+    "options": {
+      "A": "Moving from AI replacement to Human-AI Teaming and augmentation",
+      "B": "Transitioning back to manual typewriters",
+      "C": "Outsourcing legal work to non-lawyers",
+      "D": "Eliminating contract reviews"
+    },
+    "correct_answer": "A",
+    "explanation": "Human-AI Teaming shifts the focus from replacing humans to empowering them, positioning workers as high-level strategists and verifiers of AI-generated work."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "16. In the SESTOSENSO project, why are qualitative interviews with workers combined with quantitative sensor data?",
+    "options": {
+      "A": "To capture subjective perceptions of trust, safety, and comfort alongside objective physiological metrics",
+      "B": "To double the project budget",
+      "C": "To replace physical robot testing",
+      "D": "Because quantitative data is always inaccurate"
+    },
+    "correct_answer": "A",
+    "explanation": "Mixed-methods evaluations ensure that objective physiological readings (HRV) align with workers' subjective experiences of safety and operational trust."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "17. What is 'cognitive underload' in automated monitoring tasks?",
+    "options": {
+      "A": "Extreme mental fatigue caused by having too many mathematical tasks",
+      "B": "A state of low cognitive stimulation leading to boredom, reduced vigilance, and delayed response during sudden system failures",
+      "C": "High brain activity measured during active problem solving",
+      "D": "The inability to remember computer passwords"
+    },
+    "correct_answer": "B",
+    "explanation": "When automation handles almost everything, human supervisors can suffer cognitive underload, dropping vigilance and failing to intervene during critical anomalies."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "18. How does Industry 5.0 address environmental sustainability in industrial production?",
+    "options": {
+      "A": "By ignoring resource consumption to maximize output speed",
+      "B": "By integrating circular economy principles, energy efficiency, and bio-inspired materials into automated production systems",
+      "C": "By outsourcing pollution to non-regulated countries",
+      "D": "By shutting down all manufacturing plants"
+    },
+    "correct_answer": "B",
+    "explanation": "Industry 5.0 embeds sustainability directly into system design, utilizing energy monitoring, circular materials, and minimal waste practices."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "19. Which organizational upskilling strategy best prepares a workforce for rapid technological shifts?",
+    "options": {
+      "A": "One-time lectures with no hands-on application",
+      "B": "Continuous, technology-mediated learning integrated into daily workflows with feedback loops",
+      "C": "Firing staff every two years to hire recent graduates",
+      "D": "Banning internal training sessions"
+    },
+    "correct_answer": "B",
+    "explanation": "Effective upskilling relies on continuous, contextual learning embedded into daily operations, fostering adaptability as technology evolves."
+  },
+  {
+    "topic": "AI Integration, Human-Robot Collaboration & Industry 5.0",
+    "question": "20. Why is ethical governance required when collecting physiological stress data from workers using wearable cobot sensors?",
+    "options": {
+      "A": "To prevent invasive surveillance, unauthorized health data profiling, and coercion",
+      "B": "To ensure sensors never run out of battery",
+      "C": "To keep sensor weights below 10 grams",
+      "D": "Ethical governance is unnecessary for internal company data"
+    },
+    "correct_answer": "A",
+    "explanation": "Collecting physiological worker data raises severe privacy concerns, requiring strict data anonymization, consent, and protections against punitive misuse."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "1. In José van Dijck's (2021) 'Platformization Tree' botanical metaphor, what structural component is represented by the 'Trunk'?",
+    "options": {
+      "A": "Subsea fiber-optic cables and microchip foundries",
+      "B": "Central intermediary platforms (cloud infrastructure, search, app stores, ID logins, payment systems) dominated by tech monopolies",
+      "C": "Specialized sectoral applications in education, healthcare, and transport",
+      "D": "Non-profit community radio stations"
+    },
+    "correct_answer": "B",
+    "explanation": "Van Dijck assigns the 'Trunk' to core intermediary platforms (Big Tech) that gatekeep data flows, identification, payment, and cloud services linking infrastructure roots to societal branches."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "2. In Van Dijck's tree metaphor, what do the 'Branches' represent?",
+    "options": {
+      "A": "Underground data centers",
+      "B": "Societal sectors (e.g., healthcare, education, urban transport, journalism) where platform mechanisms are applied",
+      "C": "Subsea internet cables",
+      "D": "Federal supreme courts"
+    },
+    "correct_answer": "B",
+    "explanation": "The 'Branches' represent various public and private societal sectors that depend on the central intermediary platform trunk to deliver digital services."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "3. What represents the 'Roots' in Van Dijck's Platformization Tree framework?",
+    "options": {
+      "A": "Hard physical infrastructure: data centers, microchips, subsea fiber-optic cables, and satellite networks",
+      "B": "End-user smartphone apps like TikTok",
+      "C": "High school computer lab classes",
+      "D": "Municipal parking permits"
+    },
+    "correct_answer": "A",
+    "explanation": "The 'Roots' symbolize the foundational physical and technological infrastructure—chips, server farms, cables, and cloud hardware—supporting the platform ecosystem."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "4. What is 'Datafication' as defined in Platform Society literature?",
+    "options": {
+      "A": "Deleting old files from a hard drive",
+      "B": "The transformation of everyday social interactions, behaviors, and objects into quantified digital data points",
+      "C": "Printing numerical data on physical paper",
+      "D": "Translating books into foreign languages"
+    },
+    "correct_answer": "B",
+    "explanation": "Datafication is the systemic conversion of human life and social phenomena into real-time quantifiable digital data for analysis, predictive modeling, and value extraction."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "5. A commercial social network platform uses user engagement data to organize news feeds, highlighting controversial content to maximize ad exposure. Which core platform mechanism is active?",
+    "options": {
+      "A": "Algorithmic Selection",
+      "B": "Analog Archiving",
+      "C": "Hardware Virtualization",
+      "D": "De-platformization"
+    },
+    "correct_answer": "A",
+    "explanation": "Algorithmic Selection involves filtering, ranking, and curating vast data streams to steer user attention and behavior based on platform business models."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "6. Free email services collect user communication metadata to build targeted advertising profiles. What core platform business mechanism does this illustrate?",
+    "options": {
+      "A": "Commodification (converting user data into targeted ad value)",
+      "B": "Public philanthropy",
+      "C": "Hardware recycling",
+      "D": "De-commodification"
+    },
+    "correct_answer": "A",
+    "explanation": "Commodification transforms user data, attention, and online activity into monetizable commodities bought and sold in ad markets."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "7. In Van Dijck's governance model, what distinguishes the 'Californian Sequoia' model from the 'European Federated Tree' model?",
+    "options": {
+      "A": "The Californian model relies on market-driven private monopolies, whereas the European model stresses public values, interoperability, and democratic regulation.",
+      "B": "The Californian model is non-profit, while the European model is purely commercial.",
+      "C": "The European model bans all digital technologies completely.",
+      "D": "There is zero difference between the two models."
+    },
+    "correct_answer": "A",
+    "explanation": "The Californian model favors market-driven, corporate platform concentration (GAFAM), while the European model promotes public interest, data sovereignty, and democratic oversight."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "8. What phenomenon is described by 'infrastructuralization' in platform studies?",
+    "options": {
+      "A": "When private platform services become so essential to daily life that they function as indispensable public utilities",
+      "B": "Building physical concrete bridges over rivers",
+      "C": "Replacing software with manual paperwork",
+      "D": "The collapse of internet connections"
+    },
+    "correct_answer": "A",
+    "explanation": "Infrastructuralization occurs when commercial platforms become the essential backbone of societal functions (education, health, commerce), making non-use practically impossible."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "9. In Livingstone et al.'s (2024) study 'Googlization of the Classroom', what major ethical concern is raised regarding educational platforms?",
+    "options": {
+      "A": "Students are forced to buy expensive textbooks.",
+      "B": "Opaque data harvesting of children's digital footprints for commercial profiling and privacy infringement",
+      "C": "Lack of internet connection in schools",
+      "D": "Google Classroom charges students $100 per day"
+    },
+    "correct_answer": "B",
+    "explanation": "Livingstone et al. highlight how public schools adopting commercial EdTech platforms expose children to commercial data collection and privacy risks without transparent consent."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "10. What is 'Ghost Work' in the platform economy as documented by Gray & Suri?",
+    "options": {
+      "A": "Software written by automated AI generators without humans",
+      "B": "The invisible human labor force performing content moderation, data labeling, and AI training for low wages under precarious conditions",
+      "C": "Employees who do not show up to the office",
+      "D": "Robots working in dark warehouses"
+    },
+    "correct_answer": "B",
+    "explanation": "Ghost Work refers to the hidden global workforce powering AI systems through micro-tasking platforms (e.g., MTurk), often earning low wages with no benefits or job security."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "11. Hartmut Rosa describes modern digital society as an 'Acceleration Society'. What are the three dimensions of this social acceleration?",
+    "options": {
+      "A": "Technological acceleration, acceleration of social change, and acceleration of the pace of life",
+      "B": "Car speed, airplane speed, and rocket speed",
+      "C": "CPU clock speed, RAM speed, and internet download speed",
+      "D": "Population growth, urban sprawl, and deforestation"
+    },
+    "correct_answer": "A",
+    "explanation": "Rosa's theory outlines technological acceleration (transport/tech), social change acceleration (shifting institutions), and pace-of-life acceleration (feeling pressed for time)."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "12. The EU Digital Services Act (DSA) primarily aims to achieve which regulatory objective?",
+    "options": {
+      "A": "Banning all commercial websites in Europe",
+      "B": "Creating a safer digital space by enforcing platform accountability, content moderation transparency, and illegal content removal",
+      "C": "Forcing all citizens to use open-source operating systems",
+      "D": "Nationalizing all internet service providers"
+    },
+    "correct_answer": "B",
+    "explanation": "The DSA sets rules for online platforms to protect users, ensure transparent content moderation, counter misinformation, and curb illegal online content."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "13. What is the core purpose of the EU Digital Markets Act (DMA)?",
+    "options": {
+      "A": "To curb the market power of large tech 'gatekeepers', ensuring fair competition, interoperability, and preventing anti-competitive self-preferencing",
+      "B": "To fix stock market share prices for tech companies",
+      "C": "To tax online grocery deliveries",
+      "D": "To standardize physical power outlets across Europe"
+    },
+    "correct_answer": "A",
+    "explanation": "The DMA targets major digital platform 'gatekeepers' to prevent anti-competitive behavior, ensure app store interoperability, and foster market access for smaller rivals."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "14. A user stays on a social media platform because all their contacts are there, and transferring personal data and social graphs to a competing platform is impossible. What concept does this illustrate?",
+    "options": {
+      "A": "Platform lock-in and high switching costs resulting from network effects",
+      "B": "Free market choice",
+      "C": "Data portability",
+      "D": "Open-source interoperability"
+    },
+    "correct_answer": "A",
+    "explanation": "Platform lock-in occurs when network effects and non-portable data make it extremely difficult or costly for users to switch to alternative platforms."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "15. What is 'cross-sectorization' in Big Tech platform expansion strategies?",
+    "options": {
+      "A": "Tech monopolies leveraging data and platform dominance in one sector (e.g., search/e-commerce) to capture adjacent public sectors (health, education, finance)",
+      "B": "Building railways across national borders",
+      "C": "Selling physical hardware at local retail stores",
+      "D": "Splitting a company into four smaller independent businesses"
+    },
+    "correct_answer": "A",
+    "explanation": "Cross-sectorization describes Big Tech expanding its platform architecture from core markets into diverse public sectors like healthcare, schooling, and municipal services."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "16. In platform literature, what is the 'threat of invisibility' for content creators and businesses?",
+    "options": {
+      "A": "Being physically unseeable in real life",
+      "B": "Being demoted or hidden by proprietary recommendation algorithms if one refuses to pay for platform ads or conform to opaque ranking criteria",
+      "C": "Computer monitors shutting down automatically",
+      "D": "Losing physical business keys"
+    },
+    "correct_answer": "B",
+    "explanation": "The threat of invisibility refers to algorithmic suppression: if a business or creator is down-ranked by a platform's algorithm, their economic visibility drops to near zero."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "17. Why is 'Data Portability' a key requirement under the GDPR and EU DMA?",
+    "options": {
+      "A": "It empowers users to download and transfer their personal data across competing services, reducing platform lock-in.",
+      "B": "It allows companies to sell user data without consent.",
+      "C": "It requires users to carry physical USB drives at all times.",
+      "D": "It forces internet providers to limit file attachment sizes."
+    },
+    "correct_answer": "A",
+    "explanation": "Data portability gives users ownership rights over their data, enabling them to move social graphs and personal information to alternative platforms, enhancing competition."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "18. What is 'algorithmic bias' in automated platform hiring tools?",
+    "options": {
+      "A": "Systematic, unfair discrimination against specific demographic groups caused by biased historical training data or flawed feature weighting",
+      "B": "A computer error that prevents file opening",
+      "C": "When a computer operates faster on weekends",
+      "D": "Hardware clock calibration errors"
+    },
+    "correct_answer": "A",
+    "explanation": "Algorithmic bias occurs when machine learning models reproduce or amplify historical human biases present in their training datasets."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "19. In late-modern digital culture, what is 'postmediality' as discussed in media theory?",
+    "options": {
+      "A": "The complete disappearance of all digital screens",
+      "B": "A condition where media technologies are so pervasive and embedded in daily objects that media no longer exist as distinct, isolated channels",
+      "C": "Banning news broadcasts on television",
+      "D": "Relying exclusively on printed newspapers"
+    },
+    "correct_answer": "B",
+    "explanation": "Postmediality describes an environment where digital media technologies have saturated life to the point where they fade into the background tissue of reality."
+  },
+  {
+    "topic": "Big Data, Platform Society & Algorithmic Governance",
+    "question": "20. How do commercial platform business models impact the unbundling of traditional public institutions like higher education?",
+    "options": {
+      "A": "By breaking degree programs into isolated digital micro-credentials monetized through commercial cloud platforms",
+      "B": "By funding free university tuition for all citizens",
+      "C": "By forcing universities to construct physical stone libraries",
+      "D": "By eliminating online learning software"
+    },
+    "correct_answer": "A",
+    "explanation": "Commercial platforms unbundle traditional higher education by offering standalone digital certificates and learning modules hosted on private infrastructure."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "1. In Henry Jenkins' (2006) landmark study on 21st-century media education, what are the three core challenges facing youth in digital culture?",
+    "options": {
+      "A": "The Participation Gap, the Transparency Problem, and the Ethics Challenge",
+      "B": "Screen addiction, eye strain, and physical laziness",
+      "C": "High hardware costs, slow download speeds, and bad software",
+      "D": "Lack of textbooks, teacher shortages, and low test scores"
+    },
+    "correct_answer": "A",
+    "explanation": "Jenkins identifies the Participation Gap (unequal access to skills/opportunities), the Transparency Problem (inability to see how media shapes worldviews), and the Ethics Challenge (preparations for online community conduct)."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "2. According to Jenkins, what defines a 'Participatory Culture'?",
+    "options": {
+      "A": "A culture with high barriers to artistic expression where citizens passively consume commercial broadcasts",
+      "B": "A culture with low barriers to artistic expression and civic engagement, strong support for creating/sharing, and informal mentorship",
+      "C": "A political system where voting is mandatory every week",
+      "D": "An economy based strictly on physical cash exchange"
+    },
+    "correct_answer": "B",
+    "explanation": "Participatory culture empowers individuals to shift from passive consumers to active producers, collaborators, and curators of media content."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "3. Which of Jenkins' 11 New Media Literacies is defined as 'the ability to pool knowledge and compare notes with others toward a common goal'?",
+    "options": {
+      "A": "Collective Intelligence",
+      "B": "Distributed Cognition",
+      "C": "Appropriation",
+      "D": "Transmedia Navigation"
+    },
+    "correct_answer": "A",
+    "explanation": "Collective Intelligence is the ability to pool knowledge and collaborate online (e.g., open-source communities, wikis) to solve complex problems."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "4. A student uses digital tools (like search engines, calculators, and cloud databases) to expand their mental processing capacity while analyzing a complex dataset. Which Jenkins literacy does this represent?",
+    "options": {
+      "A": "Distributed Cognition",
+      "B": "Play",
+      "C": "Performance",
+      "D": "Negotiation"
+    },
+    "correct_answer": "A",
+    "explanation": "Distributed Cognition is the ability to interact meaningfully with tools that expand mental capacities and process complex information."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "5. What is 'Appropriation' in Jenkins' framework of New Media Literacies?",
+    "options": {
+      "A": "The ability to meaningfully sample and remix media content to create new cultural meanings",
+      "B": "Stealing physical computers from a school lab",
+      "C": "Copyrighting personal photographs",
+      "D": "Deleting online comments"
+    },
+    "correct_answer": "A",
+    "explanation": "Appropriation involves taking existing media fragments, remixing them, and repurposing them to express new perspectives or artistic statements."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "6. A high school student follows a story across a TV series, a graphic novel, an interactive mobile game, and online fan fiction platforms. Which Jenkins literacy is being exercised?",
+    "options": {
+      "A": "Transmedia Navigation",
+      "B": "Simulation",
+      "C": "Judgment",
+      "D": "Networking"
+    },
+    "correct_answer": "A",
+    "explanation": "Transmedia Navigation is the ability to follow the flow of stories and information across multiple media platforms."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "7. In UNESCO's (2021) Media and Information Literacy (MIL) curriculum, how is access to reliable information framed?",
+    "options": {
+      "A": "As a fundamental public good essential for democracy, human rights, and sustainable development",
+      "B": "As a private commodity reserved only for paying corporate subscribers",
+      "C": "As an optional luxury item for wealthy urban centers",
+      "D": "As a danger to government security"
+    },
+    "correct_answer": "A",
+    "explanation": "UNESCO frames MIL as a human right and reliable information as a public good required for informed citizenship, democracy, and critical thinking."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "8. According to UNESCO definitions, what is 'Misinformation'?",
+    "options": {
+      "A": "False information shared without malicious intent to cause harm",
+      "B": "Deliberately fabricated false information created to harm a person, group, or country",
+      "C": "Truthful, accurate information leaked to cause physical harm",
+      "D": "Encrypted secure network data"
+    },
+    "correct_answer": "A",
+    "explanation": "Misinformation is incorrect or misleading information shared inadvertently without deliberate intent to deceive or inflict damage."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "9. A political operative creates a deepfake video showing a rival candidate committing a crime, knowing the video is fake, in order to rig an election. What is this under UNESCO terms?",
+    "options": {
+      "A": "Disinformation",
+      "B": "Misinformation",
+      "C": "Malinformation",
+      "D": "Collective Intelligence"
+    },
+    "correct_answer": "A",
+    "explanation": "Disinformation is deliberately created and weaponized false information designed maliciously to deceive, manipulate, and cause harm."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "10. Private, truthful medical records of a public figure are hacked and published out of context to ruin their personal reputation. According to UNESCO, this is classified as:",
+    "options": {
+      "A": "Malinformation",
+      "B": "Misinformation",
+      "C": "Disinformation",
+      "D": "Fair Use Appropriation"
+    },
+    "correct_answer": "A",
+    "explanation": "Malinformation is truthful, accurate private information published maliciously to cause personal or psychological harm."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "11. What is the main thesis of Fitzgerard et al. (2020) regarding digital reading comprehension versus traditional print reading?",
+    "options": {
+      "A": "Digital reading requires non-linear processing, hyperlinking navigation, and continuous critical source evaluation beyond traditional linear text skills.",
+      "B": "Reading on digital screens uses identical cognitive pathways as reading physical paper.",
+      "C": "Digital reading requires zero critical thinking skills.",
+      "D": "Students should never read on digital screens."
+    },
+    "correct_answer": "A",
+    "explanation": "Fitzgerard et al. highlight that digital reading is complex, non-linear, and multimodal, requiring readers to evaluate source reliability actively while navigating hyperlinks."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "12. Pier Cesare Rivoltella (2023) argues that we live in a 'post-digital' culture. What does this imply for media literacy education?",
+    "options": {
+      "A": "Media literacy must expand into dynamic alphabets—including data, AI, and algorithmic literacy—integrated into hybrid learning environments.",
+      "B": "Educators should stop teaching technology and focus exclusively on handwriting.",
+      "C": "Computers should be removed from schools.",
+      "D": "Teaching media literacy is no longer necessary."
+    },
+    "correct_answer": "A",
+    "explanation": "Rivoltella emphasizes that because technology is ubiquitous, media literacy must evolve into new alphabets (data, algorithmic, and AI literacy) for hybrid third spaces."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "13. What is the 'Participation Gap' in digital education as described by Jenkins?",
+    "options": {
+      "A": "The disparity in access to technology, cultural competencies, and mentorship needed for full participation in digital life",
+      "B": "Students refusing to raise their hands in physical classrooms",
+      "C": "Disagreements during parent-teacher conferences",
+      "D": "Unequal physical athletic abilities in sports"
+    },
+    "correct_answer": "A",
+    "explanation": "The Participation Gap refers to unequal access to the technology, skills, experiences, and mentorship required for youth to engage fully in participatory culture."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "14. A user evaluates the credibility of an online article by cross-checking the author's credentials and funding sources before sharing it. Which Jenkins literacy is being used?",
+    "options": {
+      "A": "Judgment",
+      "B": "Play",
+      "C": "Performance",
+      "D": "Simulation"
+    },
+    "correct_answer": "A",
+    "explanation": "Judgment is the ability to evaluate the reliability, credibility, and quality of information sources critically."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "15. What is 'Multimodality' in 21st-century literacy studies?",
+    "options": {
+      "A": "Combining multiple modes of communication—text, images, audio, video, and interactivity—to convey meaning",
+      "B": "Writing exclusively in one language",
+      "C": "Printing black-and-white text documents",
+      "D": "Using landline telephones"
+    },
+    "correct_answer": "A",
+    "explanation": "Multimodality refers to how modern texts combine diverse semiotic modes (visual, audio, textual, spatial) to create rich, integrated meaning."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "16. In UNESCO's 5 Laws of Media and Information Literacy, Law 1 asserts that information and communications are for everyone. What does Law 2 state?",
+    "options": {
+      "A": "Every citizen is a creator of information and knowledge.",
+      "B": "Information is only for government officials.",
+      "C": "Media literacy is only necessary for computer science majors.",
+      "D": "Commercial platforms should control all news."
+    },
+    "correct_answer": "A",
+    "explanation": "UNESCO Law 2 emphasizes that every citizen is a creator and transmitter of information/knowledge, and MIL is essential for all genders and backgrounds."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "17. What is 'Negotiation' in Jenkins' list of New Media Literacies?",
+    "options": {
+      "A": "The ability to travel across diverse communities, respecting multiple perspectives, and grasping conflicting norms",
+      "B": "Bargaining for lower prices on retail websites",
+      "C": "Signing employee contract agreements",
+      "D": "Demanding higher grades from teachers"
+    },
+    "correct_answer": "A",
+    "explanation": "Negotiation is the social skill of moving across diverse online communities, understanding alternative worldviews, and navigating cultural differences respectfully."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "18. How does 'demediation' function in post-digital media landscapes according to Rivoltella?",
+    "options": {
+      "A": "The blurring of traditional gatekeeping institutions, allowing direct, unmediated user publishing on platforms",
+      "B": "Destroying radio transmission towers",
+      "C": "Relying on traditional newspaper editors for approval",
+      "D": "Enforcing government censorship on all books"
+    },
+    "correct_answer": "A",
+    "explanation": "Demediation bypasses traditional institutional gatekeepers (publishers, editors), letting individuals publish directly to global audiences via digital platforms."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "19. A classroom uses a video game simulation to allow students to manage a virtual city's ecological budget. Which Jenkins literacy is active?",
+    "options": {
+      "A": "Simulation",
+      "B": "Appropriation",
+      "C": "Performance",
+      "D": "Collective Intelligence"
+    },
+    "correct_answer": "A",
+    "explanation": "Simulation is the ability to interpret and construct dynamic models of real-world processes."
+  },
+  {
+    "topic": "Media & Information Literacy, Participatory Culture & Digital Education",
+    "question": "20. Why is 'Critical Thinking' considered the ultimate objective of UNESCO's MIL framework?",
+    "options": {
+      "A": "It empowers citizens to interrogate media biases, identify manipulation, defend human rights, and make informed choices.",
+      "B": "It helps users memorize computer programming syntax faster.",
+      "C": "It increases typing speed on touchscreens.",
+      "D": "It eliminates the need for public libraries."
+    },
+    "correct_answer": "A",
+    "explanation": "MIL aims to cultivate critical thinking, turning citizens into active, discerning participants who question assumptions and recognize disinformation."
   },
   {
     "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "18. In the context of EU social sustainability policies, what is the 'Digital Divide'?",
+    "question": "1. In the empirical study on EU-27 countries (Nosratabadi et al.), what primary methodology was used to analyze the social sustainability of digital transformation?",
     "options": {
-      "A": "The physical cable separating two servers",
-      "B": "The socioeconomic gap between those who have affordable access/skills to use digital tech and those who are excluded",
-      "C": "The difference between Apple and Android users",
-      "D": "A math equation in computer science"
+      "A": "Partial Least Squares Structural Equation Modeling (PLS-SEM) on Eurostat and World Bank data",
+      "B": "Qualitative opinion polls of 10 individuals",
+      "C": "Measuring total national electricity grids",
+      "D": "Counting paper newspaper subscriptions"
     },
-    "correct_answer": "B",
-    "explanation": "The Digital Divide represents structural inequalities in access, affordability, and digital literacy that prevent vulnerable groups from participating in digital life."
+    "correct_answer": "A",
+    "explanation": "The research utilized PLS-SEM structural equation modeling on Eurostat and World Bank dataset indicators to evaluate social sustainability empirical links."
   },
   {
     "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "19. According to OECD Going Digital, 'Digital Tax Policies' must be modernized internationally to address which economic challenge?",
+    "question": "2. According to the SOSDIT model empirical findings across EU-27 nations, which two factors form the fundamental pillars of social sustainability in digital transformation?",
     "options": {
-      "A": "Taxing physical paper receipts",
-      "B": "Ensuring multinational tech conglomerates pay fair taxes in market jurisdictions where value is generated from user data",
-      "C": "Abolishing all corporate taxes",
-      "D": "Taxing citizens for sending emails"
+      "A": "Digital Inclusion and Digital Skills",
+      "B": "High GPU imports and low server costs",
+      "C": "Social media popularity and commercial ad spending",
+      "D": "Strict internet censorship and high tariffs"
     },
-    "correct_answer": "B",
-    "explanation": "International digital tax reform aims to prevent base erosion and profit shifting by tech monopolies operating across borders without local physical presence."
+    "correct_answer": "A",
+    "explanation": "The study proved that Digital Inclusion (equitable access/infrastructure) and Digital Skills (human capability) are the statistical foundations driving social sustainability."
   },
   {
     "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
-    "question": "20. How does high performance in Social Sustainability of Digital Transformation (SOSDIT) directly support UN Sustainable Development Goal 4 (Quality Education)?",
+    "question": "3. Which country ranked highest in social sustainability performance related to digital transformation in the EU-27 study?",
     "options": {
-      "A": "By banning computers from classrooms",
-      "B": "By ensuring equitable access to digital learning tools, digital literacy curricula, and open educational resources for all students",
-      "C": "By charging high tuition for online courses",
-      "D": "By replacing teachers with automated grading algorithms"
+      "A": "Finland (0.59)",
+      "B": "Italy (0.12)",
+      "C": "Greece (0.05)",
+      "D": "Romania (0.02)"
     },
-    "correct_answer": "B",
-    "explanation": "SOSDIT ensures digital educational technologies and literacy programs are accessible to all learners, upholding equal opportunity under SDG 4."
+    "correct_answer": "A",
+    "explanation": "Finland achieved the highest score (0.59) in the EU-27 ranking, followed closely by Denmark and the Netherlands, due to high digital inclusion and skills development."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "4. What direct empirical effect does income inequality (measured by the Gini coefficient) exert on a country's progress toward Sustainable Development Goals (SDGs)?",
+    "options": {
+      "A": "A direct negative effect (higher income inequality significantly hinders SDG achievement)",
+      "B": "A strong positive effect",
+      "C": "Zero statistical effect",
+      "D": "It doubles digital speed"
+    },
+    "correct_answer": "A",
+    "explanation": "The SOSDIT empirical model proved that a higher Gini coefficient directly impairs a nation's ability to achieve Sustainable Development Goals."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "5. The OECD Going Digital policy framework outlines how many core policy vectors for national digital strategies?",
+    "options": {
+      "A": "7 core policy vectors",
+      "B": "3 core policy vectors",
+      "C": "12 core policy vectors",
+      "D": "25 core policy vectors"
+    },
+    "correct_answer": "A",
+    "explanation": "The OECD framework provides 7 integrated policy vectors: Access, Effective Use, Innovation, Jobs, Society, Trust, and Market Openness."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "6. In the OECD Going Digital framework, what is the focus of the 'Access' policy vector?",
+    "options": {
+      "A": "Ensuring high-quality, affordable digital infrastructure, broadband connectivity, and data accessibility for all regions",
+      "B": "Regulating television broad broadcast licenses",
+      "C": "Taxing smartphone purchases",
+      "D": "Restricting internet connections to government offices"
+    },
+    "correct_answer": "A",
+    "explanation": "The Access vector targets widespread, high-speed, affordable digital infrastructure and communications networks for all citizens and businesses."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "7. A nation invests in digital literacy programs for senior citizens and low-income communities to ensure no demographic is left behind. Which OECD vector does this support?",
+    "options": {
+      "A": "Society / Social Prosperity",
+      "B": "Market Openness only",
+      "C": "Hardware Manufacturing",
+      "D": "Military Defense"
+    },
+    "correct_answer": "A",
+    "explanation": "The Society vector ensures digital transformation fosters inclusive growth, social well-being, and digital inclusion across all population segments."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "8. What labor market risk does the OECD report highlight regarding digital transformation and job polarization?",
+    "options": {
+      "A": "Growth in high-skill and low-skill jobs accompanied by a hollowed-out middle class performing routine middle-skill tasks",
+      "B": "Immediate 100% unemployment across all job categories",
+      "C": "Shortages of manual agricultural workers only",
+      "D": "Complete elimination of high-paying jobs"
+    },
+    "correct_answer": "A",
+    "explanation": "The OECD flags job polarization: automation replaces routine middle-skill jobs, expanding high-skill managerial roles and low-skill manual service roles."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "9. In the SOSDIT model, why is 'Digital Inclusion' necessary for achieving UN SDG 4 (Quality Education)?",
+    "options": {
+      "A": "It ensures equitable access to digital learning platforms and open resources regardless of socioeconomic background.",
+      "B": "It replaces teachers with automated grading software.",
+      "C": "It forces students to purchase commercial subscriptions.",
+      "D": "It eliminates physical school buildings."
+    },
+    "correct_answer": "A",
+    "explanation": "Digital Inclusion provides the technological access and connectivity necessary for marginalized learners to benefit from quality educational tools."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "10. What is the OECD's recommendation regarding 'Trust' in digital policy design?",
+    "options": {
+      "A": "Establishing robust cybersecurity frameworks, privacy protections, and consumer rights to build confidence in digital transactions",
+      "B": "Asking citizens to trust online platforms blindly",
+      "C": "Banning all digital payments",
+      "D": "Outsourcing national security to private platforms"
+    },
+    "correct_answer": "A",
+    "explanation": "The Trust vector emphasizes that without strong security, data privacy protection, and consumer rights, public trust and digital adoption will collapse."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "11. Why do lower-ranking EU-27 nations in the SOSDIT study struggle to translate digital investments into social sustainability gains?",
+    "options": {
+      "A": "Structural gaps in digital skills training and high income inequality prevent broader populations from leveraging technology.",
+      "B": "They import too many computers.",
+      "C": "Their citizens refuse to use mobile phones.",
+      "D": "They lack electrical power."
+    },
+    "correct_answer": "A",
+    "explanation": "Without basic digital skills and equitable wealth distribution, technological investments remain concentrated among elite groups, failing to drive societal progress."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "12. What role does 'Market Openness' play in the OECD Going Digital strategy?",
+    "options": {
+      "A": "Fostering trade in digital goods/services, encouraging cross-border data flows, and lowering market entry barriers for innovative startups",
+      "B": "Imposing 200% tariffs on all imported electronics",
+      "C": "Forcing startups to register exclusively with government monopolies",
+      "D": "Prohibiting foreign software imports"
+    },
+    "correct_answer": "A",
+    "explanation": "Market Openness promotes transparent trade policies, digital trade, dynamic competition, and foreign investment to stimulate innovation."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "13. In the context of social sustainability, what is the 'Secondary Digital Divide'?",
+    "options": {
+      "A": "Disparities in digital skills, usage capabilities, and critical outcomes among people who already have physical access to technology",
+      "B": "Lack of physical electricity wires in rural villages",
+      "C": "Having a second smartphone in a household",
+      "D": "The difference between 4G and 5G speeds"
+    },
+    "correct_answer": "A",
+    "explanation": "The Primary Digital Divide is about physical access; the Secondary Digital Divide is about the gap in skills and ability to use technology productively."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "14. How does the OECD recommend handling workforce transition for workers displaced by AI and digital automation?",
+    "options": {
+      "A": "Proactive lifelong learning programs, targeted reskilling initiatives, and social protection safety nets during transitions",
+      "B": "Relying strictly on market self-correction without government support",
+      "C": "Encouraging early retirement for all workers over age 30",
+      "D": "Banning AI technologies permanently"
+    },
+    "correct_answer": "A",
+    "explanation": "OECD policy advocates active labor market strategies, portable benefits, and continuous reskilling to assist displaced workers transitioning to new industries."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "15. In the SOSDIT model findings, how does Digital Transformation support SDG 8 (Decent Work and Economic Growth)?",
+    "options": {
+      "A": "By stimulating digital entrepreneurship, boosting labor productivity, and creating flexible, high-value digital job opportunities",
+      "B": "By replacing all human workers with lower-paid gig workers",
+      "C": "By forcing employees to work 80-hour workweeks without pay",
+      "D": "By eliminating local business taxes"
+    },
+    "correct_answer": "A",
+    "explanation": "When paired with adequate skills and worker protections, digital transformation drives sustainable economic growth and high-value employment."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "16. Which OECD policy dimension addresses the need for digital tools to foster environmental sustainability and climate action?",
+    "options": {
+      "A": "Society (using green ICT and digital monitoring for climate goals)",
+      "B": "Access only",
+      "C": "Market Openness only",
+      "D": "Hardware Sales"
+    },
+    "correct_answer": "A",
+    "explanation": "The Society vector incorporates environmental dimensions, leveraging IoT, AI data monitoring, and green ICT to reduce carbon footprints and achieve climate targets."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "17. What is 'Data Governance' in public sector policy design?",
+    "options": {
+      "A": "Legal and technical frameworks ensuring public and private data are managed securely, ethically, and for the public interest",
+      "B": "Storing all government files on personal flash drives",
+      "C": "Selling citizen records to commercial platforms",
+      "D": "Deleting government archives every year"
+    },
+    "correct_answer": "A",
+    "explanation": "Data governance establishes clear rules for data sharing, privacy, interoperability, and ethics across government agencies and private platforms."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "18. In the EU-27 study, why is digital skills development considered more impactful than basic infrastructure investment alone?",
+    "options": {
+      "A": "Because infrastructure without human skills results in underutilized tech, whereas skilled citizens active in the digital economy drive real socio-economic value.",
+      "B": "Because physical cables cost zero dollars.",
+      "C": "Because digital skills can be learned in 5 seconds.",
+      "D": "Because infrastructure automatically teaches people how to code."
+    },
+    "correct_answer": "A",
+    "explanation": "Empirical evidence shows that infrastructure is merely an enabler; actual social value and SDG progress depend directly on human capability and digital literacy."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "19. How does income inequality exacerbate the digital divide according to the SOSDIT framework?",
+    "options": {
+      "A": "Low-income households cannot afford high-speed connectivity, advanced hardware, or premium educational opportunities, compounding disadvantages.",
+      "B": "It causes computer processors to slow down physically.",
+      "C": "It increases the price of open-source software.",
+      "D": "It prevents companies from sending emails."
+    },
+    "correct_answer": "A",
+    "explanation": "Income inequality creates financial barriers to hardware, connectivity, and quality digital education, reinforcing social exclusion in a platformized economy."
+  },
+  {
+    "topic": "Social Sustainability & Policy Dimensions (EU-27 & OECD)",
+    "question": "20. What overarching conclusion do both the SOSDIT study and the OECD Going Digital report share?",
+    "options": {
+      "A": "Digital transformation does not automatically guarantee social progress; coordinated policy intervention is mandatory to ensure inclusive, sustainable benefits.",
+      "B": "Free market forces will solve all social inequalities without policy intervention.",
+      "C": "Governments should halt all technological development.",
+      "D": "Digital transformation only benefits large tech monopolies."
+    },
+    "correct_answer": "A",
+    "explanation": "Both frameworks conclude that digital technology is a double-edged sword: without deliberate, coordinated public policy, it risks widening inequality rather than fostering social prosperity."
   }
 ]
