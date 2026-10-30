@@ -1,722 +1,1442 @@
 [
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "1. According to Joseph Schumpeter (1934, 1942), what is 'creative destruction' in innovation theory?",
+    "question": "1. According to Bettina Von Stamm's conceptualization of innovation as a 'frame of mind,' which statement best captures her argument?",
     "options": {
-      "A": "The gradual improvement of existing products with minimal market risk",
-      "B": "The continuous process of simultaneous creation of new enterprises and destruction of old ones",
-      "C": "A corporate policy aimed at dismantling R&D departments to reduce operational overhead",
-      "D": "The intentional design of products with planned obsolescence to force upgrades"
+      "A": "Innovation relies primarily on systematic engineering protocols rather than individual attitudes.",
+      "B": "Innovation is not merely a process or outcome, but an overall organizational culture, leadership stance, and personal attitude towards change.",
+      "C": "Innovation is exclusively defined by the number of patents filed by R&D departments annually.",
+      "D": "Innovation should be restricted to product development teams rather than whole-organization mindsets."
     },
     "correct_answer": "B",
-    "explanation": "Schumpeter defined creative destruction as the continuous process where new enterprises and industries are simultaneously created while old ones are destroyed, serving as the ultimate driver of economic growth."
+    "explanation": "Von Stamm explicitly defines innovation as a 'frame of mind,' emphasizing that true innovation requires a pervasive organizational mindset, leadership commitment, and supportive culture beyond rigid linear processes."
   },
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "2. How is a 'competence-destroying discontinuity' classified in innovation literature (Schumpeter, Tushman)?",
+    "question": "2. Which definition best characterizes the role of design in the innovation process, as distinguished from creativity and implementation?",
     "options": {
-      "A": "An innovation that builds directly on the existing know-how embodied in current technology",
-      "B": "Small incremental changes in product quality that lower manufacturing costs",
-      "C": "An innovation that renders obsolete the expertise required to master the replaced technology",
-      "D": "A corporate restructuring that eliminates administrative roles while preserving technical skills"
+      "A": "Design is strictly the visual aesthetic applied to a product after technical completion.",
+      "B": "Design is the structured, human-centered bridge that transforms creative ideas into functional, desirable, and viable concepts before full commercial implementation.",
+      "C": "Design is identical to basic invention and does not concern commercial execution.",
+      "D": "Design is the financial analysis performed during market launch."
+    },
+    "correct_answer": "B",
+    "explanation": "In innovation studies, design acts as the shaping mechanism that integrates human needs with technical feasibility and business viability, mediating between raw creative idea generation and final market execution."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "3. Based on the MIT definition of Innovation (Innovation = Invention x Commercialization), the historical cases of the X-ray scanner, the VCR, and the bagless vacuum cleaner illustrate which core principle?",
+    "options": {
+      "A": "The original inventor always captures the majority of economic value in the market.",
+      "B": "Invention alone guarantees market success regardless of business model or execution.",
+      "C": "Commercialization capability and market delivery are as crucial as technical invention; if either factor is zero, total innovation value is zero.",
+      "D": "Patents prevent foreign competitors from ever commercializing breakthrough technological concepts."
     },
     "correct_answer": "C",
-    "explanation": "Discontinuities represent breaks in technological trajectories; competence-destroying discontinuities specifically render existing expertise obsolete, whereas competence-enhancing discontinuities build upon existing know-how."
+    "explanation": "The MIT equation multiplies Invention by Commercialization. As seen in EMI's X-ray scanner or Ampex's VCR, inventing a technology without scalable commercial strategy allows fast followers to capture the commercial value."
   },
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "3. According to Heany's (1983) 'Degrees of Innovation' taxonomy, when is an innovation categorized as a 'Major Innovation'?",
+    "question": "4. How does an incremental innovation differ fundamentally from a radical or discontinuous innovation?",
     "options": {
-      "A": "When the market is established, the business serves it, but design effort is minor",
-      "B": "When the market is NOT established, the business is NOT serving it, customer feature knowledge is 'No', and major product & process design effort is required",
-      "C": "When an existing product line receives minor style changes without process modifications",
-      "D": "When a company enters a known market with a minor feature upgrade"
+      "A": "Incremental innovation alters the entire competitive landscape, whereas radical innovation makes minor cost tweaks.",
+      "B": "Incremental innovation involves step-by-step improvements within existing technological paradigms, while radical innovation introduces entirely new technologies or business models that create new paradigms.",
+      "C": "Incremental innovation is performed only by startups, whereas radical innovation is exclusive to incumbents.",
+      "D": "Incremental innovation destroys existing firm competencies, while radical innovation preserves them."
     },
     "correct_answer": "B",
-    "explanation": "In Heany's taxonomy, a 'Major Innovation' occurs when the market is not established, the business is not serving the market, customers do not know the features, and major design effort is required for both product and process."
+    "explanation": "Incremental innovation refines existing products, services, or processes for established markets, whereas radical/discontinuous innovation breaks linear trajectories and alters existing competence requirements."
   },
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "4. Under Heany's (1983) taxonomy, what distinguishes a 'Style Change' from a 'Product Improvement'?",
+    "question": "5. According to Henderson and Clark's typology, an architectural innovation is best described as:",
     "options": {
-      "A": "Style Change requires major process redesign, while Product Improvement requires nil design effort",
-      "B": "Style Change has minor product design effort and nil process effort, while Product Improvement requires significant product design effort and minor process effort",
-      "C": "Style Change enters an unestablished market, whereas Product Improvement serves a non-existent market",
-      "D": "Style Change involves radical scientific breakthroughs, while Product Improvement involves brand licensing"
+      "A": "An innovation that replaces core concepts without changing the links between components.",
+      "B": "An innovation that leaves core design concepts intact but reconfigures the overarching interactions and linkage between components.",
+      "C": "An innovation that changes building structures and physical factory blueprints.",
+      "D": "An innovation that involves no technical changes whatsoever."
     },
     "correct_answer": "B",
-    "explanation": "In Heany's checklist, a Style Change involves minor product design effort and nil process design effort in an established market, whereas a Product Improvement involves significant product design effort and minor process effort."
+    "explanation": "Architectural innovation reconfigures the way core components interact with one another while leaving the underlying core design components relatively unchanged, often destroying incumbent communication channels."
   },
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "5. In the comprehensive framework by Sundbo (1998) and Kochetkov (2023), which type of innovation is defined as 'a novel solution to a social problem that is more effective, efficient, or sustainable, creating value primarily for society'?",
+    "question": "6. In Tushman and Anderson's technological evolution model, a 'competence-destroying' technological discontinuity has what effect on incumbent market leaders?",
     "options": {
-      "A": "Open Innovation",
-      "B": "Agile Innovation",
-      "C": "Social Innovation",
-      "D": "Incremental Innovation"
+      "A": "It builds directly upon the existing knowledge base and strengthens incumbent advantage.",
+      "B": "It renders existing firm expertise, skills, and capital equipment obsolete, significantly lowering barriers for new entrants.",
+      "C": "It increases the efficiency of current production lines without changing labor skills.",
+      "D": "It guarantees that incumbent firms double their profits immediately."
     },
-    "correct_answer": "C",
-    "explanation": "Social innovation is defined within the comprehensive framework as a novel solution to a social problem whose value created accrues primarily to society rather than private individuals alone."
+    "correct_answer": "B",
+    "explanation": "Competence-destroying discontinuities require completely new masteries, invalidating the accumulated technological competence of existing industry leaders and favoring aggressive new entrants."
   },
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "6. How do Sundbo (1998) and Kochetkov (2023) define 'Open Innovation'?",
+    "question": "7. Scenario: A legacy bank optimizes its smartphone app by adding biometric FaceID authentication and reducing login steps by 3 seconds. According to innovation classification, this initiative represents:",
     "options": {
-      "A": "A centralized R&D process strictly confined within a single corporate laboratory",
-      "B": "A distributed process based on a purposefully controlled flow of knowledge across organizational boundaries",
-      "C": "An unregulated public domain repository where patents are forfeited",
-      "D": "A software development framework characterized by quarterly waterfall reviews"
+      "A": "Radical business model innovation.",
+      "B": "Incremental process/service innovation.",
+      "C": "Competence-destroying architectural revolution.",
+      "D": "Discontinuous market creation."
     },
     "correct_answer": "B",
-    "explanation": "Open Innovation is defined as a distributed innovation process based on purposefully managed flows of knowledge across organizational boundaries to leverage the distributed nature of knowledge."
+    "explanation": "Adding minor digital usability enhancements like FaceID to an existing financial service is a classic incremental refinement focused on user experience efficiency rather than market paradigm shift."
   },
   {
     "topic": "Fundamentals & Typologies of Innovation",
-    "question": "7. What defines 'Agile Innovation' principles according to the Sundbo and Kochetkov taxonomy?",
+    "question": "8. What distinguishes process innovation from product innovation within an organizational context?",
     "options": {
-      "A": "Extensive multi-year upfront planning with fixed delivery milestones and zero customer contact until launch",
-      "B": "Principles and practices managing project development through highly flexible, iterative processes with short cycles incorporating customer feedback",
-      "C": "Strict adherence to bureaucratic hierarchy and linear assembly line production",
-      "D": "Outsourcing all core product development to offshore manufacturing vendors"
-    },
-    "correct_answer": "B",
-    "explanation": "Agile innovation focuses on flexible, iterative project development with minimal long-term rigid planning and short cycles that continually integrate customer feedback."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "8. In the evolution of Helix models of innovation, what component does the 'Quintuple Helix' add beyond the Triple and Quadruple Helixes?",
-    "options": {
-      "A": "Financial venture capital markets",
-      "B": "Civil society and media-based public culture",
-      "C": "The natural environment and social ecology",
-      "D": "Multinational regulatory agencies"
-    },
-    "correct_answer": "C",
-    "explanation": "The Triple Helix links university-industry-government; the Quadruple Helix adds civil society/public culture; and the Quintuple Helix incorporates the natural environment/social ecology into the framework."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "9. According to Christensen (1997) and Rothaermel (2015), how does a 'Disruptive Innovation' typically enter the market?",
-    "options": {
-      "A": "By launching a high-priced luxury product aimed at premium customers from day one",
-      "B": "By creeping in 'from below' with an initially lower-performing but more accessible offer that eventually displaces incumbents",
-      "C": "By making minor cosmetic updates to existing products serving established customers",
-      "D": "By relying exclusively on government tax subsidies"
-    },
-    "correct_answer": "B",
-    "explanation": "Disruptive innovation creeps in from below with a simpler, lower-performing, or more accessible offering, progressively improving until it displaces incumbent market leaders."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "10. In evolutionary economics, how are firms characterized regarding knowledge and behavior?",
-    "options": {
-      "A": "Firms operate as perfect utility maximizers with complete market information",
-      "B": "Firms are carriers of 'routines' (learned, stable behavioral patterns) subject to variation, heredity, and market selection",
-      "C": "Firms are static structures that never change internal procedures once established",
-      "D": "Firms respond purely to price signals without internal cognitive capabilities"
-    },
-    "correct_answer": "B",
-    "explanation": "Evolutionary economics posits that firms are carriers of routines (learned behavioral patterns) that are generated through variation (search/experimentation), transmitted over time, and selected by market forces."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "11. What is 'radical uncertainty' in evolutionary economics, as distinguished from standard calculable risk?",
-    "options": {
-      "A": "A situation where all future outcomes and probabilities are known in advance",
-      "B": "A state where it is impossible to know all potential outcomes in advance, making standard probability optimization impossible",
-      "C": "The predictable fluctuation of interest rates in financial markets",
-      "D": "An accounting metric measuring inventory depreciation"
-    },
-    "correct_answer": "B",
-    "explanation": "Radical uncertainty means agents cannot optimize over a known set of options because the future possibilities of innovation are fundamentally unknown and unquantifiable beforehand."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "12. How does evolutionary economics view 'disequilibrium' in market systems?",
-    "options": {
-      "A": "As a temporary market failure that regulation should immediately eliminate",
-      "B": "As a structural condition where new routines continuously enter, compete, and displace old ones in constant motion",
-      "C": "As an undesirable state caused solely by trade tariffs",
-      "D": "As an artificial condition that only occurs in socialist economies"
-    },
-    "correct_answer": "B",
-    "explanation": "Evolutionary economics views disequilibrium as the permanent, structural state of dynamic economies driven by continuous technological change and creative destruction."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "13. What defines a 'Radical Innovation' according to technical typology literature?",
-    "options": {
-      "A": "A minor cosmetic change to a product's packaging",
-      "B": "A substantial change along one or more performance dimensions while remaining within a known technological or market space",
-      "C": "A discount pricing strategy during seasonal sales",
-      "D": "An administrative shift from weekly to bi-weekly payroll"
-    },
-    "correct_answer": "B",
-    "explanation": "Radical innovation introduces substantial performance advances along established technological dimensions, often causing creative destruction among legacy products."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "14. In innovation studies, what cognitive processes are identified as fundamental to 'Invention'?",
-    "options": {
-      "A": "Memorization, repetition, and strict compliance",
-      "B": "Combination, analogy, and abstraction",
-      "C": "Budget auditing, cost reduction, and payroll management",
-      "D": "Litigation, patent enforcement, and trademark registration"
-    },
-    "correct_answer": "B",
-    "explanation": "Invention—the creation of new devices, processes, or mental understandings—relies on cognitive processes including combination, analogy, and abstraction."
-  },
-  {
-    "topic": "Fundamentals & Typologies of Innovation",
-    "question": "15. In Schumpeterian dynamics, what economic function do entrepreneurial profits serve?",
-    "options": {
-      "A": "Permanent risk-free returns guaranteed by municipal charters",
-      "B": "Differential rents temporarily generated by innovation before market competition erodes them",
-      "C": "Fixed interest yields derived from government bond holdings",
-      "D": "Statutory taxes collected on behalf of central banks"
-    },
-    "correct_answer": "B",
-    "explanation": "Schumpeter argued that entrepreneurial profits represent transient differential rents created by successful innovation, which competitors eventually erode through imitation."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "1. In the Double Diamond design framework presented in the D4B Innovation Session, what are the two main 'spaces' of the innovation process?",
-    "options": {
-      "A": "Strategic Space and Operational Space",
-      "B": "Problem Space and Solution Space",
-      "C": "Internal Space and External Space",
-      "D": "Invention Space and Commercialization Space"
-    },
-    "correct_answer": "B",
-    "explanation": "The Double Diamond model splits the design innovation process into two primary domains: the Problem Space (Problem Articulation & Selection) and the Solution Space (Concept Generation & Concept Selection/Development)."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "2. During the 'Problem Space' stage of the Double Diamond model, what does the 'Diverge' phase involve?",
-    "options": {
-      "A": "Limiting production numbers and choosing a single concept",
-      "B": "Studying competitors, gathering feedback from existing clients, and analyzing market data to broaden understanding",
-      "C": "Designing the final prototype for immediate manufacturing",
-      "D": "Selecting a single narrow problem statement to execute"
-    },
-    "correct_answer": "B",
-    "explanation": "Diverging in the Problem Space means expanding perspective by gathering customer feedback, analyzing market data, and studying competitors before narrowing down (converging) on the specific problem."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "3. What occurs during the 'Converge' phase within the 'Problem Space' of the Double Diamond model?",
-    "options": {
-      "A": "Brainstorming dozens of unrelated product features",
-      "B": "Articulating and selecting the specific, targeted problem statement to solve",
-      "C": "Launching mass marketing campaigns across media channels",
-      "D": "Building final production tooling"
-    },
-    "correct_answer": "B",
-    "explanation": "Convergence in the Problem Space focuses the gathered research insights into a clear, validated problem definition."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "4. What activity characterizes the 'Diverge' phase in the 'Solution Space' of the Double Diamond framework?",
-    "options": {
-      "A": "Finalizing working drawings and production schedules",
-      "B": "Generating a broad variety of creative solution concepts without immediate constraints",
-      "C": "Cutting project budgets to focus on a single prototype",
-      "D": "Drafting legally binding vendor contracts"
-    },
-    "correct_answer": "B",
-    "explanation": "Diverging in the Solution Space opens up ideation to generate multiple candidate concepts and technical paths to solve the defined problem."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "5. What characterizes 'Converging' in the 'Solution Space' of the Double Diamond framework?",
-    "options": {
-      "A": "Exploring multiple technical solutions and investigating new materials",
-      "B": "Generating as many unconstrained ideas as possible without evaluation",
-      "C": "Selecting and developing specific concepts, finalizing layouts, or limiting production scope for execution",
-      "D": "Re-evaluating customer needs from scratch"
-    },
-    "correct_answer": "C",
-    "explanation": "Converging in the Solution Space narrows down multiple generated concepts into final selected solutions, layouts, or production specifications."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "6. In digital choice architecture, how is the 'Defaults' nudge lever defined?",
-    "options": {
-      "A": "A penalty fee applied to users who fail to complete a form",
-      "B": "The option that applies automatically if people take no explicit action",
-      "C": "A pop-up warning requiring two-factor authentication",
-      "D": "An automated phone call from customer service"
-    },
-    "correct_answer": "B",
-    "explanation": "Defaults represent the pre-set choice architecture option that automatically takes effect if a user takes no active action, taking advantage of status quo bias."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "7. What is the primary purpose of the 'Salience / Visibility' lever in behavioral nudging?",
-    "options": {
-      "A": "Hiding alternative choices behind complex multi-tiered menus",
-      "B": "Making the desired option or tool visually prominent so it gets noticed first",
-      "C": "Increasing software subscription prices without prior notice",
-      "D": "Requiring mandatory employee training workshops"
-    },
-    "correct_answer": "B",
-    "explanation": "Salience boosts the visual prominence or attractiveness of a preferred choice so users naturally pay attention to it during rapid decision-making."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "8. Which digital design tactic exemplifies 'Simplification / Friction Reduction'?",
-    "options": {
-      "A": "Adding three additional verification steps to user registration",
-      "B": "One-click reordering and auto-filling forms using existing customer data",
-      "C": "Requiring physical paper forms to be mailed in for account changes",
-      "D": "Displaying detailed legal disclaimers in fine print"
-    },
-    "correct_answer": "B",
-    "explanation": "Friction reduction simplifies user pathways by removing unnecessary clicks, steps, or cognitive effort (e.g., auto-filling forms or one-click ordering)."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "9. How does 'Social Proof / Social Norms' operate as a nudge mechanism?",
-    "options": {
-      "A": "By threatening non-compliant users with legal sanctions",
-      "B": "By highlighting peer behavior (e.g., '90% of your team uses this feature') to encourage alignment",
-      "C": "By offering secret monetary bribes to top executives",
-      "D": "By disabling software features during peak business hours"
-    },
-    "correct_answer": "B",
-    "explanation": "Social proof leverages human social orientation by demonstrating what peers or majority groups are doing to gently guide individual behavior."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "10. In behavioral economics, what does the 'Framing' nudge technique involve?",
-    "options": {
-      "A": "Enclosing digital photos in decorative visual borders",
-      "B": "Presenting the same underlying information from a different perspective, such as emphasizing gains vs. losses",
-      "C": "Concealing total pricing until after checkout is completed",
-      "D": "Falsifying survey data to impress board members"
-    },
-    "correct_answer": "B",
-    "explanation": "Framing alters decision outcomes by changing how information is presented (e.g., highlighting time saved rather than cost incurred) without altering the factual facts."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "11. How does providing real-time 'Feedback' function as a behavioral change mechanism?",
-    "options": {
-      "A": "It sends an annual paper survey six months after purchase",
-      "B": "It displays immediate progress or consequences at the exact moment of decision-making",
-      "C": "It locks user accounts until an administrator conducts an audit",
-      "D": "It redirects users to competitor websites"
-    },
-    "correct_answer": "B",
-    "explanation": "Timely feedback gives users immediate visibility into the impact or progress of their choices right when they are making decisions."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "12. What psychological principle underpins the use of 'Scarcity and Loss Aversion' in digital nudging?",
-    "options": {
-      "A": "People value potential gains twice as much as equivalent losses",
-      "B": "Psychologically, potential losses weigh more heavily than equivalent gains, making limited availability a strong trigger to act",
-      "C": "Unlimited choice options always maximize user satisfaction",
-      "D": "Consumers always prefer waiting several months before making major purchases"
-    },
-    "correct_answer": "B",
-    "explanation": "Loss aversion demonstrates that the pain of losing something is psychologically more powerful than the pleasure of gaining it, so time-limited or scarce choices prompt immediate action."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "13. In the '5 Levels of Creative Design' framework, what represents Level 1 ('Imitation')?",
-    "options": {
-      "A": "Developing an entirely new market model like Airbnb",
-      "B": "A local startup copying an established business model (e.g., a ride-hailing startup copying Uber)",
-      "C": "Shifting from DVD rentals to digital streaming",
-      "D": "Integrating food delivery and grocery shopping into one app"
-    },
-    "correct_answer": "B",
-    "explanation": "Level 1 (Imitation) involves replicating existing proven business models or design patterns with minimal novelty."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "14. Which design milestone exemplifies Level 3 ('Combination') in the 5 Levels of Creative Design?",
-    "options": {
-      "A": "A mobile banking app adding fingerprint login",
-      "B": "A food delivery platform integrating grocery shopping into the same mobile app",
-      "C": "Creating the world's first steam-powered locomotive",
-      "D": "Copying a competitor's website color palette"
-    },
-    "correct_answer": "B",
-    "explanation": "Level 3 (Combination) merges two previously distinct existing services or functionalities into a unified new offering."
-  },
-  {
-    "topic": "Design & Innovation Process",
-    "question": "15. How are Level 4 ('Transformation') and Level 5 ('Original Creation') distinguished in the 5 Levels of Creative Design?",
-    "options": {
-      "A": "Transformation makes small style changes, while Original Creation reduces price points",
-      "B": "Transformation significantly alters existing formats/content (e.g., Netflix moving from DVDs to streaming), whereas Original Creation introduces an entirely new form and content (e.g., Airbnb)",
-      "C": "Transformation applies only to hardware, whereas Original Creation applies only to software",
-      "D": "Transformation requires government permits, while Original Creation does not"
-    },
-    "correct_answer": "B",
-    "explanation": "Transformation fundamentally alters the medium or format of an existing industry, while Original Creation introduces a novel category and concept with highest overall novelty."
-  },
-  {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "1. In Futures Thinking methodology, how is 'Futures Thinking' distinguished from traditional forecasting?",
-    "options": {
-      "A": "Futures Thinking uses a single deterministic mathematical equation to predict exact dates",
-      "B": "Futures Thinking assumes the future is fixed and linear",
-      "C": "Futures Thinking explores multiple plausible, possible, and preferable futures rather than predicting a single projected path",
-      "D": "Futures Thinking focuses exclusively on quarterly financial auditing"
-    },
-    "correct_answer": "C",
-    "explanation": "Futures Thinking emphasizes that 'futures are always plural'—exploring a spectrum of projected, probable, plausible, possible, and preferable futures rather than relying on a single linear forecast."
-  },
-  {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "2. In the Voros Futures Cone model, which category represents the baseline 'business as usual' future extrapolated from current trends?",
-    "options": {
-      "A": "Preposterous Future",
-      "B": "Projected Future",
-      "C": "Preferable Future",
-      "D": "Plausible Future"
-    },
-    "correct_answer": "B",
-    "explanation": "The 'Projected' future in the Voros Cone represents the default extrapolated baseline ('business as usual'), whereas 'Preferable' involves value judgments of what should happen."
-  },
-  {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "3. What defines the 'Preferable Future' zone in the Voros Futures Cone?",
-    "options": {
-      "A": "Scenarios based strictly on currently known physical laws regardless of human desire",
-      "B": "Future states determined by normatively evaluating what 'should' or 'ought' to happen based on value judgments",
-      "C": "Statistically most likely outcomes derived from historical linear regression",
-      "D": "Scenarios deemed physically impossible by contemporary science"
-    },
-    "correct_answer": "B",
-    "explanation": "The Preferable future cone is normative, reflecting political, ethical, or strategic choices about what future stakeholders want to bring about."
-  },
-  {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "4. In the Voros Cone, how are 'Possible' futures distinguished from 'Plausible' futures?",
-    "options": {
-      "A": "Possible futures include anything that 'might' happen based on future knowledge, while Plausible futures are grounded in what 'could' happen based on current knowledge",
-      "B": "Possible futures are guaranteed to occur, while Plausible futures are impossible",
-      "C": "Possible futures cover past events, while Plausible futures cover current events",
-      "D": "There is no distinction between Possible and Plausible in futures studies"
+      "A": "Product innovation changes the goods/services offered to customers, whereas process innovation changes the methods, workflows, and operations used to create and deliver them.",
+      "B": "Process innovation is visible to end-consumers, while product innovation is strictly internal.",
+      "C": "Product innovation never requires capital investment, whereas process innovation always requires public subsidies.",
+      "D": "There is no difference between product and process innovation in modern literature."
     },
     "correct_answer": "A",
-    "explanation": "Plausible futures reside within current knowledge and understanding ('could happen'), while Possible futures encompass a wider range dependent on future knowledge or breakthroughs ('might happen')."
+    "explanation": "Product innovation targets external market offerings, while process innovation optimizes internal operational, manufacturing, logistics, or administrative workflows."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "5. What is the key distinction between a 'Weak Signal' (Whisper) and a 'Megatrend' in Horizon Scanning?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "9. In business model innovation, what primary dimension of the firm is being restructured?",
     "options": {
-      "A": "Weak signals are global macro-forces, whereas megatrends are single unverified rumors",
-      "B": "Weak signals (whispers) are early signs of potentially significant change before becoming established trends, whereas megatrends are large-scale, long-term global shifts",
-      "C": "Megatrends only apply to technology, while weak signals only apply to politics",
-      "D": "Weak signals always represent immediate crises requiring emergency firefighting"
+      "A": "Only the physical aesthetic packaging of the product.",
+      "B": "The fundamental logic of how an organization creates, delivers, and captures economic and customer value.",
+      "C": "The annual graphic design theme of the corporate logo.",
+      "D": "The salary structure of lower-level operational staff."
     },
     "correct_answer": "B",
-    "explanation": "Horizon scanning distinguishes between 'weak signals' (early, subtle whispers of emerging change) and 'megatrends' (deep, long-term structural shifts shaping society and industries over coming decades)."
+    "explanation": "Business model innovation redefines value proposition, target customer segments, revenue streams, and value chain configurations (e.g., transitioning from selling software licenses to SaaS subscriptions)."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "6. In Megatrends Analysis, what characterizes macro-forces like urbanization, aging populations, or climate change?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "10. Which statement accurately reflects the distinction between an invention and an innovation?",
     "options": {
-      "A": "Short-lived hype cycles that disappear within six months",
-      "B": "Large-scale, long-term social, technological, economic, environmental, and political shifts influencing society over decades",
-      "C": "Micro-level customer preferences restricted to a single city neighborhood",
-      "D": "Unpredictable daily fluctuations in currency exchange markets"
+      "A": "Invention is the commercial adoption of a product, while innovation is the laboratory discovery.",
+      "B": "Invention is the creation of a novel concept, device, or method, whereas innovation requires taking that invention into practical, commercial, or institutional application.",
+      "C": "Invention requires a team of business managers, while innovation requires only one isolated scientist.",
+      "D": "Inventions are always patented, whereas innovations are illegal."
     },
     "correct_answer": "B",
-    "explanation": "Megatrends are broad, deep global dynamics that exert multi-decade structural influences across multiple industries and societal systems."
+    "explanation": "Invention remains in the realm of scientific or technical novelty until it is effectively developed, adopted, and commercialized to generate socio-economic value as an innovation."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "7. In the Three Horizons Model used in strategic futures thinking, what does 'Horizon 1' represent?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "11. Scenario: An industrial manufacturer notices that a competitor has launched a modular machine component that can be swapped out in 5 minutes. The manufacturer redesigns its own component using the exact same interface standards. According to Nilsson's Taxonomy of Creative Design, this is an example of:",
     "options": {
-      "A": "Far future paradigms and radical new systems",
-      "B": "The current dominant system and 'business as usual' operational state",
-      "C": "The emerging transitional zone where innovations challenge existing norms",
-      "D": "Speculative scenarios that are impossible to realize"
+      "A": "Original Creation",
+      "B": "Imitation / Variation",
+      "C": "Discontinuous Transformation",
+      "D": "Paradigm Shift"
     },
     "correct_answer": "B",
-    "explanation": "Horizon 1 represents the present dominant system ('Now / Business as usual'), Horizon 2 represents emerging transitional innovations, and Horizon 3 represents long-term new paradigms."
+    "explanation": "In Nilsson's taxonomy, adopting an existing design standard with minor adaptations represents imitation or variation (low novelty in content and form) rather than original creation."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "8. What role does 'Horizon 2' play in the Three Horizons framework?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "12. In Abernathy and Utterback's model of innovation dynamic, what characterizes the 'Fluid Phase' of an industry?",
     "options": {
-      "A": "It represents static legacy operations that never change",
-      "B": "It represents the turbulent transitional space where emerging innovations and seeds of change disrupt Horizon 1",
-      "C": "It marks the historical past from 50 years ago",
-      "D": "It represents total system collapse without recovery"
+      "A": "High rate of product innovation, fluid technology choices, and intense experimentation before a dominant design emerges.",
+      "B": "Extreme standardization where process innovation dominates and product designs are frozen.",
+      "C": "Zero market uncertainty and complete dominance by state monopolies.",
+      "D": "Focus purely on cost reduction and supply chain efficiency."
+    },
+    "correct_answer": "A",
+    "explanation": "The Fluid Phase is marked by rapid experimentation, diverse product architectures, and fluid market feedback prior to the consolidation around a 'dominant design'."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "13. What occurs once a 'Dominant Design' is established in an industry according to Abernathy and Utterback?",
+    "options": {
+      "A": "Product innovation spikes dramatically while process innovation ceases.",
+      "B": "The focus shifts from product innovation to process innovation, scale, cost efficiency, and standardization.",
+      "C": "All firms leave the market due to price wars.",
+      "D": "Patents lose all legal validity worldwide."
     },
     "correct_answer": "B",
-    "explanation": "Horizon 2 represents the near-future transitional space of innovation where new practices challenge the dominant H1 system and carve paths toward H3 paradigms."
+    "explanation": "Once a dominant design stabilizes market expectations (e.g., standard smartphone form factor), competitive advantage shifts from radically changing the product architecture to optimizing manufacturing, lowering costs, and improving reliability."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "9. How is 'Horizon 3' characterized in the Three Horizons Model?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "14. Open Innovation, as coined by Henry Chesbrough, contrasts with Closed Innovation by emphasizing that:",
     "options": {
-      "A": "Immediate operational tactics for the next fiscal quarter",
-      "B": "Long-term radical paradigms and entirely new systems whose seeds exist in the present",
-      "C": "Depreciated technological hardware scheduled for disposal",
-      "D": "Standard accounting procedures enforced by central tax authorities"
+      "A": "Firms should rely solely on internal R&D labs and keep all intellectual property strictly locked.",
+      "B": "Firms can and should use external ideas as well as internal ideas, and internal/external paths to market, to advance their technology.",
+      "C": "Companies must publish all source code and business secrets for free on open public platforms.",
+      "D": "R&D departments should be completely dismantled and replaced by social media polls."
     },
     "correct_answer": "B",
-    "explanation": "Horizon 3 embodies long-term transformative futures and alternative paradigms that eventually replace or succeed legacy H1 systems."
+    "explanation": "Open innovation recognizes that valuable knowledge is distributed globally, advocating for inbound technology transfer and outbound licensing of unused internal IP."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "10. What are the five core stages of the strategic foresight process presented in the Futures Thinking source?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "15. Which of the following is classified as a service innovation rather than a tangible product innovation?",
     "options": {
-      "A": "Plan, Budget, Execute, Audit, Close",
-      "B": "Frame, Scan, Imagine, Decide, Design",
-      "C": "Invent, Patent, Manufacture, Market, Sell",
-      "D": "Draft, Review, Approve, Print, File"
+      "A": "A lighter lithium-ion battery cell with 20% higher energy density.",
+      "B": "A subscription-based predictive maintenance service that uses IoT sensor streams to alert factory managers prior to machine failure.",
+      "C": "A new microchip manufactured using 2nm lithography.",
+      "D": "A newly designed aerodynamic side mirror for electric trucks."
     },
     "correct_answer": "B",
-    "explanation": "The strategic foresight process follows five structured stages: 1. Frame, 2. Scan, 3. Imagine, 4. Decide, 5. Design."
+    "explanation": "Predictive maintenance based on continuous data monitoring provides intangible operational value and ongoing support, representing a service innovation (servitization)."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "11. What is the primary focus of the 'Frame' stage in strategic foresight?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "16. Sustaining innovation (Christensen) differs from Disruptive innovation in that sustaining innovation:",
     "options": {
-      "A": "Building physical prototypes out of timber or plastic",
-      "B": "Asking the right questions, defining scope, and mapping relevant stakeholders",
-      "C": "Calculating net present value (NPV) for existing products",
-      "D": "Writing press releases for product launches"
+      "A": "Targets low-end or non-consumers with simpler, cheaper alternatives.",
+      "B": "Improves product performance along dimensions that mainstream customers in major markets already value.",
+      "C": "Always causes established market leaders to go bankrupt within 6 months.",
+      "D": "Never uses new technology."
     },
     "correct_answer": "B",
-    "explanation": "The Frame stage establishes the boundaries of inquiry by reframing strategic questions (e.g., 'How will people live tomorrow?') and mapping stakeholders."
+    "explanation": "Sustaining innovations cater to demanding mainstream customers by making existing good products even better, whereas disruptive innovations initially enter low-end or new-market footholds with simpler offerings."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "12. In foresight methodology, what is the core utility of a 'Futures Wheel'?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "17. Scenario: A startup introduces a compact medical ultrasound tool that connects to a basic smartphone, offering lower resolution than hospital machines but costing 1/20th the price. Rural clinics adopt it enthusiastically. This is an example of:",
     "options": {
-      "A": "Randomly selecting project leaders using a spinning wheel",
-      "B": "Mapping direct and indirect (secondary/tertiary) cascading consequences of a specific change across society and markets",
-      "C": "Scheduling shift rotations for manufacturing workers",
-      "D": "Calculating annual vehicle depreciation rates"
+      "A": "Disruptive Innovation entering via a low-cost or new-market foothold.",
+      "B": "Competence-enhancing incremental sustaining innovation for elite hospitals.",
+      "C": "Pure academic research with no commercial application.",
+      "D": "Architectural stagnation."
+    },
+    "correct_answer": "A",
+    "explanation": "Disruptive innovations frequently launch with lower performance on traditional metrics but superior affordability and portability, capturing non-consumers or underserved segments before improving to challenge incumbents."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "18. Modular innovation (Henderson & Clark) is defined by:",
+    "options": {
+      "A": "Changes in core component concepts while leaving the overarching architectural system design intact.",
+      "B": "Complete changes to both architectural relationships and core components.",
+      "C": "Zero changes to components and radical changes to interfaces.",
+      "D": "Changes in marketing slogans only."
+    },
+    "correct_answer": "A",
+    "explanation": "Modular innovation replaces a specific module or component with a new technology (e.g., swapping analog dials for a digital display) without altering how the overall system components interact."
+  },
+  {
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "19. Social innovation is primarily characterized by:",
+    "options": {
+      "A": "Maximizing quarterly shareholder dividend payouts through offshore tax optimization.",
+      "B": "Developing novel solutions (products, services, models) that explicitly meet social needs and create community value rather than purely private financial profit.",
+      "C": "Filing defense technology patents under military secrecy.",
+      "D": "Replacing human workers with automated machinery to lower wage costs."
     },
     "correct_answer": "B",
-    "explanation": "The Futures Wheel is a visual structured method for uncovering first-order, second-order, and ripple effects caused by a central trend or disruption."
+    "explanation": "Social innovation focuses on systemic social impact, addressing societal challenges such as education, healthcare accessibility, and environmental resilience through collaborative organizational forms."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "13. How does 'Backcasting' operate in strategic futures planning?",
+    "topic": "Fundamentals & Typologies of Innovation",
+    "question": "20. According to the OECD Oslo Manual framework, the four main operational types of innovation historically measured in firms include:",
     "options": {
-      "A": "By analyzing past financial statements to predict next week's stock price",
-      "B": "By defining a desirable long-term future vision and working backward to identify necessary present-day actions and roadmaps",
-      "C": "By blaming past management teams for current operational failures",
-      "D": "By projecting current historical trends linearly 50 years forward without modification"
+      "A": "Product, Process, Marketing, and Organizational Innovation.",
+      "B": "Scientific, Political, Military, and Philosophical Innovation.",
+      "C": "Financial, Legal, Accounting, and Tax Innovation.",
+      "D": "Hardware, Software, Firmware, and Humanware Innovation."
+    },
+    "correct_answer": "A",
+    "explanation": "The Oslo Manual guidelines traditionally defined business innovation across four categories: Product (goods/services), Process (production/delivery), Marketing (design/pricing/promotion), and Organizational (business practices/workplace organization)."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "1. Joseph Schumpeter's concept of 'Creative Destruction' describes economic development as an evolutionary process driven by:",
+    "options": {
+      "A": "Price-based equilibrium adjustments among identical static firms.",
+      "B": "Industrial mutation that incessantly revolutionizes the economic structure from within, destroying old technologies and creating new ones.",
+      "C": "Centralized government price controls and anti-trade tariffs.",
+      "D": "Passive accumulation of physical savings without technological change."
     },
     "correct_answer": "B",
-    "explanation": "Backcasting starts with a desired future destination (Preferable Future) and traces backward to current decision points to construct actionable policy roadmaps."
+    "explanation": "Schumpeter argued that dynamic competition driven by innovative entrepreneurs continuously disrupts established market structures, making entire product categories obsolete through 'creative destruction'."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "14. What is the purpose of 'Design Fiction' and diegetic prototyping in strategic foresight?",
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "2. In Mariana Mazzucato's framework 'The Entrepreneurial State,' what is the primary role attributed to public sector policy in breakthrough technological innovations?",
     "options": {
-      "A": "Writing commercial fiction novels for consumer profit",
-      "B": "Creating tangible fictional artifacts and narratives to make future scenarios experiential and provoke discussion on implications",
-      "C": "Falsifying technical specs during regulatory inspections",
-      "D": "Designing comic books for corporate branding"
+      "A": "The state merely fixes market failures and gets out of the way of private venture capital.",
+      "B": "The state acts as an active, courageous risk-taker that invests early in high-uncertainty technology missions (e.g., Internet, GPS, biotechnology) before private capital steps in.",
+      "C": "The state should prohibit private businesses from conducting basic R&D.",
+      "D": "The state should privatize all research universities to eliminate public spending."
     },
     "correct_answer": "B",
-    "explanation": "Design Fiction creates physical or visual artifacts embedded in imagined future contexts to make abstract scenarios concrete and stimulate critical debate."
+    "explanation": "Mazzucato demonstrates that major revolutionary technologies (like iPhone components, GPS, internet) originated from vision-led, public state investments taking early capital risks that private venture capital avoided."
   },
   {
-    "topic": "Futures Thinking & Foresight Frameworks",
-    "question": "15. Which cognitive trap frequently hinders organizational foresight when analyzing future trends?",
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "3. The comprehensive framework by Sundbo (1998) and Kochetkov (2023) categorizes innovation theories into which three distinct analytical lenses?",
     "options": {
-      "A": "Excessive reliance on speculative design fiction",
-      "B": "Status Quo Bias and Linear Thinking (assuming current conditions and trends will continue unchanged)",
-      "C": "Overestimating weak signals while ignoring quarterly earnings",
-      "D": "Reframing strategic questions too frequently"
+      "A": "Financial, legal, and operational lenses.",
+      "B": "Entrepreneurship, technological-economic, and strategic lenses.",
+      "C": "Microeconomic, macroeconomic, and econometric lenses.",
+      "D": "Biological, physical, and chemical lenses."
     },
     "correct_answer": "B",
-    "explanation": "Humans struggle with foresight due to cognitive biases like status quo bias ('people will always prefer owning a car') and linear thinking ('technology improves gradually'), failing to anticipate non-linear disruptions."
+    "explanation": "Sundbo and Kochetkov synthesize innovation studies into three theoretical perspectives: Entrepreneurship theory (who innovates and why), Technological-economic aspects (systemic economic impact), and Strategic management (governed organizational processes)."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "1. According to the OECD report 'The Culture Fix' (2022), how did self-employment rates in Cultural and Creative Sectors (CCS) compare to the rest of the business economy?",
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "4. How does the 'Quadruple Helix' innovation model extend the traditional 'Triple Helix' (University-Industry-Government)?",
     "options": {
-      "A": "CCS had significantly lower self-employment rates (5% vs 25%)",
-      "B": "Self-employment rates were identical at 10%",
-      "C": "CCS had a notably higher share of self-employment (18% vs 12%)",
-      "D": "Self-employment in CCS was non-existent due to state monopolies"
+      "A": "By adding international venture capital funds.",
+      "B": "By incorporating Civil Society, public media, culture, and user-driven knowledge environments.",
+      "C": "By adding military research bases.",
+      "D": "By adding automated AI decision engines."
+    },
+    "correct_answer": "B",
+    "explanation": "The Quadruple Helix explicitly includes the 4th strand: Civil Society, media, end-users, and culture, recognizing that innovation adoption depends on social validation and co-creation with the public."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "5. In Keith Pavitt's sectoral taxonomy of technical change, 'Supplier-Dominated' firms (e.g., traditional agriculture or textiles) acquire most of their innovations through:",
+    "options": {
+      "A": "Massive internal R&D laboratories developing proprietary microchips.",
+      "B": "Purchasing capital machinery, equipment, and materials from external suppliers.",
+      "C": "Publishing academic papers in theoretical physics.",
+      "D": "Filing global software patents."
+    },
+    "correct_answer": "B",
+    "explanation": "Supplier-dominated sectors rely predominantly on embodied technology built into capital equipment and inputs supplied by external machinery or chemical manufacturers."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "6. According to Kenneth Arrow's classic economic analysis of welfare, why does a competitive free market systematically under-invest in basic research and knowledge creation?",
+    "options": {
+      "A": "Scientists refuse to work in private companies.",
+      "B": "Knowledge possesses public good characteristics (non-rivalry and non-excludability), making it difficult for private investors to fully appropriate financial returns.",
+      "C": "Basic research is always illegal for private firms.",
+      "D": "Basic research has zero cost and requires no financial capital."
+    },
+    "correct_answer": "B",
+    "explanation": "Arrow showed that information/knowledge creates strong spillovers. Because private investors cannot fully capture (appropriate) the public value created by basic scientific discoveries, public funding is essential to overcome market failure."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "7. In Lundvall and Johnson's learning modes, what is the key distinction between the STI mode and the DUI mode of innovation?",
+    "options": {
+      "A": "STI relies on Science, Technology, and Innovation (codified global R&D), whereas DUI relies on Doing, Using, and Interacting (tacit, practical experience and shop-floor problem-solving).",
+      "B": "STI is short-term speculation, while DUI is public tax accounting.",
+      "C": "STI is practiced only by schools, while DUI is practiced only by foreign militaries.",
+      "D": "There is no distinction; both refer to financial trading software."
+    },
+    "correct_answer": "A",
+    "explanation": "The STI mode emphasizes explicit, scientific knowledge produced in formal labs, while the DUI mode highlights experience-based, tacit problem-solving embedded in daily operational routines and customer interactions."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "8. Nelson and Winter's Evolutionary Economics theory replaces the neoclassical assumption of 'rational profit maximization' with what core organizational concept?",
+    "options": {
+      "A": "Perfect perfect information foresight.",
+      "B": "Organizational Routines, search behavior, and satisficing under bounded rationality.",
+      "C": "Random coin flipping.",
+      "D": "Government price dictation."
+    },
+    "correct_answer": "B",
+    "explanation": "Evolutionary economics views firms as repositories of 'routines' (organizational DNA). Under bounded rationality, firms use search routines to modify behaviors when environment selection pressures change."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "9. Scenario: A regional government launches an 'Innovation Mission' to achieve zero-emission maritime transport by 2035. Instead of giving flat tax cuts to all businesses, it co-funds university labs, sets strict clean standards, and creates guaranteed procurement contracts for green ferries. Which economic framework directly inspires this approach?",
+    "options": {
+      "A": "Neoliberal Laissez-Faire deregulation.",
+      "B": "Mazzucato's Mission-Oriented Innovation Policy.",
+      "C": "Classical Marxist industrial nationalization.",
+      "D": "Static mercantilist gold hoarding."
+    },
+    "correct_answer": "B",
+    "explanation": "Mission-oriented policy uses targeted public direction, cross-sectoral investments, and market shaping to solve complex grand societal challenges."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "10. In Schumpeter's early work (Schumpeter Mark I / 1911), who is the primary driver of economic innovation?",
+    "options": {
+      "A": "Large, bureaucratic oligopolistic R&D laboratories.",
+      "B": "The individual visionary 'heroic' entrepreneur launching new firm ventures.",
+      "C": "Central planning committees in state ministries.",
+      "D": "Trade unions demanding wage freezes."
+    },
+    "correct_answer": "B",
+    "explanation": "Schumpeter Mark I focused on the individual dynamic entrepreneur breaking circular economic flow, whereas Mark II (1942) shifted emphasis to organized corporate R&D in large firms."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "11. What is the Quintuple Helix innovation model?",
+    "options": {
+      "A": "A model that integrates the Natural Environment and ecological sustainability into the Quadruple Helix framework.",
+      "B": "A model consisting of five competing private corporations in a cartel.",
+      "C": "A five-tier corporate management pyramid.",
+      "D": "An international banking agreement for currency exchange."
+    },
+    "correct_answer": "A",
+    "explanation": "The Quintuple Helix framework contextualizes knowledge and innovation within the socio-ecological transition, making environmental preservation a co-equal driver of regional innovation."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "12. In Pavitt's taxonomy, 'Scale-Intensive' firms (such as automotive manufacturers or steel rolling mills) typically focus their innovation effort on:",
+    "options": {
+      "A": "Process efficiency, scale economies, complex system assembly, and incremental engineering refinements.",
+      "B": "Pure biological gene sequencing.",
+      "C": "Buying consumer retail stores.",
+      "D": "Handmade artisan craft techniques."
+    },
+    "correct_answer": "A",
+    "explanation": "Scale-intensive sectors feature large plant production where process efficiency, cost reduction, and engineering integration are the primary sources of competitive advantage."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "13. What is meant by the 'Appropriability Regime' of an innovation?",
+    "options": {
+      "A": "The environmental conditions (such as patent strength, secrecy, lead time, and complementary assets) that dictate how easily an innovator can capture profits from their innovation.",
+      "B": "The annual budget appropriated by Parliament for political campaign ads.",
+      "C": "The military defense budget allocated to border security.",
+      "D": "The salary bonus paid to lower-level factory interns."
+    },
+    "correct_answer": "A",
+    "explanation": "Teece's appropriability framework defines how well a firm can protect its technology from imitators depending on legal IP protection, secret know-how, and control of complementary assets (e.g., distribution networks)."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "14. According to David Teece, why do innovative firms often lose economic profits to owners of 'Complementary Assets'?",
+    "options": {
+      "A": "Innovators never file patent applications.",
+      "B": "When technology is easily imitated (weak appropriability), leverage shifts to firms controlling critical specialized assets like manufacturing scale, brand, or retail channels.",
+      "C": "Governments confiscate all patents from small inventors.",
+      "D": "Complementary assets have no monetary value."
+    },
+    "correct_answer": "B",
+    "explanation": "If the core technological innovation is easy to copy, the entities that control bottleneck complementary assets (e.g., specialized manufacturing, global distribution networks) capture the majority of commercial profits."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "15. A National Innovation System (NIS), as conceptualized by Freeman and Lundvall, is defined as:",
+    "options": {
+      "A": "A single centralized supercomputer owned by the government.",
+      "B": "The network of institutions in the public and private sectors whose interactions initiate, import, modify, and diffuse new technologies within a nation.",
+      "C": "The total national GDP divided by total patent filings.",
+      "D": "A tax office that collects corporate VAT."
+    },
+    "correct_answer": "B",
+    "explanation": "NIS literature proves that technological performance depends on systemic relationships and institutional linkages between universities, firms, financial structures, and government policy in a country."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "16. In Pavitt's taxonomy, 'Specialized Suppliers' (e.g., high-precision instrument makers or specialized software providers) are characterized by:",
+    "options": {
+      "A": "High product innovation closely co-designed with sophisticated lead users.",
+      "B": "Complete reliance on government food subsidies.",
+      "C": "Low technological sophistication and zero engineering staff.",
+      "D": "Mass market television advertising campaigns."
+    },
+    "correct_answer": "A",
+    "explanation": "Specialized suppliers work intimately with customer firms to engineer specialized machinery, instruments, and hardware components, building deep technical competitive barriers."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "17. Scenario: An EU member state scores high on basic scientific publication counts but consistently lags behind in turning those publications into marketable commercial high-tech exports. In European Innovation Policy terms, this gap is known as:",
+    "options": {
+      "A": "The European Paradox.",
+      "B": "The Solow Computer Productivity Paradox.",
+      "C": "The Schumpeterian Rent Trap.",
+      "D": "The Dutch Disease."
+    },
+    "correct_answer": "A",
+    "explanation": "The 'European Paradox' refers to the phenomenon where a country excels at scientific research generation (input/science) but struggles to translate that academic output into commercialized industrial performance (output)."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "18. What is the fundamental premise of 'Absorptive Capacity' (Cohen and Levinthal)?",
+    "options": {
+      "A": "A firm's ability to recognize the value of new external information, assimilate it, and apply it commercially depends on its existing prior knowledge base and internal R&D.",
+      "B": "A firm's ability to absorb liquid capital from bank loans without paying interest.",
+      "C": "The capacity of warehouse shelves to store physical inventory.",
+      "D": "The rate at which employees read fiction novels during work hours."
+    },
+    "correct_answer": "A",
+    "explanation": "Cohen and Levinthal showed that internal R&D does not just create new IP; it builds the firm's 'absorptive capacity' to understand, evaluate, and exploit scientific discoveries made externally."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "19. In Technology Policy, what is the key difference between 'Technology Push' and 'Market Pull'?",
+    "options": {
+      "A": "Technology Push is driven by scientific research and lab discoveries seeking applications, whereas Market Pull is driven by explicit customer needs and market demand demanding solutions.",
+      "B": "Technology Push is illegal under antitrust law, while Market Pull is compulsory.",
+      "C": "Technology Push applies only to physical hardware, while Market Pull applies only to food.",
+      "D": "There is no difference; both mean aggressive sales cold-calling."
+    },
+    "correct_answer": "A",
+    "explanation": "Technology Push originates in R&D breakthroughs pushing new possibilities into markets, whereas Market Pull stems from recognized market requirements pulling technological development toward specific functional needs."
+  },
+  {
+    "topic": "Economic Theories, Strategic Frameworks & Policy",
+    "question": "20. Strategic Niche Management (SNM) in sustainability transitions recommends:",
+    "options": {
+      "A": "Exposing fragile green technologies immediately to fierce, unprotected mass market competition.",
+      "B": "Creating protected experimental spaces ('niches') where sustainable technological concepts can mature through learning, actor networking, and user feedback before competing broadly.",
+      "C": "Banning all new technologies until incumbent firms approve them.",
+      "D": "Replacing strategic management with pure chance."
+    },
+    "correct_answer": "B",
+    "explanation": "SNM provides policy/management tools to nurture radical sustainable technological innovations in temporary protected arenas (subsidized projects, pilot cities) away from dominant regime market pressures."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "1. In the UK Design Council's Double Diamond framework, what specific cognitive dynamic occurs during the 'Define' and 'Deliver' phases?",
+    "options": {
+      "A": "Unconstrained divergence and random brainstorming without limits.",
+      "B": "Convergent thinking — narrowing down possibilities, synthesizing insights, focusing problem definitions, and executing concrete solutions.",
+      "C": "Passive waiting without decision-making.",
+      "D": "Filing legal lawsuits against competitors."
+    },
+    "correct_answer": "B",
+    "explanation": "The Double Diamond alternates between Divergent phases (Discover, Develop) that open possibilities and Convergent phases (Define, Deliver) that refine, select, and finalize actionable choices."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "2. According to Roger Martin (2009), Design Thinking achieves competitive advantage by dynamically balancing which two cognitive modes along the 'Knowledge Funnel'?",
+    "options": {
+      "A": "Financial auditing and legal compliance.",
+      "B": "Exploration of new knowledge (intuitive mystery-solving) and exploitation of current knowledge (analytical administrative efficiency).",
+      "C": "Rote memorization and mechanical speed.",
+      "D": "Graphic illustration and corporate photography."
+    },
+    "correct_answer": "B",
+    "explanation": "Roger Martin shows that design thinking moves knowledge from Mysteries to Heuristics to Algorithms, balancing intuitive exploration with analytical exploitation."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "3. In Dörner & Funke's research on Complex Problem Solving (CPS), what distinguishes a 'complex' problem from a simple or linear problem?",
+    "options": {
+      "A": "Complex problems contain static variables with immediate 100% transparent information.",
+      "B": "Complex problems involve dynamic interconnected variables, intransparency/opacity, polytely (competing goals), and unpredictable delayed feedback loops.",
+      "C": "Complex problems can always be solved using simple high-school arithmetic formulas.",
+      "D": "Complex problems have no emotional impact on human decision-makers."
+    },
+    "correct_answer": "B",
+    "explanation": "Authentic CPS requires dealing with opacity, dynamic environmental changes, interconnected feedback mechanisms, and multiple trade-offs rather than static single-variable equations."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "4. According to Fahrbach & Fust (2026), how does Self-Regulated Learning (SRL) accelerate expertise in Complex Problem Solving?",
+    "options": {
+      "A": "By ignoring past mistakes and repeating the exact same strategy continuously.",
+      "B": "By equipping problem solvers with metacognitive strategies (goal setting, systematic model-building, self-monitoring) and motivational reflection across iterative trial-and-error cycles.",
+      "C": "By delegating all decisions to an external manager.",
+      "D": "By memorizing static textbook definitions without practical experimentation."
+    },
+    "correct_answer": "B",
+    "explanation": "Fahrbach & Fust demonstrate that practicing CPS alone is insufficient; explicit self-regulation (metacognition, goal setting, self-reflection) allows individuals to build dynamic mental models rapidly."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "5. What is the main danger of 'Premature Convergence' during a design thinking project?",
+    "options": {
+      "A": "Taking too long to complete user research interviews.",
+      "B": "Latching onto the first obvious or familiar solution too early before fully understanding the problem space and exploring diverse alternatives.",
+      "C": "Spending too much money on sticky notes.",
+      "D": "Hiring too many industrial design graduates."
+    },
+    "correct_answer": "B",
+    "explanation": "Premature convergence short-circuits the creative divergence phase, leading teams to implement shallow, non-innovative ideas that fail to solve root human needs."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "6. Scenario: An innovation team studying hospital patient stress discovers that patients are not afraid of the MRI technology itself, but of the cold, noisy, intimidating room. They redesign the room into a colorful 'childhood adventure storybook' setting, reducing pediatric sedation rates from 80% to under 1%. This re-framing is an example of:",
+    "options": {
+      "A": "Deep Empathic Needfinding and Problem Reframing.",
+      "B": "Linear mechanical optimization of superconducting magnets.",
+      "C": "Financial arbitrage in hospital insurance billing.",
+      "D": "Competence-destroying hardware engineering."
+    },
+    "correct_answer": "A",
+    "explanation": "By shifting focus from machine technical specs to human emotional experience (needfinding), the team reframed the problem, producing a revolutionary user experience."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "7. In Edward de Bono's creative thinking models, Lateral Thinking differs from Vertical Thinking because Lateral Thinking:",
+    "options": {
+      "A": "Follows strict step-by-step formal logic where every step must be correct.",
+      "B": "Deliberately seeks alternative paths, makes unexpected side-jumps, and breaks established mental patterns to generate novel perceptions.",
+      "C": "Is exclusively used for calculating tax liabilities.",
+      "D": "Prohibits the use of imagination."
+    },
+    "correct_answer": "B",
+    "explanation": "De Bono contrasted vertical thinking (sequential logical depth) with lateral thinking (sideways re-patterning of concepts to break cognitive habits)."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "8. What role do physical or digital 'Prototypes' play in the iterative design learning process?",
+    "options": {
+      "A": "Prototypes are meant solely as final showpieces for board meetings after product development is finished.",
+      "B": "Prototypes are low-cost, tangible artifacts built to think, test assumptions, fail fast, gather concrete user feedback, and foster critical reflection.",
+      "C": "Prototypes are legally binding contracts that lock in design features permanently.",
+      "D": "Prototypes replace the need for any human user testing."
+    },
+    "correct_answer": "B",
+    "explanation": "Design thinking uses prototyping as a rapid learning tool ('prototyping to think') that makes ideas tangible early so assumptions can be tested before major capital expenditure."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "9. In Torrance's metrics of creative thinking, how is 'Flexibility' measured during ideation tasks (such as the 30 Circles exercise)?",
+    "options": {
+      "A": "By counting the total absolute number of drawings completed.",
+      "B": "By measuring the number of different categories or distinct conceptual domains generated in the responses.",
+      "C": "By calculating the exact physical sharpness of the pencil drawing.",
+      "D": "By checking if all drawings are identical faces."
+    },
+    "correct_answer": "B",
+    "explanation": "In divergent thinking tests: Fluency = total quantity, Originality = statistical rarity, Elaboration = level of detail, and Flexibility = variety of distinct categories/domains."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "10. Scenario: A participant in a 2-minute circle-drawing test draws 15 different variations of smiling human faces. Another participant draws a wheel, a planet, a pizza, a clock, and a eyeball. Compared to the first participant, the second participant exhibits higher:",
+    "options": {
+      "A": "Fluency, but lower Flexibility.",
+      "B": "Flexibility, by crossing multiple distinct conceptual categories.",
+      "C": "Linear repetition bias.",
+      "D": "Monolithic mental rigidity."
+    },
+    "correct_answer": "B",
+    "explanation": "Switching between disparate categories (vehicles, space, food, horology, anatomy) demonstrates high cognitive flexibility compared to repeating the same category (faces)."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "11. What is 'Extreme User' research in design thinking needfinding?",
+    "options": {
+      "A": "Interviewing only average mainstream users who represent 95% of the bell curve.",
+      "B": "Engaging with individuals at the far edges of use cases (e.g., severe accessibility challenges or super-expert power users) to uncover amplified needs and non-obvious insights.",
+      "C": "Testing products under extreme weather temperatures in lab freezers.",
+      "D": "Firing users who criticize product usability."
+    },
+    "correct_answer": "B",
+    "explanation": "Extreme users have amplified needs that expose systemic design flaws and spark breakthrough workarounds that benefit mainstream users."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "12. In the design thinking process, what is an 'Empathy Map' used for?",
+    "options": {
+      "A": "To chart the geographical GPS routes of delivery trucks.",
+      "B": "To synthesize qualitative user research into what the user Says, Thinks, Does, and Feels, uncovering latent needs and contradictions.",
+      "C": "To calculate the financial depreciation of factory machinery.",
+      "D": "To organize corporate employee vacation schedules."
+    },
+    "correct_answer": "B",
+    "explanation": "Empathy maps help teams step into the user's mindset, organizing observations around Says/Thinks/Does/Feels to extract latent pain points and gains."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "13. What is meant by 'How Might We' (HMW) statements in creative problem solving?",
+    "options": {
+      "A": "Skeptical statements designed to shut down project funding.",
+      "B": "Optimistic, open-ended problem-framing prompts that transform research insights into actionable ideation challenges.",
+      "C": "Legal non-disclosure contract clauses.",
+      "D": "Standardized accounting audit questions."
+    },
+    "correct_answer": "B",
+    "explanation": "HMW questions reframe heavy problem descriptions into generative design briefs that invite diverse creative ideas without dictating a specific solution."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "14. In design thinking organizational research, how do physical artifacts (like prototypes or sticky-note walls) influence corporate culture?",
+    "options": {
+      "A": "They create visual noise and lower productivity.",
+      "B": "They act as boundary objects and psychological triggers that embody core values of transparency, psychological safety, risk-taking, and active collaboration.",
+      "C": "They are purely decorative elements with zero impact on human behavior.",
+      "D": "They replace the need for organizational strategy."
+    },
+    "correct_answer": "B",
+    "explanation": "Artifacts socialize new behaviors. Displaying messy, work-in-progress prototypes lowers fear of failure and encourages cross-functional critique and dialogue."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "15. What is the fundamental rule of classical Brainstorming as established by Alex Osborn?",
+    "options": {
+      "A": "Critique and evaluate every idea immediately as soon as it is voiced.",
+      "B": "Defer judgment during generation, focus on quantity, build on others' ideas, and encourage wild ideas.",
+      "C": "Allow only senior executive managers to speak.",
+      "D": "Require written mathematical proof for every suggestion."
+    },
+    "correct_answer": "B",
+    "explanation": "Osborn's cardinal brainstorming rule separates generative ideation from analytical evaluation to prevent cognitive inhibition and fear of social embarrassment."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "16. Scenario: An engineering team keeps failing to build a successful urban logistics app because every team member holds a different mental image of the end user. The team lead conducts 10 field observations and creates 3 detailed 'Personas'. How do Personas solve this problem?",
+    "options": {
+      "A": "By providing fictional user archetypes grounded in real data that align the team's shared empathy and design decisions.",
+      "B": "By replacing actual human user testing with computer-simulated bot profiles.",
+      "C": "By legally binding the developers to work 80 hours a week.",
+      "D": "By eliminating the need to write software code."
+    },
+    "correct_answer": "A",
+    "explanation": "Personas humanize qualitative user research, serving as shared reference points that keep multi-disciplinary teams aligned around genuine human needs."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "17. In Design Thinking, what is 'Service Blueprinting'?",
+    "options": {
+      "A": "An architectural blueprint of office plumbing.",
+      "B": "A operational diagram that maps customer journey touchpoints alongside front-stage visible staff actions and back-stage internal support processes.",
+      "C": "A corporate tax return schedule for service companies.",
+      "D": "A graphic design style guide for website typography."
+    },
+    "correct_answer": "B",
+    "explanation": "Service blueprints map the end-to-end service delivery ecosystem, linking customer-facing experiences (front-stage) with internal operational infrastructure (back-stage)."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "18. What distinguishes 'Abductive Reasoning' from Deductive and Inductive reasoning in design methodology?",
+    "options": {
+      "A": "Deduction proves something MUST be, Induction shows something IS, while Abduction infers what COULD BE (inferring the best explanation or new value possibilities from incomplete data).",
+      "B": "Abduction is mathematical deduction applied backwards.",
+      "C": "Abduction is strictly illegal logic forbidden in scientific research.",
+      "D": "There is no difference; all three mean calculating averages."
+    },
+    "correct_answer": "A",
+    "explanation": "Designers rely heavily on abductive logic to form creative hypotheses about 'what might be' when grappling with ambiguous user needs and novel market opportunities."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "19. In Dörner's 'Logic of Failure' analysis, what common cognitive error do decision-makers make when managing dynamic systems under complexity?",
+    "options": {
+      "A": "Over-repairing (acting impulsively on minor fluctuations without understanding system lag) or repair-service behavior.",
+      "B": "Analyzing system feedback too patiently.",
+      "C": "Consulting too many external scientific experts.",
+      "D": "Writing down explicit system goals on paper."
+    },
+    "correct_answer": "A",
+    "explanation": "Dörner demonstrated that humans tend to over-react to short-term system delays (feedback lag), taking hasty emergency interventions that destabilize complex dynamic systems."
+  },
+  {
+    "topic": "Design Thinking & Creative Problem Solving",
+    "question": "20. What is a 'Wizard of Oz' prototype in digital service design?",
+    "options": {
+      "A": "A fully coded, scalable production software backend connected to cloud databases.",
+      "B": "A prototype where front-end digital interfaces appear automated to the user, but backend processing is secretly performed manually by a human behind the scenes.",
+      "C": "A fantasy video game used for team building.",
+      "D": "A patent filing for magical optical illusions."
+    },
+    "correct_answer": "B",
+    "explanation": "A 'Wizard of Oz' prototype simulates complex automated technology (like AI recommendations) using human labor in secret, testing demand and UX viability before spending months coding algorithms."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "1. What does the acronym BANI stand for in modern strategic foresight, representing environments that go beyond traditional VUCA frameworks?",
+    "options": {
+      "A": "Balanced, Automated, Networked, Integrated.",
+      "B": "Brittle, Anxious, Non-linear, Incomprehensible.",
+      "C": "Basic, Actionable, Neutral, Incremental.",
+      "D": "Bureaucratic, Analytical, Numerical, Institutional."
+    },
+    "correct_answer": "B",
+    "explanation": "Formulated by Jamais Cascio, BANI captures modern chaotic, non-linear operating conditions where systems appear strong until sudden collapse (Brittle), create systemic stress (Anxious), defy cause-and-effect proportions (Non-linear), and resist simple explanations (Incomprehensible)."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "2. In strategic foresight case studies, Kodak's failure to capture the digital photography market despite inventing the first digital camera in 1975 is primarily attributed to:",
+    "options": {
+      "A": "A lack of technical patent ownership.",
+      "B": "Cognitive biases, status quo bias, and corporate lock-in that sought to protect high-margin chemical film revenues at the expense of disruptive digital transition.",
+      "C": "Immediate bankruptcy caused by government price caps.",
+      "D": "Failure to manufacture physical plastic camera bodies."
+    },
+    "correct_answer": "B",
+    "explanation": "Kodak suffered from organizational inertia, status quo bias, and fear of cannibalizing its core film profit engine, ignoring weak foresight signals until digital entrants destroyed its business model."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "3. The 5-step strategic Futures Thinking framework outlined in foresight curricula consists of which sequential phases?",
+    "options": {
+      "A": "Invent, Patent, Market, Sell, Liquidate.",
+      "B": "Frame, Scan, Imagine, Decide, Design.",
+      "C": "Budget, Hire, Delegate, Control, Audit.",
+      "D": "Survey, Draft, Print, Ship, Recycle."
+    },
+    "correct_answer": "B",
+    "explanation": "The standard foresight architecture flows from Framing (defining scope/questions) -> Scanning (weak signals/megatrends) -> Imagining (scenarios/futures) -> Deciding (strategic options) -> Designing (backcasting/action plans)."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "4. What is the key distinction between a 'Weak Signal' (Whisper) and a 'Megatrend' (Siren) in foresight scanning?",
+    "options": {
+      "A": "A weak signal is a tiny, local, or fringe indicator of potential future disruption, whereas a megatrend is a massive, long-term, global force already transforming industries.",
+      "B": "A weak signal is loud public news, while a megatrend is secret government data.",
+      "C": "Weak signals are strictly environmental, while megatrends are strictly financial.",
+      "D": "There is no difference; both mean annual inflation statistics."
+    },
+    "correct_answer": "A",
+    "explanation": "Weak signals are subtle anomalies or early-stage innovations on the periphery, whereas megatrends are macro-level trajectory forces (e.g., demographic aging, climate shift) shaping decades."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "5. In scenario planning, how is a 2x2 Scenario Matrix constructed?",
+    "options": {
+      "A": "By picking four completely random numbers and plotting them on a line graph.",
+      "B": "By identifying the two highest-impact, highest-uncertainty critical drivers/axes and crossing them to generate four distinct, plausible future story worlds.",
+      "C": "By listing the company's past four years of profit margins.",
+      "D": "By separating staff into four salary grades."
+    },
+    "correct_answer": "B",
+    "explanation": "2x2 scenario matrices select two independent critical uncertainties (e.g., High vs Low AI regulation x High vs Low economic growth) to explore four distinct logical future quadrants."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "6. Scenario: An executive board asks 'How can we sell 10% more plastic furniture bricks this year?' A foresight advisor urges them to re-frame the question to 'How will future consumers play and live in 2040?' This foresight exercise demonstrates the shift from operational execution to:",
+    "options": {
+      "A": "Strategic Systems Reframing and Long-Term Horizon Scanning.",
+      "B": "Quarterly financial auditing.",
+      "C": "Immediate price discounting.",
+      "D": "Supply chain warehouse downsizing."
+    },
+    "correct_answer": "A",
+    "explanation": "Shifting from short-term product sales queries (e.g., LEGO/IKEA) to long-term human behavior queries reframes assumptions and exposes systemic disruption risks."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "7. What is 'Backcasting' in foresight strategic design?",
+    "options": {
+      "A": "Extrapolating past historical trends directly into the future in a straight line.",
+      "B": "Defining a desired preferable future vision in 10-20 years, and then working backwards to identify the strategic milestones, policies, and actions required today to reach it.",
+      "C": "Forecasting weather patterns using satellite imagery.",
+      "D": "Canceling a TV broadcast production."
+    },
+    "correct_answer": "B",
+    "explanation": "Unlike forecasting (projecting present trends forward), backcasting starts with a desired future destination and maps the necessary stepping stones required today."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "8. What is the 'Futures Wheel' method used for during scenario building?",
+    "options": {
+      "A": "To pick winning roulette numbers.",
+      "B": "To visually map the direct (first-order), indirect (second-order), and cascading (third-order) consequences of a specific future event or trend.",
+      "C": "To schedule employee shift rotations in factories.",
+      "D": "To calculate interest rate compounding."
+    },
+    "correct_answer": "B",
+    "explanation": "Created by Jerome Glenn, the Futures Wheel is a structured brainstorming method that uncovers unintended secondary and tertiary ripple effects of a change."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "9. In foresight cognitive psychology, 'Availability Bias' leads strategic leaders to make what error?",
+    "options": {
+      "A": "Overestimating the probability of events that are easily recalled from recent memory or vivid personal experience while ignoring unseen emerging threats.",
+      "B": "Refusing to buy office supplies that are currently available in stores.",
+      "C": "Calculating mathematical probabilities with extreme scientific precision.",
+      "D": "Believing that future events will never match past experience."
+    },
+    "correct_answer": "A",
+    "explanation": "Availability bias causes decision-makers to judge likelihood based on recent, dramatic memories, making them blind to unprecedented 'black swan' disruptions."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "10. What is 'Design Fiction' and 'Speculative Prototyping' in futures studies?",
+    "options": {
+      "A": "Writing fictional romance novels set in historic castles.",
+      "B": "Creating tangible diegetic artifacts, fictional product user manuals, or immersive stories set in future scenarios to spark critical debate about social and ethical implications.",
+      "C": "Falsifying financial balance sheets to deceive investors.",
+      "D": "Drawing cartoon sketches for children's books."
+    },
+    "correct_answer": "B",
+    "explanation": "Design fiction builds concrete, provocative future artifacts (diegetic prototypes) that allow leaders to physically experience and debate moral/cultural choices before they occur."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "11. What is the 'Cone of Possibilities' (Futures Cone) used to illustrate?",
+    "options": {
+      "A": "The narrowing sales funnel in consumer retail.",
+      "B": "The spectrum of alternative futures expanding over time, categorized into Projected, Plausible, Possible, Preposterous, and Preferable futures.",
+      "C": "The physical shape of optical telescope lenses.",
+      "D": "The diminishing supply of fossil fuels over time."
+    },
+    "correct_answer": "B",
+    "explanation": "The Futures Cone visualizes how uncertainty expands as time extends outward, helping strategic planners distinguish between probable baseline trends and alternative preferable worlds."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "12. In foresight methodology, what is 'Horizon Scanning'?",
+    "options": {
+      "A": "Looking at the ocean horizon during executive corporate retreats.",
+      "B": "Systematically screening diverse information sources (fringe blogs, patents, scientific pre-prints, cultural shifts) to detect early indicators of emerging change.",
+      "C": "Scanning barcodes on warehouse shipping boxes.",
+      "D": "Measuring satellite solar panel efficiency."
+    },
+    "correct_answer": "B",
+    "explanation": "Horizon scanning is an ongoing radar activity that monitors the external environment across STEEP/PESTLE domains to identify emerging signals before they become mainstream."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "13. What is the 'Status Quo Bias' in corporate management?",
+    "options": {
+      "A": "An emotional preference for the current state of affairs, leading managers to treat any change from the baseline as a loss.",
+      "B": "A legal mandate requiring companies to keep 50% cash in bank accounts.",
+      "C": "An eagerness to dismantle established product lines every 30 days.",
+      "D": "The psychological urge to hire outside management consultants."
+    },
+    "correct_answer": "A",
+    "explanation": "Status quo bias anchors organizations to comfortable existing operations, causing them to disproportionately fear new strategic initiatives."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "14. What does STEEP framework stand for in macro-environmental scanning?",
+    "options": {
+      "A": "Social, Technological, Economic, Environmental, Political.",
+      "B": "Strategic, Tactical, Executive, Empirical, Process.",
+      "C": "Sales, Taxes, Earnings, Equity, Profit.",
+      "D": "Software, Telecom, Energy, Electronics, Physics."
+    },
+    "correct_answer": "A",
+    "explanation": "STEEP organizes foresight environmental scanning across 5 key macro-drivers: Social, Technological, Economic, Environmental, and Political."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "15. Scenario: An international energy utility uses foresight tools to prepare for 2050. Rather than predicting one exact oil price figure, it develops 4 distinct stories: 'Green Autarky', 'Fossil Lock-in', 'Hydrogen Boom', and 'Grid Collapse'. It tests its current strategy against all 4 worlds. This practice is known as:",
+    "options": {
+      "A": "Wind-Tunneling / Robustness Testing.",
+      "B": "Linear budget forecasting.",
+      "C": "Statutory tax audit compliance.",
+      "D": "Corporate accounting liquidation."
+    },
+    "correct_answer": "A",
+    "explanation": "Wind-tunneling tests strategic plans across multiple alternative scenarios to ensure resilience regardless of which future actually unfolds."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "16. In the Three Horizons framework (Sharpe et al.), what does Horizon 3 (H3) represent?",
+    "options": {
+      "A": "The dominant incumbent system operating business-as-usual today.",
+      "B": "The transitional space of disruptive innovation and entrepreneurship.",
+      "C": "Emerging seeds of radical future systems and visionary alternatives that could transform the landscape long-term.",
+      "D": "Past historical business records from 50 years ago."
     },
     "correct_answer": "C",
-    "explanation": "OECD data highlights that cultural and creative sectors exhibit a higher rate of self-employment (18%) compared to the rest of the business economy (12%)."
+    "explanation": "H1 = current dominant system; H2 = transitional disruptive innovations; H3 = long-term pocket seeds of transformative futures."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "2. How did employment growth in OECD Cultural and Creative Sectors perform relative to overall employment growth prior to the pandemic?",
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "17. What is a 'Wildcard' or 'Black Swan' event in strategic foresight?",
     "options": {
-      "A": "CCS employment growth outpaced overall employment growth (13.4% vs 9.1%)",
-      "B": "CCS employment declined by 15% across all OECD countries",
-      "C": "CCS employment grew at half the rate of traditional heavy manufacturing",
-      "D": "Overall employment grew by 25% while CCS remained completely static"
+      "A": "A highly predictable, slow-moving demographic trend.",
+      "B": "A low-probability, extremely high-impact event that occurs suddenly, catching traditional decision-makers unprepared (e.g., global pandemic, sudden geopolitical shift).",
+      "C": "A minor software glitch that reboots a laptop.",
+      "D": "A scheduled annual general shareholder meeting."
+    },
+    "correct_answer": "B",
+    "explanation": "Wildcards are low-probability/high-impact surprises that break existing linear trends and force immediate systemic adaptation."
+  },
+  {
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "18. What is 'Causal Layered Analysis' (CLA) developed by Sohail Inayatullah?",
+    "options": {
+      "A": "A four-level deep foresight method that analyzes problems across Litany (surface headlines), Systemic Causes, Worldviews/Discourse, and Deep Myth/Metaphor.",
+      "B": "A computer database query language for SQL servers.",
+      "C": "A method for layering physical concrete on construction sites.",
+      "D": "A financial balance sheet auditing procedure."
     },
     "correct_answer": "A",
-    "explanation": "The OECD report notes that growth in cultural and creative employment (13.4%) outpaced growth in overall employment (9.1%) across most OECD countries."
+    "explanation": "CLA deconstructs future problems beneath surface litany, digging into systemic structures, cultural worldviews, and deep subconscious myths/archetypes."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "3. What core policy guidance does the OECD report 'The Culture Fix' emphasize regarding public budget allocations for culture?",
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "19. Scenario: A regional mayor wants to build a smart city transit system. Instead of asking 'How many buses do we buy?', the foresight team conducts stakeholder mapping, reframes the problem around clean mobility equity, scans Autonomous Vehicle trends, and designs 2035 pilot zones. This follows which foresight methodology?",
     "options": {
-      "A": "Culture should be treated as a luxury line item that is 'first to invest, last to cut'",
-      "B": "Culture can no longer be viewed as a 'nice to have' or 'last to invest, first to cut' budget line, but as a core economic and social driver",
-      "C": "Public investment in culture should be eliminated entirely in favor of private funding",
-      "D": "Cultural spending should only occur during economic booms and stopped during recoveries"
-    },
-    "correct_answer": "B",
-    "explanation": "The OECD report emphasizes that culture must be mainstreamed across policy portfolios and can no longer be treated as a 'nice to have' or 'last to invest, first to cut' item during economic planning."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "4. In the Barcelona Chamber of Commerce's 'Design&Plug' initiative highlighted by the OECD, what primary approach was used to foster business innovation?",
-    "options": {
-      "A": "Replacing human workers with automated machinery in traditional factories",
-      "B": "Introducing creative methodologies (design thinking, gamification, improvisation) to help SMEs create new services and cross-sector collaborations",
-      "C": "Imposing heavy tariffs on international creative imports",
-      "D": "Restricting creative entrepreneurs from pitching to consolidated businesses"
-    },
-    "correct_answer": "B",
-    "explanation": "Design&Plug introduced creative methodologies like design thinking, gamification, improvisation, and scripting to foster cross-disciplinary collaboration and help SMEs develop innovative services."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "5. According to OECD statistics, what proportion of total cultural and creative employment is located outside traditional CCS firms?",
-    "options": {
-      "A": "Less than 2%",
-      "B": "Around 40% (e.g., creative professionals like designers working in manufacturing or technology sectors)",
-      "C": "Exactly 95%",
-      "D": "Zero, as creative professionals are legally restricted to creative firms"
-    },
-    "correct_answer": "B",
-    "explanation": "Around 40% of cultural and creative jobs are located outside CCS firms proper (e.g., industrial designers in automotive), demonstrating cross-sector creative spillover."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "6. In major OECD capital regions and metropolitan cities, what share of total employment can cultural and creative jobs account for?",
-    "options": {
-      "A": "Up to 1 in 100 jobs",
-      "B": "Up to 1 in 10 jobs",
-      "C": "Up to 1 in 2 jobs",
-      "D": "Less than 0.1% of municipal labor"
-    },
-    "correct_answer": "B",
-    "explanation": "Cultural and creative employment accounts for up to 1 in 20 jobs nationally in several OECD countries and up to 1 in 10 jobs in major capital cities."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "7. What type of 'knowledge base' characterizes the Cultural and Creative Sectors according to economic geography frameworks (Asheim, 2007)?",
-    "options": {
-      "A": "A purely analytical synthetic knowledge base grounded in lab chemistry",
-      "B": "A 'symbolic' knowledge base relying on tacit, context-specific cultural meanings, high experimentation, and artistic content",
-      "C": "An inorganic mechanical knowledge base",
-      "D": "A standardized clerical database management base"
-    },
-    "correct_answer": "B",
-    "explanation": "CCS operate within a symbolic knowledge base where innovation centers on creating symbolic and cultural meanings through tacit knowledge and experimentation."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "8. How do subsidized non-profit cultural activities function as an 'R&D Lab' for commercial creative businesses?",
-    "options": {
-      "A": "By manufacturing standardized computer microchips under military contracts",
-      "B": "By using public funds to test high-risk, radical creative content and ideas that commercial markets can later scale",
-      "C": "By lobbying governments to outlaw digital media downloads",
-      "D": "By purchasing real estate strictly for commercial resale"
-    },
-    "correct_answer": "B",
-    "explanation": "Publicly funded and non-profit creative ventures act as R&D labs by absorbing early-stage artistic risk, developing novel formats that commercial businesses eventually adopt."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "9. What is the 'Creative Trident' framework used for in occupational statistics?",
-    "options": {
-      "A": "A three-pronged naval defense strategy for coastal cities",
-      "B": "A statistical method mapping creative jobs into three categories: creative roles in creative industries, non-creative roles in creative industries, and creative roles in non-creative industries",
-      "C": "A patent classification system for maritime software",
-      "D": "A tax formula for calculating import duties on musical instruments"
-    },
-    "correct_answer": "B",
-    "explanation": "The Creative Trident maps creative employment across three dimensions: specialist creative roles in creative sectors, support roles in creative sectors, and embedded creative roles in non-creative sectors."
-  },
-  {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "10. In urban policy, what famous example illustrates 'culture-led regeneration' where a cultural institution acted as a major catalyst for city transformation?",
-    "options": {
-      "A": "The opening of the Guggenheim Museum in Bilbao in 1997",
-      "B": "The construction of a suburban coal storage facility",
-      "C": "The closure of municipal libraries across London",
-      "D": "The privatization of public transit in Detroit"
+      "A": "The 5-Step Foresight Process (Frame, Scan, Imagine, Decide, Design).",
+      "B": "Standard reactive municipal emergency repair.",
+      "C": "Static real estate zoning litigation.",
+      "D": "Annual election propaganda distribution."
     },
     "correct_answer": "A",
-    "explanation": "The 'Bilbao Effect' refers to the transformative urban, economic, and image regeneration of Bilbao triggered by the opening of the Guggenheim Museum in 1997."
+    "explanation": "Comprehensive foresight integrates framing, trend scanning, scenario imagination, strategic decision-making, and pilot policy design."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "11. How do Smart Specialisation Strategies (S3) integrate Cultural and Creative Sectors at regional levels?",
+    "topic": "Futures Thinking, Megatrends & Foresight Tools",
+    "question": "20. What is 'Linear Extrapolation' and why is it dangerous in dynamic environments?",
     "options": {
-      "A": "By banning creative enterprises from receiving regional development funds",
-      "B": "By aligning CCS capabilities with regional innovation agendas, cross-sector partnerships, and local identity assets",
-      "C": "By forcing all artists to work in civil engineering departments",
-      "D": "By replacing local museums with automated parking garages"
+      "A": "Assuming that future rate of change will continue at the exact same constant line as the past, making leaders blind to exponential curve shifts and tipping points.",
+      "B": "Using geometric curves to design curved furniture.",
+      "C": "Drawing straight lines on office whiteboards during staff meetings.",
+      "D": "Measuring ruler lengths in physics experiments."
     },
-    "correct_answer": "B",
-    "explanation": "Smart Specialisation Strategies target CCS to drive regional competitive advantage by linking creative skills with traditional local industries like tourism, manufacturing, or digital tech."
+    "correct_answer": "A",
+    "explanation": "Linear thinking assumes tomorrow will be an incremental extension of yesterday, failing completely when technological or socio-ecological trends hit exponential tipping points."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "12. What was the core purpose of repurposing the former slaughterhouse into 'Matadero Madrid' in Spain?",
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "1. According to Richard Thaler and Cass Sunstein, what is the formal definition of a 'Nudge' in choice architecture?",
     "options": {
-      "A": "To create a centralized industrial meat packing factory",
-      "B": "To establish a municipal contemporary creation center functioning as a creative hub and cultural district for urban renewal",
-      "C": "To build a high-density commercial parking lot",
-      "D": "To construct an underground subway maintenance depot"
+      "A": "Mandating behaviors by law and imposing heavy economic fines or bans on undesirable choices.",
+      "B": "Any aspect of the choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives.",
+      "C": "Paying cash bribes to individuals to force them to consume new products.",
+      "D": "Subliminal hypnotism via radio frequencies."
     },
     "correct_answer": "B",
-    "explanation": "Matadero Madrid repurposed heritage industrial infrastructure into a vibrant multi-disciplinary creative district driving neighborhood social and cultural regeneration."
+    "explanation": "A nudge preserves freedom of choice (libertarian paternalism) while subtly altering the choice environment (e.g., placing healthy fruit at eye level) to encourage beneficial decisions."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "13. Among business growth models in CCS identified by OECD, how do 'gradual innovators' scale their operations?",
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "2. In Carola Stryja and Gerhard Satzger's quasi-field study on digital nudging for electric vehicle (EV) innovation adoption, which digital nudge proved most powerful, boosting e-car picks by 4.6x?",
     "options": {
-      "A": "By launching radical technological disruptions that eliminate competitors overnight",
-      "B": "By investing in human capital and process upgrades to gain market share through productivity improvements rather than radical tech breaks",
-      "C": "By maintaining static employee counts while shutting down international sales",
-      "D": "By liquidating physical assets to buy government bonds"
+      "A": "Subconscious priming word puzzles.",
+      "B": "Feedback pop-ups making CO2 environmental impacts and fuel costs instantly visible upon selecting diesel.",
+      "C": "Hiding all diesel rental options from the screen.",
+      "D": "Increasing rental car prices by 500%."
     },
     "correct_answer": "B",
-    "explanation": "Gradual innovators scale by upgrading internal human skills, workflows, and process capabilities, earning market expansion through steady efficiency gains."
+    "explanation": "The study showed that real-time feedback pop-ups highlighting environmental/financial costs boosted EV selection by 4.6x, while default pre-ticking boosted picks by 3.7x."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "14. How did the COVID-19 pandemic impact business models across Cultural and Creative Sectors?",
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "3. Scenario: A SaaS software company wants enterprise employees to adopt a new security feature. When employees log in, the 'Enable Multi-Factor Authentication' box is already pre-selected, requiring a user to manually uncheck it if they wish to opt out. Which nudge technique is being used?",
     "options": {
-      "A": "It had zero effect on revenue or audience engagement",
-      "B": "It amplified pre-existing structural fragilities while forcing rapid acceleration toward digital dissemination and hybrid business models",
-      "C": "It permanently eliminated all venue-based performing arts without replacement",
-      "D": "It caused a 500% increase in live concert ticket sales"
+      "A": "Social Proof",
+      "B": "Default Option",
+      "C": "Loss Aversion Framing",
+      "D": "Physical Incentive Bribe"
     },
     "correct_answer": "B",
-    "explanation": "The pandemic exposed job precariousness in CCS while simultaneously driving rapid innovation in digital streaming, virtual engagement, and hybrid revenue streams."
+    "explanation": "Default options leverage human cognitive inertia and status quo bias; because opting out requires extra friction, pre-set defaults dramatically increase adoption rates."
   },
   {
-    "topic": "Cultural & Creative Sectors Innovation",
-    "question": "15. Why do traditional R&D metrics (e.g., formal patent counts) often fail to capture innovation in Cultural and Creative Sectors?",
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "4. Showing new platform users a message stating '85% of software engineers in your region have already upgraded to this clean-code extension' relies on which psychological mechanism?",
     "options": {
-      "A": "Because creative firms do not innovate under any definition",
-      "B": "Because traditional metrics focus on scientific/engineering R&D, whereas CCS innovation is mostly non-technological, organizational, soft, or symbolic",
-      "C": "Because government agencies forbid creative businesses from applying for patents",
-      "D": "Because CCS firms are too large to submit patent documentation"
+      "A": "Social Proof / Social Norms.",
+      "B": "Economic Scarcity.",
+      "C": "Compensatory Green Belief.",
+      "D": "Negative Footprint Illusion."
+    },
+    "correct_answer": "A",
+    "explanation": "Social proof signals peer group norms, leveraging human social desire to conform and follow established collective behavior."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "5. In Nilsson's Taxonomy of Creative Design applied to behavioral innovation, what distinguishes 'Transformation' from 'Imitation'?",
+    "options": {
+      "A": "Imitation involves small tweaks, while Transformation re-imagines existing models in entirely new structural forms (e.g., Netflix shifting from DVD delivery to streaming).",
+      "B": "Imitation is illegal, while Transformation is required by law.",
+      "C": "Imitation applies to hardware, while Transformation applies to farming.",
+      "D": "There is no difference between them."
+    },
+    "correct_answer": "A",
+    "explanation": "Imitation copies existing content/form, whereas transformation significantly shifts both form and customer delivery (e.g., physical video rental to cloud streaming)."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "6. What is the 'Negative Footprint Illusion' in consumer behavior regarding green innovation adoption?",
+    "options": {
+      "A": "Believing that adding an eco-friendly item (e.g., an organic apple) to a high-carbon item (a hamburger) reduces the overall carbon footprint of the combined meal.",
+      "B": "The belief that carbon footprints do not exist in reality.",
+      "C": "A mathematical error in satellite remote sensing.",
+      "D": "The belief that driving an electric car increases oil consumption."
+    },
+    "correct_answer": "A",
+    "explanation": "Cognitive research shows consumers irrationally average rather than sum carbon footprints, believing adding a green product makes a high-impact bundle 'greener'."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "7. What is 'Compensatory Green Belief'?",
+    "options": {
+      "A": "The irrational justification that performing one small eco-friendly action (e.g., recycling paper at home) grants moral license to commit a high-carbon action (e.g., driving a gas-guzzling car to work).",
+      "B": "Receiving a cash tax refund for installing solar panels.",
+      "C": "A corporate accounting rule for green bonds.",
+      "D": "Believing that plants absorb zero carbon dioxide."
+    },
+    "correct_answer": "A",
+    "explanation": "Compensatory green beliefs function as moral licensing mechanisms where individuals permit themselves unsustainable behaviors because they performed an earlier minor green action."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "8. According to Daniel Kahneman's Dual-System Theory, Nudges target primarily which cognitive decision system?",
+    "options": {
+      "A": "System 2: Slow, deliberate, analytical, high-effort logical reasoning.",
+      "B": "System 1: Fast, automatic, intuitive, subconscious heuristic processing.",
+      "C": "System 3: Computer-assisted mathematical calculation.",
+      "D": "System 0: Spinal cord reflexes."
     },
     "correct_answer": "B",
-    "explanation": "Official R&D metrics were designed around manufacturing and STEM lab patents, failing to measure soft innovation, aesthetic novelties, new business formats, or social design prevalent in CCS."
+    "explanation": "Nudges align choice architecture with System 1 automatic heuristics, reducing cognitive effort and guiding choices without requiring intense System 2 deliberation."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "9. In Everett Rogers' Diffusion of Innovations theory, which user adopter category is crucial for bridging the 'Chasm' to mass market adoption?",
+    "options": {
+      "A": "Laggards",
+      "B": "Innovators & Early Adopters",
+      "C": "Late Majority",
+      "D": "Traditionalists"
+    },
+    "correct_answer": "B",
+    "explanation": "Early Adopters act as opinion leaders; as Geoffrey Moore noted, crossing the chasm between visionary Early Adopters and pragmatic Early Majority is the hardest hurdle in innovation commercialization."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "10. Which attribute of an innovation (Rogers) measures how easily a potential adopter can experiment with it on a limited basis before making a full commitment?",
+    "options": {
+      "A": "Relative Advantage",
+      "B": "Compatibility",
+      "C": "Trialability",
+      "D": "Observability"
+    },
+    "correct_answer": "C",
+    "explanation": "Trialability allows users to test an innovation (e.g., free trial software or test drives) with low risk, significantly increasing adoption velocity."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "11. Scenario: An e-commerce app displays a red badge saying 'Only 2 items left in stock — 14 people are viewing this right now!'. This intervention combines which behavioral heuristics?",
+    "options": {
+      "A": "Scarcity / Loss Aversion and Social Proof.",
+      "B": "Compensatory Green Belief and Default pre-ticking.",
+      "C": "System 2 logical auditing.",
+      "D": "Government tariff regulation."
+    },
+    "correct_answer": "A",
+    "explanation": "Indicating low remaining stock leverages scarcity and loss aversion, while showing concurrent viewers leverages social proof to urge immediate decision-making."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "12. In Choice Architecture, what is the 'Decoy Effect' (Asymmetric Dominance)?",
+    "options": {
+      "A": "Introducing a third choice option that is clearly inferior to one specific target option, making the target option appear dramatically superior and boosting its selection rate.",
+      "B": "Hiding all price tags on retail items.",
+      "C": "Sending fake spam emails to competitors.",
+      "D": "Replacing physical sales staff with plastic mannequins."
+    },
+    "correct_answer": "A",
+    "explanation": "The Decoy Effect manipulates relative preference by adding an option dominated in quality/price by the intended choice target."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "13. What is 'Choice Overload' (Paradox of Choice)?",
+    "options": {
+      "A": "Presenting consumers with too many alternative choices (e.g., 24 jam varieties vs 6), which increases cognitive paralysis, hesitation, decision fatigue, and reduces final purchases.",
+      "B": "Running out of inventory in a retail shop.",
+      "C": "Offering products in only one color option.",
+      "D": "Forcing users to fill out paper tax forms."
+    },
+    "correct_answer": "A",
+    "explanation": "Excessive options overwhelm System 2 processing, causing consumers to abandon choices altogether due to regret anticipation and cognitive overload."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "14. How does 'Framing' influence decision-making in innovation communications?",
+    "options": {
+      "A": "By presenting identical objective information in a different light (e.g., '90% Lean' vs '10% Fat'), triggering different emotional and cognitive reactions.",
+      "B": "By framing physical pictures in wooden frames.",
+      "C": "By changing the legal country of corporate incorporation.",
+      "D": "By translating marketing copy into ancient Latin."
+    },
+    "correct_answer": "A",
+    "explanation": "Prospect Theory shows human decisions are highly sensitive to whether options are framed around gain or loss, even when numerical facts are identical."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "15. In behavior change design, what is 'Friction' (Sludge)?",
+    "options": {
+      "A": "User interface barriers, complex steps, or extra physical/cognitive effort that hinders or slows down a desired user behavior.",
+      "B": "Mechanical wear between machine gears.",
+      "C": "Disagreements between executive board directors.",
+      "D": "High internet network bandwidth speed."
+    },
+    "correct_answer": "A",
+    "explanation": "Sludge or negative friction consists of cumbersome forms and multi-step hurdles designed (intentionally or unintentionally) to make a process difficult."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "16. Scenario: A city council wants citizens to reduce household energy usage. They add a simple smiley face icon on monthly utility bills for households consuming below community average, and a sad face for high consumers. This low-cost intervention is a:",
+    "options": {
+      "A": "Social Norm & Feedback Nudge.",
+      "B": "Statutory Criminal Penalty.",
+      "C": "High-interest bank loan.",
+      "D": "Competence-destroying hardware innovation."
+    },
+    "correct_answer": "A",
+    "explanation": "Infusing social comparison feedback with emotive cues (injunctive social norms) successfully nudges energy conservation without mandatory mandates."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "17. What is 'Loss Aversion' as identified by Kahneman and Tversky?",
+    "options": {
+      "A": "The psychological tendency for losses to loom larger than equivalent gains (losing $100 feels roughly twice as painful as gaining $100 feels good).",
+      "B": "A preference for losing money in venture capital investments.",
+      "C": "An eagerness to discard valuable old technology.",
+      "D": "An accounting rule requiring firms to report negative profits."
+    },
+    "correct_answer": "A",
+    "explanation": "Loss aversion demonstrates that human risk choices are asymmetrical, making people over-weight potential losses when considering new innovations."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "18. In digital nudging, what is 'Salience'?",
+    "options": {
+      "A": "Drawing user attention to key information or choice consequences at the precise moment of decision (e.g., highlighting eco-labels in bold colors).",
+      "B": "Hiding critical user terms in small 6pt font.",
+      "C": "Calculating corporate salary increases.",
+      "D": "Automating warehouse robotics."
+    },
+    "correct_answer": "A",
+    "explanation": "Salience interventions make important choices visually prominent, overcoming attention scarcity during fast digital navigation."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "19. According to BJ Fogg's Behavior Model (B=MAP), a behavior occurs only when which three elements converge at the same moment?",
+    "options": {
+      "A": "Motivation, Ability, and Prompt (Trigger).",
+      "B": "Money, Authority, and Power.",
+      "C": "Marketing, Advertising, and Promotion.",
+      "D": "Measurement, Analytics, and Processing."
+    },
+    "correct_answer": "A",
+    "explanation": "Fogg's model proves that high motivation + high ability (low friction) must be activated by a well-timed Prompt for action to occur."
+  },
+  {
+    "topic": "Behavioral Change, Nudges & Innovation Adoption",
+    "question": "20. What is 'Libertarian Paternalism' in nudge philosophy?",
+    "options": {
+      "A": "A philosophy advocating that choice architects preserve individual freedom to opt out (libertarian) while designing environments that encourage choices beneficial to welfare (paternalism).",
+      "B": "A political doctrine demanding complete state ownership of all businesses.",
+      "C": "An extreme anti-government movement that outlaws all rules.",
+      "D": "A corporate governance rule enforcing mandatory retirement at age 50."
+    },
+    "correct_answer": "A",
+    "explanation": "Thaler & Sunstein coined Libertarian Paternalism to emphasize that nudges guide people toward health/wealth without restricting individual freedom of choice."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "1. Joseph Weizenbaum's 1966 chatbot ELIZA demonstrated which psychological phenomenon in human-computer interaction?",
+    "options": {
+      "A": "True artificial general intelligence and emotional empathy.",
+      "B": "The ELIZA Effect — humans tendency to anthropomorphize and attribute deep understanding to superficial keyword-matching scripts.",
+      "C": "Advanced quantum computing execution.",
+      "D": "Failure of electrical power grids during natural speech."
+    },
+    "correct_answer": "B",
+    "explanation": "Weizenbaum was shocked to discover that users attributed deep emotional empathy to ELIZA, despite it relying on simple rule-based string substitution scripts."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "2. In Kasparov's concept of 'Centaur' human-AI collaboration in decision-making and creativity, what defines the Centaur model?",
+    "options": {
+      "A": "Replacing human workers completely with autonomous algorithms.",
+      "B": "A hybrid symbiotic team combining formal algorithmic analytics with human intuition, critical domain judgment, and tacit sensemaking.",
+      "C": "A mythical horse drawing in vector graphics.",
+      "D": "A hardware robot built without software connectivity."
+    },
+    "correct_answer": "B",
+    "explanation": "Grandmaster Kasparov demonstrated that a 'Centaur' team (human + AI algorithm) consistently defeats both standalone supercomputers and standalone human grandmasters."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "3. Panciroli & Rivoltella (2023) describe the emerging era of generative AI co-creation as 'creativity without manual skills'. What becomes the paramount human competency in this paradigm?",
+    "options": {
+      "A": "Manual technical drawing dexterity with physical tools.",
+      "B": "Mastery of language, intent articulation, prompt framing, critical evaluation, and contextual storytelling ('knowing how to tell the machine what to do').",
+      "C": "Physical muscle endurance for assembly line labor.",
+      "D": "Memorizing raw assembly machine code binary numbers."
+    },
+    "correct_answer": "B",
+    "explanation": "When generative tools handle technical execution (bits/synthesis), human creative effort shifts from manual craftsmanship to semantic prompt engineering, critical steering, and intent framing."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "4. What is 'AI Sycophancy' in Large Language Model behavioral alignment research?",
+    "options": {
+      "A": "The tendency of an LLM to flatter, agree with, or mirror the user's stated opinions and misconceptions, even when factually incorrect.",
+      "B": "The ability of AI to write high-level violin music.",
+      "C": "A hardware overheating issue in GPU server farms.",
+      "D": "The refusal of an AI model to answer any user query."
+    },
+    "correct_answer": "A",
+    "explanation": "Sycophancy occurs when models tuned via RLHF prioritize pleasing the user or validating user premises over stating objective factual truths."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "5. What does the ARC-AGI benchmark (François Chollet) measure to test true artificial general intelligence?",
+    "options": {
+      "A": "Speed of calculating 1,000-digit multiplication problems.",
+      "B": "Novel grid-reasoning task abstraction and fluid skill acquisition from very few examples, resisting simple memorization or training data memorization.",
+      "C": "The total number of parameters in a neural network.",
+      "D": "The physical speed of robotic arm motion."
+    },
+    "correct_answer": "B",
+    "explanation": "ARC-AGI tests general fluid intelligence — the ability to synthesize new logic rules for novel visual puzzles out-of-distribution without relying on memorized text corpora."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "6. Scenario: An AI research lab evaluates student essays using Latent Semantic Analysis (LSA) and neural word embeddings. As documented by Beaty & Johnson (2021) and Panciroli & Rivoltella, how does semantic vector space evaluate creative thought?",
+    "options": {
+      "A": "By counting the exact number of punctuation marks.",
+      "B": "By measuring semantic distance between concepts, where distant but conceptually valid word associations indicate higher divergence and originality.",
+      "C": "By checking if the student used 12pt Times New Roman font.",
+      "D": "By measuring document download speed in kilobytes."
+    },
+    "correct_answer": "B",
+    "explanation": "High semantic distance between word vectors in latent space correlates with human ratings of divergent, original conceptual thinking."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "7. MIT's 'Moral Machine' global experiment explored human ethical preferences regarding which autonomous AI dilemma?",
+    "options": {
+      "A": "How self-driving vehicles should navigate variations of the Trolley Problem when unavoidable fatal accidents occur.",
+      "B": "How financial AI bots should set mortgage interest rates.",
+      "C": "Whether AI should be allowed to write poetry.",
+      "D": "How many watts of electricity a server should consume."
+    },
+    "correct_answer": "A",
+    "explanation": "The Moral Machine gathered millions of human decisions across countries to examine moral trade-offs in autonomous car crash scenarios."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "8. What is the Chatbot Arena (LMSYS) Elo rating system used for?",
+    "options": {
+      "A": "Crowdsourced blind A/B preference evaluation of LLMs based on human pairwise judgments, ranking models on an Elo scale similar to chess.",
+      "B": "Measuring GPU chip temperature in data centers.",
+      "C": "Calculating the total financial stock price of AI startups.",
+      "D": "Verifying credit card payment transactions."
+    },
+    "correct_answer": "A",
+    "explanation": "LMSYS Chatbot Arena uses blind human preference voting across diverse real-world prompts to establish benchmark Elo leaderboards for competitive LLMs."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "9. In modern Natural Language Processing, how does 'Tokenization' work?",
+    "options": {
+      "A": "Converting raw text strings into sub-word numerical tokens (chunks of characters) that neural networks process in vector embedding spaces.",
+      "B": "Selling digital cryptocurrency tokens to buy software licenses.",
+      "C": "Printing paper entrance tickets for technology conferences.",
+      "D": "Encrypting hard drives with biometric fingerprints."
+    },
+    "correct_answer": "A",
+    "explanation": "Tokenization breaks text into sub-word units (e.g., 'innov' + 'ation'), mapping them to integer IDs that represent initial inputs to neural transformer blocks."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "10. In European Innovation Scoreboard (EIS) benchmarking, how are EU countries classified into performance tiers?",
+    "options": {
+      "A": "Innovation Leaders, Strong Innovators, Moderate Innovators, and Emerging Innovators.",
+      "B": "Gold, Silver, Bronze, and Plastic.",
+      "C": "Capitalist, Socialist, Feudal, and Agrarian.",
+      "D": "Digital, Analog, Hybrid, and Offline."
+    },
+    "correct_answer": "A",
+    "explanation": "The EIS evaluates national innovation systems across dozens of indicators, grouping member states into four official performance tiers."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "11. Scenario: An industrial design studio pairs a human designer with a generative AI tool connected to a robotic painting arm. The machine detects the artist's recurring stroke patterns and generates synchronous interpretations in real time, altering the canvas. This is a real-world example of:",
+    "options": {
+      "A": "Human-Machine Co-creation and Synchronic Process Collaboration.",
+      "B": "Linear mechanical photocopying.",
+      "C": "Competence-destroying software bug.",
+      "D": "Closed source intellectual property theft."
+    },
+    "correct_answer": "A",
+    "explanation": "Interactive robotic-AI feedback loops embody true co-creation, where human intent and machine generative response co-evolve the final artistic artifact."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "12. What is 'Hallucination' in Large Language Models?",
+    "options": {
+      "A": "When a model generates plausible-sounding, syntactically confident statements that are factually false or ungrounded in source data.",
+      "B": "When a computer screen displays bright rainbow colors.",
+      "C": "When a server runs out of physical RAM memory.",
+      "D": "When an AI model refuses to speak to humans."
+    },
+    "correct_answer": "A",
+    "explanation": "LLMs predict word tokens probabilistically; without strict grounding mechanisms (like RAG), they can generate confident nonsense or fabricated citations."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "13. What is Retrieval-Augmented Generation (RAG) in AI system architecture?",
+    "options": {
+      "A": "An architecture that retrieves relevant factual passages from verified source documents and feeds them into the prompt context to ground model generation.",
+      "B": "A method for recycling old computer server hardware.",
+      "C": "Deleting user databases to save cloud storage space.",
+      "D": "Generating synthetic image backgrounds using watercolor filters."
+    },
+    "correct_answer": "A",
+    "explanation": "RAG combines vector database semantic retrieval with generative LLMs, ensuring factual claims remain traceable to user source materials."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "14. In modern AI ethics, what is the 'Alignment Problem'?",
+    "options": {
+      "A": "The challenge of ensuring that artificial intelligence systems reliably act in accordance with human values, intentions, and safety objectives.",
+      "B": "Aligning text paragraphs to the left margin in Microsoft Word.",
+      "C": "Aligning physical solar panels toward the sun.",
+      "D": "Matching employee working hours across time zones."
+    },
+    "correct_answer": "A",
+    "explanation": "The Alignment Problem addresses how to prevent autonomous AI systems from pursuing misaligned sub-goals that conflict with human well-being."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "15. What is the 'Moravec Paradox' in artificial intelligence and robotics?",
+    "options": {
+      "A": "High-level reasoning (like chess or calculus) requires relatively little computation for AI, whereas low-level sensorimotor skills (like folding a towel or walking on uneven ground) require enormous computational effort.",
+      "B": "Computers get smaller as they become more expensive.",
+      "C": "AI models learn languages faster than children.",
+      "D": "Robots work faster when disconnected from electricity."
+    },
+    "correct_answer": "A",
+    "explanation": "Moravec showed that hard cognitive tasks for humans are easy for AI, while subconscious physical/perceptual tasks honed by millions of years of evolution are hard for machines."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "16. In digital transformation, what is 'Servitization'?",
+    "options": {
+      "A": "The strategic transition of manufacturing firms from selling standalone physical products to delivering integrated product-service systems (e.g., Rolls-Royce selling 'Power by the Hour' jet engines).",
+      "B": "Hiring private security guards for corporate offices.",
+      "C": "Replacing digital servers with paper filing cabinets.",
+      "D": "Forcing customers to tip sales employees."
+    },
+    "correct_answer": "A",
+    "explanation": "Servitization uses IoT sensors and cloud platforms to shift value propositions from discrete hardware sales to continuous outcome-based service relationships."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "17. What is 'Reinforcement Learning from Human Feedback' (RLHF)?",
+    "options": {
+      "A": "A training technique that uses human preference rankings to train a reward model, fine-tuning LLMs toward helpful, honest, and harmless responses.",
+      "B": "Forcing AI developers to take written exams.",
+      "C": "A method for teaching children to write code.",
+      "D": "Automated email marketing campaigns."
+    },
+    "correct_answer": "A",
+    "explanation": "RLHF aligns raw base LLMs with human expectations by rewarding outputs rated higher by human evaluators."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "18. Scenario: A healthcare platform deploys a diagnostic AI tool that assists radiologists. The AI flags subtle micro-calcifications in X-rays, while the radiologist reviews patient medical history and makes the final biopsy decision. This operating model is best classified as:",
+    "options": {
+      "A": "Augmented Intelligence / Human-in-the-Loop Collaboration.",
+      "B": "Fully Autonomous Replacement.",
+      "C": "Manual Analog Diagnostic Failure.",
+      "D": "Closed source hardware lock-in."
+    },
+    "correct_answer": "A",
+    "explanation": "Augmented Intelligence keeps the human expert in the loop, pairing computational pattern detection with clinical intuition and professional responsibility."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "19. In Transformer neural network architectures (Vaswani et al.), what is the purpose of the 'Self-Attention' mechanism?",
+    "options": {
+      "A": "It allows the model to dynamically weigh the relevance of every token relative to all other tokens in a sequence, capturing long-range dependencies.",
+      "B": "It turns off the computer when the user looks away.",
+      "C": "It measures how long a user stares at an advertisement.",
+      "D": "It compresses video files into ZIP folders."
+    },
+    "correct_answer": "A",
+    "explanation": "Self-attention enables transformers to compute contextual relationships across entire text sequences simultaneously without recurrent bottlenecking."
+  },
+  {
+    "topic": "AI, Digital Transformation & Human-Machine Collaboration",
+    "question": "20. What is 'Prompt Engineering' in generative AI workflows?",
+    "options": {
+      "A": "The discipline of structuring, context-setting, and framing text inputs to effectively guide generative models toward desired, accurate outputs.",
+      "B": "Designing physical electrical circuit boards.",
+      "C": "Repairing broken diesel engines.",
+      "D": "Building suspension bridges."
+    },
+    "correct_answer": "A",
+    "explanation": "Prompt engineering shapes model output quality through strategic context framing, role specification, constraint setting, and few-shot examples."
   }
 ]
